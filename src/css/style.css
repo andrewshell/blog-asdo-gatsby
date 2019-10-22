@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "./prism-coy.css";
+
+a {
+	@apply text-black;
+}
+
+a:hover {
+	@apply text-green-700;
+}
+
+h1 {
+	@apply text-4xl font-bold mb-8;
+}
+
+h2 {
+	@apply text-2xl font-bold mb-2;
+}
+
+p {
+	@apply mb-6;
+}
+
+ul {
+	@apply list-disc list-inside;
+}
+
+blockquote {
+	@apply border-l-4 border-gray-200 pl-8;
+}

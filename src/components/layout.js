@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-
+import { useStaticQuery, Link, graphql } from "gatsby"
 import Header from "./header";
 
 function Layout({ children }) {
@@ -12,12 +12,12 @@ function Layout({ children }) {
         {children}
       </main>
 
-      <footer className="bg-blue-700">
+      <footer className="bg-gray-200">
         <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
-          <p className="text-white">
+          <p>
             Created by{` `}
             <a
-              className="font-bold no-underline text-white"
+              className="font-bold no-underline"
               href="https://bryant.io"
             >
               Taylor Bryant
@@ -26,7 +26,7 @@ function Layout({ children }) {
 
           <p>
             <a
-              className="font-bold no-underline text-white"
+              className="font-bold no-underline"
               href="https://github.com/taylorbryant/gatsby-starter-tailwind"
             >
               GitHub

@@ -1,10 +1,10 @@
 import React from "react";
+import { graphql, Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
-function IndexPage() {
+export default function IndexPage({data}) {
   return (
     <Layout>
       <SEO
@@ -12,30 +12,38 @@ function IndexPage() {
         title="Home"
       />
 
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block mx-auto w-1/2"
-          src={catAndHumanIllustration}
-        />
-
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold no-underline text-gray-900"
-            href="https://tailwindcss.com/"
-          >
-            Tailwind
-          </a>
-          , a utility-first CSS framework.
-        </p>
-      </section>
+    {data.allMarkdownRemark.edges.map(({node}) => (
+      <article key={node.id} className="post pb-8 mb-10 border-b border-gray-200">
+        <header className="entry-header">
+          <h2 className="entry-title">
+            <Link to={node.frontmatter.slug} rel="bookmark">{node.frontmatter.title}</Link>
+          </h2>
+        </header>
+        <div className="entry-content">
+          <div className="entry-summary">
+            <p>{node.excerpt}</p>
+          </div>
+        </div>
+      </article>
+    ))}
     </Layout>
   );
 }
 
-export default IndexPage;
+export const query = graphql`query HomePageQuery{
+  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    totalCount
+    edges {
+      node {
+        frontmatter {
+          title
+          slug
+          date
+          author
+        }
+        excerpt(pruneLength: 240)
+        timeToRead
+      }
+    }
+  }
+}`
