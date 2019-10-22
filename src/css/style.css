@@ -20,7 +20,7 @@ h2 {
 	@apply text-2xl font-bold mb-2;
 }
 
-p {
+p, ul, ol, table {
 	@apply mb-6;
 }
 
@@ -28,6 +28,18 @@ ul {
 	@apply list-disc list-inside;
 }
 
+ol {
+	@apply list-decimal list-inside;
+}
+
 blockquote {
 	@apply border-l-4 border-gray-200 pl-8;
+}
+
+th, td {
+	@apply border px-4 py-2;
+}
+
+th p, td p {
+	@apply mb-0;
 }

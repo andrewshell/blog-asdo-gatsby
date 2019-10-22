@@ -21,24 +21,21 @@ This time I wanted to make sure that my pages & components worked with `ChangeDe
 
 The tutorials I found showed something simple like this:
 
+```ts
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+import {store} from './store/counter';
 
-    
-    <code class="ts">import { Component, ChangeDetectionStrategy } from '@angular/core';
-    import {store} from './store/counter';
-    
-    @Component({
+@Component({
     changeDetection: ChangeDetectionStrategy.OnPush,
     template: `
     <div>{{ store.value }} - {{ store.computedValue }}
     <button>Action</button></div>
     `
-    })
-    export class AppComponent {
-    store = store;
-    }
-    </code>
-
-
+})
+export class AppComponent {
+store = store;
+}
+```
 
 Now I'm not doing inline templates, but I'd make sure I was using `@observable` and `@computed` properties. However, whenever I put *mobxAutorun on an element, the entire element disappeared.
 

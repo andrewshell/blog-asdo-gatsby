@@ -23,31 +23,28 @@ I spent the weekend thinking about how to solve this.
 
 First, I asked "How would I do this right now with what's available?" and the answer was:
 
+```php
+$atlasContainer = new Cadre\AtlasOrmDebugBarBridge\AtlasContainer(
+    'mysql:host=localhost;dbname=testdb',
+    'username',
+    'password'
+);
 
-    
-    <code class="php">$atlasContainer = new Cadre\AtlasOrmDebugBarBridge\AtlasContainer(
-        'mysql:host=localhost;dbname=testdb',
-        'username',
+$debugbar = new DebugBar\StandardDebugBar();
+$atlasCollector = new Cadre\AtlasOrmDebugBarBridge\AtlasOrmCollector($atlasContainer);
+
+$atlasContainer->setReadConnection('readonly', function () use ($atlasCollector) {
+    $readOnly = new Cadre\AtlasOrmDebugBarBridge\ExtendedPdo(
+        'mysql:host=localhost;dbname=slavedb',
+        'readonly',
         'password'
     );
-    
-    $debugbar = new DebugBar\StandardDebugBar();
-    $atlasCollector = new Cadre\AtlasOrmDebugBarBridge\AtlasOrmCollector($atlasContainer);
-    
-    $atlasContainer->setReadConnection('readonly', function () use ($atlasCollector) {
-        $readOnly = new Cadre\AtlasOrmDebugBarBridge\ExtendedPdo(
-            'mysql:host=localhost;dbname=slavedb',
-            'readonly',
-            'password'
-        );
-        $atlasCollector->addConnection('readonly', $readOnly->getPdo());
-        return $readOnly;
-    });
-    
-    $debugbar->addCollector($atlasCollector);
-    </code>
+    $atlasCollector->addConnection('readonly', $readOnly->getPdo());
+    return $readOnly;
+});
 
-
+$debugbar->addCollector($atlasCollector);
+```
 
 I wasn't happy with this solution. Too complicated and too easy to mess up.
 
@@ -61,30 +58,27 @@ This way, I could easily configure new connections (via ConnectionFactory), add 
 
 The new method of adding multiple connections is then:
 
+```php
+$atlasContainer = Cadre\AtlasOrmDebugBarBridge\AtlasContainer(
+    'mysql:host=localhost;dbname=testdb',
+    'username',
+    'password'
+);
 
-    
-    <code class="php">$atlasContainer = Cadre\AtlasOrmDebugBarBridge\AtlasContainer(
-        'mysql:host=localhost;dbname=testdb',
-        'username',
-        'password'
-    );
-    
-    $factory = new Cadre\AtlasOrmDebugBarBridge\ConnectionFactory(
-        'mysql:host=localhost;dbname=slavedb',
-        'readonly',
-        'password'
-    );
-    
-    $atlasContainer->setReadConnection('readonly', $factory);
-    
-    $collector = new Cadre\AtlasOrmDebugBarBridge\AtlasOrmCollector($container);
-    $collector->addConnectionFactory($factory, 'readonly');
-    
-    $debugbar = new DebugBar\StandardDebugBar();
-    $debugbar->addCollector($collector);
-    </code>
+$factory = new Cadre\AtlasOrmDebugBarBridge\ConnectionFactory(
+    'mysql:host=localhost;dbname=slavedb',
+    'readonly',
+    'password'
+);
 
+$atlasContainer->setReadConnection('readonly', $factory);
 
+$collector = new Cadre\AtlasOrmDebugBarBridge\AtlasOrmCollector($container);
+$collector->addConnectionFactory($factory, 'readonly');
+
+$debugbar = new DebugBar\StandardDebugBar();
+$debugbar->addCollector($collector);
+```
 
 I think it looks a lot cleaner and less prone to errors.
 

@@ -19,7 +19,7 @@ Frameworks, libraries, and components are great. They can greatly simplify the p
 
 In this talk, Andrew Shell will cover how to architect your applications to allow you to leverage all the power from these tools without exposing your application to unnecessary risk. He'll also demo how you can use [Radar](http://radarphp.com/), a library that can make it easier to build your application in a future-proof way.
 
-https://www.youtube.com/watch?v=yEc48QfkFcY
+`youtube: yEc48QfkFcY`
 
 Code available: [github.com/andrewshell/radar-fig-demo](https://github.com/andrewshell/radar-fig-demo/tree/2.0)
 This talk was recorded at Milwaukee PHP on 3/8/2016.

@@ -36,10 +36,9 @@ Next, we create a new `AtlasContainer` class that extends `Atlas\Orm\AtlasContai
 
 Finally, we can use the `DebugBar\DataCollector\PDO\PDOCollector` which requires a `DebugBar\DataCollector\PDO\TraceablePDO` connection. We can get that out of our `AtlasContainer` like this:
 
-
-    
-    <code class="php">$pdo = $atlasContainer->getConnectionLocator()->getDefault()->getPdo();
-    </code>
+```php
+$pdo = $atlasContainer->getConnectionLocator()->getDefault()->getPdo();
+```
 
 
 
@@ -49,16 +48,15 @@ I've packaged all of this up into the library [AtlasOrm.DebugBar.Bridge](https:/
 
 You can now integrate PHP Debug Bar into your applications that use Atlas ORM as simply as this:
 
+```php
+$atlasContainer = new Cadre\AtlasOrmDebugBarBridge\AtlasContainer(
+    'mysql:host=localhost;dbname=testdb',
+    'username',
+    'password'
+);
 
-    
-    <code class="php">$atlasContainer = new Cadre\AtlasOrmDebugBarBridge\AtlasContainer(
-        'mysql:host=localhost;dbname=testdb',
-        'username',
-        'password'
-    );
-    
-    $debugbar = new DebugBar\StandardDebugBar();
-    $debugbar->addCollector(
-        new Cadre\AtlasOrmDebugBarBridge\AtlasOrmCollector($atlasContainer)
-    );
-    </code>
+$debugbar = new DebugBar\StandardDebugBar();
+$debugbar->addCollector(
+    new Cadre\AtlasOrmDebugBarBridge\AtlasOrmCollector($atlasContainer)
+);
+```

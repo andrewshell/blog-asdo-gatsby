@@ -13,11 +13,7 @@ Lately I've been overwhelmed.  This is not unusual for me ever since my heart su
 
 I've been reading books lately about goal setting, life planning and task management so today I felt I needed to do a brain dump and figure out what are all my commitments are.  Some of these are more broad like Andrea (my wife) or Finances and others are more specific like [Madison PHP](http://www.madisonphp.com/) or a new eStore for [John Kovalic](http://www.dorktower.com/).
 
-
-
 ## Note Card Strategy
-
-
 
 So writing out all my commitments can be done any number of ways, but I personally find it a little tricky to figure out how to sort them.
 
@@ -29,11 +25,7 @@ I put one commitment on each card then I just took the first two off the stack a
 
 After a few minutes I had gone through the entire stack and had a working list of priorities.
 
-
-
 ## Extracting Meaning
-
-
 
 One way I could have done this exercise was to order things based on what the current priority is.  This way at the end you have a picture of why your life is the way it is.  For me exercising would be at the bottom of the pile right under meal planning which is why I'm 60 lbs overweight.
 
@@ -43,11 +35,7 @@ One thing that actually surprised me quite a bit was that for me right now start
 
 Part of the reason it's so low on the list is that there are some shorter term commitments that I want to finish and take off the list entirely.  Other items on the list may actually feed into starting my own business, but that's not why I'm doing them so I don't consider them to be the same item.  For instance right now I'm taking a couple of online classes.
 
-
-
 ## What's Next?
-
-
 
 The next step is to turn this list into action.  If there are items toward the top of my list perhaps I need to create a daily routine that makes sure I'm making progress on those commitments.  It's also important not to just focus on just the top items, but make sure that I'm allocating time to the things that are important to me.
 

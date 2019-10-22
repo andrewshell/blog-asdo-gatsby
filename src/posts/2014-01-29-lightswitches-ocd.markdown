@@ -11,16 +11,7 @@ wordpress_id: 21
 
 I'm a little OCD when it comes to light switches. My particular obsession goes a little like this:
 
-
-
-<blockquote>
-  A light switch should be up for on and down for off.  When you have multiple
-  switches, the light should be off when all of the switches are off.  I'm not
-  worried about the state of the light when all the switches are on, just when
-  they are all off.
-</blockquote>
-
-
+>  A light switch should be up for on and down for off.  When you have multiple switches, the light should be off when all of the switches are off.  I'm not worried about the state of the light when all the switches are on, just when they are all off.
 
 When I moved into my condo many years ago I had two light switches that controlled the dining room light that did not meet my requirement.  I tried to ignore it, but it would eat away at me every time I went to bed and had to leave one of the switches "on" so the light would turn off.
 
@@ -34,65 +25,37 @@ Today I was thinking about it and realized I had no idea how these switches even
 
 The first way is an "and" conditional.
 
-
-    
-    <code class="php">
-    if ($switch1 && $switch2) {
-        echo "Light is on";
-    } else {
-        echo "Light is off";
-    }
-    </code>
-
-
+```php
+if ($switch1 && $switch2) {
+    echo "Light is on";
+} else {
+    echo "Light is off";
+}
+```
 
 The second way is an "or" conditional.
 
-
-    
-    <code class="php">
-    if ($switch1 || $switch2) {
-        echo "Light is on";
-    } else {
-        echo "Light is off";
-    }
-    </code>
-
-
+```php
+if ($switch1 || $switch2) {
+    echo "Light is on";
+} else {
+    echo "Light is off";
+}
+```
 
 However neither of these are actually what I observe.
 
-<table class="table table-hover table-condensed" >
-
-<tr >
-Switch 1
-Switch 2
-Light
-</tr>
-
-<tbody >
-<tr >
-off
-off
-off
-</tr>
-<tr >
-off
-on
-on
-</tr>
-<tr >
-on
-off
-on
-</tr>
-<tr >
-on
-on
-off <- WTF?
-</tr>
-</tbody>
-</table>
++----------+----------+------------+
+| Switch 1 | Switch 2 | Light      |
++==========+==========+============+
+| off      | off      | off        |
++----------+----------+------------+
+| off      | on       | on         |
++----------+----------+------------+
+| on       | off      | on         |
++----------+----------+------------+
+| on       | on       | off <- WTF |
++----------+----------+------------+
 
 Up until that last row it was behaving as an "or" conditional and then things got real.
 
@@ -112,7 +75,7 @@ A 4-way switch has 4 posts, again A, B, C and D.  If the switch is in one positi
 
 To see how they connect to each other to make the circuit work I had to dig around a bit but found this awesome animation.
 
-![How 4-way switches work](/uploads/2014/01/4WayAnimation.gif)
+![How 4-way switches work](https://blog.andrewshell.org/uploads/2014/01/4WayAnimation.gif)
 
 [How 4-way switches work](http://users.wfu.edu/matthews/misc/switches/4WayAnimation.html)
 

@@ -19,11 +19,7 @@ Previous versions ran on the [OPML Editor](http://home.opml.org/) which I've bee
 
 The only issue is that step 4 of his instructions says:
 
-
-
-<blockquote>Launch river4.js on a node.js system.</blockquote>
-
-
+>  Launch river4.js on a node.js system.
 
 If you've never done this before it's somewhat vexing. Dave has some links to resources about Heroku, but I have a Linux server sitting in my basement that I wanted to use, so how should I keep the app running as a long term service?
 
@@ -31,28 +27,22 @@ After some digging I found the glorious app [forever](https://www.npmjs.org/pack
 
 Installing and using it was very easy. After following steps 1-3 from the River4 repo I ran:
 
-
-    
-    <code class="bash">git clone https://github.com/scripting/river4 /var/www/river4
-    sudo npm install forever -g
-    cd /var/www/river4
-    forever start river4.js
-    </code>
-
-
+```shell-session
+git clone https://github.com/scripting/river4 /var/www/river4
+sudo npm install forever -g
+cd /var/www/river4
+forever start river4.js
+```
 
 This will launch River4 as a background process, keep an eye on it and restart it if it crashes. Then I finished the rest of the steps 5-8.
 
 When Dave releases an updated version it's simple to upgrade:
 
-
-    
-    <code class="bash">cd /var/www/river4
-    forever stopall
-    git pull
-    forever start river4.js
-    </code>
-
-
+```shell-session
+cd /var/www/river4
+forever stopall
+git pull
+forever start river4.js
+```
 
 I currently have 5 rivers running but my main one is [river.andrewshell.org](http://river.andrewshell.org/).

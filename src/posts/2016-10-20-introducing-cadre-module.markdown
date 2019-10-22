@@ -19,11 +19,7 @@ Today I published a new component [Cadre.Module](https://github.com/cadrephp/Cad
 
 This component was born out of my side project that's using [Radar](https://github.com/radarphp/Radar.Project).
 
-
-
 ## Stock Radar
-
-
 
 Radar is built around [Aura.Di](https://github.com/auraphp/Aura.Di) which is a very nice dependency injection container. If you're interested in learning more about Radar check out [Radar Under the Hood](https://www.futureproofphp.com/2016/09/21/radar-under-the-hood/).
 
@@ -31,22 +27,19 @@ One thing that's great about Aura.Di is the concept of ContainerConfig objects.
 
 Here is an example:
 
+```php
+use Aura\Di\ContainerBuilder;
 
-    
-    <code class="php">use Aura\Di\ContainerBuilder;
-    
-    $container_builder = new ContainerBuilder();
-    
-    // use the builder to create and configure a container
-    // using an array of ContainerConfig classes
-    $di = $container_builder->newConfiguredInstance([
-        'Aura\Cli\_Config\Common',
-        'Aura\Router\_Config\Common',
-        'Aura\Web\_Config\Common',
-    ]);
-    </code>
+$container_builder = new ContainerBuilder();
 
-
+// use the builder to create and configure a container
+// using an array of ContainerConfig classes
+$di = $container_builder->newConfiguredInstance([
+    'Aura\Cli\_Config\Common',
+    'Aura\Router\_Config\Common',
+    'Aura\Web\_Config\Common',
+]);
+```
 
 This is nice because I can package my DI configuration into smaller classes that configure a single thing. An example of this could be one ContainerConfig that configures [Twig](http://twig.sensiolabs.org/) and another that configured [Atlas.Orm](https://github.com/atlasphp/Atlas.Orm).
 
@@ -58,11 +51,7 @@ PHP Debug Bar can collect data from many different sources. I'm using it current
 
 It's also possible that I'll want to reuse this code in the future on projects that may not use Twig and/or Atlas.Orm.
 
-
-
 ## Cadre.Module
-
-
 
 In Cadre.Module I introduce the `Module` and `ModuleLoader` classes. Both are useable as ContainerConfig objects. Modules define four additional methods that are inspired by [Composer](https://getcomposer.org/).
 
@@ -82,10 +71,6 @@ The other neat feature of Cadre.Module is that modules can query the module load
 
 This is especially useful for optional modules or development modules that may not always be present.
 
-
-
 ## Conclusion
-
-
 
 I'm interested in what you think of Cadre.Module. Check out [the documentation](https://github.com/cadrephp/Cadre.Module) and ask questions either here in the comments or as [an issue on GitHub](https://github.com/cadrephp/Cadre.Module/issues).

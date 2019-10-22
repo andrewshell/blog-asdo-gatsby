@@ -29,31 +29,28 @@ At this point, it's more of a proof of concept rather than a production solution
 
 Here is an example of how you'd use it. It will seem very familiar [if you've used Radar](https://www.futureproofphp.com/2016/09/21/radar-under-the-hood/).
 
+```php
+use Aura\Di\ContainerBuilder;
+use Aura\Cli\CliFactory;
 
-    
-    <code class="php">use Aura\Di\ContainerBuilder;
-    use Aura\Cli\CliFactory;
-    
-    require __DIR__ . '/../vendor/autoload.php';
-    
-    $di = (new ContainerBuilder())
-        ->newConfiguredInstance([
-            'Cadre\CliAdr\Config',
-        ]);
-    
-    $adr = $di->get('cadre:cliadr/adr');
-    
-    $factory = new CliFactory();
-    $context = $factory->newContext($GLOBALS);
-    $stdio = $factory->newStdio();
-    
-    $adr->route('test', function ($params) {
-        return 'This is a test.';
-    });
-    
-    exit($adr->run($context, $stdio));
-    </code>
+require __DIR__ . '/../vendor/autoload.php';
 
+$di = (new ContainerBuilder())
+    ->newConfiguredInstance([
+        'Cadre\CliAdr\Config',
+    ]);
 
+$adr = $di->get('cadre:cliadr/adr');
+
+$factory = new CliFactory();
+$context = $factory->newContext($GLOBALS);
+$stdio = $factory->newStdio();
+
+$adr->route('test', function ($params) {
+    return 'This is a test.';
+});
+
+exit($adr->run($context, $stdio));
+```
 
 Expect revisions and documentation to come.  In the meantime, please post any comments here or as an [issue on GitHub](https://github.com/cadrephp/Cadre.CliAdr/issues).

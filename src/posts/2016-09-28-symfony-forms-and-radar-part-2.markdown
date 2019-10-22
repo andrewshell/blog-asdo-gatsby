@@ -20,11 +20,7 @@ Today I'm picking up where I left off. My goal is to figure out what I need to d
 
 All of my issues with Aura.Di have been resolved and my LazyArray class is currently [being reviewed](https://github.com/auraphp/Aura.Di/pull/138) for inclusion in Aura.Di.
 
-
-
 ## Removing Validation
-
-
 
 The first thing I did was remove [Symfony Validator](http://symfony.com/components/Validator) from the form (and my app). I did this for several reasons.
 
@@ -32,11 +28,7 @@ First, my initial attempts to validate independently from the Form showed that V
 
 Second, the point of this series is to integrate Symfony Forms, not Validator. No sense going down another rabbit hole. If you're interested in me figuring out Symfony Validator, please [contact me](https://www.futureproofphp.com/contact/) and let me know.
 
-
-
 ## Isolating Form to the Responder
-
-
 
 The second thing I did was move all use of the Form object to the Responder. Since I'd like to handle the Request manually and validate separately in the domain, the form can be moved to the Responder.
 
@@ -46,32 +38,21 @@ How I'm handling things in Input and the Domain right now are just placeholders 
 
 I'm still calling `handleRequest` at this point because I haven't figured out how to pass in the payload from the domain. I'll do that next.
 
-
-
 ## Handling Request from Payload
-
-
 
 This was far easier than I expected. Since I'm not doing anything crazy with file uploads or anything I was simply able to submit the form directly.
 
-
-    
-    <code class="php">$form = $this->formFactory->create(RegistrationType::class);
-    $name = $form->getName();
-    if ('' === $name) {
-        $form->submit($data, true);
-    } elseif (array_key_exists($name, $data)) {
-        $form->submit($data[$name], true);
-    }
-    </code>
-
-
-
-
+```php
+$form = $this->formFactory->create(RegistrationType::class);
+$name = $form->getName();
+if ('' === $name) {
+    $form->submit($data, true);
+} elseif (array_key_exists($name, $data)) {
+    $form->submit($data[$name], true);
+}
+```
 
 ## Validating and Showing Validation Errors
-
-
 
 Now that the basics are working, I can implement validation and display the validation errors with the form.
 
@@ -79,111 +60,92 @@ I decided to use [Aura.Filter](https://github.com/auraphp/Aura.Filter) for my va
 
 The first step is to create a filter. This is easily done by extending `Aura\Filter\SubjectFilter` and overriding the `init` method.
 
+```php
+namespace FutureProofPhp;
 
-    
-    <code class="php">namespace FutureProofPhp;
-    
-    use Aura\Filter\SubjectFilter;
-    
-    class RegistrationFilter extends SubjectFilter
+use Aura\Filter\SubjectFilter;
+
+class RegistrationFilter extends SubjectFilter
+{
+    public function init()
     {
-        public function init()
-        {
-            $this->validate('firstName')->isNotBlank();
-            $this->validate('firstName')->is('strlenMin', 4);
-            $this->sanitize('firstName')->to('string');
-            $this->useFieldMessage('firstName', 'Minimum length of 4 is required.');
-    
-            $this->validate('lastName')->isNotBlank();
-            $this->validate('lastName')->is('strlenMin', 4);
-            $this->sanitize('lastName')->to('string');
-            $this->useFieldMessage('lastName', 'Minimum length of 4 is required.');
-    
-            $this->validate('gender')->isNotBlank();
-            $this->validate('gender')->is('inValues', ['male', 'female']);
-            $this->sanitize('gender')->to('string');
-            $this->useFieldMessage('gender', 'Invalid value.');
-    
-            $this->validate('newsletter')->isBlankOr('equalToValue', 1);
-            $this->useFieldMessage('newsletter', 'Invalid value.');
-    
-            $this->validate('_token')->isNotBlank();
-            $this->useFieldMessage('_token', 'Invalid value.');
-        }
+        $this->validate('firstName')->isNotBlank();
+        $this->validate('firstName')->is('strlenMin', 4);
+        $this->sanitize('firstName')->to('string');
+        $this->useFieldMessage('firstName', 'Minimum length of 4 is required.');
+
+        $this->validate('lastName')->isNotBlank();
+        $this->validate('lastName')->is('strlenMin', 4);
+        $this->sanitize('lastName')->to('string');
+        $this->useFieldMessage('lastName', 'Minimum length of 4 is required.');
+
+        $this->validate('gender')->isNotBlank();
+        $this->validate('gender')->is('inValues', ['male', 'female']);
+        $this->sanitize('gender')->to('string');
+        $this->useFieldMessage('gender', 'Invalid value.');
+
+        $this->validate('newsletter')->isBlankOr('equalToValue', 1);
+        $this->useFieldMessage('newsletter', 'Invalid value.');
+
+        $this->validate('_token')->isNotBlank();
+        $this->useFieldMessage('_token', 'Invalid value.');
     }
-    </code>
-
-
+}
+```
 
 Next, since I'll need this filter in my post domain, I convert my closure into an invokable class.
 
-
-    
-    <code class="php">$adr->post('postHome', '/', 'FutureProofPhp\RegistrationPost')
-    ->input('FutureProofPhp\RegistrationInput')
-    ->responder('FutureProofPhp\RegistrationResponder');
-    </code>
-
-
+```php
+$adr->post('postHome', '/', 'FutureProofPhp\RegistrationPost')
+->input('FutureProofPhp\RegistrationInput')
+->responder('FutureProofPhp\RegistrationResponder');
+```
 
 I then configure the container to instantiate this filter and pass it into `RegistrationPost`.
 
-
-    
-    <code class="php">$di->set('filter:registration', $di->lazy(
-        [$di->lazyNew(FilterFactory::class), 'newSubjectFilter'],
-        RegistrationFilter::class
-    ));
-    $di->params[RegistrationPost::class]['filter'] = $di->lazyGet('filter:registration');
-    </code>
-
-
+```php
+$di->set('filter:registration', $di->lazy(
+    [$di->lazyNew(FilterFactory::class), 'newSubjectFilter'],
+    RegistrationFilter::class
+));
+$di->params[RegistrationPost::class]['filter'] = $di->lazyGet('filter:registration');
+```
 
 Next, I apply this filter on the data I get from `RegistrationInput`.
 
-
-    
-    <code class="php">public function __invoke($data)
-    {
-        $payload = [
-            'success' => $this->filter->apply($data['registration']),
-        ];
-        if (!$payload['success']) {
-            $failures = $this->filter->getFailures();
-            $payload['failures'] = $failures->getMessages();
-        }
-        $payload['data'] = $data['registration'];
-        return $payload;
+```php
+public function __invoke($data)
+{
+    $payload = [
+        'success' => $this->filter->apply($data['registration']),
+    ];
+    if (!$payload['success']) {
+        $failures = $this->filter->getFailures();
+        $payload['failures'] = $failures->getMessages();
     }
-    </code>
-
-
+    $payload['data'] = $data['registration'];
+    return $payload;
+}
+```
 
 Finally, I consume the payload in `RegistrationResponder` going through the failure messages and adding `FormError` objects to the correct elements.
 
-
-    
-    <code class="php">$form = $this->formFactory->create(RegistrationType::class);
-    $form->submit($payload['data'], true);
-    if (isset($payload['failures'])) {
-        foreach ($payload['failures'] as $name => $messages) {
-            $element = $form->get($name);
-            foreach ($messages as $message) {
-                $element->addError(new FormError($message));
-            }
+```php
+$form = $this->formFactory->create(RegistrationType::class);
+$form->submit($payload['data'], true);
+if (isset($payload['failures'])) {
+    foreach ($payload['failures'] as $name => $messages) {
+        $element = $form->get($name);
+        foreach ($messages as $message) {
+            $element->addError(new FormError($message));
         }
     }
-    </code>
-
-
+}
+```
 
 You can see the result of this in the [2.x branch](https://github.com/futureproofphp/symfony-forms-radar/tree/2.x) of the project repo.
 
-
-
 ## Conclusion
-
-
 
 This exercise left me with a greater understanding of Symfony Forms and Aura.Filter. I think the solution is pretty good. If I was using this in production, I'd probably refactor some of this to be more reusable, especially if I plan on defining a lot of forms. I probably wouldn't use arrays as the data transfer mechanism. I'd also probably create a factory that takes a generic definition and generates the form, validation and entity objects that I'd be using.
 

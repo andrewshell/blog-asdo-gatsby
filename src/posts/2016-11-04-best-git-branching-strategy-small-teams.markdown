@@ -19,80 +19,61 @@ On our team, we use feature branches and pull requests. I don't have a strong pr
 
 Let's start with the following `master` branch.
 
-
-    
-    <code>master A-B-C
-    </code>
-
-
+```
+master A-B-C
+```
 
 I'm going to work on a new feature so I create a new branch off of `master` and start committing my changes.
 
-
-    
-    <code>master  A-B-C
-    feature      \_F1-F2
-    </code>
-
+```
+master  A-B-C
+feature      \_F1-F2
+```
 
 
 During that time, other developers merged in features.
 
-
-    
-    <code>master  A-B-C-D-E
-    feature      \_F1-F2
-    </code>
+```
+master  A-B-C-D-E
+feature      \_F1-F2
+```
 
 
 
 I'm ready to submit my PR, but first I need to rebase off of `master`, potentially resolving conflicts that emerge.
 
-
-    
-    <code>master  A-B-C-D-E
-    feature          \_F1-F2
-    </code>
+```
+master  A-B-C-D-E
+feature          \_F1-F2
+```
 
 
 
 I need to make changes based on a code review, so I commit those to my repo. Meanwhile, other features are merged into `master`.
 
-
-    
-    <code>master  A-B-C-D-E-F-G
-    feature          \_F1-F2-F3
-    </code>
-
-
+```
+master  A-B-C-D-E-F-G
+feature          \_F1-F2-F3
+```
 
 Before I have my new changes reviewed I once again need to rebase off of `master`.
 
-
-    
-    <code>master  A-B-C-D-E-F-G
-    feature              \_F1-F2-F3
-    </code>
-
-
+```
+master  A-B-C-D-E-F-G
+feature              \_F1-F2-F3
+```
 
 To push up to the main repo I need to do a force push because I'm overwriting what was previously there.
 
-
-    
-    <code>git push -f origin feature
-    </code>
-
-
+```shell-session
+git push -f origin feature
+```
 
 My PR is accepted, so it's squashed and merged into `master` as `H` (via GitHub), the `feature` branch is deleted.
 
-
-    
-    <code>master  A-B-C-D-E-F-G-H
-    </code>
-
-
+```
+master  A-B-C-D-E-F-G-H
+```
 
 Once something is merged into `master` it's locked.  Other than specific edge cases, you shouldn't ever have to force push to `master`, only to feature branches.
 
@@ -102,27 +83,21 @@ I have special branches `staging` and `production` which our continuous integrat
 
 So if we wanted to deploy my latest feature, I'd merge it into `staging` and have our team review it to determine if there are any issues that need to be resolved before deploying to production.
 
-
-    
-    <code>git checkout staging
-    git merge master
-    git push origin staging
-    </code>
-
-
+```shell-session
+git checkout staging
+git merge master
+git push origin staging
+```
 
 If there are changes we create a new feature branch and start at the top of this workflow.
 
 If there are no changes to be made then we merge into `production`, it's tested and deployed.
 
-
-    
-    <code>git checkout production
-    git merge staging
-    git push origin production
-    </code>
-
-
+```shell-session
+git checkout production
+git merge staging
+git push origin production
+```
 
 That's it!  Developers I've worked with tend to get hung up on rebasing.  I know some workflows never rebase and always merge, but I strongly prefer keeping things clean with rebasing.
 

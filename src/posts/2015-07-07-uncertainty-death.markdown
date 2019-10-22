@@ -19,25 +19,13 @@ I had another echocardiogram done end of May but I wouldn't be able to get in to
 
 Two weeks ago I get an e-mail from one of the insurance companies. I was still denied.
 
-
-
-<blockquote>
-  The reasoning for the decline was due to a combination of the mitral valve repair and an abnormal follow up echo showing atrial septal aneurysm, ejection fraction of 40% and an abnormal EKG showing t wave changes.
-</blockquote>
-
-
+> The reasoning for the decline was due to a combination of the mitral valve repair and an abnormal follow up echo showing atrial septal aneurysm, ejection fraction of 40% and an abnormal EKG showing t wave changes.
 
 What the hell is an "atrial septal aneurysm"? What is a normal ejection fraction? Shouldn't it be 100%? Am I going to die?
 
 I send my primary care provider an e-mail asking "What's going on with my echo?"
 
-
-
-<blockquote>
-  It looks like your heart function has been stable since your previous echocardiogram of almost 2 years ago.
-</blockquote>
-
-
+> It looks like your heart function has been stable since your previous echocardiogram of almost 2 years ago.
 
 Ok, but he still didn't address the aneurysm or why my ejection fraction is so low.
 
@@ -49,19 +37,9 @@ He was slightly concerned that my ejection fraction wasn't higher but it wasn't 
 
 I feel like there is a lot that could have been handled differently here but I'm not exactly sure how.
 
-
-
-
-
-  1. I should not have learned about my echo results from underwriting, I should have heard from a doctor.
-
-
-  2. There shouldn't have been 6 weeks between my echo and my cardiology appointment.
-
-
-  3. If there was no way for me to have been seen sooner, I should have gotten a call or e-mail with my results right away.
-
-
+1. I should not have learned about my echo results from underwriting, I should have heard from a doctor.
+2. There shouldn't have been 6 weeks between my echo and my cardiology appointment.
+3. If there was no way for me to have been seen sooner, I should have gotten a call or e-mail with my results right away.
 
 Because of the way this was handled I've just had two of the most stressful weeks of my life. I was full of anxiety and having difficulty concentrating at work. I broke down in tears at the dinner table with my family. I had to explain to my wife, parents and boss that there could still be something wrong with my heart and I don't know what's going to happen. I literally spent the last two weeks thinking that at any moment something was going to pop in my chest and I was going to drop dead or worse I'd have a stroke.
 

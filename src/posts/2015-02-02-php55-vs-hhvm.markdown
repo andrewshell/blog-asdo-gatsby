@@ -25,38 +25,35 @@ So as a first step I thought "What about [HHVM](http://HHVM.com/)?". If you're n
 
 But HHVM isn't exactly PHP and although they are working to make it as compatible as possible, there could be weird edge cases. So what do I do? Let's run our unit tests through HHVM and see if they pass. Yes! They do all pass, however I saw something weird when I did this.
 
+```shell-session
+PHPunit:
+     [exec] PHPUnit 3.7.38 by Sebastian Bergmann.
+     [exec]
+     [exec] Configuration read from /var/www/pinpoint.dev/PHPunit.xml.dist
+     [exec]
+     [exec] ...............................................................  63 / 202 ( 31%)
+     [exec] ............................................................... 126 / 202 ( 62%)
+     [exec] ............................................................... 189 / 202 ( 93%)
+     [exec] .............
+     [exec]
+     [exec] Time: 570 ms, Memory: 15.00Mb
+     [exec]
+     [exec] OK (202 tests, 2753 assertions)
 
-    
-    <code>PHPunit:
-         [exec] PHPUnit 3.7.38 by Sebastian Bergmann.
-         [exec]
-         [exec] Configuration read from /var/www/pinpoint.dev/PHPunit.xml.dist
-         [exec]
-         [exec] ...............................................................  63 / 202 ( 31%)
-         [exec] ............................................................... 126 / 202 ( 62%)
-         [exec] ............................................................... 189 / 202 ( 93%)
-         [exec] .............
-         [exec]
-         [exec] Time: 570 ms, Memory: 15.00Mb
-         [exec]
-         [exec] OK (202 tests, 2753 assertions)
-    
-    HHVMunit:
-         [exec] PHPUnit 3.7.38 by Sebastian Bergmann.
-         [exec]
-         [exec] Configuration read from /var/www/pinpoint.dev/PHPunit.xml.dist
-         [exec]
-         [exec] ...............................................................  63 / 202 ( 31%)
-         [exec] ............................................................... 126 / 202 ( 62%)
-         [exec] ............................................................... 189 / 202 ( 93%)
-         [exec] .............
-         [exec]
-         [exec] Time: 4.65 seconds, Memory: 27.63Mb
-         [exec]
-         [exec] OK (202 tests, 2753 assertions)
-    </code>
-
-
+HHVMunit:
+     [exec] PHPUnit 3.7.38 by Sebastian Bergmann.
+     [exec]
+     [exec] Configuration read from /var/www/pinpoint.dev/PHPunit.xml.dist
+     [exec]
+     [exec] ...............................................................  63 / 202 ( 31%)
+     [exec] ............................................................... 126 / 202 ( 62%)
+     [exec] ............................................................... 189 / 202 ( 93%)
+     [exec] .............
+     [exec]
+     [exec] Time: 4.65 seconds, Memory: 27.63Mb
+     [exec]
+     [exec] OK (202 tests, 2753 assertions)
+```
 
 Running my tests with HHVM took 23 times longer and 1.8 times more memory.
 

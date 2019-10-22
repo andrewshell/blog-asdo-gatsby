@@ -15,13 +15,7 @@ Donald Trump will be the next president of the United States.
 
 There will be a lot of negativity in the coming days. A lot of finger pointing, name calling, blaming and possibly violence. Please don't participate in the negativity.
 
-
-
-<blockquote>
-  When people succeed they tend to party but when they fail they tend to ponder. --Tony Robbins
-</blockquote>
-
-
+> When people succeed they tend to party but when they fail they tend to ponder. --Tony Robbins
 
 This is an opportunity to listen to each other. A large part of our country spoke last night. They are tired of being ignored, they are in pain. They want what all of us want. To be loved and to provide for themselves and their families.
 
@@ -35,12 +29,6 @@ I think that many Trump supporters are kind, caring, thoughtful people. They are
 
 Don't ask why is this happening to us. But what opportunities does this present for us all to be the change we want in the world?
 
-
-
-<blockquote>
-  When I was a boy and I would see scary things in the news, my mother would say to me, "Look for the helpers. You will always find people who are helping." --Fred Rogers
-</blockquote>
-
-
+> When I was a boy and I would see scary things in the news, my mother would say to me, "Look for the helpers. You will always find people who are helping." --Fred Rogers
 
 Do not shut out your friends, family or neighbors who voted differently than you yesterday. Listen. Don't lecture or try to convince. Just listen. We are more common than different.

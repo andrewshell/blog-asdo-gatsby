@@ -13,11 +13,7 @@ categories:
 
 [Jeffrey Kishner](http://jeffreykishner.com/) asks:
 
-
-
-<blockquote>I don't understand what rssCloud does. Is it related to River?</blockquote>
-
-
+> I don't understand what rssCloud does. Is it related to River?
 
 Back in the RSS 2.0 spec, [Dave Winer](http://scripting.com/) documented a [cloud element](http://cyber.law.harvard.edu/rss/rss.html#ltcloudgtSubelementOfLtchannelgt) which is used to point to an rssCloud server for real time updates about a feed changing.
 
