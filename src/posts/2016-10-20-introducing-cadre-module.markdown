@@ -5,7 +5,6 @@ date: 2016-10-20 15:51:24+00:00
 excerpt: I created a new library that works with Aura.DI to allow specifying dependent
   modules to be auto loaded.
 layout: post
-link: https://blog.andrewshell.org/introducing-cadre-module/
 slug: introducing-cadre-module
 title: Introducing Cadre.Module
 wordpress_id: 727

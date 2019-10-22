@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2017-05-25 16:42:29+00:00
 layout: post
-link: https://blog.andrewshell.org/best-way-use-domainsession-command-line-environment/
 slug: best-way-use-domainsession-command-line-environment
 title: What is the best way to use DomainSession in a command line environment?
 wordpress_id: 733

@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2006-11-05 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/php-bugtracking/
 slug: php-bugtracking
 title: PHP Bugtracking
 wordpress_id: 89
@@ -15,31 +14,13 @@ So I am currently looking for good bug tracking software. I have a few requireme
 
 A few that I've tested out:
 
-
-
-
-    
-  * [PEST](http://sourceforge.net/projects/pest/)
-
-    
-  * [Flyspray](http://flyspray.org/)
-
-    
-  * [CodeTrack](http://kennwhite.sourceforge.net/codetrack/)
-
-    
-  * [phpBugTracker](http://phpbt.sourceforge.net/)
-
-    
-  * [Eventum](https://github.com/eventum/eventum/wiki)
-
-    
-  * [Mantis](http://www.mantisbugtracker.com/)
-
-    
-  * [ActiveCollab](http://www.activecollab.com/)
-
-
+* [PEST](http://sourceforge.net/projects/pest/)
+* [Flyspray](http://flyspray.org/)
+* [CodeTrack](http://kennwhite.sourceforge.net/codetrack/)
+* [phpBugTracker](http://phpbt.sourceforge.net/)
+* [Eventum](https://github.com/eventum/eventum/wiki)
+* [Mantis](http://www.mantisbugtracker.com/)
+* [ActiveCollab](http://www.activecollab.com/)
 
 The only two that meet my requirements are Mantis and ActiveCollab. Neither one however stands as a clear winner though.
 

@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2012-12-31 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/a-better-social-news-experience/
 slug: a-better-social-news-experience
 title: A better social news experience?
 wordpress_id: 48

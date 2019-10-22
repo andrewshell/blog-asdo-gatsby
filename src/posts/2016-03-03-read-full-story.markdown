@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2016-03-03 18:01:42+00:00
 layout: post
-link: https://blog.andrewshell.org/read-full-story/
 slug: read-full-story
 title: Read Full Story
 wordpress_id: 258

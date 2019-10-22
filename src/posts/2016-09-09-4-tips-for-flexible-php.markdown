@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2016-09-09 05:00:09+00:00
 layout: post
-link: https://blog.andrewshell.org/4-tips-for-flexible-php/
 slug: 4-tips-for-flexible-php
 title: The Top 4 Techniques That Make Your Code More Flexible
 wordpress_id: 837
@@ -15,4 +14,4 @@ Now I don't sweat adding new features or fixing bugs. I know that whatever I bui
 
 To learn exactly how I did this and how YOU can do the same download my free ebook now.
 
-[4 Tips for Flexible PHP](http://blog.andrewshell.org/downloads/4-tips-for-flexible-php.pdf)
+[4 Tips for Flexible PHP](/uploads/2016/09/4-tips-for-flexible-php.pdf)

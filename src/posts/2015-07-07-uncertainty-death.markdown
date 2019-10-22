@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2015-07-07 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/uncertainty-death/
 slug: uncertainty-death
 title: Uncertainty about death
 wordpress_id: 10
@@ -11,7 +10,7 @@ wordpress_id: 10
 
 I feel like I dodged a bullet today.
 
-Back in May, I found out that my application for life insurance, both personally and for "Key Man" life insurance at work, were denied. I wasn't completely shocked since two years ago I had [heart surgery](https://blog.andrewshell.org/heart-surgery/) to repair a prolapsed mitral valve. They said that if I got another echocardiogram they would reopen my application and see if they could cover me.
+Back in May, I found out that my application for life insurance, both personally and for "Key Man" life insurance at work, were denied. I wasn't completely shocked since two years ago I had [heart surgery](/heart-surgery/) to repair a prolapsed mitral valve. They said that if I got another echocardiogram they would reopen my application and see if they could cover me.
 
 I knew that two years ago I got a clean bill of health so having another echo could do nothing but confirm that I'm doing great. It didn't quite work out that way.
 

@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2015-05-01 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/laravel-utcmodel/
 slug: laravel-utcmodel
 title: Laravel UTC Model
 wordpress_id: 15

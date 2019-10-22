@@ -3,7 +3,6 @@ author: andrewshell
 comments: false
 date: 2013-03-13 20:44:21+00:00
 layout: post
-link: https://blog.andrewshell.org/joining-hyperboria/
 slug: joining-hyperboria
 title: Joining Hyperboria
 wordpress_id: 932
@@ -11,13 +10,7 @@ wordpress_id: 932
 
 Yesterday I joined [Hyperboria](http://hyperboria.net/).
 
-
-
-<blockquote>
-  Hyperboria is a decentralized network established with the principles of freedom and security at its core.
-</blockquote>
-
-
+> Hyperboria is a decentralized network established with the principles of freedom and security at its core.
 
 To get into Hyperboria you have to install CJDNS which and then get on IRC and find someone that is willing to give you a password to connect through their computer. Ideally, you'll peer with multiple people so you have a more reliable connection to the network. If you only have one peer and their computer goes down, so does your connection.
 

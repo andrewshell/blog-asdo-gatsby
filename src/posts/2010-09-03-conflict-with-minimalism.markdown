@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2010-09-03 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/conflict-with-minimalism/
 slug: conflict-with-minimalism
 title: Conflict with Minimalism
 wordpress_id: 74

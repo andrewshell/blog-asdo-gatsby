@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2009-03-05 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/php-frameworks-are-governments/
 slug: php-frameworks-are-governments
 title: PHP Frameworks are Governments
 wordpress_id: 84

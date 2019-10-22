@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2018-09-26 12:30:18+00:00
 layout: post
-link: https://blog.andrewshell.org/how-to-build-a-time-tracking-app-in-react/
 slug: how-to-build-a-time-tracking-app-in-react
 title: How To Build A Time Tracking App In React
 wordpress_id: 888
@@ -13,7 +12,7 @@ categories:
 
 Recently for a job I was applying for I build a time tracking demo in React.
 
-[![](https://blog.andrewshell.org/wp-content/uploads/2018/09/Screen-Shot-2018-09-26-at-7.28.39-AM-1024x502.png)](https://blog.andrewshell.org/wp-content/uploads/2018/09/Screen-Shot-2018-09-26-at-7.28.39-AM.png)
+[![](/uploads/2018/09/Screen-Shot-2018-09-26-at-7.28.39-AM.png)](/uploads/2018/09/Screen-Shot-2018-09-26-at-7.28.39-AM.png)
 
 I've spent the last 4-5 years working with Angular (via Ionic) but many of the jobs I've seen are asking for React.
 

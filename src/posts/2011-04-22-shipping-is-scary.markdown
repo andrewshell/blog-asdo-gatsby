@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2011-04-22 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/shipping-is-scary/
 slug: shipping-is-scary
 title: Shipping is Scary
 wordpress_id: 61

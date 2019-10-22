@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2017-05-02 10:00:59+00:00
 layout: post
-link: https://blog.andrewshell.org/best-way-handle-sessions-adr/
 slug: best-way-handle-sessions-adr
 title: What is the best way to handle sessions with ADR?
 wordpress_id: 731

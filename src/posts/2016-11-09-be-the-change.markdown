@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2016-11-09 12:14:18+00:00
 layout: post
-link: https://blog.andrewshell.org/be-the-change/
 slug: be-the-change
 title: Be the Change
 wordpress_id: 365

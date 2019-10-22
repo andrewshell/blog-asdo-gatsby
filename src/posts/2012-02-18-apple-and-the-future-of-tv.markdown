@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2012-02-18 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/apple-and-the-future-of-tv/
 slug: apple-and-the-future-of-tv
 title: Apple and the future of TV
 wordpress_id: 54
@@ -15,11 +14,7 @@ I just came across Dave Winer's post [Samsung is wrong about TV](http://scriptin
 
 Now I'm actually with TechCrunch on this one that when it comes to TV content is king. Dave thinks the #1 most important thing is communication.
 
-
-
-<blockquote>Because nowadays while I'm watching TV, I want to look stuff up on the web, communicate about the experience on the net with people I communicate with. And see what they're saying. And who knows what else in the years to come.</blockquote>
-
-
+> Because nowadays while I'm watching TV, I want to look stuff up on the web, communicate about the experience on the net with people I communicate with. And see what they're saying. And who knows what else in the years to come.
 
 I agree with him that turning the TV into a two-way medium is going to become more and more important as time goes by, but I don't think this is how Apple is going to win.
 

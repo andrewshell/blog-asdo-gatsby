@@ -4,7 +4,6 @@ comments: true
 date: 2016-09-26 05:00:50+00:00
 excerpt: I explore how to integrate the Symfony Form Component with Radar.
 layout: post
-link: https://blog.andrewshell.org/symfony-forms-radar/
 slug: symfony-forms-radar
 title: Symfony Forms and Radar - Part 1
 wordpress_id: 720

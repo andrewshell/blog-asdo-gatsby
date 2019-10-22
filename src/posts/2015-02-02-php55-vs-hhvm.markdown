@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2015-02-02 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/php55-vs-hhvm/
 slug: php55-vs-hhvm
 title: PHP 5.5 vs HHVM
 wordpress_id: 16

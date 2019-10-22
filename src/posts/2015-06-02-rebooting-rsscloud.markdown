@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2015-06-02 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/rebooting-rsscloud/
 slug: rebooting-rsscloud
 title: Rebooting rssCloud
 wordpress_id: 12

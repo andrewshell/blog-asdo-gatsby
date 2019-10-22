@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2011-03-17 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/data-minimalism/
 slug: data-minimalism
 title: Data Minimalism
 wordpress_id: 63

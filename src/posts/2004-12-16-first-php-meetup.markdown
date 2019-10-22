@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2004-12-16 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/first-php-meetup/
 slug: first-php-meetup
 title: First PHP Meetup
 wordpress_id: 92

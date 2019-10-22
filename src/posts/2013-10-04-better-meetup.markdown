@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2013-10-04 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/better-meetup/
 slug: better-meetup
 title: Building a better Meetup
 wordpress_id: 26
@@ -11,21 +10,13 @@ wordpress_id: 26
 
 This post is a request into the aether for something I'd really like to see and would be willing to pay for.  My hope is that someone reads this and decides to build it (maybe even Meetup).  I unfortunately don't have the time to build this as much as I'd like to do so.
 
-
-
 ## Background
 
-
-
-Meetup is great.  I've been using it since December 2004 when I had my [first PHP Meetup](https://blog.andrewshell.org/first-php-meetup/) and we're still using it for [Madison PHP](http://www.madisonphp.com/).  I've seen it struggle under the weight of free spammy groups and I was thrilled with it's decision to drop free groups altogether.  However over the last couple years it's become clear to me that Meetup and I have different views on the future.  Recently [Meetup stopped supporting custom domains](http://www.discussmeetup.com/forum/meetup-updates/the-latest-change-custom-domains/), opting instead to redirect my domain to my group.
+Meetup is great.  I've been using it since December 2004 when I had my [first PHP Meetup](/first-php-meetup/) and we're still using it for [Madison PHP](http://www.madisonphp.com/).  I've seen it struggle under the weight of free spammy groups and I was thrilled with it's decision to drop free groups altogether.  However over the last couple years it's become clear to me that Meetup and I have different views on the future.  Recently [Meetup stopped supporting custom domains](http://www.discussmeetup.com/forum/meetup-updates/the-latest-change-custom-domains/), opting instead to redirect my domain to my group.
 
 This is just one small thing but it illustrates the direction Meetup is going.  It wants to be a silo like Facebook or Twitter.  Obviously they want to reinforce their brand and they want to make it harder for people to leave their platform but that's exactly why I'm now thinking about leaving.  I don't like the idea of my group being held hostage.  They clearly want the dynamic to be "I have a Meetup Group" and not "I have a group that uses Meetup".
 
-
-
 ## Alternative
-
-
 
 So, what would I like to see?
 

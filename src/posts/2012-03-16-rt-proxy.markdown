@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2012-03-16 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/rt-proxy/
 slug: rt-proxy
 title: RT Proxy
 wordpress_id: 53

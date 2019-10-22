@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2014-01-29 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/lightswitches-ocd/
 slug: lightswitches-ocd
 title: Lightswitches and OCD
 wordpress_id: 21
@@ -75,7 +74,7 @@ A 4-way switch has 4 posts, again A, B, C and D.  If the switch is in one positi
 
 To see how they connect to each other to make the circuit work I had to dig around a bit but found this awesome animation.
 
-![How 4-way switches work](https://blog.andrewshell.org/uploads/2014/01/4WayAnimation.gif)
+![How 4-way switches work](/uploads/2014/01/4WayAnimation.gif)
 
 [How 4-way switches work](http://users.wfu.edu/matthews/misc/switches/4WayAnimation.html)
 

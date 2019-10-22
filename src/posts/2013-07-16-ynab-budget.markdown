@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2013-07-16 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/ynab-budget/
 slug: ynab-budget
 title: My YNAB Budget
 wordpress_id: 39
@@ -21,22 +20,10 @@ Early February I discovered YNAB and I was shocked at how great it is. For the f
 
 The first thing that's great about YNAB is that the software supports a sensible method to manage your budget.
 
-
-
-
-    
-  1. Give Every Dollar a Job
-
-    
-  2. Save For a Rainy Day
-
-    
-  3. Role With the Punches
-
-    
-  4. Live on Last Month's Income
-
-
+1. Give Every Dollar a Job
+2. Save For a Rainy Day
+3. Role With the Punches
+4. Live on Last Month's Income
 
 You don't have to do all 4 to make a huge difference in your financial life. The two that I feel are most revolutionary are #1 and #3 which I've never seen implemented in another software package.
 

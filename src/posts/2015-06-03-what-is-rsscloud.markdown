@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2015-06-03 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/what-is-rsscloud/
 slug: what-is-rsscloud
 title: What is rssCloud?
 wordpress_id: 11

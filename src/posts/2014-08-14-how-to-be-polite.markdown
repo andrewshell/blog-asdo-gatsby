@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2014-08-14 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/how-to-be-polite/
 slug: how-to-be-polite
 title: How to Be Polite
 wordpress_id: 17

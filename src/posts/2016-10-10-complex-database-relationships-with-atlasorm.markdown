@@ -4,7 +4,6 @@ comments: true
 date: 2016-10-10 16:51:58+00:00
 excerpt: How I used Atlas.ORM to perform complex queries in my Pen & Paper side project.
 layout: post
-link: https://blog.andrewshell.org/complex-database-relationships-with-atlasorm/
 slug: complex-database-relationships-with-atlasorm
 title: Complex Database Relationships with AtlasORM
 wordpress_id: 724
@@ -18,7 +17,7 @@ In my [side project](https://github.com/andrewshell/pen-paper-2) I'm working wit
 
 One of the most complex pages is a `Creator` where it shows info about the creator and all of the works that they have contributed to.
 
-[![creatordiagram](https://www.futureproofphp.com/wp-content/uploads/2016/10/CreatorDiagram-150x300.png)](https://www.futureproofphp.com/wp-content/uploads/2016/10/CreatorDiagram.png)
+[![creatordiagram](/uploads/2016/10/CreatorDiagram.png)](/uploads/2016/10/CreatorDiagram.png)
 
 This is the database structure for this page.  On the left, we have a Creator which has a one-to-many relationship to seven different join tables. Each of these tables represents this creators credit on that particular type of work.  So if the creator worked on an RPG book there would be a `RpgBookCreator` that shows what credit that creator had in a particular RPG book. A credit could be something like Author or Illustrator.
 

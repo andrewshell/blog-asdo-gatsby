@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2015-05-23 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/facebook-comments/
 slug: facebook-comments
 title: Facebook Comments
 wordpress_id: 14

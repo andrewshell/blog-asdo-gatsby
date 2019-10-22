@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2016-12-31 14:58:01+00:00
 layout: post
-link: https://blog.andrewshell.org/psr-7-objects-immutable/
 slug: psr-7-objects-immutable
 title: PSR-7 Objects Could Be Immutable
 wordpress_id: 730

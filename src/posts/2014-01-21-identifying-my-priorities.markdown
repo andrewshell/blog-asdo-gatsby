@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2014-01-21 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/identifying-my-priorities/
 slug: identifying-my-priorities
 title: Identifying my priorities
 wordpress_id: 22

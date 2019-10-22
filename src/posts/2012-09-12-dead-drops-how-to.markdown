@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2012-09-12 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/dead-drops-how-to/
 slug: dead-drops-how-to
 title: Dead Drops 'How to'
 wordpress_id: 49

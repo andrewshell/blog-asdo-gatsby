@@ -5,7 +5,6 @@ date: 2016-10-22 14:39:24+00:00
 excerpt: I've created a new proof of concept ADR library that works like Radar, only
   for the command line interface.
 layout: post
-link: https://blog.andrewshell.org/using-action-domain-responder-command-line/
 slug: using-action-domain-responder-command-line
 title: Using Action-Domain-Responder on the command line
 wordpress_id: 728

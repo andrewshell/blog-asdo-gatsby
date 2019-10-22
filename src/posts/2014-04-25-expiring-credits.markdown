@@ -3,7 +3,6 @@ author: andrewshell
 comments: false
 date: 2014-04-25 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/?p=19
 published: false
 slug: expiring-credits
 title: Your credits expire soon

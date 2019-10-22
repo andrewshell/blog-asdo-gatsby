@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2017-06-10 13:41:01+00:00
 layout: post
-link: https://blog.andrewshell.org/develop-laravel-homestead/
 slug: develop-laravel-homestead
 title: How to Develop with Laravel Homestead
 wordpress_id: 734

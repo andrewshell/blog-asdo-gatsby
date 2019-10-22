@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2006-09-12 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/phpdb-works-2006/
 slug: phpdb-works-2006
 title: PHP/DB | Works 2006
 wordpress_id: 91

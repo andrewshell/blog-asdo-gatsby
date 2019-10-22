@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2010-08-11 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/rss-flipboard-and-me/
 slug: rss-flipboard-and-me
 title: RSS, FlipBoard and Me
 wordpress_id: 76

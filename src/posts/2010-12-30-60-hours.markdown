@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2010-12-30 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/60-hours/
 slug: 60-hours
 title: What would you do with 60 hours?
 wordpress_id: 70

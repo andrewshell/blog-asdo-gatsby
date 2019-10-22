@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2010-12-15 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/technology-delegation-vs-abdication/
 slug: technology-delegation-vs-abdication
 title: Technology delegation vs abdication
 wordpress_id: 71

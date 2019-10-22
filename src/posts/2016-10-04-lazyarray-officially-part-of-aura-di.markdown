@@ -4,7 +4,6 @@ comments: true
 date: 2016-10-04 18:37:55+00:00
 excerpt: My LazyArray feature has been officially added to Aura.DI.
 layout: post
-link: https://blog.andrewshell.org/lazyarray-officially-part-of-aura-di/
 slug: lazyarray-officially-part-of-aura-di
 title: LazyArray Officially Part of Aura.Di
 wordpress_id: 723

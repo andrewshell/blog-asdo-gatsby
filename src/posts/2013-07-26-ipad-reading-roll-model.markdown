@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2013-07-26 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/ipad-reading-roll-model/
 slug: ipad-reading-roll-model
 title: Can You Be a Reading Roll Model With an iPad?
 wordpress_id: 38

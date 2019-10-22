@@ -4,7 +4,6 @@ comments: true
 date: 2016-09-28 05:00:55+00:00
 excerpt: I refactor my code from Part One and integrate Aura.Filter.
 layout: post
-link: https://blog.andrewshell.org/symfony-forms-and-radar-part-2/
 slug: symfony-forms-and-radar-part-2
 title: Symfony Forms and Radar - Part 2
 wordpress_id: 722

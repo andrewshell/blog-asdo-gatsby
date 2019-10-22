@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2017-03-06 16:34:00+00:00
 layout: post
-link: https://blog.andrewshell.org/best-way-inject-logger/
 slug: best-way-inject-logger
 title: What is the best way to inject a logger?
 wordpress_id: 732

@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2016-12-20 20:46:50+00:00
 layout: post
-link: https://blog.andrewshell.org/can-colonize-mars/
 slug: can-colonize-mars
 title: How Can We Colonize Mars?
 wordpress_id: 381

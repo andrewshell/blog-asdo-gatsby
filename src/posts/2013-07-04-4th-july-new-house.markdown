@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2013-07-04 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/4th-july-new-house/
 slug: 4th-july-new-house
 title: Fourth of July in New House
 wordpress_id: 40

@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2012-03-20 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/world-outline-podcast-7/
 slug: world-outline-podcast-7
 title: 'World Outline Podcast #7'
 wordpress_id: 52

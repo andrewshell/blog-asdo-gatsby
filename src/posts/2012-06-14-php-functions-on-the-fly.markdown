@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2012-06-14 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/php-functions-on-the-fly/
 slug: php-functions-on-the-fly
 title: PHP Functions on the Fly
 wordpress_id: 50
@@ -13,8 +12,7 @@ categories:
 
 I've been a big of a laggard when it comes around to the latest and greatest in the world of PHP. Only recently have I been using the new functionality of PHP 5.3 even though 5.4 just came out. Today I had an idea for a proof of concept and I thought I'd share it with you today.
 
-
-    
+```php
     class Model
     {
         public function __call($name, $args)
@@ -24,17 +22,15 @@ I've been a big of a laggard when it comes around to the latest and greatest in 
             }
         }
     }
-    
+
     $m = new Model();
     $m->hello = function ($name) {
         echo "Hello, {$name}";
     };
-    
+
     $m->hello('Andrew');
-    
+```
 
-
-
-What this example does is allow me to assign an anonymous function to any public parameter on my object. Then the __call magic method checks to see if that parameter is callable and if so calls it. I could see all sorts of interesting ways of leveraging this functionality. We could create special ways to allow for input and output filters on every one of these parameter functions pretty easily.
+What this example does is allow me to assign an anonymous function to any public parameter on my object. Then the `__call` magic method checks to see if that parameter is callable and if so calls it. I could see all sorts of interesting ways of leveraging this functionality. We could create special ways to allow for input and output filters on every one of these parameter functions pretty easily.
 
 Anyway, I thought it was a neat idea.

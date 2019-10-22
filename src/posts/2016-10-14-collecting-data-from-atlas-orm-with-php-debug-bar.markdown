@@ -5,7 +5,6 @@ date: 2016-10-14 05:00:09+00:00
 excerpt: My new library AtlasOrm.DebugBar.Bridge lets you collect data from Atlas.ORM
   using PHP Debug Bar.
 layout: post
-link: https://blog.andrewshell.org/collecting-data-from-atlas-orm-with-php-debug-bar/
 slug: collecting-data-from-atlas-orm-with-php-debug-bar
 title: Collecting Data from Atlas ORM with PHP Debug Bar
 wordpress_id: 725

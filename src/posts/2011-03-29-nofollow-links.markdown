@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2011-03-29 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/nofollow-links/
 slug: nofollow-links
 title: Nofollow Links
 wordpress_id: 62
@@ -19,50 +18,18 @@ It does not conflict with the link relationships (XFN) specified when you edit a
 
 Got a bug to report? Or an enhancement to recommend? Or perhaps even some code to submit for inclusion in the next release? Great! Share your feedback through [my contact form](/contact-andrew).
 
-
-
 ## Installation
 
-
-
-
-
-
-    
-  1. Upload `nofollow-links` folder to the `/wp-content/plugins/` directory
-
-    
-  2. Activate the plugin through the `Plugins` menu in WordPress
-
-    
-  3. Navigate to `Links` > `Nofollow Links` and select links you want nofollowed
-
-    
-  4. Click `Mark Links Nofollow` button to save your selection
-
-
-
-
+1. Upload `nofollow-links` folder to the `/wp-content/plugins/` directory
+2. Activate the plugin through the `Plugins` menu in WordPress
+3. Navigate to `Links` > `Nofollow Links` and select links you want nofollowed
+4. Click `Mark Links Nofollow` button to save your selection
 
 ## Screenshots
 
-
-
-[![Nofollow Screenshot](/uploads/2011/03/nofollow-screenshot-300x235.png)](/uploads/2011/03/nofollow-screenshot.png)
-
-
+[![Nofollow Screenshot](/uploads/2011/03/nofollow-screenshot.png)](/uploads/2011/03/nofollow-screenshot.png)
 
 ## Translations Provided by:
 
-
-
-
-
-
-    
-  * Lithuanian translation was provided by [Vincent Grinius](http://www.host1plus.com/)
-
-    
-  * Serbo-Croatian translation was provided by [Andrijana Nikolic](http://webhostinggeeks.com/)
-
-
+* Lithuanian translation was provided by [Vincent Grinius](http://www.host1plus.com/)
+* Serbo-Croatian translation was provided by [Andrijana Nikolic](http://webhostinggeeks.com/)

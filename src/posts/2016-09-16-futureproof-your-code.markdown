@@ -5,7 +5,6 @@ date: 2016-09-16 19:46:52+00:00
 excerpt: A presentation I have at Milwaukee PHP on how to architect your code so it
   will withstand the tests of time.
 layout: post
-link: https://blog.andrewshell.org/futureproof-your-code/
 slug: futureproof-your-code
 title: FutureProof Your Code
 wordpress_id: 717

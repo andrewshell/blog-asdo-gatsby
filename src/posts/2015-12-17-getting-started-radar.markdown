@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2015-12-17 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/getting-started-radar/
 slug: getting-started-radar
 title: Getting started with Radar
 wordpress_id: 8
@@ -17,13 +16,13 @@ I like Radar and I'd like to document some of the things that I noticed while I 
 
 ## Great for Domain Driven Design (DDD)
 
-[![](https://blog.andrewshell.org/uploads/2015/12/architecture-uml-2x.png)](https://blog.andrewshell.org/uploads/2015/12/architecture-uml.pdf)
+[![](/uploads/2015/12/architecture-uml-2x.png)](/uploads/2015/12/architecture-uml.pdf)
 
 In [the documentation](https://github.com/radarphp/Radar.Project/blob/1.x/docs/domain.md) Paul leads with:
 
-<blockquote>Radar concentrates exclusively the HTTP request/response cycle. This means that, for Radar to be useful, you need to build your Domain outside of, and probably in parallel with, your Radar wrapper around that Domain.</blockquote>
+> Radar concentrates exclusively the HTTP request/response cycle. This means that, for Radar to be useful, you need to build your Domain outside of, and probably in parallel with, your Radar wrapper around that Domain.
 
-The best illustration of this was in Robert Martin's talk [Architecture the Lost Years](https://www.youtube.com/watch?v=WpkDN78P884) in which he works his way through a [UML diagram I recreated here](https://blog.andrewshell.org/uploads/2015/12/architecture-uml.pdf) for you.
+The best illustration of this was in Robert Martin's talk [Architecture the Lost Years](https://www.youtube.com/watch?v=WpkDN78P884) in which he works his way through a [UML diagram I recreated here](/uploads/2015/12/architecture-uml.pdf) for you.
 
 Your application's domain code should be framework agnostic and not depend on any logic related to the delivery mechanism or specific implementations (like databases).
 

@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2016-11-04 12:45:59+00:00
 layout: post
-link: https://blog.andrewshell.org/best-git-branching-strategy-small-teams/
 slug: best-git-branching-strategy-small-teams
 title: What is the best git branching strategy for small teams?
 wordpress_id: 729

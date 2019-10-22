@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2016-01-15 17:09:57+00:00
 layout: post
-link: https://blog.andrewshell.org/jumping-in-with-php-7/
 slug: jumping-in-with-php-7
 title: Jumping in with PHP 7
 wordpress_id: 208

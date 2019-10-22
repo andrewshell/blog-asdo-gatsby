@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2010-05-18 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/kickstart-madison-coworking/
 slug: kickstart-madison-coworking
 title: Kickstart Madison Coworking
 wordpress_id: 78

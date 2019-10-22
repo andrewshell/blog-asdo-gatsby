@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2018-06-28 21:02:31+00:00
 layout: post
-link: https://blog.andrewshell.org/ionic-4-and-mobx/
 slug: ionic-4-and-mobx
 title: Ionic 4 and MobX
 wordpress_id: 632

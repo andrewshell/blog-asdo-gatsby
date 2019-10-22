@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2011-02-18 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/giving-up-on-web-ownership/
 slug: giving-up-on-web-ownership
 title: Giving Up On Web Ownership?
 wordpress_id: 66

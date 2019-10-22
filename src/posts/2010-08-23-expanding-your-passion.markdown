@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2010-08-23 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/expanding-your-passion/
 slug: expanding-your-passion
 title: Expanding Your Passion
 wordpress_id: 75

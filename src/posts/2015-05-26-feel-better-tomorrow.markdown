@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2015-05-26 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/feel-better-tomorrow/
 slug: feel-better-tomorrow
 title: Will this make me feel better tomorrow?
 wordpress_id: 13

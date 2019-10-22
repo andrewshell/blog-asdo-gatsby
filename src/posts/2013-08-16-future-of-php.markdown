@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2013-08-16 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/future-of-php/
 slug: future-of-php
 title: The future of PHP (and JavaScript)
 wordpress_id: 31
@@ -18,11 +17,7 @@ I've been doing pretty much nothing but PHP for close to a decade and I love it.
 
 Now don't get me wrong, I don't think JavaScript is going to kill PHP (nothing ever dies) and I don't think Node.js will eclipse PHP in popularity anywhere in the near future. But the trend I see is that new applications are being built primarily in client side JavaScript and the back end is little more then an API. That API can be built in PHP, Ruby, Python, whatever. It's only logical to determine that if this trend continues, we'll end up with a lot of skilled JavaScript developers who don't want to write their APIs in a different language. That's where Node.js comes in.
 
-
-
-<blockquote>Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</blockquote>
-
-
+> Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
 
 If you look up [PHP on Google Trends](http://www.google.com/trends/explore?q=wordpress#q=php&cmpt=q) it doesn't look pretty. It's "web search interest" has steadily decreased since 2004 (the earliest data you get in Google Trends). However I think this is a [red herring](http://en.wikipedia.org/wiki/Red_herring). PHP is such an [elephpant](http://www.elephpant.com/) in the room (har har) that it's not enough to be a PHP developer these days, you have to specialize. We have WordPress, Yii, CodeIgniter, Symfony, Drupal and about a million other frameworks and applications that are built in PHP, each have become ecosystems of their own.
 

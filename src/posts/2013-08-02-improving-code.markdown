@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2013-08-02 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/improving-code/
 slug: improving-code
 title: Improving My Code
 wordpress_id: 37

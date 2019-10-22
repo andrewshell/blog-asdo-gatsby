@@ -5,11 +5,11 @@
 @import "./prism-coy.css";
 
 a {
-	@apply text-black;
+	@apply text-green-700 underline;
 }
 
 a:hover {
-	@apply text-green-700;
+	@apply text-green-900;
 }
 
 h1 {
@@ -17,7 +17,11 @@ h1 {
 }
 
 h2 {
-	@apply text-2xl font-bold mb-2;
+	@apply text-2xl font-bold mb-6;
+}
+
+h3 {
+	@apply text-lg font-bold mb-6;
 }
 
 p, ul, ol, table {
@@ -40,6 +44,10 @@ th, td {
 	@apply border px-4 py-2;
 }
 
-th p, td p {
-	@apply mb-0;
+th p, td p, li p {
+	@apply inline-block mb-0;
+}
+
+li ul, li ol {
+	@apply mb-0 ml-8;
 }

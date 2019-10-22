@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2011-02-11 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/are-you-suffering-from-news-poisoning/
 slug: are-you-suffering-from-news-poisoning
 title: Are you suffering from News Poisoning?
 wordpress_id: 68

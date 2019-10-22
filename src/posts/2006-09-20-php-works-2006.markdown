@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2006-09-20 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/php-works-2006/
 slug: php-works-2006
 title: PHP Works 2006
 wordpress_id: 90

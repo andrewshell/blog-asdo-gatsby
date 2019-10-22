@@ -3,7 +3,6 @@ author: andrewshell
 comments: true
 date: 2007-08-27 00:00:00+00:00
 layout: post
-link: https://blog.andrewshell.org/drains-of-canada-an-interview-with-michael-cook/
 slug: drains-of-canada-an-interview-with-michael-cook
 title: 'Drains of Canada: An Interview with Michael Cook'
 wordpress_id: 87
