@@ -21,22 +21,25 @@ exports.createPages = ({ graphql, actions }) => {
           edges {
             node {
               frontmatter {
-                slug
+                slug,
+                published
               }
             }
           }
         }
       }`).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        createPage({
-          path: node.frontmatter.slug,
-          component: path.resolve(`./src/templates/posts.js`),
-          context: {
-            slug: node.frontmatter.slug,
-          },
-        })
+        if (false !== node.frontmatter.published) {
+          createPage({
+            path: node.frontmatter.slug,
+            component: path.resolve(`./src/templates/posts.js`),
+            context: {
+              slug: node.frontmatter.slug,
+            },
+          });
+        }
       })
-      resolve()
+      resolve();
     })
   })
 }

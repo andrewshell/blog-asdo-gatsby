@@ -2,9 +2,66 @@ module.exports = {
   siteMetadata: {
     title: `Andrew Shell's Weblog`,
     description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`
+    author: `@taylorbryant`,
+    siteUrl: 'https://blog.andrewshell.org'
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + '/' + edge.node.frontmatter.slug,
+                  guid: site.siteMetadata.siteUrl + '/' + edge.node.frontmatter.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              }).filter(edge => {
+                return false !== edge.published;
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      frontmatter {
+                        title
+                        date
+                        slug
+                        published
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Andrew Shell's Weblog",
+          },
+        ],
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -12,20 +12,26 @@ export default function IndexPage({data}) {
         title="Home"
       />
 
-    {data.allMarkdownRemark.edges.map(({node}) => (
-      <article key={node.id} className="post pb-8 mb-10 border-b border-gray-200">
-        <header className="entry-header">
-          <h2 className="entry-title">
-            <Link to={node.frontmatter.slug} rel="bookmark">{node.frontmatter.title}</Link>
-          </h2>
-        </header>
-        <div className="entry-content">
-          <div className="entry-summary">
-            <p>{node.excerpt}</p>
+    {data.allMarkdownRemark.edges.map(({node}) => {
+      if (false === node.frontmatter.published) {
+        return '';
+      }
+
+      return (
+        <article key={node.id} className="post pb-8 mb-10 border-b border-gray-200">
+          <header className="entry-header">
+            <h2 className="entry-title">
+              <Link to={node.frontmatter.slug} rel="bookmark">{node.frontmatter.title}</Link>
+            </h2>
+          </header>
+          <div className="entry-content">
+            <div className="entry-summary">
+              <p>{node.excerpt}</p>
+            </div>
           </div>
-        </div>
-      </article>
-    ))}
+        </article>
+      );
+    })}
     </Layout>
   );
 }
@@ -40,6 +46,7 @@ export const query = graphql`query HomePageQuery{
           slug
           date
           author
+          published
         }
         excerpt(pruneLength: 240)
         timeToRead
