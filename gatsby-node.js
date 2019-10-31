@@ -1,15 +1,35 @@
 const { createFilePath } = require(`gatsby-source-filesystem`);
+const parseFilepath = require(`parse-filepath`);
 const path = require(`path`);
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` });
+exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
+  const {createNodeField} = boundActionCreators
+  const fileNode = getNode(node.parent)
+
+  if (
+    node.internal.type === `Mdx` &&
+    fileNode.internal.type === `File`
+  ) {
+    const parsedFilePath = parseFilepath(fileNode.relativePath)
+    let slug
+
+    if (node.frontmatter && node.frontmatter.slug) {
+      slug = `/${node.frontmatter.slug}`
+    } else {
+      if (parsedFilePath.name !== `index` && parsedFilePath.dir !== ``) {
+        slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`
+      } else if (parsedFilePath.dir === ``) {
+        slug = `/${parsedFilePath.name}/`
+      } else {
+        slug = `/${parsedFilePath.dir}/`
+      }
+    }
+
     createNodeField({
-      node,
       name: `slug`,
+      node,
       value: slug,
-    });
+    })
   }
 }
 
@@ -17,7 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return new Promise((resolve, reject) => {
     graphql(`{
-        allMarkdownRemark {
+        allMdx {
           edges {
             node {
               frontmatter {
@@ -28,7 +48,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }`).then(result => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      result.data.allMdx.edges.forEach(({ node }) => {
         if (false !== node.frontmatter.published) {
           createPage({
             path: node.frontmatter.slug,
