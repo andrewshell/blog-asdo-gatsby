@@ -59,7 +59,7 @@ module.exports = {
                 }
               }
             `,
-            output: "/feed/index.xml",
+            output: "/feed/index.html",
             title: "Andrew Shell's Weblog",
           },
         ],
@@ -130,6 +130,16 @@ module.exports = {
         purgeOnly: [`src/css/style.css`]
       }
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/feed": [
+            "Content-Type: application/rss+xml"
+          ]
+        }
+      }
+    }
   ]
 };
