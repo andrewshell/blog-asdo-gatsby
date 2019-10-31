@@ -21,7 +21,7 @@ export default function IndexPage({data}) {
         <article key={node.id} className="post pb-8 mb-10 border-b border-gray-200">
           <header className="entry-header">
             <h2 className="entry-title">
-              <Link to={node.frontmatter.slug} rel="bookmark">{node.frontmatter.title}</Link>
+              <Link to={ node.frontmatter.slug + '/' } rel="bookmark">{node.frontmatter.title}</Link>
             </h2>
           </header>
           <div className="entry-content">
