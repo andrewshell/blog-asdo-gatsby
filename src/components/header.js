@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
+import geekityIcon from '../images/geekity_icon.svg';
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -14,25 +15,17 @@ function Header() {
   `);
 
   return (
-    <header className="bg-gray-200">
+    <header className="bg-gray-200 border-b border-gray-400">
       <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
         <Link className="flex items-center no-underline" to="/">
-          <svg
-            className="fill-current h-8 mr-2 w-8"
-            height="54"
-            viewBox="0 0 54 54"
-            width="54"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-          </svg>
+          <img src={ geekityIcon } alt="Geekity" style={ { height: '40px' } } />
           <span className="font-bold text-xl tracking-tight">
             {site.siteMetadata.title}
           </span>
         </Link>
 
         <button
-          className="block md:hidden border border-white flex items-center px-3 py-2 rounded"
+          className="block md:hidden bg-white border border-gray-400 flex items-center px-3 py-2 rounded"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
@@ -56,12 +49,16 @@ function Header() {
               title: `Home`
             },
             {
-              route: `/about`,
+              route: `/andrew/`,
               title: `About`
             },
             {
-              route: `/contact`,
+              route: `/contact-andrew/`,
               title: `Contact`
+            },
+            {
+              route: `/my-resume/`,
+              title: `Résumé`
             }
           ].map(link => (
             <Link
@@ -72,6 +69,13 @@ function Header() {
               {link.title}
             </Link>
           ))}
+        <a
+          className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline"
+          href="https://amzn.to/2gdI0Ua"
+          rel="nofollow"
+        >
+            Wishlist
+        </a>
         </nav>
       </div>
     </header>

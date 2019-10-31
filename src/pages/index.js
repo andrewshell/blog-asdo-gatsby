@@ -18,7 +18,7 @@ export default function IndexPage({data}) {
       }
 
       return (
-        <article key={node.id} className="post pb-8 mb-10 border-b border-gray-200">
+        <article key={node.id} className="post mb-6 border-b border-gray-200">
           <header className="entry-header">
             <h2 className="entry-title">
               <Link to={ node.frontmatter.slug + '/' } rel="bookmark">{node.frontmatter.title}</Link>
@@ -37,7 +37,10 @@ export default function IndexPage({data}) {
 }
 
 export const query = graphql`query HomePageQuery{
-  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+  allMarkdownRemark(
+    filter: { fields: { sourceInstanceName: { eq: "posts" } } },
+    sort: {fields: [frontmatter___date], order: DESC}
+  ) {
     totalCount
     edges {
       node {

@@ -28,8 +28,8 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + '/' + edge.node.frontmatter.slug,
-                  guid: site.siteMetadata.siteUrl + '/' + edge.node.frontmatter.slug,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               }).filter(edge => {
@@ -39,6 +39,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
+                  filter: { fields: { sourceInstanceName: { eq: "posts" } } },
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   edges {
@@ -46,17 +47,19 @@ module.exports = {
                       excerpt
                       html
                       frontmatter {
-                        title
-                        date
-                        slug
+                        title,
+                        date,
                         published
+                      }
+                      fields {
+                        slug
                       }
                     }
                   }
                 }
               }
             `,
-            output: "/rss.xml",
+            output: "/feed/index.xml",
             title: "Andrew Shell's Weblog",
           },
         ],
@@ -65,8 +68,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
+        name: `posts`,
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -99,6 +109,7 @@ module.exports = {
         ]
       }
     },
+    "gatsby-source-instance-name-for-remark",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -108,7 +119,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        icon: `src/images/geekity_icon.png`
       }
     },
     `gatsby-plugin-postcss`,

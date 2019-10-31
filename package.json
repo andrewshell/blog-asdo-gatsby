@@ -53,6 +53,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.1.2",
+    "gatsby-source-instance-name-for-remark": "^0.1.1",
     "prettier": "^1.18.2",
     "tailwindcss": "^1.1.2",
     "typescript": "^3.6.4"

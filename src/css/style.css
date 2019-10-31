@@ -12,6 +12,10 @@ a:hover {
 	@apply text-green-900;
 }
 
+footer a:hover {
+	@apply text-green-500;
+}
+
 h1 {
 	@apply text-4xl font-bold mb-8;
 }

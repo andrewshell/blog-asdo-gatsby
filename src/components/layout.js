@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { useStaticQuery, Link, graphql } from "gatsby"
 import Header from "./header";
+import Footer from "./footer";
 
 function Layout({ children }) {
   return (
@@ -12,28 +13,7 @@ function Layout({ children }) {
         {children}
       </main>
 
-      <footer className="bg-gray-200">
-        <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
-          <p>
-            Created by{` `}
-            <a
-              className="font-bold no-underline"
-              href="https://bryant.io"
-            >
-              Taylor Bryant
-            </a>
-          </p>
-
-          <p>
-            <a
-              className="font-bold no-underline"
-              href="https://github.com/taylorbryant/gatsby-starter-tailwind"
-            >
-              GitHub
-            </a>
-          </p>
-        </nav>
-      </footer>
+      <Footer />
     </div>
   );
 }
