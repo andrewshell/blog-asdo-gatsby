@@ -15,7 +15,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 }
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions;
+
+  createRedirect({ fromPath: '/feed/', toPath: '/rss.xml', isPermanent: true });
+
   return new Promise((resolve, reject) => {
     graphql(`{
         allMarkdownRemark {

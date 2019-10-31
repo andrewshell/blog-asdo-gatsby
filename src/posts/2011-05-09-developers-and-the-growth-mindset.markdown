@@ -8,7 +8,7 @@ title: Developers and the Growth Mindset
 wordpress_id: 59
 ---
 
-Recently I've been reading the book [Mindset: The New Psychology of Success](http://shll.me/mindset) by Carol Dweck and it's really making me think.  According to [the official website](http://mindsetonline.com/whatisit/about/index.html):
+Recently I've been reading the book [Mindset: The New Psychology of Success](http://shll.me/mindset) by Carol Dweck and it's really making me think.  According to [the official website](https://web.archive.org/web/20190905050915/https://mindsetonline.com/whatisit/about/index.html):
 
 > In a fixed mindset, people believe their basic qualities, like their  intelligence or talent, are simply fixed traits. They spend their time  documenting their intelligence or talent instead of developing them.  They also believe that talent alone creates success—without effort.  They’re wrong.
 >

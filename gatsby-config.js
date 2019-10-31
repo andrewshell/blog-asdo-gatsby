@@ -59,7 +59,7 @@ module.exports = {
                 }
               }
             `,
-            output: "/feed/index.html",
+            output: "/rss.xml",
             title: "Andrew Shell's Weblog",
           },
         ],
@@ -135,13 +135,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {
-          "/feed": [
-            "Content-Type: application/rss+xml"
-          ]
-        }
-      }
+      options: {}
     }
   ]
 };

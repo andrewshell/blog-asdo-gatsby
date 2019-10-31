@@ -12,7 +12,7 @@ Dave Winer says in [What's missing in our social networks?](http://scripting.com
 
 > Meanwhile, as we all settle in on these networks, we're also settling -- missing features that would have been developed long ago if we were using open and competitive platforms. At some point the dam will break and there will be a flood of new ideas, or possibly a platform for trying out new social networking ideas.
 
-This made me reflect on all of the attempts that are being made to create a decentralized social network.  Some that come to mind are [Status.net](http://status.net/), [Pump.io](http://pump.io/), [Tent](https://tent.io/) and [Diaspora](https://diasporafoundation.org/). There have also been attempts at protocols like [OStatus](http://www.w3.org/community/ostatus/) and [Activity Streams](http://activitystrea.ms/).
+This made me reflect on all of the attempts that are being made to create a decentralized social network.  Some that come to mind are [Status.net](http://status.net/), [Pump.io](http://pump.io/), [Tent](https://web.archive.org/web/20190405122017/http://tent.io/) and [Diaspora](https://diasporafoundation.org/). There have also been attempts at protocols like [OStatus](http://www.w3.org/community/ostatus/) and [Activity Streams](http://activitystrea.ms/).
 
 ## What exactly do we want?
 

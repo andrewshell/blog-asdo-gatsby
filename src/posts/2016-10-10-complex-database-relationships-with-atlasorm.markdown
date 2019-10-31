@@ -23,7 +23,7 @@ This is the database structure for this page.  On the left, we have a Creator wh
 
 When I first started working on this project I was doing plain SQL with PDO. Quickly I realized that for all the pages I was building I'd be writing a whole lot of queries and that didn't sound particularly fun.
 
-Then I tried porting part of this page over to [Doctrine 2 ORM](http://docs.doctrine-project.org/en/latest/) and that was a huge mess.  All of the mapping files and entity objects was taking a long time to get right. Then, once I had it configured for `Creator`, `RpgBookCreator`, `RpgBook`, `Credit`, `GameLine` and `Publisher` (which is only 1/7 of the structure) I ran the query and the page just sat there spinning. I was not familiar enough with Doctrine to make it perform the way I wanted it to.
+Then I tried porting part of this page over to [Doctrine 2 ORM](https://www.doctrine-project.org/projects/orm.html) and that was a huge mess.  All of the mapping files and entity objects was taking a long time to get right. Then, once I had it configured for `Creator`, `RpgBookCreator`, `RpgBook`, `Credit`, `GameLine` and `Publisher` (which is only 1/7 of the structure) I ran the query and the page just sat there spinning. I was not familiar enough with Doctrine to make it perform the way I wanted it to.
 
 It was suffering from the ["N+1 Problem"](https://www.sitepoint.com/silver-bullet-n1-problem/):
 

@@ -37,4 +37,4 @@ This has been the number one influence on how I write software.
 
 This is one of the key motivators for me creating this blog. I hope to help PHP developers discover tools and techniques that help them become better, more productive developers.
 
-I’m also very interested in hearing from you. I will be creating new content over the coming weeks and I want to customize the content for YOU and help you overcome any obstacles you might be experiencing. [Send me a message!](/contact/)
+I’m also very interested in hearing from you. I will be creating new content over the coming weeks and I want to customize the content for YOU and help you overcome any obstacles you might be experiencing. [Send me a message!](/contact-andrew/)

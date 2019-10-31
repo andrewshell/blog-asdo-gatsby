@@ -10,7 +10,7 @@ categories:
 - PHP
 ---
 
-I recently needed a quick tool to track and generate invoices for my small random freelance jobs. I thought this would be a good project to try out [Radar](https://github.com/radarphp/Radar.Project), a PSR-7 compliant Action-Domain-Responder (ADR) system created by [Paul M. Jones](http://paul-m-jones.com/archives/category/programming/radar).
+I recently needed a quick tool to track and generate invoices for my small random freelance jobs. I thought this would be a good project to try out [Radar](https://github.com/radarphp/Radar.Project), a PSR-7 compliant Action-Domain-Responder (ADR) system created by [Paul M. Jones](http://paul-m-jones.com/posts/label/radar/).
 
 I like Radar and I'd like to document some of the things that I noticed while I built my app. This is not meant to be a replacement of the [official docs](https://github.com/radarphp/Radar.Project/blob/1.x/docs/index.md) which you should read first if you want to build an application using Radar. If you'd like to follow along, my project is [Stupid Simple Invoices](https://github.com/andrewshell/invoice/tree/0.0.1).
 

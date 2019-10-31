@@ -19,7 +19,7 @@ For my projects at work, one uses a custom solution I built and the other uses A
 
 The two I came across was [Symfony Form Component](http://symfony.com/doc/current/components/form.html) and [Zend\Form](https://framework.zend.com/manual/2.4/en/modules/zend.form.intro.html). I've used many Symfony components so I figured I'd start with theirs.
 
-I really dig [Radar](/2016/09/21/radar-under-the-hood/) but I know that not everything easily fits in the Action-Domain-Responder model.
+I really dig [Radar](/radar-under-the-hood/) but I know that not everything easily fits in the Action-Domain-Responder model.
 
 I leveraged the [Symfony Forms documentation](http://symfony.com/doc/current/components/form.html) and [webmozart/standalone-forms](https://github.com/webmozart/standalone-forms) to create my proof of concept.
 

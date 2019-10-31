@@ -14,7 +14,7 @@ Today I was reading a post about a talk Rasmus Lerdorf (the creator of PHP who c
 
 > Rasmus made a special point of highlighting the importance of embedding structured metadata into the page. RDFa allows you to embed data into your web pages and also lets you create custom vocabularies, or even better, reuse existing vocabularies. Why would you want to do this? SearchMonkey will go out and index this content and open up a rich search API to allow you to do intelligent queries. Well beyond what is possible with traditional search.
 
-I know Netconcepts has started to experiment with SearchMonkey (I spoke on this topic at [Web608](http://web608.org/)) but this is the first I've really heard of RDFa. I've heard of RDF before (Resource Description Framework) but only in terms of XML documents (commonly used with RSS feeds). But what is RDFa? A quick look to Wikipedia says:
+I know Netconcepts has started to experiment with SearchMonkey (I spoke on this topic at Web608 but this is the first I've really heard of RDFa. I've heard of RDF before (Resource Description Framework) but only in terms of XML documents (commonly used with RSS feeds). But what is RDFa? A quick look to Wikipedia says:
 
 > RDFa (or Resource Description Framework attributes) is a set of extensions to XHTML being proposed by W3C. RDFa uses attributes from XHTML's meta and link elements, and generalises them so that they are usable on all elements. This allows you to annotate XHTML markup with semantics.
 
