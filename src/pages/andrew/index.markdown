@@ -3,7 +3,6 @@ author: andrewshell
 comments: false
 date: 2016-01-08 16:22:00+00:00
 layout: page
-link: https://blog.andrewshell.org/andrew/
 slug: andrew
 title: About Me
 wordpress_id: 115

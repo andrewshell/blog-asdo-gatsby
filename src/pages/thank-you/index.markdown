@@ -3,7 +3,6 @@ author: andrewshell
 comments: false
 date: 2016-09-23 19:25:09+00:00
 layout: page
-link: https://blog.andrewshell.org/thank-you/
 slug: thank-you
 title: Thank You!
 wordpress_id: 721

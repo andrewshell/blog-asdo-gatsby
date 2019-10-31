@@ -3,7 +3,6 @@ author: andrewshell
 comments: false
 date: 2016-01-21 16:12:00+00:00
 layout: page
-link: https://blog.andrewshell.org/htmlpurifier-article/
 slug: htmlpurifier-article
 title: Filtering user submitted HTML with HTMLPurifier
 wordpress_id: 217
