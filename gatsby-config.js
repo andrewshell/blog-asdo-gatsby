@@ -130,6 +130,8 @@ module.exports = {
         purgeOnly: [`src/css/style.css`]
       }
     },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-netlify`,

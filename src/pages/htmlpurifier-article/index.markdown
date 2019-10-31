@@ -11,505 +11,216 @@ wordpress_id: 217
 
 _This article was originally published in the [June 2012](http://www.phparch.com/magazine/2012-2/june/) issue of php|architect magazine._
 
-
-
-
-
-One of the trickiest types of user input to filter is HTML.
-Between WYSIWYG editors, Cross-Site Scripting (XSS) attacks and pasting from
-Word it’s enough to make you pull your hair out.  In this article I’ll cover
-how to set up and use HTML Purifier which is a PHP library that makes filtering
-and transforming HTML a breeze.
-
-
-
-
+One of the trickiest types of user input to filter is HTML. Between WYSIWYG editors, Cross-Site Scripting (XSS) attacks and pasting from Word it’s enough to make you pull your hair out.  In this article I’ll cover how to set up and use HTML Purifier which is a PHP library that makes filtering and transforming HTML a breeze.
 
 ## Solving the problem of HTML input
 
+If you’ve been programming for any period of time I’m sure you’ve come across the problem of accepting HTML.  There are great solutions like TinyMCE or CKEditor that do a great job of creating a WYSIWYG editor for your users.  You can limit what buttons are on the editor, but if they copy and paste from a word processor you end up with all sorts of weird markup in your submission.  Plus you have to assume that all input coming from the user is malicious and you start trying to figure out how you’ll make sure the submission is safe.
 
+One solution has been to abandon HTML entirely and just accept plain text.  Run the input through `nl2br` and hope for the best.  Other approaches are to use a tool like markdown or bbcode, but most users I've dealt with have difficulty figuring out the syntax.
 
+Another solution would be to try your best to clean up the output with a collection of HTML Tidy, `strip_tags` and regular expressions.  You end up with a solution that you think works but then a few weeks later something sneaks in and breaks everything.  That or you have a solution that's so complicated and fragile that nobody but you can work with it.
 
+Well in this article I'm going to show another solution, a PHP library called HTML Purifier.  HTML Purifier actually parses the HTML, has secure yet permissive whitelist that filters out the nasty stuff that can be present in user submitted HTML.  It will also clean your HTML and make sure it's standards compliant.
 
-If you’ve been programming for any period of time I’m sure you’ve come across
-the problem of accepting HTML.  There are great solutions like TinyMCE or
-CKEditor that do a great job of creating a WYSIWYG editor for your users.  You
-can limit what buttons are on the editor, but if they copy and paste from a word processor you end up with all sorts of weird markup in your submission.  Plus you have to assume that all input coming from the user is malicious and you start trying to figure out how you’ll make sure the submission is safe.
-
-
-
-
-
-One solution has been to abandon HTML entirely and just accept plain text.  Run
-the input through `nl2br` and hope for the best.  Other approaches are to use
-a tool like markdown or bbcode, but most users I've dealt with have difficulty
-figuring out the syntax.
-
-
-
-
-
-Another solution would be to try your best to clean up the output with a
-collection of HTML Tidy, `strip_tags` and regular expressions.  You end up
-with a solution that you think works but then a few weeks later something sneaks
-in and breaks everything.  That or you have a solution that's so complicated and
-fragile that nobody but you can work with it.
-
-
-
-
-
-Well in this article I'm going to show another solution, a PHP library called
-HTML Purifier.  HTML Purifier actually parses the HTML, has secure yet
-permissive whitelist that filters out the nasty stuff that can be present in
-user submitted HTML.  It will also clean your HTML and make sure it's standards
-compliant.
-
-
-
-
-
-Best of all it's open source and written in PHP so if it does something that you
-want to behave differently you are free to hack and extend it to your hearts
-content.
-
-
-
-
+Best of all it's open source and written in PHP so if it does something that you want to behave differently you are free to hack and extend it to your hearts content.
 
 ## Installing HTML Purifier
 
+HTML Purifier is very simple to get set up and configured.  It requires a minimum of PHP 5.0.5 and no special extensions.
 
+There are many ways to download and use HTML Purifier.  They are all described at [http://htmlpurifier.org/](http://htmlpurifier.org/) download but I will cover two common ways to install here.
 
-
-
-HTML Purifier is very simple to get set up and configured.  It requires a
-minimum of PHP 5.0.5 and no special extensions.
-
-
-
-
-
-There are many ways to download and use HTML Purifier.  They are all described
-at [http://htmlpurifier.org/](http://htmlpurifier.org/) download but I will cover two common ways to
-install here.
-
-
-
-
-
-The first way is to just download it.  The current version as of writing this
-article is `4.4.0` which you can download from
-[http://htmlpurifier.org/download](http://htmlpurifier.org/download).  Either the full or lite version will do,
-the only difference is that the lite version does not include user
-documentation, unit tests and such.
-
-
-
-
+The first way is to just download it.  The current version as of writing this article is `4.4.0` which you can download from [http://htmlpurifier.org/download](http://htmlpurifier.org/download).  Either the full or lite version will do, the only difference is that the lite version does not include user documentation, unit tests and such.
 
 The other way of installing it is to use PEAR.
 
+```shell-session
+pear channel-discover htmlpurifier.org pear install hp/HTMLPurifier</code>
+```
 
+You'll also need to make the folder `HTMLPurifier/DefinitionCache/Serializer` writable by the web server.  This is necessary whether you download the zip file or install via PEAR.
 
-
-    
-    <code class="php">pear channel-discover htmlpurifier.org pear install hp/HTMLPurifier</code>
-
-
-
-
-
-You'll also need to make the folder `HTMLPurifier/DefinitionCache/Serializer`
-writable by the web server.  This is necessary whether you download the zip file
-or install via PEAR.
-
-
-
-
-
-You then just include the file `HTMLPurifier.auto.php` and you're ready to
-rock.
-
-
-
-
+You then just include the file `HTMLPurifier.auto.php` and you're ready to rock.
 
 ## Getting Started
 
-
-
-
-
 The minimum you need to do to get started using HTML Purifier is as follows:
 
+```php
+require_once 'HTMLPurifier.auto.php'; $purifier = new
+HTMLPurifier(); $clean_html = $purifier->purify($dirty_html);
+```
 
+The default configuration will clean up the markup so missing end tags will be added, invalid nesting will be corrected.  Unsafe tags and attributes like `<script>` or `onclick` will be stripped out.
 
+If you take a look at Listing 1 you'll see an example of some dirty HTML and in Listing 2 the clean HTML generated by the default configuration.  It does a good job and if you left it like this you would be safe from Cross-Site Scripting attacks and the markup is cleaned up with missing end tags and incorrectly nested tags fixed.
 
-    
-    <code class="php">purify($dirty_html);
-    ?></code>
+```html
+<!-- Listing 1 - Dirty HTML -->
+<script type="text/javascript">
+alert('Unsafe');
+</script>
+<div class="WordSection1">
 
+<p class="MsoNormal">Hoopla! This is some
+<b style="mso-bidi-font-weight:normal">html
+output</b> from
+<i style="mso-bidi-font-style:normal">Office</i> that
+could use some <u>cleaning up</u>!</p>
 
+<p>
+<a href="http://google.com" onclick="alert('Also Unsafe')">
+Click here</p>
 
+<a href="http://google.com" target="_blank">
+Target Blank
+</a>
 
+<p><em><strong>Messed up nesting</p></em></strong>
 
-The default configuration will clean up the markup so missing end tags will be
-added, invalid nesting will be corrected.  Unsafe tags and attributes like
-`<script>` or `onclick` will be stripped out.
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+```
 
+```html
+<!-- Listing 2 - Clean HTML (default config) -->
+<div class="WordSection1">
 
+<p class="MsoNormal">Hoopla! This is some
+<b>html
+output</b> from
+<i>Office</i> that
+could use some <u>cleaning up</u>!</p>
 
+<p>
+<a href="http://google.com">
+Click here</a></p>
 
+<a href="http://google.com">
+Target Blank
+</a>
 
-If you take a look at Listing 1 you'll see an example of some
-dirty HTML and in Listing 2 the clean HTML generated by the default
-configuration.  It does a good job and if you left it like this you would be
-safe from Cross-Site Scripting attacks and the markup is cleaned up with
-missing end tags and incorrectly nested tags fixed.
+<p><em><strong>Messed up nesting</strong></em></p>
 
-
-
-
-
-
-
-
-    
-    <code class="html">
-    <script type="text/javascript">
-    alert('Unsafe');
-    </script>
-    <div class="WordSection1">
-    
-    <p class="MsoNormal">Hoopla! This is some
-    <b style="mso-bidi-font-weight:normal">html
-    output</b> from
-    <i style="mso-bidi-font-style:normal">Office</i> that
-    could use some <u>cleaning up</u>!</p>
-    
-    <p>
-    <a href="http://google.com" onclick="alert('Also Unsafe')">
-    Click here</p>
-    
-    <a href="http://google.com" target="_blank">
-    Target Blank
-    </a>
-    
-    <p><em><strong>Messed up nesting</p></em></strong>
-    
-    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
-    
-    </div></code>
-
-
-
-
-
-
-
-
-    
-    <code class="html">
-    <div class="WordSection1">
-    
-    <p class="MsoNormal">Hoopla! This is some
-    <b>html
-    output</b> from
-    <i>Office</i> that
-    could use some <u>cleaning up</u>!</p>
-    
-    <p>
-    <a href="http://google.com">
-    Click here</a></p>
-    
-    <a href="http://google.com">
-    Target Blank
-    </a>
-    
-    <p><em><strong>Messed up nesting</strong></em></p>
-    
-    <p class="MsoNormal"></p><p> </p>
-    
-    </div></code>
-
-
-
-
+<p class="MsoNormal"></p><p> </p>
+```
 
 But there are probably some things that you would like to change.
 
-
-
-
-
 ## Configuration
 
-
-
-
-
-Next we're going to start configuring HTML Purifier in order to customize it to
-our particular needs.  We want our output to be XHTML 1.0 Strict and we want to
-whitelist `special` as the only class that is allowed.
-
-
-
-
+Next we're going to start configuring HTML Purifier in order to customize it to our particular needs.  We want our output to be XHTML 1.0 Strict and we want to whitelist `special` as the only class that is allowed.
 
 The following is how we set up custom configuration:
 
+```php
+$config = HTMLPurifier_Config::createDefault();
+$config->set('HTML.Doctype', 'XHTML 1.0 Strict');
+$config->set('Attr.AllowedClasses', 'special');
 
+$purifier = new HTMLPurifier($config); $clean_html =
+$purifier->purify($dirty_html);
+```
 
+We start out by creating a default config object with `HTMLPurifier_Config::createDefault()` then we start to change the configuration variables with `$config->set()`.  There are a lot of configuration options that you can read about at [http://htmlpurifier.org/live/configdoc/plain.html](http://htmlpurifier.org/live/configdoc/plain.html) the two that we're using here are `HTML.Doctype` and `Attr.AllowedClasses`.
 
-    
-    <code class="php">set('HTML.Doctype', 'XHTML 1.0 Strict');
-    $config->set('Attr.AllowedClasses', 'special');
-    
-    $purifier = new HTMLPurifier($config); $clean_html =
-    $purifier->purify($dirty_html);
-    ?></code>
+The first config option that we set is `HTML.Doctype` which can be set as "HTML 4.01 Transitional", "HTML 4.01 Strict", "XHTML 1.0 Transitional", "XHTML 1.0 Strict" or "XHTML 1.1".  Unfortunately at this time there is no HTML5 support.  However since HTML Purifier is open source you are free to add that functionality yourself and hopefully contribute it back.
 
+This will change what tags are allowed and in some cases will transform your tags to be standards compliant.  In my example one of the changes it makes is converting my `<u>` tag to `<span style="text-decoration:underline;">`.
 
-
-
-
-We start out by creating a default config object with
-`HTMLPurifier_Config::createDefault()` then we start to change the
-configuration variables with `$config->set()`.  There are a lot of
-configuration options that you can read about at
-[http://htmlpurifier.org/live/configdoc/plain.html](http://htmlpurifier.org/live/configdoc/plain.html) the two that we're using
-here are `HTML.Doctype` and `Attr.AllowedClasses`.
-
-
-
-
-
-The first config option that we set is `HTML.Doctype` which can be set as
-"HTML 4.01 Transitional", "HTML 4.01 Strict", "XHTML 1.0 Transitional", "XHTML
-1.0 Strict" or "XHTML 1.1".  Unfortunately at this time there is no HTML5
-support.  However since HTML Purifier is open source you are free to add that
-functionality yourself and hopefully contribute it back.
-
-
-
-
-
-This will change what tags are allowed and in some cases will transform your
-tags to be standards compliant.  In my example one of the changes it makes is
-converting my `<u>` tag to `<span style="text-decoration:underline;">`.
-
-
-
-
-
-The second option we set is `Attr.AllowedClasses` which takes a case-
-insensitive comma separated list of all classes you want to allow in your clean
-HTML.  In my example we're just allowing the class `special`.
-
-
-
-
+The second option we set is `Attr.AllowedClasses` which takes a case-insensitive comma separated list of all classes you want to allow in your clean HTML.  In my example we're just allowing the class `special`.
 
 Now take a look at Listing 3 to see how our newly configured clean HTML looks.
 
+```html
+<!-- Listing 3 - Clean HTML (modified config) -->
+<div>
 
+<p>Hoopla! This is some
+<b>html
+output</b> from
+<i>Office</i> that
+could use some <span style="text-decoration:underline;">
+cleaning up</span>!</p>
 
+<p>
+<a href="http://google.com">
+Click here</a></p>
 
+<a href="http://google.com">
+Target Blank
+</a>
 
+<p><em><strong>Messed up nesting</strong></em></p>
 
-
-
-    
-    <code class="html">
-    <div>
-    
-    <p>Hoopla! This is some
-    <b>html
-    output</b> from
-    <i>Office</i> that
-    could use some <span style="text-decoration:underline;">
-    cleaning up</span>!</p>
-    
-    <p>
-    <a href="http://google.com">
-    Click here</a></p>
-    
-    <a href="http://google.com">
-    Target Blank
-    </a>
-    
-    <p><em><strong>Messed up nesting</strong></em></p>
-    
-    <p></p><p> </p>
-    
-    </div></code>
-
-
-
-
+<p></p><p> </p>
+```
 
 ## Tag Transformation and Adding Attributes
 
+The output from our configuration is pretty good, however I have some more modifications I'd like to make.  The `<u>` tag was converted because it's not allowed in the XHTML 1.0 Strict standard, but I'd prefer if the `<b>` and `<i>` tags were converted to `<strong>` and `<em>` respectively.
 
+Due to the flexibility of HTML Purifier this is an easy task to complete, however it requires that we modify the HTML definition.  The HTML definition  according to the documentation is the "Definition of the purified HTML that describes allowed children, attributes, and many other things."
 
+In our case we're going to modify the HTML definition, adding two tag transformations in order to accomplish our conversions.  The way to do this is by inserting the following after the `$config` definition:
 
+```php
+$def = $config->getHTMLDefinition(true);
+$def->info_tag_transform['b'] =
+    new HTMLPurifier_TagTransform_Simple('strong');
+$def->info_tag_transform['i'] =
+    new HTMLPurifier_TagTransform_Simple('em');
+```
 
-The output from our configuration is pretty good, however I have some more
-modifications I'd like to make.  The `<u>` tag was converted because it's not
-allowed in the XHTML 1.0 Strict standard, but I'd prefer if the `<b>` and
-`<i>` tags were converted to `<strong>` and `<em>` respectively.
+In the example you'll see that we're defining two new keys in the `$def->info_tag_transform` array.  One for `<b>` and one for `<i>`.  We assign to them an instance of `HTMLPurifier_TagTransform_Simple` that defines what we're transforming these tags to.
 
+If you dig into the source code you'll see that the library is actually using this functionality extensively.  For instance they use:
 
+```php
+$r['u'] = new HTMLPurifier_TagTransform_Simple('span', 'text-decoration:underline;');
+```
 
+To convert the `<u>` tags in the definition for XHTML they use the first parameter to transform the tag to a `<span>` and the second paramater to define the style attribute.
 
+Now we're getting somewhere.  However by default HTML Purifier is filtering out the target attribute from our `<a>` tag.  The way to fix this is to add an attribute to the HTML definition.  This is done by adding the following line to our HTML definition modifications:
 
-Due to the flexibility of HTML Purifier this is an easy task to complete,
-however it requires that we modify the HTML definition.  The HTML definition
-according to the documentation is the "Definition of the purified HTML that
-describes allowed children, attributes, and many other things."
+```php
+$dev->addAttribute('a', 'target',
+'Enum#_blank,_self,_target,_top');
+```
 
+The `addAttribute` method adds a custom attribute to a pre-existing element. The first param is which element we're modifying, the second param is what attribute we're adding and the third param is the definition of what we're allowing through.
 
+In the example we're only allowing the specific values that we've defined.  If we didn't want to be so strict we could have set our third param as "Text" and that would have allowed any text to pass through.
 
+I was not able to find great documentation about the available definitions so I had to dive into the source code.  If you're interested in learning more check out the class `HTMLPurifier_AttrTypes`.
 
+Take a look at Listing 4 to see the final clean HTML after our modifications of the HTML definition.
 
-In our case we're going to modify the HTML definition, adding two tag
-transformations in order to accomplish our conversions.  The way to do this is
-by inserting the following after the `$config` definition:
+```html
+<!-- Listing 4: Clean HTML (modified HTML def) -->
+<div>
 
+<p>Hoopla! This is some
+<strong>html
+output</strong> from
+<em>Office</em> that
+could use some <span style="text-decoration:underline;">
+cleaning up</span>!</p>
 
+<p>
+<a href="http://google.com">
+Click here</a></p>
 
+<a href="http://google.com" target="_blank">
+Target Blank
+</a>
 
-    
-    <code class="php">getHTMLDefinition(true);
-    $def->info_tag_transform['b'] =
-        new HTMLPurifier_TagTransform_Simple('strong');
-    $def->info_tag_transform['i'] =
-        new HTMLPurifier_TagTransform_Simple('em');
-    ?></code>
+<p><em><strong>Messed up nesting</strong></em></p>
 
-
-
-
-
-In the example you'll see that we're defining two new keys in the
-`$def->info_tag_transform` array.  One for `<b>` and one for `<i>`.  We
-assign to them an instance of `HTMLPurifier_TagTransform_Simple` that defines
-what we're transforming these tags to.
-
-
-
-
-
-If you dig into the source code you'll see that the library is actually using
-this functionality extensively.  For instance they use:
-
-
-
-
-    
-    <code class="php"></code>
-
-
-
-
-
-To convert the `<u>` tags in the definition for XHTML they use the first
-parameter to transform the tag to a `<span>` and the second paramater to
-define the style attribute.
-
-
-
-
-
-Now we're getting somewhere.  However by default HTML Purifier is filtering out
-the target attribute from our `<a>` tag.  The way to fix this is to add an
-attribute to the HTML definition.  This is done by adding the following line to
-our HTML definition modifications:
-
-
-
-
-    
-    <code class="php">addAttribute('a', 'target',
-    'Enum#_blank,_self,_target,_top');
-    ?></code>
-
-
-
-
-
-The `addAttribute` method adds a custom attribute to a pre-existing element.
-The first param is which element we're modifying, the second param is what
-attribute we're adding and the third param is the definition of what we're
-allowing through.
-
-
-
-
-
-In the example we're only allowing the specific values that we've defined.  If
-we didn't want to be so strict we could have set our third param as "Text" and
-that would have allowed any text to pass through.
-
-
-
-
-
-I was not able to find great documentation about the available definitions so I
-had to dive into the source code.  If you're interested in learning more check
-out the class `HTMLPurifier_AttrTypes`.
-
-
-
-
-
-Take a look at Listing 4 to see the final clean HTML after
-our modifications of the HTML definition.
-
-
-
-
-
-
-
-
-    
-    <code class="html">
-    <div>
-    
-    <p>Hoopla! This is some
-    <strong>html
-    output</strong> from
-    <em>Office</em> that
-    could use some <span style="text-decoration:underline;">
-    cleaning up</span>!</p>
-    
-    <p>
-    <a href="http://google.com">
-    Click here</a></p>
-    
-    <a href="http://google.com" target="_blank">
-    Target Blank
-    </a>
-    
-    <p><em><strong>Messed up nesting</strong></em></p>
-    
-    <p></p><p> </p>
-    
-    </div></code>
-
-
-
-
+<p></p><p> </p>
+```
 
 ## Conclusion
 
-
-
-
-
-As you can see from my examples HTML Purifier is a work horse capable of a lot
-of sophisticated HTML filtering and transforming.  The documentation is great if
-you're just doing some standard filtering and tweaking, but if you need to get
-into some heavy tweaking it will probably require some code diving.
+As you can see from my examples HTML Purifier is a work horse capable of a lot of sophisticated HTML filtering and transforming.  The documentation is great if you're just doing some standard filtering and tweaking, but if you need to get into some heavy tweaking it will probably require some code diving.
