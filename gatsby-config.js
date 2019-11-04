@@ -1,9 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Andrew Shell's Weblog`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
-    siteUrl: 'https://blog.andrewshell.org'
+    titleTemplate: `%s - Andrew Shell's Weblog`,
+    description: `Hoopla, Ballyhoo, and more...`,
+    author: `Andrew Shell`,
+    image: "/default-image.png",
+    twitterUsername: `@andrewshell`,
+    siteUrl: 'https://blog.andrewshell.org',
+    googleSiteVerification: '_-goZtBP-ox3-3pjEHer7rHHhX5qA_1R_TsQsjyWQtc'
   },
   plugins: [
     {
@@ -129,6 +133,15 @@ module.exports = {
         tailwind: true,
         purgeOnly: [`src/css/style.css`]
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-60009507-1",
+        head: true,
+        anonymize: true,
+        respectDNT: true
+      },
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,

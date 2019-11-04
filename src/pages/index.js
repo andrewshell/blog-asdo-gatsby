@@ -14,14 +14,16 @@ export default function IndexPage({data}) {
 
     {data.allMarkdownRemark.edges.map(({node}) => {
       if (false === node.frontmatter.published) {
-        return '';
+        return (
+          <article key={node.id}></article>
+        );
       }
 
       return (
         <article key={node.id} className="post mb-6 border-b border-gray-200">
           <header className="entry-header">
             <h2 className="entry-title">
-              <Link to={ node.frontmatter.slug + '/' } rel="bookmark">{node.frontmatter.title}</Link>
+              <Link to={ node.fields.slug } rel="bookmark">{node.frontmatter.title}</Link>
             </h2>
           </header>
           <div className="entry-content">
@@ -46,13 +48,16 @@ export const query = graphql`query HomePageQuery{
       node {
         frontmatter {
           title
-          slug
           date
           author
           published
         }
+        fields {
+          slug
+        }
         excerpt(pruneLength: 240)
         timeToRead
+        id
       }
     }
   }

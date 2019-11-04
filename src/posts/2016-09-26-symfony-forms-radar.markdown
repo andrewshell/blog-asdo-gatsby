@@ -107,7 +107,7 @@ Then, the form validates this input and will return the filtered/sanitized outpu
 
 Lastly, through the `Twig` the form is rendered, prepopulated with data and any validation errors.
 
-If you're not familiar with Radar check out my post [Radar Under the Hood](/2016/09/21/radar-under-the-hood/) where it talked in depth how it works.
+If you're not familiar with Radar check out my post [Radar Under the Hood](/radar-under-the-hood/) where it talked in depth how it works.
 
 The problem here is that the whole point of Radar is to separate your concerns.
 
