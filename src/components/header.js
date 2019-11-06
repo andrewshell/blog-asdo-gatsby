@@ -17,7 +17,7 @@ function Header() {
   return (
     <header className="bg-gray-200 border-b border-gray-400">
       <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
-        <Link className="flex items-center no-underline" to="/">
+        <Link className="flex items-center" to="/">
           <img src={ geekityIcon } alt="Geekity" style={ { height: '40px' } } />
           <span className="font-bold text-xl tracking-tight">
             {site.siteMetadata.title}
@@ -45,10 +45,6 @@ function Header() {
         >
           {[
             {
-              route: `/`,
-              title: `Home`
-            },
-            {
               route: `/andrew/`,
               title: `About`
             },
@@ -57,12 +53,12 @@ function Header() {
               title: `Contact`
             },
             {
-              route: `/my-resume/`,
-              title: `Résumé`
+              route: `/search/`,
+              title: `Search`
             }
           ].map(link => (
             <Link
-              className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline"
+              className="block md:inline-block mt-4 md:mt-0 md:ml-6"
               key={link.title}
               to={link.route}
             >
@@ -70,7 +66,7 @@ function Header() {
             </Link>
           ))}
         <a
-          className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline"
+          className="block md:inline-block mt-4 md:mt-0 md:ml-6"
           href="https://amzn.to/2gdI0Ua"
           rel="nofollow"
         >

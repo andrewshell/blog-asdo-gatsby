@@ -9,14 +9,14 @@ function Footer() {
         <p className="m-0">
           {`Powered by `}
           <a
-            className="font-bold no-underline"
+            className="font-bold"
             href="https://www.gatsbyjs.org/"
           >
             Gatsby
           </a>
           {` and `}
           <a
-            className="font-bold no-underline"
+            className="font-bold"
             href="https://tailwindcss.com/"
           >
             Tailwind
@@ -25,8 +25,8 @@ function Footer() {
 
         <p className="m-0">
           <a
-            className="font-bold no-underline"
-            href="https://github.com/andrewshell"
+            className="font-bold"
+            href="https://github.com/andrewshell/blog-asdo-gatsby"
           >
             GitHub
           </a>

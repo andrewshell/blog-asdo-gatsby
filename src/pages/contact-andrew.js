@@ -56,7 +56,7 @@ export default function Contact() {
             Your Name
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="rounded-lg w-full py-2 px-3 border text-gray-800 border-gray-500 bg-white"
             type="text"
             name="name"
             id="name"
@@ -71,7 +71,7 @@ export default function Contact() {
             Your Email
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="rounded-lg w-full py-2 px-3 border text-gray-800 border-gray-500 bg-white"
             type="email"
             name="email"
             id="email"
@@ -86,7 +86,7 @@ export default function Contact() {
             Subject
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="rounded-lg w-full py-2 px-3 border text-gray-800 border-gray-500 bg-white"
             type="subject"
             name="subject"
             id="subject"
@@ -101,7 +101,7 @@ export default function Contact() {
             Message
           </label>
           <textarea
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="rounded-lg w-full py-2 px-3 border text-gray-800 border-gray-500 bg-white"
             name="message"
             id="message"
             onChange={handleChange}
