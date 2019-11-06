@@ -6,7 +6,7 @@ title: My Résumé
 
 Senior Web Engineer at Johnson Health Tech North America
 
-[E-Mail Andrew Shell](/contact-andrew/)
+[E-Mail Andrew Shell](/contact/)
 
 [![View Andrew Shell's profile on LinkedIn](https://www.linkedin.com/img/webpromo/btn_viewmy_160x25.gif)](https://www.linkedin.com/in/andrewshell)
 

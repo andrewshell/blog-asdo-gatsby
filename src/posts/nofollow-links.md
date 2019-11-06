@@ -9,7 +9,7 @@ It does not conflict with the link relationships (XFN) specified when you edit a
 
 [Download Nofollow Links WordPress Plugin](http://wordpress.org/extend/plugins/nofollow-links/nofollow-links.zip)
 
-Got a bug to report? Or an enhancement to recommend? Or perhaps even some code to submit for inclusion in the next release? Great! Share your feedback through [my contact form](/contact-andrew).
+Got a bug to report? Or an enhancement to recommend? Or perhaps even some code to submit for inclusion in the next release? Great! Share your feedback through [my contact form](/contact/).
 
 ## Installation
 

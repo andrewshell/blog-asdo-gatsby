@@ -12,7 +12,7 @@ I like a lot of music and had been enjoying my [Spotify](https://open.spotify.co
 
 I'm big on community. I founded and currently co-organize [Madison PHP](http://www.madisonphp.com/) (a group for web nerds like me). I'm also involved in other groups and events in town, which all relate to the internet.
 
-*  [Résumé](/my-resume/)
+*  [Résumé](/resume/)
 *  [Twitter](https://twitter.com/andrewshell)
 *  [Facebook](https://www.facebook.com/andrew.shell)
 *  [GitHub](https://github.com/andrewshell)
