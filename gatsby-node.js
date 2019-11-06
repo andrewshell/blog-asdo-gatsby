@@ -17,7 +17,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions;
 
+  createRedirect({ fromPath: '/andrew/', toPath: '/about/', isPermanent: true });
+  createRedirect({ fromPath: '/contact-andrew/', toPath: '/contact/', isPermanent: true });
   createRedirect({ fromPath: '/feed/', toPath: '/rss.xml', isPermanent: true });
+  createRedirect({ fromPath: '/my-resume/', toPath: '/resume/', isPermanent: true });
 
   return new Promise((resolve, reject) => {
     graphql(`{
