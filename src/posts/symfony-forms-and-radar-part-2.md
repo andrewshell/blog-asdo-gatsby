@@ -1,16 +1,6 @@
 ---
-author: andrewshell
-comments: true
+title: 'Symfony Forms and Radar - Part 2'
 date: 2016-09-28 05:00:55+00:00
-excerpt: I refactor my code from Part One and integrate Aura.Filter.
-layout: post
-slug: symfony-forms-and-radar-part-2
-title: Symfony Forms and Radar - Part 2
-wordpress_id: 722
-categories:
-- PHP
-tags:
-- radar
 ---
 
 In [Part 1](https://www.futureproofphp.com/2016/09/26/symfony-forms-radar/) I talked about the difficulties in getting Symfony Forms to play nicely with Aura.Di and Radars ADR model.

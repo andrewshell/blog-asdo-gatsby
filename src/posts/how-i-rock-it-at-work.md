@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
+title: 'Rock-It at Work - Start a Group'
 date: 2011-06-29 00:00:00+00:00
-layout: post
-slug: how-i-rock-it-at-work
-title: Rock-It at Work - Start a Group
-wordpress_id: 57
 ---
 
 _At Brazen Careerist where I work we're having a series of posts by Brazen employees with tips about how they got ahead in their careers.  My post about starting a group was just posted today.  Check it out._

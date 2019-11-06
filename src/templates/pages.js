@@ -26,7 +26,6 @@ export const query = graphql`query PageQuery($slug: String!) {
     html
     frontmatter {
       title
-      author
       date
     }
   }

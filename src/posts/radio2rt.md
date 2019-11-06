@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2012-02-04 00:00:00+00:00
-layout: post
-published: false
-slug: radio2rt
 title: Radio2 RT WordPress Plugin
-wordpress_id: 55
+date: 2012-02-04 00:00:00+00:00
+published: false
 ---
 
 Maps the Radio2 style RT standard onto the Press This URL. (see [A standard for RT'ing?](http://scripting.com/stories/2012/02/03/aStandardForRting.html))

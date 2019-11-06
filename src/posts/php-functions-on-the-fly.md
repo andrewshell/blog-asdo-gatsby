@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2012-06-14 00:00:00+00:00
-layout: post
-slug: php-functions-on-the-fly
 title: PHP Functions on the Fly
-wordpress_id: 50
-categories:
-- PHP
+date: 2012-06-14 00:00:00+00:00
 ---
 
 I've been a big of a laggard when it comes around to the latest and greatest in the world of PHP. Only recently have I been using the new functionality of PHP 5.3 even though 5.4 just came out. Today I had an idea for a proof of concept and I thought I'd share it with you today.

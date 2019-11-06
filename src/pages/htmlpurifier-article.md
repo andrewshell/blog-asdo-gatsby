@@ -1,11 +1,5 @@
 ---
-author: andrewshell
-comments: false
-date: 2016-01-21 16:12:00+00:00
-layout: page
-slug: htmlpurifier-article
 title: Filtering user submitted HTML with HTMLPurifier
-wordpress_id: 217
 ---
 
 _This article was originally published in the [June 2012](http://www.phparch.com/magazine/2012-2/june/) issue of php|architect magazine._

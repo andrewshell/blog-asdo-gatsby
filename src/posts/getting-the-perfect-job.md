@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-06-21 00:00:00+00:00
-layout: post
-published: false
-slug: getting-the-perfect-job
 title: Getting the Perfect Job
-wordpress_id: 42
+date: 2013-06-21 00:00:00+00:00
+published: false
 ---
 
 In my last article I

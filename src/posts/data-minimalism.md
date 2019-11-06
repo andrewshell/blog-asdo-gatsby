@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2011-03-17 00:00:00+00:00
-layout: post
-slug: data-minimalism
 title: Data Minimalism
-wordpress_id: 63
+date: 2011-03-17 00:00:00+00:00
 ---
 
 I previously railed against the trend of digital sharecropping in my post [Giving Up On Web Ownership](/giving-up-on-web-ownership/). The task of taking ownership of your digital identity can be very difficult when you try to replicate the functionality of all the different sites you might use.

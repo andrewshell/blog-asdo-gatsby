@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2014-01-21 00:00:00+00:00
-layout: post
-slug: identifying-my-priorities
 title: Identifying my priorities
-wordpress_id: 22
+date: 2014-01-21 00:00:00+00:00
 ---
 
 Lately I've been overwhelmed.  This is not unusual for me ever since my heart surgery I've been more aware of it.

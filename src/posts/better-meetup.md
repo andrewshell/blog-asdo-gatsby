@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-10-04 00:00:00+00:00
-layout: post
-slug: better-meetup
 title: Building a better Meetup
-wordpress_id: 26
+date: 2013-10-04 00:00:00+00:00
 ---
 
 This post is a request into the aether for something I'd really like to see and would be willing to pay for.  My hope is that someone reads this and decides to build it (maybe even Meetup).  I unfortunately don't have the time to build this as much as I'd like to do so.

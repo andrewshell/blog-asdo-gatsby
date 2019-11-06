@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2011-03-14 00:00:00+00:00
-layout: post
-published: false
-slug: rebooting-the-news-86
 title: 'Rebooting The News #86'
-wordpress_id: 64
+date: 2011-03-14 00:00:00+00:00
+published: false
 ---
 
 Today's episode of [Rebooting The News](http://scripting.com/stories/2011/03/14/todaysPotluckPodcast.html) Jay was out of town so Dave had on Adam Curry and yours truly!  I wish I could say I was invited to be a guest, but Dave was just taking calls and picked me.  On the show I talk about my work trying to use WordPress as a microblog platform.  It's an interesting show, but if you want to skip directly to my part jump to 31:45.

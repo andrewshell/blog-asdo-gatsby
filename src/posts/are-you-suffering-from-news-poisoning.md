@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2011-02-11 00:00:00+00:00
-layout: post
-slug: are-you-suffering-from-news-poisoning
 title: Are you suffering from News Poisoning?
-wordpress_id: 68
+date: 2011-02-11 00:00:00+00:00
 ---
 
 I had an interesting conversation with my friend [Monica](http://www.mlvwrites.com/) last night. We talked about information overload and she brought up a term "News Poisoning" which means how you can poison your mind by watching the news.

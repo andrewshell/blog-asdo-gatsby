@@ -1,14 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2015-06-02 00:00:00+00:00
-layout: post
-slug: rebooting-rsscloud
 title: Rebooting rssCloud
-wordpress_id: 12
-categories:
-- JavaScript
-- Technology
+date: 2015-06-02 00:00:00+00:00
 ---
 
 I recently built an rssCloud Server implementation in node.js

@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-08-12 00:00:00+00:00
-layout: post
-published: false
-slug: multi-process-levelup
 title: Multi-Process LevelUP
-wordpress_id: 33
+date: 2013-08-12 00:00:00+00:00
+published: false
 ---
 
 Recently I've been working on a Node.js app that uses [LevelDB](http://code.google.com/p/leveldb/) via the [LevelUp](https://github.com/rvagg/node-levelup) module.

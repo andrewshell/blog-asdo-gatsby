@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-01-19 00:00:00+00:00
-layout: post
-published: false
-slug: sharing-disqus-threads
 title: Sharing Disqus Threads
-wordpress_id: 47
+date: 2013-01-19 00:00:00+00:00
+published: false
 ---
 
 Today I met up with my friend [Joe Nelson](http://begriffs.com/), the goal was to discuss my prior blog post about [a better social news experience](/a-better-social-news-experience/). We wanted to look at the larger idea and see what baby steps could we accomplish to start moving toward that ideal.

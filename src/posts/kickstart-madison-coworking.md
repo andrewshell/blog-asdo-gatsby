@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2010-05-18 00:00:00+00:00
-layout: post
-slug: kickstart-madison-coworking
 title: Kickstart Madison Coworking
-wordpress_id: 78
+date: 2010-05-18 00:00:00+00:00
 ---
 
 When I was out in California I was somewhat involved with the group of people starting [Hacker Dojo](https://hackerdojo.com/). I've been interested in creating a similar type of space in Madison. I started looking around at spaces when I was telecommuting for PBwiki but the issue is always how to fund it. It's a chicken and egg type problem. Do you get members before you find a space or do you find a space then get members? Well, I can't afford to go out there and sign a lease for office space and then not have any members so the project died off.

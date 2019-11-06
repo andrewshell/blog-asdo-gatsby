@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2012-02-18 00:00:00+00:00
-layout: post
-slug: apple-and-the-future-of-tv
 title: Apple and the future of TV
-wordpress_id: 54
-categories:
-- Opinion
+date: 2012-02-18 00:00:00+00:00
 ---
 
 I just came across Dave Winer's post [Samsung is wrong about TV](http://scripting.com/stories/2012/02/18/samsungIsWrongAboutTv.html) which is a response to the earlier TechCrunch article [Samsung Not Worried About Apple’s TV: "TVs are ultimately about picture quality"](http://techcrunch.com/2012/02/13/samsung-not-worried-about-apples-tv-tvs-are-ultimately-about-picture-quality/).

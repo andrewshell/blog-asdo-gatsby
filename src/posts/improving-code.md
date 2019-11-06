@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-08-02 00:00:00+00:00
-layout: post
-slug: improving-code
 title: Improving My Code
-wordpress_id: 37
-categories:
-- PHP
+date: 2013-08-02 00:00:00+00:00
 ---
 
 I'll be honest with you. I had kinda stagnated over the last couple years when it came to improving my skills as a developer. When I first started developing professionally I went from not knowing much PHP to being well regarded as a developer in a few years.

@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2015-05-01 00:00:00+00:00
-layout: post
-slug: laravel-utcmodel
 title: Laravel UTC Model
-wordpress_id: 15
-categories:
-- PHP
+date: 2015-05-01 00:00:00+00:00
 ---
 
 I've been playing around with [Laravel](http://laravel.com/) lately and overall I like it.

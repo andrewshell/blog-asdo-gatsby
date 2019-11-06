@@ -49,7 +49,6 @@ export const query = graphql`query HomePageQuery{
         frontmatter {
           title
           date
-          author
           published
         }
         fields {

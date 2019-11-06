@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2016-11-04 12:45:59+00:00
-layout: post
-slug: best-git-branching-strategy-small-teams
 title: What is the best git branching strategy for small teams?
-wordpress_id: 729
-categories:
-- PHP
+date: 2016-11-04 12:45:59+00:00
 ---
 
 In my development, I use Git all the time. It was a little tricky to figure out at first but, I feel like I have a good understanding of how to use it.

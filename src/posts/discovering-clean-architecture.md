@@ -1,14 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2016-09-23 05:00:34+00:00
-excerpt: Story about how I discovered Uncle Bob and Clean Architecture.
-layout: post
-slug: discovering-clean-architecture
 title: Discovering Clean Architecture
-wordpress_id: 719
-categories:
-- PHP
+date: 2016-09-23 05:00:34+00:00
 ---
 
 Several years ago I came across the following video. It was a keynote from a Ruby conference by some guy named Robert "Uncle Bob" Martin. It's really worth your time to watch.

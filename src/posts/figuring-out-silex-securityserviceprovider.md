@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-11-23 00:00:00+00:00
-layout: post
-slug: figuring-out-silex-securityserviceprovider
 title: Figuring out Silex SecurityServiceProvider
-wordpress_id: 23
-categories:
-- PHP
+date: 2013-11-23 00:00:00+00:00
 ---
 
 I'm working on a couple of projects that will be using [Silex](http://silex.sensiolabs.org/) as the underlying framework.

@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2014-06-25 00:00:00+00:00
-layout: post
-slug: running-river4-with-forever
 title: Running River4 with forever
-wordpress_id: 18
-categories:
-- JavaScript
+date: 2014-06-25 00:00:00+00:00
 ---
 
 I've been playing around with Node.js for a while but I never got far enough to deploy an app to production.

@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2017-06-10 13:41:01+00:00
-layout: post
-slug: develop-laravel-homestead
 title: How to Develop with Laravel Homestead
-wordpress_id: 734
-categories:
-- PHP
+date: 2017-06-10 13:41:01+00:00
 ---
 
 Are you interested in Laravel but don't know how to start? Homestead is a Laravel project that simplifies the creation of a local environment configured to run Laravel applications. Bring your laptop and when we're finished you'll have Homestead running and a fresh install of Laravel ready to work with.

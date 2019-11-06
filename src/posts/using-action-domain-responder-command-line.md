@@ -1,17 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2016-10-22 14:39:24+00:00
-excerpt: I've created a new proof of concept ADR library that works like Radar, only
-  for the command line interface.
-layout: post
-slug: using-action-domain-responder-command-line
 title: Using Action-Domain-Responder on the command line
-wordpress_id: 728
-categories:
-- PHP
-tags:
-- cadre
+date: 2016-10-22 14:39:24+00:00
 ---
 
 Yesterday I was working on a project in [Radar](https://github.com/radarphp/Radar.Project) and needed to create a command line tool for it.

@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2010-12-30 00:00:00+00:00
-layout: post
-slug: 60-hours
 title: What would you do with 60 hours?
-wordpress_id: 70
+date: 2010-12-30 00:00:00+00:00
 ---
 
 I'm not a huge fan of new years resolutions. I think most people throw out some big vague goal like "lose weight" or "start my own business" then forget about it by the end of January.

@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2010-09-03 00:00:00+00:00
-layout: post
-slug: conflict-with-minimalism
 title: Conflict with Minimalism
-wordpress_id: 74
+date: 2010-09-03 00:00:00+00:00
 ---
 
 I've been trying to be more minimalist lately. I deleted the vast majority of blogs I follow in my RSS feed (I only follow 5 now). One of the blogs I still follow is Far Beyond the Stars by Everett Bogue. Everett is a guy who lives his life with a ridiculously small number of possessions (less than 100). I really resonate with his message but I find that I also conflict with it.

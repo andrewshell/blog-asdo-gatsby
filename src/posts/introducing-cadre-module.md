@@ -1,17 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2016-10-20 15:51:24+00:00
-excerpt: I created a new library that works with Aura.DI to allow specifying dependent
-  modules to be auto loaded.
-layout: post
-slug: introducing-cadre-module
 title: Introducing Cadre.Module
-wordpress_id: 727
-categories:
-- PHP
-tags:
-- cadre
+date: 2016-10-20 15:51:24+00:00
 ---
 
 Today I published a new component [Cadre.Module](https://github.com/cadrephp/Cadre.Module).

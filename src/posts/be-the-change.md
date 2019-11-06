@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2016-11-09 12:14:18+00:00
-layout: post
-slug: be-the-change
 title: Be the Change
-wordpress_id: 365
-categories:
-- Opinion
+date: 2016-11-09 12:14:18+00:00
 ---
 
 Donald Trump will be the next president of the United States.

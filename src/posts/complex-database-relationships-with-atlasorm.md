@@ -1,16 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2016-10-10 16:51:58+00:00
-excerpt: How I used Atlas.ORM to perform complex queries in my Pen & Paper side project.
-layout: post
-slug: complex-database-relationships-with-atlasorm
 title: Complex Database Relationships with AtlasORM
-wordpress_id: 724
-categories:
-- PHP
-tags:
-- atlasorm
+date: 2016-10-10 16:51:58+00:00
 ---
 
 In my [side project](https://github.com/andrewshell/pen-paper-2) I'm working with a very well normalized database with many relationships.

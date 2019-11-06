@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
+title: "Minimalism ain't just a river in Egypt"
 date: 2011-02-15 00:00:00+00:00
-layout: post
 published: false
-slug: minimalism-aint-just-a-river-in-egypt
-title: Minimalism ain't just a river in Egypt
-wordpress_id: 67
 ---
 
 I own a lot of stuff.  A rough estimate puts me at 600 CDs. There was a time I would buy 1-3 CDs every week but the last CDs I bought were back in December 2009 and I don't think I've ever put those CDs in a CD player.  I bought them, put them on a shelf and continued to listen to them on Rhapsody.  Clearly I wasn't buying them for the music. It was about ownership, putting it on a shelf for people to see.  My CD collection was who I was.

@@ -1,17 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2016-10-18 14:14:29+00:00
-excerpt: My library AtlasOrm.DebugBar.Bridge now supports multiple connections.
-layout: post
-slug: tracking-multiple-connections-php-debug-bar-atlas-orm
 title: Tracking Multiple Connections with PHP Debug Bar and Atlas ORM
-wordpress_id: 726
-categories:
-- PHP
-tags:
-- atlasorm
-- cadre
+date: 2016-10-18 14:14:29+00:00
 ---
 
 On Friday I talked about a new library I created that [helps integrate Atlas.ORM with PHP Debug Bar](https://www.futureproofphp.com/2016/10/14/collecting-data-from-atlas-orm-with-php-debug-bar/).

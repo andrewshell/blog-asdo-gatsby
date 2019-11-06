@@ -1,16 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2016-09-21 20:23:10+00:00
-excerpt: I explain what Radar and Action-Domain-Responder are and how they work.
-layout: post
-slug: radar-under-the-hood
 title: Radar Under the Hood
-wordpress_id: 718
-categories:
-- PHP
-tags:
-- radar
+date: 2016-09-21 20:23:10+00:00
 ---
 
 [Radar](https://github.com/radarphp/Radar.Project) is a project that I really like.

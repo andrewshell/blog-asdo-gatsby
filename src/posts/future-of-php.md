@@ -1,14 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-08-16 00:00:00+00:00
-layout: post
-slug: future-of-php
 title: The future of PHP (and JavaScript)
-wordpress_id: 31
-categories:
-- JavaScript
-- PHP
+date: 2013-08-16 00:00:00+00:00
 ---
 
 As a developer, I'm always reevaluating what tools I use to do my work. This can be what language I'm using, but also what frameworks, libraries or editors I'm using.

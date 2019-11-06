@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: false
-date: 2014-04-25 00:00:00+00:00
-layout: post
-published: false
-slug: expiring-credits
 title: Your credits expire soon
-wordpress_id: 19
+date: 2014-04-25 00:00:00+00:00
+published: false
 ---
 
 I got this in my e-mail today:

@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2010-08-23 00:00:00+00:00
-layout: post
-slug: expanding-your-passion
 title: Expanding Your Passion
-wordpress_id: 75
+date: 2010-08-23 00:00:00+00:00
 ---
 
 Here's an exercise I just came up with as a method to expand and pivot my passions. Start out with something that excites you, something that you're really passionate about. Visualize that this activity or idea is just a lake that's part of a big network of lakes, rivers, streams and oceans of passion. An example for me is running the [Madison PHP Meetup Group](http://www.madisonphp.com).

@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2017-05-25 16:42:29+00:00
-layout: post
-slug: best-way-use-domainsession-command-line-environment
 title: What is the best way to use DomainSession in a command line environment?
-wordpress_id: 733
-categories:
-- PHP
+date: 2017-05-25 16:42:29+00:00
 ---
 
 Jory Geerts [asks](https://www.futureproofphp.com/2017/05/02/best-way-handle-sessions-adr/#comment-43):

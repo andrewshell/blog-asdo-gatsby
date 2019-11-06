@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2011-02-09 00:00:00+00:00
-layout: post
-published: false
-slug: life-on-autopilot
 title: Putting your life on autopilot
-wordpress_id: 69
+date: 2011-02-09 00:00:00+00:00
+published: false
 ---
 
 My life needs fixing.  There are a lot of things going on that I need to repair.  Some of which are:

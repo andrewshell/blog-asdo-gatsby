@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2015-05-23 00:00:00+00:00
-layout: post
-slug: facebook-comments
 title: Facebook Comments
-wordpress_id: 14
-categories:
-- Technology
+date: 2015-05-23 00:00:00+00:00
 ---
 
 Dave Winer uses Facebook comments on his Liveblog and today I wanted to comment on [his post about liveblogging](http://liveblog.co/users/davewiner/2015/05/22/thePointOfLiveblogging.html). However before I did this I had to check something out.

@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2011-05-09 00:00:00+00:00
-layout: post
-slug: developers-and-the-growth-mindset
 title: Developers and the Growth Mindset
-wordpress_id: 59
+date: 2011-05-09 00:00:00+00:00
 ---
 
 Recently I've been reading the book [Mindset: The New Psychology of Success](http://shll.me/mindset) by Carol Dweck and it's really making me think.  According to [the official website](https://web.archive.org/web/20190905050915/https://mindsetonline.com/whatisit/about/index.html):

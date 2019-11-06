@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2010-12-15 00:00:00+00:00
-layout: post
-slug: technology-delegation-vs-abdication
 title: Technology delegation vs abdication
-wordpress_id: 71
+date: 2010-12-15 00:00:00+00:00
 ---
 
 This is a reply to [Why Gen Y is Smarter, From a Gen X](http://happyemergency.tumblr.com/post/2326325674/why-gen-y-is-smarter-from-a-gen-x)

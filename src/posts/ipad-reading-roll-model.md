@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-07-26 00:00:00+00:00
-layout: post
-slug: ipad-reading-roll-model
 title: Can You Be a Reading Roll Model With an iPad?
-wordpress_id: 38
-categories:
-- Opinion
+date: 2013-07-26 00:00:00+00:00
 ---
 
 [My wife Andrea](http://www.andrewheartandrea.com/) and I have no immediate plans to have children, but the topic has come up a couple of times. One area that we disagree on is the topic of homeschooling.

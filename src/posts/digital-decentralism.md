@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2012-01-23 00:00:00+00:00
-layout: post
-slug: digital-decentralism
 title: Digital Decentralism
-wordpress_id: 56
+date: 2012-01-23 00:00:00+00:00
 ---
 
 I've been very interested in thinking of clever ways to help myself and other people avoid [digital sharecropping](http://www.roughtype.com/archives/2011/08/digital_sharecr.php). Especially with the recent hoopla around SOPA.

@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2017-03-06 16:34:00+00:00
-layout: post
-slug: best-way-inject-logger
 title: What is the best way to inject a logger?
-wordpress_id: 732
-categories:
-- PHP
+date: 2017-03-06 16:34:00+00:00
 ---
 
 I'm working on several projects right now that I'd like to be able to generate logs from.

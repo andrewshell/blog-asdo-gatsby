@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2010-12-15 00:00:00+00:00
-layout: post
-slug: structured-data-via-rss
 title: Structured data via RSS
-wordpress_id: 72
+date: 2010-12-15 00:00:00+00:00
 ---
 
 I've been rolling around in my head for a while now about the best way to publish structured data via RSS.  My primary use case is with syndicating data between websites, especially social networks like Brazen Careerist.  I like the idea of pulling in a feed that has more information in it then just the rendered HTML.

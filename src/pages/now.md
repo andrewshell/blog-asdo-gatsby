@@ -1,8 +1,4 @@
 ---
-author: andrewshell
-comments: false
-layout: page
-slug: now
 title: What I’m doing now
 ---
 

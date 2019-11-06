@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2015-06-03 00:00:00+00:00
-layout: post
-slug: what-is-rsscloud
 title: What is rssCloud?
-wordpress_id: 11
-categories:
-- Technology
+date: 2015-06-03 00:00:00+00:00
 ---
 
 [Jeffrey Kishner](http://jeffreykishner.com/) asks:

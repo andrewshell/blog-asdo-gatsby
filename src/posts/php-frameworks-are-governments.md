@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2009-03-05 00:00:00+00:00
-layout: post
-slug: php-frameworks-are-governments
 title: PHP Frameworks are Governments
-wordpress_id: 84
-categories:
-- PHP
+date: 2009-03-05 00:00:00+00:00
 ---
 
 I was e-mailing a friend the other day talking about PHP frameworks. He's been writing one for himself and I've written many many frameworks and CMSs through the years. I've also looked at a lot of existing frameworks out there like Zend, CodeIgniter, CakePHP, Solar, Symfony and I've come to a conclusion. There are a lot of similarities between PHP frameworks and governments.

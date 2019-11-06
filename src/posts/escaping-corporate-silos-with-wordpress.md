@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2011-02-23 00:00:00+00:00
-layout: post
-slug: escaping-corporate-silos-with-wordpress
 title: Escaping Corporate Silos With WordPress
-wordpress_id: 65
+date: 2011-02-23 00:00:00+00:00
 ---
 
 After my post on Friday about [Giving Up on Web Ownership](/giving-up-on-web-ownership/) a couple people pinged me asking how they would go about publishing to Twitter, without publishing in Twitter.  Dave Winer is working on the problem with his [minimal blogging tool](http://scripting.com/stories/2011/01/05/upcomingTheMinimalBlogging.html) but I was thinking... why can't we do this with WordPress?  So today I'm going to walk you through the steps necessary to create your own WordPress based microblog that publishes to Twitter.

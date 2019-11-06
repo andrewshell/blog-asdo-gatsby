@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-09-06 00:00:00+00:00
-layout: post
-published: false
-slug: are-you-offended
 title: Are you offended by this?
-wordpress_id: 29
+date: 2013-09-06 00:00:00+00:00
+published: false
 ---
 
 ![Censored](/uploads/2013/09/censored.jpg)

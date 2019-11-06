@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-07-04 00:00:00+00:00
-layout: post
-slug: 4th-july-new-house
 title: Fourth of July in New House
-wordpress_id: 40
+date: 2013-07-04 00:00:00+00:00
 ---
 
 It's been a crazy year since the last 4th of July.  Andrea and I got married in October.  Then we went on our honeymoon to Disney World and of January.  On our way home I got pneumonia (the first time) and that started a chain of events that led to having heart surgery.  Then 10 days after having heart surgery Andrea and I closed on our house.

@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2014-01-29 00:00:00+00:00
-layout: post
-slug: lightswitches-ocd
 title: Lightswitches and OCD
-wordpress_id: 21
+date: 2014-01-29 00:00:00+00:00
 ---
 
 I'm a little OCD when it comes to light switches. My particular obsession goes a little like this:

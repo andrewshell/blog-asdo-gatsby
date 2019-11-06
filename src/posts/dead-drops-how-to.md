@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
+title: "Dead Drops 'How to'"
 date: 2012-09-12 00:00:00+00:00
-layout: post
-slug: dead-drops-how-to
-title: Dead Drops 'How to'
-wordpress_id: 49
 ---
 
 I just came across this video and thought it would be great to share. According to the map on [deaddrops.com](https://deaddrops.com/) there aren't any listed in Madison, WI. I might have to change that.

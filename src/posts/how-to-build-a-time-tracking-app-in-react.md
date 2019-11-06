@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2018-09-26 12:30:18+00:00
-layout: post
-slug: how-to-build-a-time-tracking-app-in-react
 title: How To Build A Time Tracking App In React
-wordpress_id: 888
-categories:
-- JavaScript
+date: 2018-09-26 12:30:18+00:00
 ---
 
 Recently for a job I was applying for I build a time tracking demo in React.

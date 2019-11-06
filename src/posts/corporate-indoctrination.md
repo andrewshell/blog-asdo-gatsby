@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: false
-date: 2013-09-24 00:00:00+00:00
-layout: post
-published: false
-slug: corporate-indoctrination
 title: The corporate indoctrination of our children
-wordpress_id: 27
+date: 2013-09-24 00:00:00+00:00
+published: false
 ---
 
 My wife and I have been talking about having a child. One thing we disagree about is that once the child is school age, will they go to public school or will we home school?  I'm all about homeschooling, [I'm not happy with the public school system](http://www.youtube.com/watch?v=sXpbONjV1Jc) and I think I can do better.

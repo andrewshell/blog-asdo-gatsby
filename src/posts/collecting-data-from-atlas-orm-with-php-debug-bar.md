@@ -1,18 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2016-10-14 05:00:09+00:00
-excerpt: My new library AtlasOrm.DebugBar.Bridge lets you collect data from Atlas.ORM
-  using PHP Debug Bar.
-layout: post
-slug: collecting-data-from-atlas-orm-with-php-debug-bar
 title: Collecting Data from Atlas ORM with PHP Debug Bar
-wordpress_id: 725
-categories:
-- PHP
-tags:
-- atlasorm
-- cadre
+date: 2016-10-14 05:00:09+00:00
 ---
 
 In my last article, I talked about how I found [an N+1 bug in Atlas ORM](https://www.futureproofphp.com/2016/10/10/complex-database-relationships-with-atlasorm/).

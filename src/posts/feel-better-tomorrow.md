@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2015-05-26 00:00:00+00:00
-layout: post
-slug: feel-better-tomorrow
 title: Will this make me feel better tomorrow?
-wordpress_id: 13
+date: 2015-05-26 00:00:00+00:00
 ---
 
 I came home for lunch today and I feel like crap. I feel stressed and tired most of the time.

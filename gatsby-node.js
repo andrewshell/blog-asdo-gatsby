@@ -4,7 +4,10 @@ const path = require(`path`);
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = '/' + node.frontmatter.slug + '/';
+    let slug = createFilePath({ node, getNode, basePath: `pages` });
+    if ((node.frontmatter || {}).slug) {
+      slug = '/' + node.frontmatter.slug + '/';
+    }
     // createFilePath({ node, getNode, basePath: `pages` });
     createNodeField({
       node,

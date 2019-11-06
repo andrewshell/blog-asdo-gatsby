@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2011-04-22 00:00:00+00:00
-layout: post
-slug: shipping-is-scary
 title: Shipping is Scary
-wordpress_id: 61
+date: 2011-04-22 00:00:00+00:00
 ---
 
 Today I shipped a little app of mine called TwitOPML.  I'm now freaked out.  What if a ton of people start using it?  What if nobody uses it?  I shot an e-mail about it to the [EC2 for Poets mailing list](https://groups.google.com/group/ec2-for-poets), so most likely somebody will try it out.  In fact, I pretty much developed the app for the members of that list.

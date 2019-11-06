@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2009-12-11 00:00:00+00:00
-layout: post
-published: false
-slug: how-do-you-know-what-you-stand-for
 title: How do you know what you stand for?
-wordpress_id: 82
+date: 2009-12-11 00:00:00+00:00
+published: false
 ---
 
 I'm someone that likes to think of himself as pretty driven and goal oriented.  I think this is why it's bothered me so much that lately I've been floundering without any great direction.  Some of it is probably the "Quarterlife Crisis" but it could also be that I've been getting lazy.

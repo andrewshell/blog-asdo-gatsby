@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2014-08-14 00:00:00+00:00
-layout: post
-slug: how-to-be-polite
 title: How to Be Polite
-wordpress_id: 17
+date: 2014-08-14 00:00:00+00:00
 ---
 
 Politeness and manners are something that I feel has always intrigued and eluded me.

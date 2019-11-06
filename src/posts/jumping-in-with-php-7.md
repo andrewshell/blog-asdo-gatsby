@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2016-01-15 17:09:57+00:00
-layout: post
-slug: jumping-in-with-php-7
 title: Jumping in with PHP 7
-wordpress_id: 208
-categories:
-- PHP
+date: 2016-01-15 17:09:57+00:00
 ---
 
 After reading [Why we are requiring PHP 7 for our new packages](https://murze.be/2016/01/why-we-are-requiring-php-7-for-our-new-packages/) I decided to make [Stupid Simple Invoices](https://github.com/andrewshell/invoice) (a side project) require PHP 7.

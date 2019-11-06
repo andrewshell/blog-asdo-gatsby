@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-05-02 00:00:00+00:00
-layout: post
-slug: heart-surgery
 title: Heart Surgery
-wordpress_id: 45
+date: 2013-05-02 00:00:00+00:00
 ---
 
 I had been diagnosed with a heart murmur back in 2005 at which time the

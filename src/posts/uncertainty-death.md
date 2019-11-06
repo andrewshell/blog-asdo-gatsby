@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2015-07-07 00:00:00+00:00
-layout: post
-slug: uncertainty-death
 title: Uncertainty about death
-wordpress_id: 10
+date: 2015-07-07 00:00:00+00:00
 ---
 
 I feel like I dodged a bullet today.

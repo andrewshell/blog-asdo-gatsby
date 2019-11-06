@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2015-12-17 00:00:00+00:00
-layout: post
-slug: getting-started-radar
 title: Getting started with Radar
-wordpress_id: 8
-categories:
-- PHP
+date: 2015-12-17 00:00:00+00:00
 ---
 
 I recently needed a quick tool to track and generate invoices for my small random freelance jobs. I thought this would be a good project to try out [Radar](https://github.com/radarphp/Radar.Project), a PSR-7 compliant Action-Domain-Responder (ADR) system created by [Paul M. Jones](http://paul-m-jones.com/posts/label/radar/).

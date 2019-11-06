@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-05-03 00:00:00+00:00
-layout: post
-published: false
-slug: understanding-baseurl
 title: Understanding Base URL
-wordpress_id: 44
+date: 2013-05-03 00:00:00+00:00
+published: false
 ---
 
 I've been using GitHub Pages quite a bit these days.  In fact this blog is running off on GitHub Pages.  I really like it as a platform.

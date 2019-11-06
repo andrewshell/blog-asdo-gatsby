@@ -1,11 +1,5 @@
 ---
-author: andrewshell
-comments: false
-date: 2018-10-01 19:20:26+00:00
-layout: page
-slug: my-resume
 title: My Résumé
-wordpress_id: 119
 ---
 
 ## Andrew Shell

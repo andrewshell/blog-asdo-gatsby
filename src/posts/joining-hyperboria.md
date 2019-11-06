@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: false
-date: 2013-03-13 20:44:21+00:00
-layout: post
-slug: joining-hyperboria
 title: Joining Hyperboria
-wordpress_id: 932
+date: 2013-03-13 20:44:21+00:00
 ---
 
 Yesterday I joined [Hyperboria](http://hyperboria.net/).

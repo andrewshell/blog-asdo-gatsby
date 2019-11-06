@@ -1,11 +1,5 @@
 ---
-author: andrewshell
-comments: false
-date: 2018-09-13 18:03:35+00:00
-layout: page
-slug: goal-setting-for-developers
 title: Goal Setting for Developers
-wordpress_id: 844
 ---
 
 I'll be writing a lot about my personal process for goal setting. Here is an index of those posts and the logical order to read through the exercises.

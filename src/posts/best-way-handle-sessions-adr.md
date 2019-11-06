@@ -1,15 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2017-05-02 10:00:59+00:00
-layout: post
-slug: best-way-handle-sessions-adr
 title: What is the best way to handle sessions with ADR?
-wordpress_id: 731
-categories:
-- PHP
-tags:
-- radar
+date: 2017-05-02 10:00:59+00:00
 ---
 
 Right before Christmas, I reached out to [Paul Jones](http://paul-m-jones.com/) asking:

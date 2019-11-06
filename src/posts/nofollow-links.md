@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2011-03-29 00:00:00+00:00
-layout: post
-slug: nofollow-links
 title: Nofollow Links
-wordpress_id: 62
-categories:
-- PHP
+date: 2011-03-29 00:00:00+00:00
 ---
 
 This is a plugin designed to allow you to append nofollow to the rel attribute of selected links in your blogroll.

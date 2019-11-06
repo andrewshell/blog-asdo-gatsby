@@ -1,11 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-10-28 00:00:00+00:00
-layout: post
-slug: what-is-a-social-network
 title: What is a social network?
-wordpress_id: 24
+date: 2013-10-28 00:00:00+00:00
 ---
 
 Dave Winer says in [What's missing in our social networks?](http://scripting.com/2013/10/28/whatsMissingInOurSocialNetworks):

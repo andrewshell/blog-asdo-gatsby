@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-08-21 00:00:00+00:00
-layout: post
-published: false
-slug: revisiting-fs-key-value
 title: Revisiting fs-key-value
-wordpress_id: 30
+date: 2013-08-21 00:00:00+00:00
+published: false
 ---
 
 Last week I announced my first Node.js module [fs-key-value](/fs-key-value/). I'm new to Node.js and was not having any success making it asynchronous so I released it as a synchronous library.  Soon after I realized it made more sense to take a little more time and rewrite it to be asynchronous.

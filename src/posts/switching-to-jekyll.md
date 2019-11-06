@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-02-14 00:00:00+00:00
-layout: post
-published: false
-slug: switching-to-jekyll
 title: Switching to Jekyll
-wordpress_id: 46
+date: 2013-02-14 00:00:00+00:00
+published: false
 ---
 
 After running my blog for many years on WordPress I've recently decided to migrate over to [Jekyll](https://github.com/mojombo/jekyll) running on [Github Pages](http://pages.github.com/).

@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-06-17 00:00:00+00:00
-layout: post
-published: false
-slug: landing-my-perfect-job
 title: Landing My Perfect Job
-wordpress_id: 43
+date: 2013-06-17 00:00:00+00:00
+published: false
 ---
 
 What some people may not

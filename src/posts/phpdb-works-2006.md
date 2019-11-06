@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2006-09-12 00:00:00+00:00
-layout: post
-slug: phpdb-works-2006
 title: PHP/DB | Works 2006
-wordpress_id: 91
-categories:
-- PHP
+date: 2006-09-12 00:00:00+00:00
 ---
 
 I just arrived in Toronto yesterday for the third PHP Works conference I've attended. The last two years were incredible and I have no doubts that this year will be great as well. I will try to post several entries while I'm here detailing what talks I've attended and such. Today is the all day seminars.

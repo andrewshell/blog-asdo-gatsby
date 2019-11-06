@@ -1,13 +1,6 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-08-07 00:00:00+00:00
-layout: post
-slug: triggering-safari-reader
 title: Triggering Safari Reader
-wordpress_id: 35
-categories:
-- Technology
+date: 2013-08-07 00:00:00+00:00
 ---
 
 I do most of my blog reading on my iPhone so it's really important for me that my blog looks good on the iPhone.

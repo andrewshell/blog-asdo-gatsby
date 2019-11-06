@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2009-12-16 00:00:00+00:00
-layout: post
-published: false
-slug: managing-feeds-part-two
 title: Managing Feeds Part Two
-wordpress_id: 81
+date: 2009-12-16 00:00:00+00:00
+published: false
 ---
 
 I previously talked about [reordering my Google reader](/managing-feeds/) in order to make my life less overwhelming.  A little over a month has gone by and I thought I'd post an update about how it's worked.

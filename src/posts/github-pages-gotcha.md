@@ -1,12 +1,7 @@
 ---
-author: andrewshell
-comments: true
-date: 2013-08-03 00:00:00+00:00
-layout: post
-published: false
-slug: github-pages-gotcha
 title: GitHub Pages Gotcha
-wordpress_id: 36
+date: 2013-08-03 00:00:00+00:00
+published: false
 ---
 
 This blog (and a couple other sites) have been hosted via [GitHub Pages](http://pages.github.com/) which has been great.  However I wanted other features that required plugins which are not supported on GitHub Pages for security reasons.
