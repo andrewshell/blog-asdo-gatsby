@@ -11,15 +11,25 @@ function Footer() {
           <a
             className="font-bold"
             href="https://www.gatsbyjs.org/"
+            rel="nofollow"
           >
-            Gatsby
+            GatsbyJS
           </a>
           {` and `}
           <a
             className="font-bold"
             href="https://tailwindcss.com/"
+            rel="nofollow"
           >
             Tailwind
+          </a>
+          {` on `}
+          <a
+            className="font-bold"
+            href="https://www.netlify.com/"
+            rel="nofollow"
+          >
+            Netlify
           </a>
         </p>
 
