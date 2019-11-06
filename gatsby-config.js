@@ -145,6 +145,7 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-netlify`,
