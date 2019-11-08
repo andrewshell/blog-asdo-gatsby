@@ -117,11 +117,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        name: `Andrew Shell's Weblog`,
+        short_name: `A.Shell`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
+        theme_color: `#edf2f`,
         display: `minimal-ui`,
         icon: `src/images/geekity_icon.png`
       }
