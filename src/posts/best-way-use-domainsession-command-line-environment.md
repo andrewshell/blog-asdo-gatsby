@@ -3,7 +3,7 @@ title: What is the best way to use DomainSession in a command line environment?
 date: 2017-05-25 16:42:29+00:00
 ---
 
-Jory Geerts [asks](https://www.futureproofphp.com/2017/05/02/best-way-handle-sessions-adr/#comment-43):
+Jory Geerts asks:
 
 >  Do you have any thoughts on how [DomainSession] could be used from a CLI environment?
 

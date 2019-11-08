@@ -7,7 +7,7 @@ Right before Christmas, I reached out to [Paul Jones](http://paul-m-jones.com/) 
 
 >  I've reached a point with a couple of my Radar projects where I need to add a login and set permissions.  I'm trying to figure out the best way to handle this, especially with PSR-7 and ADR.
 
-This led to discussing how to do sessions properly in [Radar](https://www.futureproofphp.com/2016/09/21/radar-under-the-hood/). I had read Paul's post [PSR-7 and Session Cookies](http://paul-m-jones.com/archives/6310) which discussed how to tweak PHP Sessions to work better in a [PSR-7](http://www.php-fig.org/psr/psr-7/) architecture. You don't really want PHP automatically sending and reading cookies outside of the Request object.
+This led to discussing how to do sessions properly in [Radar](/radar-under-the-hood/). I had read Paul's post [PSR-7 and Session Cookies](http://paul-m-jones.com/archives/6310) which discussed how to tweak PHP Sessions to work better in a [PSR-7](http://www.php-fig.org/psr/psr-7/) architecture. You don't really want PHP automatically sending and reading cookies outside of the Request object.
 
 Paul responded:
 
@@ -19,7 +19,7 @@ Needless to say, they have been very useful. Paul has been incredibly generous w
 
 The reason for this package is that as Paul had said: "Anything that touches storage should be considered domain-layer work." so it's ok to read the session cookie in an Input class, and it's ok to write the cookie in a Responder class, but pretty much everything else should be in the Domain layer.
 
-_For more information about Radar see [Radar Under the Hood](https://www.futureproofphp.com/2016/09/21/radar-under-the-hood/)._
+_For more information about Radar see [Radar Under the Hood](/radar-under-the-hood/)._
 
 ## What does it do?
 

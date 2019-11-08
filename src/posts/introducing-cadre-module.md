@@ -9,7 +9,7 @@ This component was born out of my side project that's using [Radar](https://gith
 
 ## Stock Radar
 
-Radar is built around [Aura.Di](https://github.com/auraphp/Aura.Di) which is a very nice dependency injection container. If you're interested in learning more about Radar check out [Radar Under the Hood](https://www.futureproofphp.com/2016/09/21/radar-under-the-hood/).
+Radar is built around [Aura.Di](https://github.com/auraphp/Aura.Di) which is a very nice dependency injection container. If you're interested in learning more about Radar check out [Radar Under the Hood](/radar-under-the-hood/).
 
 One thing that's great about Aura.Di is the concept of ContainerConfig objects.
 
@@ -33,7 +33,7 @@ This is nice because I can package my DI configuration into smaller classes that
 
 The problem I ran into was where to put things if they are related to different areas. Also, there was an issue about how to make things work between dev and production if they needed a different configuration.
 
-The specific use case that prompted the development of this library was configuring [PHP Debug Bar](http://phpdebugbar.com/) which I've been [working with a lot lately](https://www.futureproofphp.com/2016/10/14/collecting-data-from-atlas-orm-with-php-debug-bar/).
+The specific use case that prompted the development of this library was configuring [PHP Debug Bar](http://phpdebugbar.com/) which I've been [working with a lot lately](/collecting-data-from-atlas-orm-with-php-debug-bar/).
 
 PHP Debug Bar can collect data from many different sources. I'm using it currently with Twig and Atlas.Orm. When I push my project to production, I will not want to be loading PHP Debug Bar, but it's very useful during development.
 

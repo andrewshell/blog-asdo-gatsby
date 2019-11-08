@@ -3,7 +3,7 @@ title: 'Symfony Forms and Radar - Part 2'
 date: 2016-09-28 05:00:55+00:00
 ---
 
-In [Part 1](https://www.futureproofphp.com/2016/09/26/symfony-forms-radar/) I talked about the difficulties in getting Symfony Forms to play nicely with Aura.Di and Radars ADR model.
+In [Part 1](/symfony-forms-radar/) I talked about the difficulties in getting Symfony Forms to play nicely with Aura.Di and Radars ADR model.
 
 Today I'm picking up where I left off. My goal is to figure out what I need to do differently to achieve the clean separation I desire.
 
@@ -15,7 +15,7 @@ The first thing I did was remove [Symfony Validator](http://symfony.com/componen
 
 First, my initial attempts to validate independently from the Form showed that Validator is fairly complex. There also seems to be very little documentation for using outside of Symfony. The [few](https://blog.tinned-software.net/using-the-symfony-validator-as-a-standalone-component/) [examples](https://gist.github.com/chrisguitarguy/2b27669a2e8d84d948ff) I found didn't seem like the sort of validation I'd like to use in my projects.
 
-Second, the point of this series is to integrate Symfony Forms, not Validator. No sense going down another rabbit hole. If you're interested in me figuring out Symfony Validator, please [contact me](https://www.futureproofphp.com/contact/) and let me know.
+Second, the point of this series is to integrate Symfony Forms, not Validator. No sense going down another rabbit hole. If you're interested in me figuring out Symfony Validator, please [contact me](/contact/) and let me know.
 
 ## Isolating Form to the Responder
 
@@ -138,4 +138,4 @@ You can see the result of this in the [2.x branch](https://github.com/futureproo
 
 This exercise left me with a greater understanding of Symfony Forms and Aura.Filter. I think the solution is pretty good. If I was using this in production, I'd probably refactor some of this to be more reusable, especially if I plan on defining a lot of forms. I probably wouldn't use arrays as the data transfer mechanism. I'd also probably create a factory that takes a generic definition and generates the form, validation and entity objects that I'd be using.
 
-I’m very interested in hearing from you. I will be creating new content over the coming weeks and I want to customize the content for YOU and help you overcome any obstacles you might be experiencing. [Send me a message](https://www.futureproofphp.com/contact/)!
+I’m very interested in hearing from you. I will be creating new content over the coming weeks and I want to customize the content for YOU and help you overcome any obstacles you might be experiencing. [Send me a message](/contact/)!

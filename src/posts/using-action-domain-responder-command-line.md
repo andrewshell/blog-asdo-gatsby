@@ -15,7 +15,7 @@ So I took a stab at writing one (that uses Aura.Cli), it's called [Cadre.CliAdr]
 
 At this point, it's more of a proof of concept rather than a production solution. It's heavily based on Radar and uses the same patterns.
 
-Here is an example of how you'd use it. It will seem very familiar [if you've used Radar](https://www.futureproofphp.com/2016/09/21/radar-under-the-hood/).
+Here is an example of how you'd use it. It will seem very familiar [if you've used Radar](/radar-under-the-hood/).
 
 ```php
 use Aura\Di\ContainerBuilder;

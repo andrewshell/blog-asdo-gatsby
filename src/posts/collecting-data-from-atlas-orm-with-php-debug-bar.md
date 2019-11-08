@@ -3,7 +3,7 @@ title: Collecting Data from Atlas ORM with PHP Debug Bar
 date: 2016-10-14 05:00:09+00:00
 ---
 
-In my last article, I talked about how I found [an N+1 bug in Atlas ORM](https://www.futureproofphp.com/2016/10/10/complex-database-relationships-with-atlasorm/).
+In my last article, I talked about how I found [an N+1 bug in Atlas ORM](/complex-database-relationships-with-atlasorm/).
 
 I had mentioned how it took a little work to get PHP Debug Bar configured with Atlas but didn't really explain why it was difficult, or how I got them working together.
 

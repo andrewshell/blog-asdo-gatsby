@@ -143,6 +143,7 @@ module.exports = {
         respectDNT: true
       },
     },
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-netlify-cms`,

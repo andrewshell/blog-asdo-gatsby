@@ -82,6 +82,6 @@ The whole thing is delivered as [Relay](https://github.com/relayphp/Relay.Relay)
 
 ## What Next?
 
-If you're interested in watching me demo Radar, you can watch my video [FutureProof Your Code](https://www.futureproofphp.com/2016/09/16/futureproof-your-code/) where I talk about Clean Architecture and how to use Radar.
+If you're interested in watching me demo Radar, you can watch my video [FutureProof Your Code](/futureproof-your-code/) where I talk about Clean Architecture and how to use Radar.
 
 I'm also very interested in hearing from you. I will be creating new content over the coming weeks and I want to customize the content for YOU and help you overcome any obstacles you might be experiencing. [Send me a message!](/contact/)

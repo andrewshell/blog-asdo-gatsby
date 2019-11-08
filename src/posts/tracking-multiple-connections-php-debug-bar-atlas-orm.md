@@ -3,7 +3,7 @@ title: Tracking Multiple Connections with PHP Debug Bar and Atlas ORM
 date: 2016-10-18 14:14:29+00:00
 ---
 
-On Friday I talked about a new library I created that [helps integrate Atlas.ORM with PHP Debug Bar](https://www.futureproofphp.com/2016/10/14/collecting-data-from-atlas-orm-with-php-debug-bar/).
+On Friday I talked about a new library I created that [helps integrate Atlas.ORM with PHP Debug Bar](/collecting-data-from-atlas-orm-with-php-debug-bar/).
 
 [Hari K T](https://twitter.com/harikt) replied asking about using multiple connections. For instance, if you use Atlas with a default master database for writes and multiple read-only slave databases. My library [AtlasOrm.DebugBar.Bridge](https://github.com/cadrephp/AtlasOrm.DebugBar.Bridge) does not support this is any way out of the box.
 
