@@ -16,10 +16,10 @@ function Header() {
 
   return (
     <header className="bg-gray-200 border-b border-gray-400">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
-        <Link className="flex items-center" to="/">
+      <div className="flex flex-no-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
+        <Link className="flex flex-shrink truncate items-center" to="/">
           <img src={ geekityIcon } alt="Geekity" style={ { height: '40px' } } />
-          <span className="font-bold text-xl tracking-tight">
+          <span className="font-bold text-lg md:text-xl tracking-tight">
             {site.siteMetadata.title}
           </span>
         </Link>
