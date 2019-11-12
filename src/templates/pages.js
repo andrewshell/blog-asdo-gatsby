@@ -30,5 +30,8 @@ export const query = graphql`query PageQuery($slug: String!) {
       title
       date
     }
+    fields {
+      slug
+    }
   }
 }`;
