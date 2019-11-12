@@ -18,11 +18,16 @@ const SEO = ({ title, description, image, pathname, article }) => (
         },
       },
     }) => {
+      let url = `${siteUrl}${pathname || "/"}`;
+      let seoImage = `https://image.thum.io/get/ogImage/${url}`;
+      if (null !== image) {
+        seoImage = `${siteUrl}${image}`;
+      }
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
-        url: `${siteUrl}${pathname || "/"}`
+        image: seoImage,
+        url
       }
       return (
         <>
