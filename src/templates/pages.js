@@ -10,6 +10,8 @@ export default ({ data }) => {
     <Layout>
       <SEO
         title={post.frontmatter.title}
+        pathname={ post.fields.slug }
+        article={ true }
       />
       <article className="post">
         <header className="entry-header">
