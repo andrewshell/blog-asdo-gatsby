@@ -55,3 +55,13 @@ th p, td p, li p {
 li ul, li ol {
 	@apply mb-0 ml-8;
 }
+
+.icon svg {
+	fill: #2f855a;
+	height: 20px;
+	width: auto;
+	@apply mx-1;
+}
+.icon:hover svg {
+	fill: #48bb78;
+}
