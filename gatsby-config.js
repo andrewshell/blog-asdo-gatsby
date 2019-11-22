@@ -1,3 +1,6 @@
+const remark = require('remark')
+const visit = require('unist-util-visit')
+
 module.exports = {
   siteMetadata: {
     title: `Andrew Shell's Weblog`,
@@ -83,6 +86,42 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-lunr',
+      options: {
+        languages: [{
+          name: 'en',
+          filterNodes: node => {
+            return (node.frontmatter || {}).published !== false;
+          }
+        }],
+        fields: [
+          { name: 'title', store: true, attributes: { boost: 20 } },
+          { name: 'excerpt', store: true, attributes: { boost: 5 }},
+          { name: 'content' },
+          { name: 'url', store: true },
+          { name: 'date', store: true }
+        ],
+        resolvers: {
+          MarkdownRemark: {
+            excerpt: node => {
+              const excerptLength = 240;
+              let excerpt = '';
+              const tree = remark().parse(node.rawMarkdownBody);
+              visit(tree, 'text', (node) => {
+                excerpt += node.value;
+              });
+              return excerpt.slice(0, excerptLength) + '...';
+            },
+            title: node => node.frontmatter.title,
+            content: node => node.rawMarkdownBody,
+            url: node => node.fields.slug,
+            date: node => node.frontmatter.date
+          },
+        },
+        filename: 'search_index.json',
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -146,7 +185,6 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-netlify`,
