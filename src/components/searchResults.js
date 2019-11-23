@@ -6,7 +6,7 @@ const SearchResults = ({ query, results }) => (
     {!!results.length && query &&
       <div className="mb-4 text-xs text-gray-500">{results.length} results</div>
     }
-    {!!results.length &&
+    {!!results.length && query &&
       <div>
         {results.map(({
           title,

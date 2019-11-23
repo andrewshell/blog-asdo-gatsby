@@ -39,19 +39,19 @@ export default function Contact() {
         action="/thank-you/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}
+        onSubmit={ handleSubmit }
       >
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
         <input type="hidden" name="form-name" value="contact" />
         <div className="hidden">
           <label>
-            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+            Don’t fill this out: <input name="bot-field" onChange={ handleChange } />
           </label>
         </div>
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
-            for="name"
+            htmlFor="name"
           >
             Your Name
           </label>
@@ -60,13 +60,13 @@ export default function Contact() {
             type="text"
             name="name"
             id="name"
-            onChange={handleChange}
+            onChange={ handleChange }
           />
         </div>
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
-            for="email"
+            htmlFor="email"
           >
             Your Email
           </label>
@@ -75,13 +75,13 @@ export default function Contact() {
             type="email"
             name="email"
             id="email"
-            onChange={handleChange}
+            onChange={ handleChange }
           />
         </div>
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
-            for="subject"
+            htmlFor="subject"
           >
             Subject
           </label>
@@ -90,13 +90,13 @@ export default function Contact() {
             type="subject"
             name="subject"
             id="subject"
-            onChange={handleChange}
+            onChange={ handleChange }
           />
         </div>
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
-            for="message"
+            htmlFor="message"
           >
             Message
           </label>
@@ -104,7 +104,7 @@ export default function Contact() {
             className="rounded-lg w-full py-2 px-3 border text-gray-800 border-gray-500 bg-white"
             name="message"
             id="message"
-            onChange={handleChange}
+            onChange={ handleChange }
           />
         </div>
         <div>
