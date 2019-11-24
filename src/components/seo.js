@@ -54,6 +54,18 @@ const SEO = ({ title, description, image, pathname, article }) => (
               <meta name="twitter:description" content={seo.description} />
             )}
             {seo.image && <meta name="twitter:image" content={seo.image} />}
+            <script type="application/ld+json">{`
+{
+   "@context": "http://schema.org",
+   "@type": "WebSite",
+   "url": "https://blog.andrewshell.org/",
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "https://blog.andrewshell.org/search/?keywords={search_term_string}",
+     "query-input": "required name=search_term_string"
+   }
+}
+`}</script>
           </Helmet>
         </>
       )
