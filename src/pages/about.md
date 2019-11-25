@@ -8,12 +8,25 @@ I live in Madison, WI with my wife Andrea and daughter Piper. I love being a hus
 
 I'm a web developer. I wish I could say I'm a person who happens to do computer programming for a living, but who am I kidding? Programming is a part of who I am, and even if I had a billion dollars and didn't have to work another day in my life, I'd still be programming.
 
-I like a lot of music and had been enjoying my [Spotify](https://open.spotify.com/user/1285501863) account. It's sort of like a drug for me. The fact that I can listen to just about anything I want whenever I want to is great. I bounce around from artist to artist, listening to whatever I can get my hands on. I love it.
+In 2011 I Co-Founded [Pinpoint Software](https://pinpointsoftware.com/) and build the flagship product Date Check Pro. I left the company in 2018 to pursue other interests but Pinpoint is still growing.
 
-I'm big on community. I founded and currently co-organize [Madison PHP](http://www.madisonphp.com/) (a group for web nerds like me). I'm also involved in other groups and events in town, which all relate to the internet.
+I like a lot of music and enjoy my [Spotify](https://open.spotify.com/user/1285501863) account. It's sort of like a drug for me. The fact that I can listen to just about anything I want whenever I want to is great. I bounce around from artist to artist, listening to whatever I can get my hands on. I love it.
 
-*  [Résumé](/resume/)
-*  [Twitter](https://twitter.com/andrewshell)
+I'm big on community. I founded [Madison PHP](http://www.madisonphp.com/) (a group for web nerds like me). I'm also involved in other groups and events in town, which all relate to the internet.
+
+I'm not currently looking for work but feel free to check out my [Résumé](/resume/).
+
+## Assessments
+
+*  [INFP-T](https://www.16personalities.com/infp-personality)
+*  [Enneagram Type 2w1](https://www.crystalknows.com/enneagram/type-2-wing-1)
+*  [Kolbe A 7-4-7-3](https://secure.kolbe.com/k2/show_viewReports/sharedGuid_042C9DC0-CDF5-E811-90EC-000C29CEDCB0).
+
+## Social Media
+
 *  [Facebook](https://www.facebook.com/andrew.shell)
 *  [GitHub](https://github.com/andrewshell)
+*  [Instagram](https://www.instagram.com/andrewshell/)
 *  [LinkedIn](https://www.linkedin.com/in/andrewshell/)
+*  [Spotify](https://open.spotify.com/user/1285501863)
+*  [Twitter](https://twitter.com/andrewshell)

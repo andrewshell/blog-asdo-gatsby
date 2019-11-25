@@ -46,7 +46,7 @@ function Footer() {
           <a className="icon" href="https://www.instagram.com/andrewshell/"><Instagram /></a>
           <a className="icon" href="https://www.linkedin.com/in/andrewshell/"><LinkedIn /></a>
           <a className="icon" href="/rss.xml"><Rss /></a>
-          <a className="icon" href="https://open.spotify.com/user/1285501863?si=4c9GGN-DSumWu8qNXlOQTQ"><Spotify /></a>
+          <a className="icon" href="https://open.spotify.com/user/1285501863"><Spotify /></a>
           <a className="icon" href="https://twitter.com/andrewshell"><Twitter /></a>
         </div>
       </nav>

@@ -33,6 +33,16 @@ export default function Contact() {
   return (
     <Layout>
       <h1>Contact</h1>
+
+      <p>I love hearing from people, so please contact me and introduce yourself.</p>
+
+      <p>Why?</p>
+
+      <ol>
+        <li>If you found my website we probably have something in common and I'd love to learn more about you.</li>
+        <li>I enjoy brainstorming with people about their ideas. So let me know what you're working on!</li>
+      </ol>
+
       <form
         name="contact"
         method="post"

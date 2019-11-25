@@ -160,7 +160,7 @@ module.exports = {
         short_name: `A.Shell`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#edf2f`,
+        theme_color: `#e2e8f0`,
         display: `minimal-ui`,
         icon: `src/images/geekity_icon.png`
       }
