@@ -26,7 +26,12 @@ I'm not currently looking for work but feel free to check out my [Résumé](/res
 
 *  [Facebook](https://www.facebook.com/andrew.shell)
 *  [GitHub](https://github.com/andrewshell)
+*  [Goodreads](https://www.goodreads.com/user/show/856379-andrew-shell)
+*  [Kik](https://kik.me/andrewshell81)
 *  [Instagram](https://www.instagram.com/andrewshell/)
 *  [LinkedIn](https://www.linkedin.com/in/andrewshell/)
+*  [Pinterest](https://www.pinterest.com/andrewshell/)
+*  [Reddit](https://www.reddit.com/user/shellab)
+*  [Snapchat](https://www.snapchat.com/add/andrewshell)
 *  [Spotify](https://open.spotify.com/user/1285501863)
 *  [Twitter](https://twitter.com/andrewshell)
