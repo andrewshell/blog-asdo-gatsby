@@ -21,17 +21,3 @@ I'm not currently looking for work but feel free to check out my [Résumé](/res
 *  [INFP-T](https://www.16personalities.com/infp-personality)
 *  [Enneagram Type 2w1](https://www.crystalknows.com/enneagram/type-2-wing-1)
 *  [Kolbe A 7-4-7-3](https://secure.kolbe.com/k2/show_viewReports/sharedGuid_042C9DC0-CDF5-E811-90EC-000C29CEDCB0).
-
-## Social Media
-
-*  [Facebook](https://www.facebook.com/andrew.shell)
-*  [GitHub](https://github.com/andrewshell)
-*  [Goodreads](https://www.goodreads.com/user/show/856379-andrew-shell)
-*  [Kik](https://kik.me/andrewshell81)
-*  [Instagram](https://www.instagram.com/andrewshell/)
-*  [LinkedIn](https://www.linkedin.com/in/andrewshell/)
-*  [Pinterest](https://www.pinterest.com/andrewshell/)
-*  [Reddit](https://www.reddit.com/user/shellab)
-*  [Snapchat](https://www.snapchat.com/add/andrewshell)
-*  [Spotify](https://open.spotify.com/user/1285501863)
-*  [Twitter](https://twitter.com/andrewshell)
