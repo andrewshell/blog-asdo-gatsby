@@ -1,3 +1,7 @@
+/andrew/ /about/
+/contact-andrew/ /contact/
+/feed/ /rss.xml
+/my-resume/ /resume/
 /2017/03/06/best-way-inject-logger/ /best-way-inject-logger/
 /2018/09/26/how-to-build-a-time-tracking-app-in-react/ /how-to-build-a-time-tracking-app-in-react/
 /2018/06/28/ionic-4-and-mobx/ /ionic-4-and-mobx/
