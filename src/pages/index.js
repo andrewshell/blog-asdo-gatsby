@@ -68,22 +68,27 @@ export default function IndexPage({data}) {
 
       <h2>My E-Mail List</h2>
 
-      <p>If you'd like to be notified by e-mail when I update my website <a href="http://eepurl.com/bvdQH9">subscribe here</a>.</p>
+      <ul>
+        <li>If you'd like to be notified by e-mail when I update my website <a href="http://eepurl.com/bvdQH9">subscribe here</a>.</li>
+      </ul>
 
       <h2>Social Media</h2>
 
-      <ul className="flex flex-wrap list-none pl-0">
-        <li className="mr-1"><a href="https://www.facebook.com/andrew.shell">Facebook</a></li>
-        <li className="mr-1"><a href="https://github.com/andrewshell">GitHub</a></li>
-        <li className="mr-1"><a href="https://www.goodreads.com/user/show/856379-andrew-shell">Goodreads</a></li>
-        <li className="mr-1"><a href="https://kik.me/andrewshell81">Kik</a></li>
-        <li className="mr-1"><a href="https://www.instagram.com/andrewshell/">Instagram</a></li>
-        <li className="mr-1"><a href="https://www.linkedin.com/in/andrewshell/">LinkedIn</a></li>
-        <li className="mr-1"><a href="https://www.pinterest.com/andrewshell/">Pinterest</a></li>
-        <li className="mr-1"><a href="https://www.reddit.com/user/shellab">Reddit</a></li>
-        <li className="mr-1"><a href="https://www.snapchat.com/add/andrewshell">Snapchat</a></li>
-        <li className="mr-1"><a href="https://open.spotify.com/user/1285501863">Spotify</a></li>
-        <li className="mr-1"><a href="https://twitter.com/andrewshell">Twitter</a></li>
+      <ul>
+        <li><a href="https://dev.to/andrewshell">DEV</a></li>
+        <li><a href="https://www.facebook.com/andrew.shell">Facebook</a></li>
+        <li><a href="https://github.com/andrewshell">GitHub</a></li>
+        <li><a href="https://www.goodreads.com/user/show/856379-andrew-shell">Goodreads</a></li>
+        <li><a href="https://kik.me/andrewshell81">Kik</a></li>
+        <li><a href="https://www.instagram.com/andrewshell/">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/andrewshell/">LinkedIn</a></li>
+        <li><a href="https://www.pinterest.com/andrewshell/">Pinterest</a></li>
+        <li><a href="https://www.reddit.com/user/shellab">Reddit</a></li>
+        <li><a href="https://stackoverflow.com/users/1052579/andrew-shell">Stack Overflow</a></li>
+        <li><a href="https://www.snapchat.com/add/andrewshell">Snapchat</a></li>
+        <li><a href="https://open.spotify.com/user/1285501863">Spotify</a></li>
+        <li><a href="https://www.twitch.tv/andrewshell">Twitch</a></li>
+        <li><a href="https://twitter.com/andrewshell">Twitter</a></li>
       </ul>
     </Layout>
   );
