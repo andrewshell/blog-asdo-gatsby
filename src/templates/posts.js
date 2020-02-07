@@ -21,7 +21,10 @@ export default ({ data }) => {
           <h1 className="p-name">{ post.frontmatter.title }</h1>
         </header>
         <div className="e-content" dangerouslySetInnerHTML = {{ __html: post.html }} />
-        <div className="text-xs">Published by <a className="p-author h-card" href="https://blog.andrewshell.org/">Andrew Shell</a> on <a className="u-url u-uid" href={ permalink }><time className="dt-published" datetime="{ post.frontmatter.iso8601 }">{ post.frontmatter.date }</time></a></div>
+        <div className="text-xs">
+          Published by <a className="p-author h-card" href="https://blog.andrewshell.org/">Andrew Shell</a>
+          on <a className="u-url u-uid" href={ permalink }><time className="dt-published" datetime={ post.frontmatter.iso8601 }>{ post.frontmatter.date }</time></a>
+        </div>
       </article>
     </Layout>
   );
