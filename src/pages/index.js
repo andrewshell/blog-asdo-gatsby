@@ -6,6 +6,10 @@ import SEO from "../components/seo";
 import topPosts from "./top-posts.json";
 
 export default function IndexPage({data}) {
+  const siteUrl = data.site.siteMetadata.siteUrl;
+  const permalink = `${siteUrl}/`;
+  const headshot = `${siteUrl}/headshot.jpg`;
+
   return (
     <Layout>
       <SEO
@@ -90,11 +94,28 @@ export default function IndexPage({data}) {
         <li><a href="https://www.twitch.tv/andrewshell" rel="me">Twitch</a></li>
         <li><a href="https://twitter.com/andrewshell" rel="me">Twitter</a></li>
       </ul>
+
+      <h2>hCard <span className="text-xs">(<a href="http://microformats.org/wiki/hcard">What's an hCard?</a>)</span></h2>
+
+      <div id="hcard-Andrew-Shell" className="vcard">
+        <img src={ headshot } alt="photo of Andrew Shell" className="photo" style={{ width: '230px', height: '230px' }} />
+        <a className="url fn" href={ permalink }>Andrew Shell</a>
+        <div className="org">Johnson Health Tech</div>
+        <div className="adr">
+          <span className="locality">Madison</span>, <span className="region">Wisconsin</span> <span className="postal-code">53718</span><br />
+          <span className="country-name">United States</span>
+        </div>
+      </div>
     </Layout>
   );
 }
 
 export const query = graphql`query HomePageQuery{
+  site {
+    siteMetadata {
+      siteUrl
+    }
+  }
   allMarkdownRemark(
     filter: { fields: { sourceInstanceName: { eq: "posts" } } },
     sort: {fields: [frontmatter___date], order: DESC},
