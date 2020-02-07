@@ -75,20 +75,20 @@ export default function IndexPage({data}) {
       <h2>Social Media</h2>
 
       <ul>
-        <li><a href="https://dev.to/andrewshell">DEV</a></li>
-        <li><a href="https://www.facebook.com/andrew.shell">Facebook</a></li>
-        <li><a href="https://github.com/andrewshell">GitHub</a></li>
-        <li><a href="https://www.goodreads.com/user/show/856379-andrew-shell">Goodreads</a></li>
-        <li><a href="https://kik.me/andrewshell81">Kik</a></li>
-        <li><a href="https://www.instagram.com/andrewshell/">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/andrewshell/">LinkedIn</a></li>
-        <li><a href="https://www.pinterest.com/andrewshell/">Pinterest</a></li>
-        <li><a href="https://www.reddit.com/user/shellab">Reddit</a></li>
-        <li><a href="https://stackoverflow.com/users/1052579/andrew-shell">Stack Overflow</a></li>
-        <li><a href="https://www.snapchat.com/add/andrewshell">Snapchat</a></li>
-        <li><a href="https://open.spotify.com/user/1285501863">Spotify</a></li>
-        <li><a href="https://www.twitch.tv/andrewshell">Twitch</a></li>
-        <li><a href="https://twitter.com/andrewshell">Twitter</a></li>
+        <li><a href="https://dev.to/andrewshell" rel="me">DEV</a></li>
+        <li><a href="https://www.facebook.com/andrew.shell" rel="me">Facebook</a></li>
+        <li><a href="https://github.com/andrewshell" rel="me">GitHub</a></li>
+        <li><a href="https://www.goodreads.com/user/show/856379-andrew-shell" rel="me">Goodreads</a></li>
+        <li><a href="https://kik.me/andrewshell81" rel="me">Kik</a></li>
+        <li><a href="https://www.instagram.com/andrewshell/" rel="me">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/andrewshell/" rel="me">LinkedIn</a></li>
+        <li><a href="https://www.pinterest.com/andrewshell/" rel="me">Pinterest</a></li>
+        <li><a href="https://www.reddit.com/user/shellab" rel="me">Reddit</a></li>
+        <li><a href="https://stackoverflow.com/users/1052579/andrew-shell" rel="me">Stack Overflow</a></li>
+        <li><a href="https://www.snapchat.com/add/andrewshell" rel="me">Snapchat</a></li>
+        <li><a href="https://open.spotify.com/user/1285501863" rel="me">Spotify</a></li>
+        <li><a href="https://www.twitch.tv/andrewshell" rel="me">Twitch</a></li>
+        <li><a href="https://twitter.com/andrewshell" rel="me">Twitter</a></li>
       </ul>
     </Layout>
   );
