@@ -17,9 +17,13 @@ export default function IndexPage({data}) {
         title="Home"
       />
 
+      <div id="hcard-Andrew-Shell" className="vcard">
+
+      <img src={ headshot } alt="photo of Andrew Shell" className="photo mb-6 rounded" style={{ width: '230px', height: '230px' }} />
+
       <h2>Me in 10 seconds</h2>
 
-      <p>I'm a software developer in Madison, WI. I founded <a rel="nofollow" href="https://www.meetup.com/madisonphp/">Madison PHP</a> and Co-Founded <a rel="nofollow" href="https://pinpointsoftware.com/">Pinpoint Software</a>. Currently I'm a Senior Web Developer at <a rel="nofollow" href="https://www.linkedin.com/company/johnson-health-tech-na/">Johnson Health Tech</a>.</p>
+      <p class="p-note">I'm <a className="url fn" href={ permalink }>Andrew Shell</a>, a software developer in Madison, WI. I founded <a rel="nofollow" href="https://www.meetup.com/madisonphp/">Madison PHP</a> and Co-Founded <a rel="nofollow" href="https://pinpointsoftware.com/">Pinpoint Software</a>. Currently I'm a Senior Web Developer at <a rel="nofollow" href="https://www.linkedin.com/company/johnson-health-tech-na/" className="org">Johnson Health Tech</a>.</p>
 
       <p>In my free time I spend time with my family, <a rel="nofollow" href="https://www.goodreads.com/user/show/856379-andrew-shell">read books</a>, and <a rel="nofollow" href="http://halloween.geekity.com/">sing poorly</a></p>
 
@@ -95,16 +99,6 @@ export default function IndexPage({data}) {
         <li><a href="https://twitter.com/andrewshell" rel="me">Twitter</a></li>
       </ul>
 
-      <h2>hCard <span className="text-xs">(<a href="http://microformats.org/wiki/hcard">What's an hCard?</a>)</span></h2>
-
-      <div id="hcard-Andrew-Shell" className="vcard">
-        <img src={ headshot } alt="photo of Andrew Shell" className="photo" style={{ width: '230px', height: '230px' }} />
-        <a className="url fn" href={ permalink }>Andrew Shell</a>
-        <div className="org">Johnson Health Tech</div>
-        <div className="adr">
-          <span className="locality">Madison</span>, <span className="region">Wisconsin</span> <span className="postal-code">53718</span><br />
-          <span className="country-name">United States</span>
-        </div>
       </div>
     </Layout>
   );
