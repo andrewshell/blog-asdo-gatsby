@@ -19,7 +19,7 @@ export default function IndexPage({data}) {
 
       <div id="hcard-Andrew-Shell" className="vcard">
 
-      <img src={ headshot } alt="photo of Andrew Shell" className="photo mb-6 rounded" style={{ width: '230px', height: '230px' }} />
+      <img src={ headshot } alt="photo of Andrew Shell" className="photo mb-6 md:ml-6 rounded md:float-right" style={{ width: '230px', height: '230px' }} />
 
       <h2>Me in 10 seconds</h2>
 
