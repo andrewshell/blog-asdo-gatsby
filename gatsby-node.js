@@ -27,12 +27,11 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     graphql(`{
-        allMarkdownRemark {
+        allMarkdownRemark (
+          filter: { frontmatter: { published: { ne: false } } },
+        ) {
           edges {
             node {
-              frontmatter {
-                published
-              },
               fields {
                 sourceInstanceName,
                 slug
@@ -42,15 +41,13 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }`).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        if (false !== node.frontmatter.published) {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve(`./src/templates/${node.fields.sourceInstanceName}.js`),
-            context: {
-              slug: node.fields.slug,
-            },
-          });
-        }
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`./src/templates/${node.fields.sourceInstanceName}.js`),
+          context: {
+            slug: node.fields.slug,
+          },
+        });
       })
       resolve();
     })

@@ -39,14 +39,12 @@ module.exports = {
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [{ "content:encoded": edge.node.html }],
                 })
-              }).filter(edge => {
-                return false !== edge.published;
               })
             },
             query: `
               {
                 allMarkdownRemark(
-                  filter: { fields: { sourceInstanceName: { eq: "posts" } } },
+                  filter: { frontmatter: { published: { ne: false } }, fields: { sourceInstanceName: { eq: "posts" } } },
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   edges {
@@ -54,9 +52,8 @@ module.exports = {
                       excerpt
                       html
                       frontmatter {
-                        title,
-                        date,
-                        published
+                        title
+                        date
                       }
                       fields {
                         slug

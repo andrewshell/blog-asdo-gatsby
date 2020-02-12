@@ -48,9 +48,7 @@ export default function IndexPage({data}) {
 
       <h2>Newest Posts <Link className="text-xs" to='/posts/'>All Posts</Link></h2>
       <ul>
-        {data.allMarkdownRemark.edges.filter(({ node }) => {
-          return false !== node.frontmatter.published;
-        }).map(({ node }) => {
+        {data.allMarkdownRemark.edges.map(({ node }) => {
           return (
             <li key={ node.id } className="entry-header">
               <span className="entry-title">
@@ -111,7 +109,7 @@ export const query = graphql`query HomePageQuery{
     }
   }
   allMarkdownRemark(
-    filter: { fields: { sourceInstanceName: { eq: "posts" } } },
+    filter: { frontmatter: { published: { ne: false } }, fields: { sourceInstanceName: { eq: "posts" } } },
     sort: {fields: [frontmatter___date], order: DESC},
     limit: 5
   ) {
@@ -120,7 +118,6 @@ export const query = graphql`query HomePageQuery{
       node {
         frontmatter {
           title
-          published
         }
         fields {
           slug

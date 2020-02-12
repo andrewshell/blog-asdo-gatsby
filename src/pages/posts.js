@@ -13,9 +13,7 @@ export default function IndexPage({data}) {
 
       <h1>All Posts</h1>
       <ul>
-        {data.allMarkdownRemark.edges.filter(({ node }) => {
-          return false !== node.frontmatter.published;
-        }).map(({ node }) => {
+        {data.allMarkdownRemark.edges.map(({ node }) => {
           return (
             <li key={node.id} className="entry-header">
               <span className="entry-title">
@@ -31,15 +29,14 @@ export default function IndexPage({data}) {
 
 export const query = graphql`query AllPostsQuery{
   allMarkdownRemark(
-    filter: { fields: { sourceInstanceName: { eq: "posts" } } },
+    filter: { frontmatter: { published: { ne: false } }, fields: { sourceInstanceName: { eq: "posts" } } },
     sort: {fields: [frontmatter___date], order: DESC}
   ) {
-    totalCount
     edges {
       node {
         frontmatter {
           title
-          published
+          date(formatString: "MMMM YYYY")
         }
         fields {
           slug
