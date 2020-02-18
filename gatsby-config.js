@@ -56,7 +56,7 @@ module.exports = {
                         date
                         enclosure {
                           url
-                          length
+                          size
                           type
                         }
                       }

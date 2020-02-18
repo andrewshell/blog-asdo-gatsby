@@ -4,7 +4,7 @@ date: 2020-02-18 16:11:06+00:00
 hoopla: ballyhoo
 enclosure:
     url: https://blog.andrewshell.org/uploads/2020/02/voicemailcast-20200218.mp3
-    length: 8158184
+    size: 8158184
     type: audio/mp3
 ---
 
