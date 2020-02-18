@@ -54,6 +54,10 @@ module.exports = {
                       frontmatter {
                         title
                         date
+                        enclosure {
+                          url
+                          type
+                        }
                       }
                       fields {
                         slug

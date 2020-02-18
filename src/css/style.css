@@ -28,7 +28,7 @@ h3 {
 	@apply text-lg font-bold mb-6;
 }
 
-p, ul, ol, table {
+p, ul, ol, table, audio {
 	@apply mb-6;
 }
 
