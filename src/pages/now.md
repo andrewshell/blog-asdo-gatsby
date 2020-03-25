@@ -10,7 +10,11 @@ As of February, 8th my wife of 7 years moved out. We will share custody of my da
 
 Since I'm getting a divorce, my wife and I decided to sell our house. I signed a lease for an apartment down the street. Since February 23rd, I've been burning myself out, going through everything in our house, and trying to move. It's been very unpleasant, and I'm not sure how I'm going to get this done.
 
-Originally, we had hoped to have the house listed on March 11th. However, we're still not listed. My wife has helped a bit, and her folks have been over as well, but I'm mostly doing all this by myself.
+We had hoped to have the house listed on March 11th. However, we didn't get it listed until March 20th. Fortunately, we had a full day of showings on Saturday and accepted an offer that evening.
+
+Now I'm working to move the rest of my stuff, but it's been difficult because we're on COVID-19 lockdown.
+
+Closing is scheduled for May 1st, but the buyers would like to close sooner if possible.
 
 ## rssCloud Server
 
