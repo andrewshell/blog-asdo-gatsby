@@ -23,4 +23,4 @@ This extends to all media. What [media are you consuming](https://en.wikipedia.o
 
 Consuming media is like turning steel into a magnet. You rub a magnet over the steel in the same direction over and over again. Eventually, it becomes magnetized.
 
-You need to guard your attention and understand how what you're hearing, reading, and watching are affecting you.
+You need to guard your attention and understand how what you're hearing, reading, and watching is affecting you.
