@@ -20,7 +20,7 @@ function Header() {
         <div className="flex flex-no-wrap items-center justify-between">
           <Link className="flex flex-shrink truncate items-center" to="/">
             <img src={ geekityIcon } alt="Geekity" style={ { height: '40px' } } />
-            <span className="font-bold text-lg md:text-xl tracking-tight">
+            <span className="font-bold font-sans text-lg md:text-xl tracking-tight">
               {site.siteMetadata.title}
             </span>
           </Link>
