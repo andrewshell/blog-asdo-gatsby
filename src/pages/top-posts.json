@@ -1,15 +1,6 @@
 [
     {
         "frontmatter": {
-            "title": "Filtering user submitted HTML with HTMLPurifier"
-        },
-        "fields": {
-            "slug": "/htmlpurifier-article/"
-        },
-        "id": "htmlpurifier-article"
-    },
-    {
-        "frontmatter": {
             "title": "How To Build A Time Tracking App In React"
         },
         "fields": {
@@ -19,12 +10,12 @@
     },
     {
         "frontmatter": {
-            "title": "What is the best way to inject a logger?"
+            "title": "Filtering user submitted HTML with HTMLPurifier"
         },
         "fields": {
-            "slug": "/best-way-inject-logger/"
+            "slug": "/htmlpurifier-article/"
         },
-        "id": "best-way-inject-logger"
+        "id": "htmlpurifier-article"
     },
     {
         "frontmatter": {
@@ -37,11 +28,20 @@
     },
     {
         "frontmatter": {
-            "title": "Understanding Javascript Object References"
+            "title": "What is the best way to inject a logger?"
         },
         "fields": {
-            "slug": "/javascript-object-references/"
+            "slug": "/best-way-inject-logger/"
         },
-        "id": "javascript-object-references"
+        "id": "best-way-inject-logger"
+    },
+    {
+        "frontmatter": {
+            "title": "Complex Database Relationships with AtlasORM"
+        },
+        "fields": {
+            "slug": "/complex-database-relationships-with-atlasorm/"
+        },
+        "id": "complex-database-relationships-with-atlasorm"
     }
 ]
