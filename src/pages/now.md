@@ -8,13 +8,11 @@ As of February, 8th my wife of 7 years moved out. We will share custody of my da
 
 ## Moving and House Sale
 
-Since I'm getting a divorce, my wife and I decided to sell our house. I signed a lease for an apartment down the street. Since February 23rd, I've been burning myself out, going through everything in our house, and trying to move. It's been very unpleasant, and I'm not sure how I'm going to get this done.
+We sold the house. It was on the market for less than 24 hours before we accepted an offer. Closing was on May 1st. It was a long, drawn-out move. Fortunately, I was only moving down the street.
 
-We had hoped to have the house listed on March 11th. However, we didn't get it listed until March 20th. Fortunately, we had a full day of showings on Saturday and accepted an offer that evening.
+I did most of the moving by myself. Due to self-isolation, it didn't seem ideal to invite people over to help. I did have to ask for help with the larger items.
 
-Now I'm working to move the rest of my stuff, but it's been difficult because we're on COVID-19 lockdown.
-
-Closing is scheduled for May 1st, but the buyers would like to close sooner if possible.
+Now, I'm waiting for Goodwill and Half Price Books to open so I can donate and sell years of accumulated crap.
 
 ## rssCloud Server
 
@@ -24,7 +22,7 @@ I've rewritten the code to use async/await instead of callbacks to improve reada
 
 With Dave rebooting [XML-RPC](http://xmlrpc.com/), I've decided to add support for that protocol. It was supported in the OPML editor version but wasn't a priority when I created my server initially.
 
-This has been put on hold for the moment until I finish moving and sell the house.
+Development was put on hold until I finished moving and sold the house. I will be picking this back up now.
 
 ## Johnson Health Tech
 
