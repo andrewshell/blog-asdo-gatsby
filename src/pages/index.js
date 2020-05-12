@@ -23,7 +23,7 @@ export default function IndexPage({data}) {
 
       <h2>Me in 10 seconds</h2>
 
-      <p class="p-note">I'm <a className="url fn" href={ permalink }>Andrew Shell</a>, a <span className="p-role">software developer</span> in <span className="p-adr"><span className="p-locality">Madison</span>, <abbr title="Wisconsin" className="p-region">WI</abbr></span>. I founded <a rel="nofollow" href="https://www.meetup.com/madisonphp/">Madison PHP</a> and Co-Founded <a rel="nofollow" href="https://pinpointsoftware.com/">Pinpoint Software</a>. Currently I'm a Senior Web Developer at <a rel="nofollow" href="https://www.linkedin.com/company/johnson-health-tech-na/" className="org">Johnson Health Tech</a>.</p>
+      <p class="p-note">I'm <a className="url fn" href={ permalink }>Andrew Shell</a>, a <span className="p-role">software developer</span> in <span className="p-adr"><span className="p-locality">Madison</span>, <abbr title="Wisconsin" className="p-region">WI</abbr></span>. I founded Madison PHP (now <a rel="nofollow" href="https://www.meetup.com/fullstackmadison/">Full Stack Madison</a>) and Co-Founded <a rel="nofollow" href="https://pinpointsoftware.com/">Pinpoint Software</a>. Currently I'm a Senior Web Developer at <a rel="nofollow" href="https://www.linkedin.com/company/johnson-health-tech-na/" className="org">Johnson Health Tech</a>.</p>
 
       <p>In my free time I spend time with my family, <a rel="nofollow" href="https://www.goodreads.com/user/show/856379-andrew-shell">read books</a>, and <a rel="nofollow" href="http://halloween.geekity.com/">sing poorly</a></p>
 
