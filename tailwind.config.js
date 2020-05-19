@@ -3,6 +3,9 @@
 const fontSizeBase = 1.15;
 
 module.exports = {
+  purge: [
+    './src/**/*.js'
+  ],
   theme: {
     fontSize: {
       xs: (fontSizeBase * 0.75) + 'rem',

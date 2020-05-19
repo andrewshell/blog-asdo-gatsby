@@ -14,6 +14,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://blog.andrewshell.org`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-feed',
       options: {
         query: `

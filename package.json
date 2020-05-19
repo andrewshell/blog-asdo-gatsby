@@ -5,6 +5,7 @@
   "author": "Andrew Shell <andrew@andrewshell.org>",
   "dependencies": {
     "gatsby": "^2.21.24",
+    "gatsby-plugin-canonical-urls": "^2.3.1",
     "gatsby-plugin-catch-links": "^2.3.1",
     "gatsby-plugin-feed": "^2.5.1",
     "gatsby-plugin-google-analytics": "^2.3.1",
