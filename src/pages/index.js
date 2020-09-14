@@ -8,7 +8,7 @@ import topPosts from "./top-posts.json";
 export default function IndexPage({data}) {
   const siteUrl = data.site.siteMetadata.siteUrl;
   const permalink = `${siteUrl}/`;
-  const headshot = `${siteUrl}/headshot.jpg`;
+  const headshot = `/headshot.jpg`;
 
   return (
     <Layout>
