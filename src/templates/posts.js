@@ -3,37 +3,38 @@ import { graphql } from "gatsby";
 import moment from "moment";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import SeoBlogPosting from "../components/seo-blogposting";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   const siteUrl = data.site.siteMetadata.siteUrl;
   const permalink = `${siteUrl}${post.fields.slug || "/"}`;
 
-  let updatedTime = '';
+  let publishedTime = '';
 
   if (post.frontmatter.iso8601) {
-      updatedTime = (
-        <span>
-          on <a className="u-url u-uid" href={ permalink }><time className="dt-updated" datetime={ post.frontmatter.iso8601 }>{ moment(post.frontmatter.iso8601).format(`MMMM DD, YYYY`) }</time></a>
-        </span>
-      );
+    publishedTime = `on <a className="u-url u-uid" href="${ permalink }"><time className="dt-published" datetime="${ post.frontmatter.iso8601 }">${ moment(post.frontmatter.iso8601).format(`MMMM DD, YYYY`) }</time></a>`;
+
+    if (post.frontmatter.updated) {
+      publishedTime += ` and updated on <time className="dt-published" datetime="${ post.frontmatter.updated }">${ moment(post.frontmatter.updated).format(`MMMM DD, YYYY`) }</time>`;
+    }
   }
 
   return (
     <Layout>
-      <SEO
+      <SeoBlogPosting
         title={ post.frontmatter.title }
         pathname={ post.fields.slug }
-        article={ true }
+        created={ post.frontmatter.iso8601 }
+        updated={ post.frontmatter.updated ? post.frontmatter.updated : post.frontmatter.iso8601 }
       />
       <article className="h-entry">
         <header>
           <h1 className="p-name">{ post.frontmatter.title }</h1>
         </header>
-        <div className="e-content" dangerouslySetInnerHTML = {{ __html: post.html }} />
+        <div className="e-content" dangerouslySetInnerHTML={{ __html: post.html }} />
         <div className="text-xs">
-          Updated by <a className="p-author h-card" href="https://blog.andrewshell.org/">Andrew Shell</a> { updatedTime }
+          Published by <a className="p-author h-card" href="https://blog.andrewshell.org/">Andrew Shell</a> <span dangerouslySetInnerHTML={{ __html: publishedTime }} />
         </div>
       </article>
     </Layout>
@@ -52,6 +53,7 @@ export const query = graphql`query PostQuery($slug: String!) {
       title
       date(formatString: "MMMM DD, YYYY")
       iso8601: date
+      updated: updated
     }
     fields {
       slug
