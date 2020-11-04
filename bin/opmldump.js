@@ -39,7 +39,7 @@ doit()
 function buildPost(oPost) {
     const created = moment.utc(oPost.$.created, "ddd, D MMM YYYY HH:mm:ss [GMT]", true);
     if (!created.isValid()) { throw new Error(`Invalid Date: ${oPost.$.created}`); }
-    if (!oPost.outline) { throw new Error(`Post has no body`); }
+    if (!oPost.outline) { return; } // throw new Error(`Post has no body`); }
 
     let type = oPost.$.type || 'outline';
 
