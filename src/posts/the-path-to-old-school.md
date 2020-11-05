@@ -1,6 +1,6 @@
 ---
 title: The Path to Old School
-date: 2020-10-26 18:04:48+0000
+date: 2020-10-26 18:04:48+00:00
 ---
 
 Dave has sent me some pointers to look at his blogging platform Old School. I'm excited to try it out.

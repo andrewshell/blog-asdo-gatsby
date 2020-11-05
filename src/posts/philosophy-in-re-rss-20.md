@@ -1,6 +1,6 @@
 ---
 title: Philosophy in re RSS 2.0
-date: 2020-11-02 16:02:25+0000
+date: 2020-11-02 16:02:25+00:00
 ---
 
 This morning I read <a href="http://essaysfromexodus.scripting.com/stories/storyReader$1744">Philosophy in re RSS 2.0</a> 

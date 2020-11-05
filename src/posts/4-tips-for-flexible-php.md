@@ -1,6 +1,7 @@
 ---
 title: The Top 4 Techniques That Make Your Code More Flexible
 date: 2016-09-09 05:00:09+00:00
+published: false
 ---
 
 For years I'd struggle to add new features and fix bugs because the likelihood of something breaking was too high.

@@ -46,7 +46,7 @@ function buildPost(oPost) {
     let body = "---\n";
     body += yaml.stringify({
         title: oPost.$.text,
-        date: created.format('YYYY-MM-DD HH:mm:ssZZ')
+        date: created.format('YYYY-MM-DD HH:mm:ssZ')
     });
     body += "---\n\n";
 

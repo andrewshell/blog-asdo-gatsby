@@ -1,6 +1,6 @@
 ---
 title: Busy Day
-date: 2020-10-28 12:08:14+0000
+date: 2020-10-28 12:08:14+00:00
 ---
 
 Today will be a busy day at work. End of sprint at and back to back meetings. I dread these days, they are exhausting.

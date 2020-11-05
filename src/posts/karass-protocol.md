@@ -1,6 +1,6 @@
 ---
 title: Karass Protocol
-date: 2020-10-21 15:14:31+0000
+date: 2020-10-21 15:14:31+00:00
 ---
 
 Talked with Dave about ideas for collaboration. He mentioned wanting to have a flow for someone to comment/reply to his content but in their own space.  I couldn't think of it at the moment, but it reminded me of <a href="https://indieweb.org/reply">reply posts</a> which could be prior art for this?

@@ -1,6 +1,6 @@
 ---
 title: My own nodeStorage server
-date: 2020-10-23 14:25:13+0000
+date: 2020-10-23 14:25:13+00:00
 ---
 
 If things worked correctly. This should be saved on my personal nodeStorage server.

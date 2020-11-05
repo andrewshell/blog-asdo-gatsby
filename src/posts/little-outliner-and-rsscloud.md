@@ -1,6 +1,6 @@
 ---
 title: Little Outliner and rssCloud?
-date: 2020-10-21 15:58:45+0000
+date: 2020-10-21 15:58:45+00:00
 ---
 
 Idea: Could we include a cloud tag in an OPML headline and have Little Outliner ping an rssCloud server with the public OPML url when it's updated? That way if we wanted to use an OPML file as a data source (blogging for instance) the consumers could subscribe to the file.

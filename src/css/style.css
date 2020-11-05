@@ -41,7 +41,8 @@ ol {
 }
 
 blockquote {
-	@apply border-l-4 border-gray-200 pl-8;
+	@apply border-l-8 m-0 pl-4;
+	border-color: #2f855a;
 }
 
 th, td {

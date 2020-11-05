@@ -1,6 +1,6 @@
 ---
 title: Playing with Old School
-date: 2020-10-27 13:36:39+0000
+date: 2020-10-27 13:36:39+00:00
 ---
 
 I seem to be having issues with the site updating. I added a post this morning and I triggered a build but the site didn't change. I can verify that the <a href="http://storage.shll.me:1229/users/andrewshell/electric/osgeekity.json">osgeekity.json</a> file has changed.

@@ -1,6 +1,6 @@
 ---
 title: My thoughts about rssCloud
-date: 2020-10-22 19:54:12+0000
+date: 2020-10-22 19:54:12+00:00
 ---
 
 One of the reasons I continue to work on the rssCloud server is that I see it has untapped potential. 

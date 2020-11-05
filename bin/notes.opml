@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<opml version="2.0">
+  <head>
+    <title>Andrew's Status</title>
+    <dateCreated>Fri, 23 Oct 2020 14:25:13 GMT</dateCreated>
+    <dateModified>Wed, 04 Nov 2020 14:09:38 GMT</dateModified>
+    <expansionState>1,4,6,7,13</expansionState>
+    <lastCursor>7</lastCursor>
+    <ownerTwitterScreenName>andrewshell</ownerTwitterScreenName>
+    <ownerName>Andrew Shell</ownerName>
+    <ownerId>http://twitter.com/andrewshell</ownerId>
+    <urlUpdateSocket>ws://storage.shll.me:1242/</urlUpdateSocket>
+    <urlInstant>http://instantoutliner.com/ln</urlInstant>
+    <urlPublic>http://storage.shll.me:1229/users/andrewshell/myOutlines/notes.opml</urlPublic>
+    <longTitle>Andrew's Status</longTitle>
+    <description>A public outline that's a log of my development work.</description>
+  </head>
+  <body>
+    <outline text="Waiting on Dave" created="Sat, 24 Oct 2020 21:35:09 GMT">
+      <outline text="Factor out the rendering of pages from a branch of OPML, probably from Old School." created="Sun, 01 Nov 2020 13:40:54 GMT">
+        <outline text="Allow this functionality to be replaced/extended in Old School" created="Sun, 01 Nov 2020 13:42:59 GMT">
+          <outline text="Add new rendering attributes (ex: blockquotes)" created="Sun, 01 Nov 2020 13:44:29 GMT"/>
+          <outline text="Use semantic markup over everything is a ul/li" created="Sun, 01 Nov 2020 13:45:01 GMT">
+            <outline text="A well defined external api could allow for a drop-in replacement" created="Sun, 01 Nov 2020 13:48:48 GMT"/>
+          </outline>
+        </outline>
+        <outline text="Use this functionality in PagePark so HowTo pages behave similarly to individual blog pages" created="Sun, 01 Nov 2020 13:43:19 GMT">
+          <outline text="Doesn't need to have all functionality enabled?" created="Sun, 01 Nov 2020 14:04:14 GMT"/>
+        </outline>
+        <outline text="Can be improved independently of apps that use it " created="Sun, 01 Nov 2020 13:47:44 GMT"/>
+      </outline>
+      <outline text="Little/Electric Outliner Feature Requests" created="Mon, 02 Nov 2020 17:09:00 GMT">
+        <outline text="High: Open from URL" created="Mon, 02 Nov 2020 17:09:22 GMT">
+          <outline text="Allow me to open (in readonly mode) any URL to an OPML file" created="Mon, 02 Nov 2020 17:09:34 GMT"/>
+        </outline>
+        <outline text="High: Create Copy" created="Mon, 02 Nov 2020 17:10:11 GMT">
+          <outline text="If I opened an outline that I don't own (either open from URL or instant outliner) have an option to create a copy of it locally. This would be useful for templates and such." created="Mon, 02 Nov 2020 17:10:18 GMT"/>
+        </outline>
+        <outline text="Low: Include Type Nodes" created="Mon, 02 Nov 2020 17:15:01 GMT">
+          <outline text="If a node has a type attribute with the value include and a URL attribute with a URL of another OPML file, double-clicking on the node (like expanding a node) would open the linked URL in a new tab. If it's a URL owned by the currently configured instance of the Outliner it would be editable, otherwise, it's read-only." created="Mon, 02 Nov 2020 17:15:36 GMT"/>
+          <outline text="This would be useful for things like archiving months of a blog." created="Mon, 02 Nov 2020 17:19:24 GMT"/>
+        </outline>
+        <outline text="Low: Split Outline" created="Mon, 02 Nov 2020 17:12:27 GMT">
+          <outline text="Click a button while on a node and enter a filename. The contents are copied into a new outline and the original node is replaced with an outline element with an &quot;include&quot; type and URL attribute referencing the new file." created="Mon, 02 Nov 2020 17:12:37 GMT"/>
+        </outline>
+      </outline>
+    </outline>
+    <outline text="Things to talk with Dave about" created="Sun, 01 Nov 2020 13:40:47 GMT">
+      <outline text="River5 &amp; River6" created="Tue, 03 Nov 2020 16:11:13 GMT"/>
+    </outline>
+    <outline text="November 2020" created="Sun, 01 Nov 2020 13:36:35 GMT" name="november2020">
+      <outline text="November 4" created="Wed, 04 Nov 2020 13:52:00 GMT" name="04">
+        <outline text="Issues with essaysfromexodus" created="Wed, 04 Nov 2020 13:57:29 GMT" type="outline">
+          <outline text="This is a new site that I wasn't previously aware of. I found it through a link from this.how." created="Wed, 04 Nov 2020 13:57:46 GMT"/>
+          <outline text="There doesn't seem to be an index of content on the site. For instance if I go to the homepage it just says it's an archive." created="Wed, 04 Nov 2020 13:58:06 GMT"/>
+          <outline text="If I click on dates in the sidebar it goes to a 404 page. Ex: http://essaysfromexodus.scripting.com/2003/11/11" created="Wed, 04 Nov 2020 13:58:54 GMT"/>
+          <outline text="I really like the design of Manila sites. The Scripting News header looks really cool with the desert landscape and the cactus." created="Wed, 04 Nov 2020 14:00:35 GMT"/>
+        </outline>
+        <outline text="Self-Hosted Web-Crawler and Search Engine " created="Wed, 04 Nov 2020 13:52:01 GMT" type="outline">
+          <outline text="I'd like to do some research into what options there are in this area. I know Dave has had issues with not finding things on his blog using Google or Duck Duck Go." created="Wed, 04 Nov 2020 13:52:40 GMT"/>
+          <outline text="Playing with Roam Research has shown how useful it would be if there was a comprehensive search engine of Dave's writing. Not just what Google deems important. Maybe something where Dave could manually put extra weight on key pages." created="Wed, 04 Nov 2020 13:53:32 GMT"/>
+          <outline text="Also it would be useful because Dave has writing on several domains. It would be cool to have a single search engine that searched all his sites." created="Wed, 04 Nov 2020 13:55:10 GMT"/>
+          <outline text="Examples: scripting.com, this.how, essaysfromexodus.scripting.com" created="Wed, 04 Nov 2020 13:56:30 GMT"/>
+          <outline text="I wonder if Dave has an archive of dave.editthispage.com?" created="Wed, 04 Nov 2020 14:09:11 GMT"/>
+        </outline>
+      </outline>
+      <outline text="November 3" created="Tue, 03 Nov 2020 15:22:25 GMT" name="03">
+        <outline text="Cluetrain Listicle is broken because it references https://dl.dropboxusercontent.com/u/368662/clues_.json" created="Tue, 03 Nov 2020 15:22:26 GMT" type="outline">
+          <outline text="Found that the file was actually archived by archive.org " created="Tue, 03 Nov 2020 15:51:35 GMT"/>
+          <outline text="https://web.archive.org/web/20160408172109/https://dl.dropboxusercontent.com/u/368662/clues_.json" created="Tue, 03 Nov 2020 15:51:59 GMT"/>
+        </outline>
+      </outline>
+      <outline text="November 2" created="Mon, 02 Nov 2020 16:02:24 GMT" name="02">
+        <outline text="Playing with dave packages" created="Tue, 03 Nov 2020 01:05:43 GMT" type="outline">
+          <outline text="I decided to take a look at some of the various dave packages this evening. In particular davehttp and daveopml." created="Tue, 03 Nov 2020 01:05:54 GMT"/>
+          <outline text="Created two issues on daveopml. One &lt;a href=&quot;https://github.com/scripting/opml/issues/2&quot;>bug&lt;/a>, one &lt;a href=&quot;https://github.com/scripting/opml/issues/3&quot;>feature&lt;/a> request." created="Tue, 03 Nov 2020 01:06:29 GMT"/>
+        </outline>
+        <outline text="Published @andrewshell/okay-recs NPM package" created="Mon, 02 Nov 2020 19:33:15 GMT" type="outline">
+          <outline text="It's broken up into different functions for caching purposes." created="Mon, 02 Nov 2020 19:33:39 GMT"/>
+          <outline text="Includes similar users functionality." created="Mon, 02 Nov 2020 19:33:58 GMT"/>
+          <outline text="&lt;a href=&quot;https://github.com/andrewshell/okay-recs&quot;>https://github.com/andrewshell/okay-recs&lt;/a>" created="Mon, 02 Nov 2020 19:34:11 GMT"/>
+        </outline>
+        <outline text="TODO: Figure out Electric Outline iconbar.opml" created="Mon, 02 Nov 2020 16:55:02 GMT" type="outline">
+          <outline text="Also, in conjunction with this, how scriptable is it?" created="Mon, 02 Nov 2020 16:55:27 GMT"/>
+          <outline text="The button for Publish for Old School was built into the code. Could this have been done in iconbar.opml?" created="Mon, 02 Nov 2020 16:55:59 GMT"/>
+          <outline text="I would assume features like &quot;New note&quot; should be able to be created in iconbar.opml so if I wanted to use an OPML file in a different CMS I could create different buttons to scaffold content in the needed ways." created="Mon, 02 Nov 2020 16:56:49 GMT"/>
+          <outline text="Features like &quot;Edit attributes&quot; are obviously core to the outliner, but perhaps it could be a core function that's triggered from iconbar.opml so users have complete control over the order of the icons. Perhaps that is a feature someone would prefer have in the menubar.opml? " created="Mon, 02 Nov 2020 16:59:03 GMT"/>
+        </outline>
+        <outline text="Little freelance project" created="Mon, 02 Nov 2020 16:08:39 GMT" type="outline">
+          <outline text="I've been &lt;a href=&quot;https://sive.rs/hellyeah&quot;>turning down&lt;/a> freelance projects because I like protecting what little free time I have lately. I certainly don't need the money right now. However, I reluctantly accepted one.  My favorite client Shawn who I've been working with on and off since the beginning of my career was in a bind. She has a project that needs to be live for a conference on Nov 16th and all her other developers are tied up on other projects that are running over. I worked on a similar project last year so I think it will be pretty easy. Should be able to wrap it up this week without too many issues." created="Mon, 02 Nov 2020 16:08:46 GMT"/>
+        </outline>
+        <outline text="Philosophy in re RSS 2.0" created="Mon, 02 Nov 2020 16:02:25 GMT" type="outline">
+          <outline text="This morning I read &lt;a href=&quot;http://essaysfromexodus.scripting.com/stories/storyReader$1744&quot;>Philosophy in re RSS 2.0&lt;/a> " created="Mon, 02 Nov 2020 16:02:38 GMT"/>
+          <outline text="My favorite quote was from Sean Gallagher &quot;I mean, here we are, a country on the edge of being dragged into a war by some whack-job Texan with the IQ of a Post-It Note (TM), and people are badgering each other over RDF?&quot;" created="Mon, 02 Nov 2020 16:03:43 GMT"/>
+          <outline text="I know enough about RSS history and other standards wars that it's not surprising, however I don't understand what's going on in peoples heads. If people are already using something, don't break them! It seems very obvious and simple." created="Mon, 02 Nov 2020 16:04:30 GMT"/>
+          <outline text="It's like Apple dropping 32-bit support from Catalina. Why? Apple is sitting on a mountain of cash. They can't hire a few developers to make sure 32-bit apps keep running?" created="Mon, 02 Nov 2020 16:05:44 GMT"/>
+        </outline>
+        <outline text="Developing better developers" created="Mon, 02 Nov 2020 16:32:45 GMT" type="outline">
+          <outline text="Just read &lt;a href=&quot;http://this.how/phoenix/index.opml&quot;>Developing better developers&lt;/a> it sounds like a great idea. I think a similar idea could also be bootstrapped outside of universities. Something that combines an open-source project with a meetup group. Senior devs can teach and work with the junior devs for the benefit of the project. " created="Mon, 02 Nov 2020 16:23:33 GMT"/>
+          <outline text="I was involved with starting something like this with the &lt;a href=&quot;https://github.com/orgs/pivot-libre/dashboard&quot;>Pivot Libre&lt;/a> project. A friend who was very into politics and had been an alderman in the past had an idea to create an open-source project for &lt;a href=&quot;https://en.wikipedia.org/wiki/Ranked_pairs&quot;>ranked pair elections&lt;/a>. It was good. We had a bunch of people, some technical, many not. We all got together and even though I left the project because I didn't have the time to commit, it's still going. It sounds like it's even been used in a &lt;a href=&quot;https://docs.google.com/document/d/1XxqrV9O7UivxjeU9vuDPCiByyB0rPA1ByO2iPeaf4ts/edit?usp=sharing&quot;>few smaller elections&lt;/a>." created="Mon, 02 Nov 2020 16:26:27 GMT"/>
+        </outline>
+      </outline>
+      <outline text="November 1" created="Sun, 01 Nov 2020 13:36:36 GMT" name="01">
+        <outline text="Playing around with OldSchool and I broke it" created="Sun, 01 Nov 2020 14:13:46 GMT" type="outline">
+          <outline text="I wondered if creating a new top level node with attributes name and type=&quot;outline&quot; would allow me to create a stand alone page outside of the blog." created="Sun, 01 Nov 2020 14:14:03 GMT"/>
+          <outline text="It doesn't. It actually &lt;a href=&quot;https://github.com/scripting/oldSchoolBlog/issues/2&quot;>crashes OldSchool&lt;/a>." created="Sun, 01 Nov 2020 14:14:53 GMT"/>
+        </outline>
+        <outline text="Saw in Dave's status that he updated the &lt;a href=&quot;https://github.com/scripting/pagePark/blob/master/docs/plugins.md&quot;>PagePark plugins&lt;/a> doc. 👍" created="Sun, 01 Nov 2020 13:36:37 GMT" type="outline"/>
+      </outline>
+    </outline>
+    <outline text="October 2020" created="Sat, 24 Oct 2020 17:09:55 GMT" name="october2020">
+      <outline text="October 30" created="Fri, 30 Oct 2020 21:37:48 GMT" name="30">
+        <outline text="How Frontier got started" created="Sat, 31 Oct 2020 01:31:08 GMT" type="outline">
+          <outline text="Interesting timing. I've been talking to Dave lately about nodeEditor and how things worked in Frontier. Then I opened Instapaper today and was scanning through pages I had bookmarked to read later and came across a &lt;a href=&quot;http://this.how/frontier/howFrontierGotStarted.opml&quot;>How Frontier got started&lt;/a> which had an attached podcast that was super interesting." created="Sat, 31 Oct 2020 01:31:17 GMT"/>
+          <outline text="I knew a little bit of this, but I had no idea how deeply integrated everything is in Frontier. Very cool. " created="Sat, 31 Oct 2020 01:33:19 GMT"/>
+          <outline text="It's also interesting because when I bookmarked this I had no idea what &lt;a href=&quot;http://this.how/&quot;>this.how&lt;/a> was and now I run my own version of it." created="Sat, 31 Oct 2020 01:34:09 GMT"/>
+        </outline>
+        <outline text="Slow Day" created="Fri, 30 Oct 2020 21:37:49 GMT" type="outline">
+          <outline text="Feeling really tired today. Got a few things done at work then was able to put together a recommendation engine for BingeWorthy." created="Fri, 30 Oct 2020 21:37:58 GMT"/>
+        </outline>
+      </outline>
+      <outline text="October 29" created="Thu, 29 Oct 2020 13:56:43 GMT" name="29">
+        <outline text="Trying to figure out installing High Sierra on a VirtualBox VM" created="Thu, 29 Oct 2020 13:56:44 GMT" type="outline">
+          <outline text="All of the instructions I'm finding are basically &lt;a href=&quot;https://www.geekrar.com/how-to-create-macos-high-sierra-iso-file/&quot;>this&lt;/a>." created="Thu, 29 Oct 2020 13:57:22 GMT"/>
+          <outline text="The third step where I call createinstallmedia fails with a message &quot;A error occurred erasing the disk.&quot; " created="Thu, 29 Oct 2020 13:58:52 GMT"/>
+          <outline text="I'm trying now to use a real USB stick which is what I think Apple expects you to use." created="Thu, 29 Oct 2020 13:59:34 GMT"/>
+          <outline text="It's been sitting with the message &quot;Copying installer files to disk&quot; but I expect this will take a while so I guess we'll see." created="Thu, 29 Oct 2020 14:01:57 GMT"/>
+          <outline text="It finished but booting from the USB in VirtualBox seemed to technically work, but I got a lot of errors on the screen." created="Thu, 29 Oct 2020 15:00:31 GMT"/>
+          <outline text="I'm trying VMWare Fusion right now which seems to be able to boot directly from &quot;Install macOS High Sierra.app&quot; and doesn't require jumping through hoops trying to create an ISO." created="Thu, 29 Oct 2020 15:00:59 GMT"/>
+          <outline text="So far it seems to be installing." created="Thu, 29 Oct 2020 15:02:05 GMT"/>
+          <outline text="I'm much farther along after 5 minutes of VMWare Fusion than I was after an hour of VirtualBox. LOL" created="Thu, 29 Oct 2020 15:02:17 GMT"/>
+          <outline text="Seems like it's up and running." created="Thu, 29 Oct 2020 15:54:30 GMT"/>
+        </outline>
+      </outline>
+      <outline text="October 28" created="Wed, 28 Oct 2020 12:08:13 GMT" name="28">
+        <outline text="Behind the scenes" created="Wed, 28 Oct 2020 14:35:38 GMT" type="outline">
+          <outline text="In order to look at the source of scripting.com as an example for how to do and Old School blog I subscribed to the outline Dave uses to populate scripting.com." created="Wed, 28 Oct 2020 14:35:45 GMT"/>
+          <outline text="Today was the first day I saw Dave writing in real time. Fun behind the scenes peek. :-)" created="Wed, 28 Oct 2020 14:36:34 GMT"/>
+          <outline text="Back to work." created="Wed, 28 Oct 2020 14:37:30 GMT"/>
+        </outline>
+        <outline text="Busy Day" created="Wed, 28 Oct 2020 12:08:14 GMT" type="outline">
+          <outline text="Today will be a busy day at work. End of sprint at and back to back meetings. I dread these days, they are exhausting." created="Wed, 28 Oct 2020 12:08:18 GMT"/>
+          <outline text="I had to take notes to prep for a meeting so I created an outline. Just booted up LO2 and got to work." created="Wed, 28 Oct 2020 14:32:25 GMT"/>
+        </outline>
+      </outline>
+      <outline text="October 27" created="Tue, 27 Oct 2020 13:36:38 GMT" name="27">
+        <outline text="Playing with Old School" created="Tue, 27 Oct 2020 13:36:39 GMT" type="outline">
+          <outline text="I seem to be having issues with the site updating. I added a post this morning and I triggered a build but the site didn't change. I can verify that the &lt;a href=&quot;http://storage.shll.me:1229/users/andrewshell/electric/osgeekity.json&quot;>osgeekity.json&lt;/a> file has changed." created="Tue, 27 Oct 2020 13:36:54 GMT"/>
+          <outline text="I tried deleting all the s3 bucket contents, I stopped oldschool and deleted the data folder. I restarted and triggered the build. The site was rebuilt, but without the latest post. " created="Tue, 27 Oct 2020 13:38:46 GMT"/>
+          <outline text="It's particularly odd because one of the changes I made was I added copyright to the opml header. I had figured out that was where [%copyright%] populated from." created="Tue, 27 Oct 2020 13:40:51 GMT"/>
+          <outline text="Now, I think I have an inkling of an idea of what's happening." created="Tue, 27 Oct 2020 13:40:48 GMT"/>
+          <outline text="The post I wrote last night in the outline was published under an &quot;October 26&quot; heading but has the timestamp of &quot;Tue, 27 Oct 2020 00:33:15 GMT&quot; so it's technically October 27." created="Tue, 27 Oct 2020 13:41:10 GMT"/>
+          <outline text="The post today is under the &quot;October 27&quot; heading with a timestamp of &quot;Tue, 27 Oct 2020 13:28:25 GMT&quot;." created="Tue, 27 Oct 2020 13:42:04 GMT"/>
+          <outline text="My guess is that oldschool overwrote the real October 27 post with the October 26 post." created="Tue, 27 Oct 2020 13:42:54 GMT"/>
+          <outline text="The clue was that the website shows yesterdays post under &quot;Tuesday, October 27, 2020&quot;" created="Tue, 27 Oct 2020 13:43:28 GMT"/>
+          <outline text="I'm going to try changing the created timestamp to the 26th and see if that fixes things." created="Tue, 27 Oct 2020 13:43:59 GMT"/>
+          <outline text="Yes! But I had to change the timestamp on the October 26 heading as well." created="Tue, 27 Oct 2020 13:46:13 GMT"/>
+        </outline>
+      </outline>
+      <outline text="October 26" created="Mon, 26 Oct 2020 18:01:32 GMT" name="26">
+        <outline text="The Path to Old School" created="Mon, 26 Oct 2020 18:04:48 GMT" type="outline">
+          <outline text="Dave has sent me some pointers to look at his blogging platform Old School. I'm excited to try it out." created="Mon, 26 Oct 2020 18:05:01 GMT"/>
+          <outline text="I was able to get it working. I have it live at &lt;a href=&quot;http://os.geekity.com/&quot;>os.geekity.com&lt;/a>" created="Tue, 27 Oct 2020 00:58:26 GMT"/>
+          <outline text="Next step is to customize it more. I found the template files although I haven't quite figured out why [%copyright%] isn't resolving. It doesn't appear to be something in the glossary which was my first guess." created="Tue, 27 Oct 2020 00:58:57 GMT"/>
+          <outline text="I'll also need to track down where the countdown is coming from." created="Tue, 27 Oct 2020 00:59:46 GMT"/>
+        </outline>
+        <outline text="Playing with Gatsby" created="Mon, 26 Oct 2020 18:01:33 GMT" type="outline">
+          <outline text="I managed to create a Gatsby source plugin and generate a basic site from an OPML file. There are still a few things to do for it to be a complete demo. But I'm happy with how it works so far." created="Mon, 26 Oct 2020 18:01:54 GMT"/>
+          <outline text="&lt;a href=&quot;https://tender-albattani-16ff01.netlify.app/&quot;>OPML Notes Demo&lt;/a>" created="Mon, 26 Oct 2020 18:02:34 GMT"/>
+          <outline text="&lt;a href=&quot;https://github.com/andrewshell/gatsby-demo-opmlnotes&quot;>GitHub Repo&lt;/a>" created="Mon, 26 Oct 2020 18:03:46 GMT"/>
+          <outline text="&lt;a href=&quot;http://storage.shll.me:1229/users/andrewshell/electric/hello.opml&quot;>OPML Source&lt;/a>" created="Mon, 26 Oct 2020 18:03:54 GMT"/>
+        </outline>
+      </outline>
+      <outline text="October 25" created="Sun, 25 Oct 2020 15:10:39 GMT" name="25">
+        <outline text="Dave fixed the bug" created="Sun, 25 Oct 2020 17:11:26 GMT" type="outline">
+          <outline text="I just tested the fix for Little Outliner per Dave's instructions and it looks like everything worked correctly. Now, with my own personal nodeStorage server, I'm able to get an instant outliner URL that works correctly. I first tested with my demo.opml file and now I'm testing it with my notes.opml file. It works!" created="Sun, 25 Oct 2020 17:11:35 GMT"/>
+        </outline>
+        <outline text="Free standing rssCloud testing tool" created="Sun, 25 Oct 2020 15:10:40 GMT" type="outline">
+          <outline text="I deployed the new rssCloud v2 to a temporary port and I'd like to have a way to poke at it and make sure it's doing what it should be doing. Today I plan on building a simple tool that will allow me to zip through the various combinations of pleaseNotify and ping and check that it works correctly. This is also important to make sure logging is still working correctly." created="Sun, 25 Oct 2020 15:10:53 GMT"/>
+          <outline text="One of my next projects after v2 is live is to revamp the view log page. Although the way it is currently is better than nothing, it isn't the best interface for debugging aggregators and publishing tools." created="Sun, 25 Oct 2020 15:12:49 GMT"/>
+        </outline>
+      </outline>
+      <outline text="October 24" created="Sat, 24 Oct 2020 17:09:56 GMT" name="24">
+        <outline text="Writing in an outliner" created="Sat, 24 Oct 2020 22:02:40 GMT" type="outline">
+          <outline text="This has been interesting. I'm used to just writing in markdown files, but I'm finding having the nested lines useful. I guess this is why it's called an &quot;Idea Processor&quot;. It can however make the text harder to read. For instance my last note about &quot;Custom templates in pagePark&quot; just looks like an impenetrable wall of text. I'm not sure what the solution would be though." created="Sat, 24 Oct 2020 22:02:46 GMT"/>
+        </outline>
+        <outline text="Custom templates in pagePark" created="Sat, 24 Oct 2020 21:41:59 GMT" type="outline">
+          <outline text="My next experiment is creating a custom template on pagePark for OPML files. I'll have to see to what extent I can make this work." created="Sat, 24 Oct 2020 21:42:11 GMT"/>
+          <outline text="Things I'd like to change from the default template:" created="Sat, 24 Oct 2020 21:43:13 GMT" type="ol">
+            <outline text="If I use &quot;New note&quot; functionality in Little Outliner (like this note), I'd like the Month &amp; Day to be h2 &amp; h3 headers and I'd like the titles of the items to be h4." created="Sat, 24 Oct 2020 21:43:24 GMT"/>
+            <outline text="I'd like to have markdown support so whether it's read in an outline or as a webpage it looks good. Right now in the outline, it looks messy especially when I'm using blockquotes. (see October 21). In markdown, I could just prefix the line with &quot;> &quot;" created="Sat, 24 Oct 2020 21:44:51 GMT"/>
+          </outline>
+          <outline text="I can see in the pagePark code that getOpmlTemplate first checks for config.opmlTemplatePath but that isn't actually something I can define in config.json" created="Sat, 24 Oct 2020 21:48:10 GMT"/>
+          <outline text="In order for this to work I'd need to:" created="Sat, 24 Oct 2020 21:49:00 GMT" type="ol">
+            <outline text="1. Add opmlTemplatePath to pageparkPrefs" created="Sat, 24 Oct 2020 21:49:10 GMT"/>
+            <outline text="2. Comment out where it gets wiped out in gatherAttributes" created="Sat, 24 Oct 2020 21:49:37 GMT" type="ul">
+              <outline text="gatherAttributes seems to be something that parses variables with a hashmark in the path" created="Sat, 24 Oct 2020 21:50:11 GMT"/>
+              <outline text="Not sure why that would be a location to overwrite the template since opmlTemplatePath is a local path" created="Sat, 24 Oct 2020 21:50:32 GMT"/>
+            </outline>
+          </outline>
+          <outline text="I also tried putting urlDefaultOpmlTemplate in config.json since it's already in pageparkPrefs but the code references pageparkPrefs.urlDefaultOpmlTemplate and not config.urlDefaultOpmlTemplate so it doesn't work." created="Sat, 24 Oct 2020 21:50:52 GMT"/>
+          <outline text="Changing pageparkPrefs to config in getOpmlTemplate would probably be the least impactful change. It's not a problem to reference the template by URL since it's already in the domain bucket that's being served." created="Sat, 24 Oct 2020 21:52:04 GMT"/>
+          <outline text="I should look into Persistent Apps because that would provide the most flexibility with what I'm trying to do." created="Sat, 24 Oct 2020 21:57:56 GMT"/>
+        </outline>
+        <outline text="Instant Outliner with self-hosted nodeStorage" created="Sat, 24 Oct 2020 17:09:57 GMT" type="outline">
+          <outline text="As it stands, it doesn't work. I updated my nodeStorage server to make sure web sockets were turned out. Looks like the config.json template I used doesn't include a WebSocket port variable which is required to turn on web sockets. My nodeStorage server now has this enabled." created="Sat, 24 Oct 2020 17:10:05 GMT"/>
+          <outline text="I went ahead and tried my best to make a detailed error report and published it &lt;a href=&quot;https://gist.github.com/andrewshell/6d554d5fd993e48d8cac8125c0e297f3&quot;>here&lt;/a>." created="Sat, 24 Oct 2020 17:17:40 GMT"/>
+          <outline text="This will need to be resolved before anyone can subscribe to my status outline and get updates." created="Sat, 24 Oct 2020 18:18:39 GMT"/>
+        </outline>
+      </outline>
+      <outline text="October 23" created="Sat, 24 Oct 2020 17:11:12 GMT">
+        <outline text="My own nodeStorage server" created="Fri, 23 Oct 2020 14:25:13 GMT" type="outline">
+          <outline text="If things worked correctly. This should be saved on my personal nodeStorage server." created="Fri, 23 Oct 2020 14:25:47 GMT"/>
+          <outline text="It did! You can visit &lt;a href=&quot;http://my.shll.me/andrewshell/notes.opml&quot;>http://my.shll.me/andrewshell/notes.opml&lt;/a>" created="Fri, 23 Oct 2020 17:14:27 GMT"/>
+          <outline text="I took the logic from &lt;a href=&quot;https://gist.github.com/scripting/a676b0da36c13576877a91fc77a34ecb&quot;>https://gist.github.com/scripting/a676b0da36c13576877a91fc77a34ecb&lt;/a> and rewrote it based on what I learned about how filter.js really works now. Since I'm running nodeStorage on the same server as pagePark I can do the same thing Dave is doing with my.this.how" created="Fri, 23 Oct 2020 17:14:46 GMT"/>
+          <outline text="I quickly found the switchServer(theServer) method in Little Outliner. This allows me to direct LO2 at my own nodeStorage server." created="Fri, 23 Oct 2020 17:15:46 GMT"/>
+          <outline text="It looks like switchServer doesn't change the urlChatLogSocket variable so as of right now instant outliner doesn't work. That's fine though, I think there are multiple systems in play and it's not important to me right now. " created="Fri, 23 Oct 2020 17:17:33 GMT"/>
+        </outline>
+      </outline>
+      <outline text="October 22" created="Sat, 24 Oct 2020 17:14:24 GMT">
+        <outline text="My thoughts about rssCloud" created="Thu, 22 Oct 2020 19:54:12 GMT" type="outline">
+          <outline text="One of the reasons I continue to work on the rssCloud server is that I see it has untapped potential. " created="Thu, 22 Oct 2020 19:54:29 GMT"/>
+          <outline text="One thing that is frequently used to &quot;Sell&quot; the rssCloud competitor PubSubHubbub (or PuSH or WebSub) is that it provides &quot;Fat Pings&quot;. The content in the feed that has changed actually gets sent to the subscribers. With rssCloud, we provide &quot;Thin Pings&quot; aka just the URL of the feed that changed. The argument is that when the feed gets updated and the ping goes out, why have everyone come to fetch the entire feed again? Couldn't we save bandwidth and server load by not re-fetching the feed?" created="Thu, 22 Oct 2020 20:03:59 GMT"/>
+          <outline text="This is exactly the reason why I think rssCloud is better. PuSH only works with feeds, rssCloud works with any URL. You could in theory subscribe to anything of any format changing." created="Thu, 22 Oct 2020 20:03:52 GMT"/>
+        </outline>
+      </outline>
+      <outline text="October 21" created="Sat, 24 Oct 2020 17:14:55 GMT">
+        <outline text="Little Outliner and rssCloud?" created="Wed, 21 Oct 2020 15:58:45 GMT" type="outline">
+          <outline text="Idea: Could we include a cloud tag in an OPML headline and have Little Outliner ping an rssCloud server with the public OPML url when it's updated? That way if we wanted to use an OPML file as a data source (blogging for instance) the consumers could subscribe to the file." created="Wed, 21 Oct 2020 15:55:42 GMT"/>
+          <outline text="&lt;a href=&quot;http://scripting.com/2020/10/22.html#a165831&quot;>Dave Winer&lt;/a>" created="Sun, 25 Oct 2020 17:41:13 GMT" type="quote">
+            <outline text="It's a good idea, but.. (sorry) -- OPML already has a realtime notification service, it came after rssCloud and is based on web sockets." created="Thu, 22 Oct 2020 19:42:38 GMT"/>
+          </outline>
+          <outline text="I'm going to think about this more and look under the hood with the web socket implementation. My gut tells me this isn't the solution I'm looking for. Here's my use case:" created="Thu, 22 Oct 2020 19:43:41 GMT" type="ul">
+            <outline text="I want to blog using little outliner as a CMS." created="Thu, 22 Oct 2020 19:44:24 GMT"/>
+            <outline text="I want the website to be a &lt;a href=&quot;https://www.gatsbyjs.com/&quot;>Gatsby&lt;/a> site. (Gatsby is an advanced static site generator.)" created="Thu, 22 Oct 2020 19:44:48 GMT"/>
+            <outline text="Gatsby can consume data from many places through the use of a &lt;a href=&quot;https://www.gatsbyjs.com/plugins/?=source&quot;>source plugin&lt;/a>." created="Thu, 22 Oct 2020 19:46:00 GMT"/>
+            <outline text="I'd create a source plugin that pulls from an OPML file hosted by little outliner." created="Thu, 22 Oct 2020 19:46:50 GMT"/>
+            <outline text="I deploy and host my site using &lt;a href=&quot;https://www.netlify.com/&quot;>Netlify&lt;/a> and it has APIs that can be used to trigger a site rebuild." created="Thu, 22 Oct 2020 19:47:21 GMT"/>
+            <outline text="I would have some mechanism so if an outline had not changed over the last 5 minutes or so, it would trigger a rebuild." created="Thu, 22 Oct 2020 19:49:05 GMT"/>
+            <outline text="I don't want to have a server continuously connected to little outliner via web socket." created="Thu, 22 Oct 2020 19:49:53 GMT"/>
+          </outline>
+          <outline text="Dave did mention to not jump to automating everything. To start out doing things manually. There is nothing preventing me from building a site with Gatsby pulling from an OPML file and deployed with Netlify.  When I'm done writing something new and I want it deployed I can log into Netlify and manually trigger a rebuild." created="Thu, 22 Oct 2020 19:52:14 GMT"/>
+        </outline>
+        <outline text="Karass Protocol" created="Wed, 21 Oct 2020 15:14:31 GMT" type="outline">
+          <outline text="Talked with Dave about ideas for collaboration. He mentioned wanting to have a flow for someone to comment/reply to his content but in their own space.  I couldn't think of it at the moment, but it reminded me of &lt;a href=&quot;https://indieweb.org/reply&quot;>reply posts&lt;/a> which could be prior art for this?" created="Wed, 21 Oct 2020 15:14:43 GMT"/>
+          <outline text="&lt;blockquote>difference between my stuff and their stuff -- mine is actual software you can use. they come up with ideas that were out there decades ago and then people cite them as if they're their original ideas. they also use trolling and flaming as tools of coercion. ugh.&lt;br/>&lt;cite>&lt;a href=&quot;https://github.com/scripting/pagePark/issues/15#issuecomment-713656333&quot;>Dave Winer&lt;/a>&lt;/cite>&lt;/blockquote>" created="Wed, 21 Oct 2020 16:00:41 GMT"/>
+        </outline>
+      </outline>
+    </outline>
+    <outline text="Archive" created="Tue, 03 Nov 2020 15:23:35 GMT">
+      <outline text="In outlines (especially notes), how are name attributes used?" created="Sun, 01 Nov 2020 13:51:44 GMT">
+        <outline text="I see &quot;November 2020&quot; has a name attribute november2020 and &quot;November 1&quot; has name attribute &quot;01&quot;" created="Sun, 01 Nov 2020 13:52:46 GMT"/>
+        <outline text="My thought would be that they would be used in OS as url slugs (I know they aren't). " created="Sun, 01 Nov 2020 13:54:42 GMT"/>
+        <outline text="So the permalink for Nov 1, 2020 would be /november2020/01.html and for the month index /november2020.html" created="Sun, 01 Nov 2020 13:55:57 GMT"/>
+        <outline text="However, the OS url for Nov 1, 2020 is /2020/11/01.html and for the month index /2020/11/" created="Sun, 01 Nov 2020 13:56:56 GMT"/>
+        <outline text="The implied year index /2020/ returns a 404." created="Sun, 01 Nov 2020 14:00:34 GMT"/>
+      </outline>
+      <outline text="Future of OldSchool" created="Mon, 02 Nov 2020 16:39:05 GMT">
+        <outline text="Dave has talked about providing hosted OldSchool for users of Little Outliner." created="Mon, 02 Nov 2020 16:39:15 GMT"/>
+        <outline text="As of Dec 2019 &lt;a href=&quot;https://github.com/scripting/Scripting-News/issues/117#issuecomment-560934276&quot;>he also said&lt;/a> &quot;I really meant it about not supporting it. It’s not a product.&quot;" created="Mon, 02 Nov 2020 16:41:35 GMT"/>
+        <outline text="If I didn't start using it as part of my experimenting, I don't think he would have considered hosting OldSchool blogs." created="Mon, 02 Nov 2020 16:41:51 GMT"/>
+        <outline text="I feel a minor conflict in myself. " created="Mon, 02 Nov 2020 16:42:41 GMT"/>
+        <outline text="On the one side, I think Old School is amazing and the flow is really great. I also really want to support Dave because he's doing amazing work." created="Mon, 02 Nov 2020 16:44:38 GMT"/>
+        <outline text="On the other side, I like hacking on stuff. My website is one of these things. I am incredibly nit-picky about what I deploy to andrewshell.org. Part of the joy of having the site is it's a place I can experiment." created="Mon, 02 Nov 2020 16:44:45 GMT"/>
+        <outline text="Whatever I decide to do on my website, I know it will have a flow similar to Old School. I'm really digging using the outliner and even just looking at this outline, I've written more here than I have on my blog over the last couple of years. Reducing the friction to publish is a really big deal." created="Mon, 02 Nov 2020 16:46:34 GMT"/>
+        <outline text="I almost wonder if it wouldn't be a better use of time and energy if Dave and I worked on finding ways to make Little Outliner a really killer headless CMS. Something that can be used in a lot of different types of websites, not just Old School style blogs. It's probably 95% there." created="Mon, 02 Nov 2020 16:48:07 GMT"/>
+        <outline text="A lot of the work I think would be non-technical. Documenting things that would help people understand how they could use an outline as the data source for websites." created="Mon, 02 Nov 2020 16:50:14 GMT"/>
+      </outline>
+    </outline>
+  </body>
+</opml>

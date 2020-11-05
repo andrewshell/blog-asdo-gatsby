@@ -1,6 +1,6 @@
 ---
 title: Trying to figure out installing High Sierra on a VirtualBox VM
-date: 2020-10-29 13:56:44+0000
+date: 2020-10-29 13:56:44+00:00
 ---
 
 All of the instructions I'm finding are basically <a href="https://www.geekrar.com/how-to-create-macos-high-sierra-iso-file/">this</a>.

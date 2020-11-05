@@ -1,6 +1,6 @@
 ---
 title: Instant Outliner with self-hosted nodeStorage
-date: 2020-10-24 17:09:57+0000
+date: 2020-10-24 17:09:57+00:00
 ---
 
 As it stands, it doesn't work. I updated my nodeStorage server to make sure web sockets were turned out. Looks like the config.json template I used doesn't include a WebSocket port variable which is required to turn on web sockets. My nodeStorage server now has this enabled.
