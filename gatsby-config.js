@@ -179,7 +179,8 @@ module.exports = {
       options: {
         tailwind: true,
         purgeOnly: [`src/css/style.css`],
-        printRejected: true
+        printRejected: true,
+        whitelist: ['blockquote']
       }
     },
     {
