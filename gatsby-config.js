@@ -180,7 +180,7 @@ module.exports = {
         tailwind: true,
         purgeOnly: [`src/css/style.css`],
         printRejected: true,
-        whitelist: ['blockquote']
+        whitelist: ['blockquote', 'figure', 'figcaption']
       }
     },
     {
