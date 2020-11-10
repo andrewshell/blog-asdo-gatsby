@@ -1,7 +1,7 @@
 const xml2js = require('xml2js'),
     fetch = require('node-fetch'),
     parser = new xml2js.Parser({ explicitArray: false }),
-    opmlurl = 'http://storage.shll.me:1229/users/andrewshell/myOutlines/notes.opml',
+    opmlurl = 'http://storage.shll.me:1229/users/andrewshell/myOutlines/asdo-import.opml',
     moment = require('moment'),
     yaml = require('yaml'),
     fs = require('fs'),
@@ -11,9 +11,13 @@ async function doit() {
     const opmltext = await (await fetch(opmlurl)).text(),
         struct = await parser.parseStringPromise(opmltext);
 
+    if (!Array.isArray(struct.opml.body.outline)) { struct.opml.body.outline = [struct.opml.body.outline]; }
+
     for (const oMonth of struct.opml.body.outline) {
         const mMonth = moment(oMonth.$.text, 'MMMM YYYY', true);
         if (!mMonth.isValid()) { continue; }
+
+        if (!Array.isArray(oMonth.outline)) { oMonth.outline = [oMonth.outline]; }
 
         for (const oDay of oMonth.outline) {
             const mDay = moment(oDay.$.text + ' ' + mMonth.year(), 'MMMM D YYYY', true);
@@ -43,11 +47,21 @@ function buildPost(oPost) {
 
     let type = oPost.$.type || 'outline';
 
-    let body = "---\n";
-    body += yaml.stringify({
+    let frontmatter = {
         title: oPost.$.text,
         date: created.format('YYYY-MM-DD HH:mm:ssZ')
-    });
+    };
+
+    if ((oPost.$.enclosure !== undefined) && (oPost.$.enclosureType !== undefined) && (oPost.$.enclosureLength !== undefined)) {
+        frontmatter.enclosure = {
+            url: oPost.$.enclosure,
+            size: oPost.$.enclosureLength,
+            type: oPost.$.enclosureType
+        };
+    }
+
+    let body = "---\n";
+    body += yaml.stringify(frontmatter);
     body += "---\n\n";
 
     if (!Array.isArray(oPost.outline)) { oPost.outline = [oPost.outline]; }
@@ -55,8 +69,10 @@ function buildPost(oPost) {
     for (const oOutline of oPost.outline) {
         if (oOutline.outline) {
             body += buildSection(oOutline, 2, type);
+        } else if (oOutline.$.inlineImage) {
+            body += `<figure><img src="${oOutline.$.inlineImage}"><figcaption>${oOutline.$.text}</figcaption></figure>\n\n`;
         } else {
-            body += oOutline.$.text + "\n\n";
+            body += `${oOutline.$.text}\n\n`;
         }
     }
 
@@ -87,10 +103,16 @@ function buildSection(oOutline, level, type) {
         prefix = '',
         ulinc = 1;
 
-    type = oOutline.$.type || type;
+    if (oOutline.$.flBulletedSubs) {
+        type = 'flBulletedSubs';
+    } else if (oOutline.$.flNumberedSubs) {
+        type = 'flNumberedSubs';
+    } else if (oOutline.$.flQuote) {
+        type = 'flQuote';
+    }
 
     switch (type) {
-        case 'ul':
+        case 'flBulletedSubs':
             if (oOutline.$.inList) {
                 prefix = ' '.repeat(oOutline.$.text.length - oOutline.$.text.trimLeft().length);
             } else {
@@ -109,7 +131,7 @@ function buildSection(oOutline, level, type) {
             body += (oOutline.$.inList ? '' : "\n");
             break;
 
-        case 'ol':
+        case 'flNumberedSubs':
             if (oOutline.$.inList) {
                 prefix = ' '.repeat(oOutline.$.text.length - oOutline.$.text.trimLeft().length);
             } else {
@@ -128,7 +150,7 @@ function buildSection(oOutline, level, type) {
             body += (oOutline.$.inList ? '' : "\n");
             break;
 
-        case 'quote':
+        case 'flQuote':
             body = '';
             for (const oChild of oOutline.outline) {
                 if (oChild.outline) {

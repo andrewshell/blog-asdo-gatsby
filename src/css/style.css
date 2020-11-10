@@ -28,8 +28,21 @@ h3 {
 	@apply text-lg font-sans font-bold mb-6;
 }
 
-p, ul, ol, table, audio {
+p, ul, ol, table, audio, figure {
 	@apply mb-6;
+}
+
+figure {
+	@apply border-2 overflow-hidden;
+	border-color: #2f855a;
+}
+
+figure img {
+	@apply w-full;
+}
+
+figcaption {
+	@apply px-6 py-4 text-center;
 }
 
 ul {
