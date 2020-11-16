@@ -5,7 +5,15 @@ const fs = require('fs'),
     builder = new xml2js.Builder(),
     matter = require('gray-matter'),
     moment = require('moment')
-    dateFormat = 'ddd, DD MMM YYYY HH:mm:ss [GMT]';
+    dateFormat = 'ddd, DD MMM YYYY HH:mm:ss [GMT]',
+    unified = require('unified'),
+    parse = require('remark-parse'),
+    stringify = require('remark-stringify');
+
+const remark = unified()
+  .use(parse)
+  .use(stringify)
+  .freeze();
 
 const struct = {
     "opml": {
@@ -51,7 +59,7 @@ async function doit() {
         const mdate = moment(fmatter.data.date, 'America/Chicago');
         const attributes = {
             name: path.basename(fname, '.md'),
-            type: 'markdown',
+            type: 'outline',
             text: fmatter.data.title,
             created: mdate.utc().format(dateFormat),
         };
@@ -60,6 +68,7 @@ async function doit() {
         }
 
         const post = createPost(mdate, attributes);
+        let htmlLine;
 
         fmatter.content.split("\n").forEach((line) => {
             if ('' === line.trim()) {
@@ -68,8 +77,10 @@ async function doit() {
 
             mdate.add(1, 'seconds');
 
+            htmlLine = await newOutline().process(line.trim());
+
             newOutline(post, {
-                text: line.trim(),
+                text: htmlLine,
                 created: mdate.utc().format(dateFormat),
             });
         });

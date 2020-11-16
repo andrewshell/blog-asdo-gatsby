@@ -1,9 +1,9 @@
 ---
 title: 'Rebooting The News #86'
 date: 2011-03-14 00:00:00+00:00
-published: false
+published: true
 ---
 
-Today's episode of [Rebooting The News](http://scripting.com/stories/2011/03/14/todaysPotluckPodcast.html) Jay was out of town so Dave had on Adam Curry and yours truly!  I wish I could say I was invited to be a guest, but Dave was just taking calls and picked me.  On the show I talk about my work trying to use WordPress as a microblog platform.  It's an interesting show, but if you want to skip directly to my part jump to 31:45.
+Today's episode of [Rebooting The News](https://rebootnews.wordpress.com/2011/03/15/rebooting-the-news-86/) Jay was out of town so Dave had on Adam Curry and yours truly!  I wish I could say I was invited to be a guest, but Dave was just taking calls and picked me.  On the show I talk about my work trying to use WordPress as a microblog platform.  It's an interesting show, but if you want to skip directly to my part jump to 31:45.
 
-Here's the [MP3](http://static.reallysimple.org/users/dave/2011/03/14/reboot11mar14.mp3).
+If you're interested in listening you can hear the [clip](/uploads/2011/03/reboot11mar14-asclip.mp3) or the [entire episode](http://mp3.morningcoffeenotes.com/reboot11mar14.mp3).
