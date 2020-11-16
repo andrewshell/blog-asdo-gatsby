@@ -1,6 +1,10 @@
 ---
 title: 'World Outline Podcast #7'
 date: 2012-03-20 00:00:00+00:00
+enclosure:
+    url: https://blog.andrewshell.org/uploads/2012/03/worldoutline1.mp3
+    size: 4350219
+    type: audio/mp3
 ---
 
 Yesterday on the [World Outline Podcast](http://podcast.worldoutline.org/) with [Dave Winer](http://scripting.com/) and [Adam Curry](http://curry.com/) they mentioned me and my projects [RT Proxy](/rt-proxy/) and [TwitOPML](/shipping-is-scary/).
