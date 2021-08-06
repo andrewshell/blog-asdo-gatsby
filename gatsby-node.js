@@ -4,11 +4,19 @@ const path = require(`path`);
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
+    const parent = getNode(node.parent);
+
     let slug = createFilePath({ node, getNode, basePath: `pages` });
     if ((node.frontmatter || {}).slug) {
       slug = '/' + node.frontmatter.slug + '/';
     }
-    // createFilePath({ node, getNode, basePath: `pages` });
+
+    createNodeField({
+      node,
+      name: 'sourceInstanceName',
+      value: parent.sourceInstanceName,
+    });
+
     createNodeField({
       node,
       name: `slug`,
@@ -28,24 +36,22 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     graphql(`{
         allMarkdownRemark (
-          filter: { frontmatter: { published: { ne: false } } },
+          filter: { frontmatter: { published: { ne: false } } }
         ) {
-          edges {
-            node {
+            nodes {
               fields {
                 sourceInstanceName,
                 slug
               }
             }
-          }
         }
-      }`).then(result => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    }`).then(result => {
+      result.data.allMarkdownRemark.nodes.forEach(({ fields }) => {
         createPage({
-          path: node.fields.slug,
-          component: path.resolve(`./src/templates/${node.fields.sourceInstanceName}.js`),
+          path: fields.slug,
+          component: path.resolve(`./src/templates/${fields.sourceInstanceName}.js`),
           context: {
-            slug: node.fields.slug,
+            slug: fields.slug,
           },
         });
       })

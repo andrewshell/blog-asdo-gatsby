@@ -1,5 +1,6 @@
 ---
 title: About Me
+date: 2020-10-18 16:27:47+00:00
 ---
 
 Hoopla! That word seems to have become a part of my brand. It started as me just being goofy one day at school after watching [Shock Treatment](http://www.amazon.com/dp/B000G6BLGK/), but now has become my stock greeting when I see people I know. It's gotten to the point where the hoopla precedes me. Once I met a boss's wife for the first time and after I said, "Hi, nice to meet you," she was like, "and.... don't I get a hoopla?"

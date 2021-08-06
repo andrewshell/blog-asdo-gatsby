@@ -39,17 +39,37 @@ if ($switch1 || $switch2) {
 
 However neither of these are actually what I observe.
 
-+----------+----------+------------+
-| Switch 1 | Switch 2 | Light      |
-+==========+==========+============+
-| off      | off      | off        |
-+----------+----------+------------+
-| off      | on       | on         |
-+----------+----------+------------+
-| on       | off      | on         |
-+----------+----------+------------+
-| on       | on       | off <- WTF |
-+----------+----------+------------+
+<table>
+    <thead>
+        <tr>
+            <th>Switch 1</th>
+            <th>Switch 2</th>
+            <th>Light</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>off</td>
+            <td>off</td>
+            <td>off</td>
+        </tr>
+        <tr>
+            <td>off</td>
+            <td>on</td>
+            <td>on</td>
+        </tr>
+        <tr>
+            <td>on</td>
+            <td>off</td>
+            <td>on</td>
+        </tr>
+        <tr>
+            <td>on</td>
+            <td>on</td>
+            <td>off <- WTF</td>
+        </tr>
+    </tbody>
+</table>
 
 Up until that last row it was behaving as an "or" conditional and then things got real.
 

@@ -5,7 +5,7 @@ import moment from "moment";
 import Layout from "../components/layout";
 import SeoBlogPosting from "../components/seo-blogposting";
 
-export default ({ data }) => {
+export default function PostTemplate({ data }) {
   const post = data.markdownRemark;
   const siteUrl = data.site.siteMetadata.siteUrl;
   const permalink = `${siteUrl}${post.fields.slug || "/"}`;
@@ -39,7 +39,7 @@ export default ({ data }) => {
       </article>
     </Layout>
   );
-};
+}
 
 export const query = graphql`query PostQuery($slug: String!) {
   site {

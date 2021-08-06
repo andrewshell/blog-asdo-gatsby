@@ -155,12 +155,10 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             }
           },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-grid-tables'
+          'gatsby-remark-prismjs'
         ]
       }
     },
-    "gatsby-source-instance-name-for-remark",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
