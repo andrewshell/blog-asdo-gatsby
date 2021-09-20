@@ -1,7 +1,7 @@
 const xml2js = require('xml2js'),
     fetch = require('node-fetch'),
     parser = new xml2js.Parser({ explicitArray: false }),
-    opmlurl = 'http://storage.shll.me:1229/users/andrewshell/myOutlines/asdo-import.opml',
+    opmlurl = 'http://lo2.geekity.com/andrewshell/myOutlines/asdo.opml',
     moment = require('moment'),
     yaml = require('yaml'),
     fs = require('fs'),
@@ -25,8 +25,13 @@ async function doit() {
 
             if (!Array.isArray(oDay.outline)) { oDay.outline = [oDay.outline]; }
 
+            const postText = buildPost(oDay);
+
             for (const oPost of oDay.outline) {
-                const postText = buildPost(oPost);
+                if (oPost.outline && !(oPost.$.flquote || oPost.$.text.startsWith('> '))) {
+                    console.log(oPost.$.text);
+                    const articleText = buildArticle(oPost);
+                }
             }
         }
     }
@@ -40,7 +45,50 @@ doit()
         console.error(err);
     });
 
-function buildPost(oPost) {
+function buildPost(oDay) {
+    const created = moment.utc(oDay.$.created, "ddd, D MMM YYYY HH:mm:ss [GMT]", true);
+    if (!created.isValid()) { throw new Error(`Invalid Date: ${oDay.$.created}`); }
+    if (!oDay.outline) { return; } // throw new Error(`Post has no body`); }
+
+    let type = oDay.$.type || 'outline';
+
+    let frontmatter = {
+        title: created.format('dddd, MMMM D, YYYY'),
+        date: created.format('YYYY-MM-DD HH:mm:ssZ'),
+        updated: created.format('YYYY-MM-DD HH:mm:ssZ'),
+        published: true
+    };
+
+    if ((oDay.$.enclosure !== undefined) && (oDay.$.enclosureType !== undefined) && (oDay.$.enclosureLength !== undefined)) {
+        frontmatter.enclosure = {
+            url: oDay.$.enclosure,
+            size: oDay.$.enclosureLength,
+            type: oDay.$.enclosureType
+        };
+    }
+
+    let body = "---\n";
+    body += yaml.stringify(frontmatter);
+    body += "---\n\n";
+
+    if (!Array.isArray(oDay.outline)) { oDay.outline = [oDay.outline]; }
+
+    for (const oOutline of oDay.outline) {
+        if (oOutline.outline) {
+            body += buildSection(oOutline, 2, type, true);
+        } else if (oOutline.$.inlineImage) {
+            body += `<figure><img src="${oOutline.$.inlineImage}"><figcaption>${oOutline.$.text}</figcaption></figure>\n\n`;
+        } else {
+            body += `${oOutline.$.text}\n\n`;
+        }
+    }
+
+    const postpath = path.join(__dirname, '../src/posts', created.format('YYYY-MM-DD') + '.md');
+    console.log(postpath);
+    fs.writeFileSync(postpath, body);
+}
+
+function buildArticle(oPost) {
     const created = moment.utc(oPost.$.created, "ddd, D MMM YYYY HH:mm:ss [GMT]", true);
     if (!created.isValid()) { throw new Error(`Invalid Date: ${oPost.$.created}`); }
     if (!oPost.outline) { return; } // throw new Error(`Post has no body`); }
@@ -49,7 +97,9 @@ function buildPost(oPost) {
 
     let frontmatter = {
         title: oPost.$.text,
-        date: created.format('YYYY-MM-DD HH:mm:ssZ')
+        date: created.format('YYYY-MM-DD HH:mm:ssZ'),
+        updated: created.format('YYYY-MM-DD HH:mm:ssZ'),
+        published: true
     };
 
     if ((oPost.$.enclosure !== undefined) && (oPost.$.enclosureType !== undefined) && (oPost.$.enclosureLength !== undefined)) {
@@ -76,7 +126,7 @@ function buildPost(oPost) {
         }
     }
 
-    const postpath = path.join(__dirname, '../src/posts', slugify(oPost.$.text) + '.md');
+    const postpath = path.join(__dirname, '../src/articles', slugify(oPost.$.text) + '.md');
     console.log(postpath);
     fs.writeFileSync(postpath, body);
 }
@@ -96,19 +146,27 @@ function slugify(string) {
     .replace(/-+$/, ''); // Trim - from end of text
 }
 
-function buildSection(oOutline, level, type) {
+function buildSection(oOutline, level, type, flatten) {
     if (!Array.isArray(oOutline.outline)) { oOutline.outline = [oOutline.outline]; }
 
     let body = '',
         prefix = '',
         ulinc = 1;
 
-    if (oOutline.$.flBulletedSubs) {
+    if (undefined === flatten) {
+        flatten = false;
+    }
+
+    if (oOutline.$.flbulletedsubs) {
         type = 'flBulletedSubs';
-    } else if (oOutline.$.flNumberedSubs) {
+    } else if (oOutline.$.flnumberedsubs) {
         type = 'flNumberedSubs';
-    } else if (oOutline.$.flQuote) {
+    } else if (oOutline.$.flquote) {
         type = 'flQuote';
+    } else if (oOutline.$.text.startsWith('> ')) {
+        type = 'flQuote';
+        oOutline.$.text = oOutline.$.text.substr(2);
+        oOutline.$.flquote = true;
     }
 
     switch (type) {
@@ -163,12 +221,17 @@ function buildSection(oOutline, level, type) {
             break;
 
         default:
-            body = "#".repeat(level) + ' ' + oOutline.$.text + "\n\n";
-            for (const oChild of oOutline.outline) {
-                if (oChild.outline) {
-                    body += buildSection(oChild, level + 1, type);
-                } else {
-                    body += oChild.$.text + "\n\n";
+            if (flatten && 0 < oOutline.outline.length) {
+                let url = '/' + slugify(oOutline.$.text) + '/';
+                body += `[${oOutline.$.text}](${url})\n\n`;
+            } else {
+                body = "#".repeat(level) + ' ' + oOutline.$.text + "\n\n";
+                for (const oChild of oOutline.outline) {
+                    if (oChild.outline) {
+                        body += buildSection(oChild, level + 1, type);
+                    } else {
+                        body += oChild.$.text + "\n\n";
+                    }
                 }
             }
     }

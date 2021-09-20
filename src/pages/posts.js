@@ -13,7 +13,7 @@ export default function IndexPage({data}) {
 
       <h1>All Posts</h1>
       <ul>
-        {data.allMarkdownRemark.edges.map(({ node }) => {
+        {data.allMarkdownRemark.nodes.map((node) => {
           return (
             <li key={node.id} className="entry-header">
               <span className="entry-title">
@@ -27,22 +27,20 @@ export default function IndexPage({data}) {
   );
 }
 
-export const query = graphql`query AllPostsQuery{
+export const query = graphql`query AllArticlesQuery{
   allMarkdownRemark(
-    filter: { frontmatter: { published: { ne: false } }, fields: { sourceInstanceName: { eq: "posts" } } },
+    filter: { frontmatter: { published: { ne: false } }, fields: { sourceInstanceName: { eq: "articles" } } },
     sort: {fields: [frontmatter___date], order: DESC}
   ) {
-    edges {
-      node {
-        frontmatter {
-          title
-          date(formatString: "MMMM YYYY")
-        }
-        fields {
-          slug
-        }
-        id
+    nodes {
+      frontmatter {
+        title
+        date(formatString: "MMMM YYYY")
       }
+      fields {
+        slug
+      }
+      id
     }
   }
 }`

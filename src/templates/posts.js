@@ -15,7 +15,7 @@ export default function PostTemplate({ data }) {
   if (post.frontmatter.iso8601) {
     publishedTime = `on <a className="u-url u-uid" href="${ permalink }"><time className="dt-published" datetime="${ post.frontmatter.iso8601 }">${ moment(post.frontmatter.iso8601).format(`MMMM DD, YYYY`) }</time></a>`;
 
-    if (post.frontmatter.updated) {
+    if (post.frontmatter.updated && post.frontmatter.updated !== post.frontmatter.iso8601) {
       publishedTime += ` and updated on <time className="dt-published" datetime="${ post.frontmatter.updated }">${ moment(post.frontmatter.updated).format(`MMMM DD, YYYY`) }</time>`;
     }
   }
