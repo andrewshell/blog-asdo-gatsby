@@ -12,9 +12,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     let slug = createFilePath({ node, getNode, basePath: `pages` });
     if ((node.frontmatter || {}).slug) {
       slug = '/' + node.frontmatter.slug + '/';
-    } else if ('posts' === parent.sourceInstanceName && (node.frontmatter || {}).date) {
-      slug = moment(node.frontmatter.date).format('/YYYY-MM/DD/');
-      console.log(slug);
     }
 
     if ((node.frontmatter || {}).date) {
@@ -39,44 +36,66 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage, createRedirect } = actions;
 
+  createRedirect({ fromPath: '/posts/', toPath: '/essays/', isPermanent: true });
   createRedirect({ fromPath: '/andrew/', toPath: '/about/', isPermanent: true });
   createRedirect({ fromPath: '/contact-andrew/', toPath: '/contact/', isPermanent: true });
   createRedirect({ fromPath: '/feed/', toPath: '/rss.xml', isPermanent: true });
   createRedirect({ fromPath: '/my-resume/', toPath: '/resume/', isPermanent: true });
 
+  // Get all markdown blog posts sorted by date
+  const result = await graphql(
+    `
+      {
+        allMarkdownRemark(
+          filter: { frontmatter: { published: { ne: false } } }
+          sort: { fields: [frontmatter___date], order: ASC }
+          limit: 1000
+        ) {
+          nodes {
+            id
+            fields {
+              sourceInstanceName,
+              slug
+              month
+            }
+            frontmatter {
+              date
+            }
+          }
+        }
+      }
+    `
+  )
+
+  if (result.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your blog posts`,
+      result.errors
+    )
+    return
+  }
+
   const months = {};
 
-  return new Promise((resolve, reject) => {
-    graphql(`{
-        allMarkdownRemark (
-          filter: { frontmatter: { published: { ne: false } } }
-        ) {
-            nodes {
-              fields {
-                sourceInstanceName,
-                slug
-                month
-              }
-              frontmatter {
-                date
-              }
-            }
-        }
-    }`).then(result => {
-      result.data.allMarkdownRemark.nodes.forEach((node) => {
-        if ('posts' === node.fields.sourceInstanceName) {
+  const nodes = result.data.allMarkdownRemark.nodes.reduce((nodes, node) => {
+    nodes[node.fields.sourceInstanceName || 'unknown'].push(node);
+    return nodes;
+  }, { pages: [], posts: [], unknown: [] });
+
+  for (const sourceInstanceName of ['posts', 'pages']) {
+    if (nodes[sourceInstanceName].length > 0) {
+      nodes[sourceInstanceName].forEach((node, index) => {
+        console.log(`${sourceInstanceName} ${node.id} ${index}`);
+        const previousNodeId = index === 0 ? null : nodes[sourceInstanceName][index - 1].id
+        const nextNodeId = index === nodes[sourceInstanceName].length - 1 ? null : nodes[sourceInstanceName][index + 1].id
+        console.log(`${previousNodeId} ${nextNodeId}`);
+
+        if ('posts' === sourceInstanceName) {
           if (undefined === months[node.fields.month]) {
             months[node.fields.month] = true;
-            createPage({
-              path: `/month/`,
-              component: path.resolve(`./src/templates/months.js`),
-              context: {
-                slug: node.fields.month,
-              },
-            });
           }
         }
 
@@ -85,18 +104,38 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve(`./src/templates/${node.fields.sourceInstanceName}.js`),
           context: {
             slug: node.fields.slug,
+            previousNodeId,
+            nextNodeId,
           },
         });
 
-        if ('articles' === node.fields.sourceInstanceName) {
-          const fromPath = moment(node.frontmatter.date).format('/YYYY-MM/DD') + node.fields.slug;
-          const toPath = node.fields.slug;
-          createRedirect({ fromPath, toPath, isPermanent: true });
+        if ('posts' === node.fields.sourceInstanceName) {
+          const fromPath = moment(node.frontmatter.date).format('/YYYY-MM/DD') + node.fields.slug
+          const toPath = node.fields.slug
+          createRedirect({ fromPath, toPath, isPermanent: true })
         }
+
       })
-      resolve();
-    })
+    }
+  }
+
+  const monthIdx = Object.keys(months);
+
+  monthIdx.forEach((month, index) => {
+    const previousMonth = index === 0 ? null : monthIdx[index - 1]
+    const nextMonth = index === monthIdx.length - 1 ? null : monthIdx[index + 1]
+
+    createPage({
+      path: `/${month}/`,
+      component: path.resolve(`./src/templates/months.js`),
+      context: {
+        slug: month,
+        previousMonth,
+        nextMonth,
+      },
+    });
   })
+
 }
 
 exports.createSchemaCustomization = ({ actions }) => {

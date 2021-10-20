@@ -4,6 +4,8 @@
 
 @import "./prism-coy.css";
 
+/* purgecss start ignore */
+
 a {
 	@apply text-green-700 underline;
 }
@@ -80,3 +82,5 @@ li ul, li ol {
 .icon:hover svg {
 	fill: #48bb78;
 }
+
+/* purgecss end ignore */

@@ -13,12 +13,57 @@ module.exports = {
     googleSiteVerification: '_-goZtBP-ox3-3pjEHer7rHHhX5qA_1R_TsQsjyWQtc'
   },
   plugins: [
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://blog.andrewshell.org`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-embed-video`,
+            options: {
+              maxWidth: 800,
+              related: false,
+              noIframerder: true,
+            }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            }
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            }
+          },
+          'gatsby-remark-prismjs'
+        ]
+      }
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-plugin-feed',
       options: {
@@ -81,27 +126,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `articles`,
-        path: `${__dirname}/src/articles`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-lunr',
       options: {
         languages: [{
@@ -137,35 +161,6 @@ module.exports = {
         filename: 'search_index.json',
       }
     },
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-embed-video`,
-            options: {
-              maxWidth: 800,
-              related: false,
-              noIframerder: true,
-            }
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-            }
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            }
-          },
-          'gatsby-remark-prismjs'
-        ]
-      }
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -185,7 +180,9 @@ module.exports = {
         tailwind: true,
         purgeOnly: [`src/css/style.css`],
         printRejected: true,
-        whitelist: ['blockquote', 'figure', 'figcaption']
+        purgeCSSOptions: {
+          safelist: ['blockquote', 'figure', 'figcaption']
+        }
       }
     },
     {
@@ -197,6 +194,7 @@ module.exports = {
         respectDNT: true
       },
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,

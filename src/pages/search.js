@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import Layout from "../components/layout";
+import Layout from "../components/journal/layout";
 import SEO from "../components/seo";
 import SearchForm from "../components/searchForm";
 import SearchResults from "../components/searchResults";

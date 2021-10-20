@@ -2,46 +2,68 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import moment from "moment";
 
-import Layout from "../components/layout";
-import SeoBlogPosting from "../components/seo-blogposting";
+import Layout from "../components/journal/layout";
+import Loop from "../components/journal/loop";
 
 export default function IndexPage({data}) {
-  const post = data.allMarkdownRemark.nodes[0];
-  const next = data.allMarkdownRemark.nodes[1];
-  const siteUrl = data.site.siteMetadata.siteUrl;
-  const permalink = `${siteUrl}${post.fields.slug || "/"}`;
-
-  let publishedTime = '';
-
-  if (post.frontmatter.iso8601) {
-    publishedTime = `on <a className="u-url u-uid" href="${ permalink }"><time className="dt-published" datetime="${ post.frontmatter.iso8601 }">${ moment(post.frontmatter.iso8601).format(`MMMM DD, YYYY`) }</time></a>`;
-
-    if (post.frontmatter.updated && post.frontmatter.updated !== post.frontmatter.iso8601) {
-      publishedTime += ` and updated on <time className="dt-published" datetime="${ post.frontmatter.updated }">${ moment(post.frontmatter.updated).format(`MMMM DD, YYYY`) }</time>`;
-    }
-  }
+  const nodes = [...data.allMarkdownRemark.nodes];
+  const post = nodes.shift();
+  const next = nodes.pop();
 
   return (
     <Layout>
-      <SeoBlogPosting
-        title={ post.frontmatter.title }
-        pathname={ post.fields.slug }
-        created={ post.frontmatter.iso8601 }
-        updated={ post.frontmatter.updated ? post.frontmatter.updated : post.frontmatter.iso8601 }
-      />
-      <article className="h-entry">
-        <header>
-          <h1 className="p-name">{ post.frontmatter.title }</h1>
-        </header>
-        <div className="e-content" dangerouslySetInnerHTML={{ __html: post.html }} />
-        <div className="text-xs">
-          Published by <a className="p-author h-card" href="https://blog.andrewshell.org/">Andrew Shell</a> <span dangerouslySetInnerHTML={{ __html: publishedTime }} />
+      <main id="gh-main" className="gh-main gh-outer">
+        <div className="gh-inner">
+          <article className="gh-latest gh-card">
+            <Link to={ post.fields.slug } rel="bookmark" className="gh-card-link">
+              <header className="gh-card-header">
+                <div className="gh-article-meta">
+                  <span className="gh-card-date">Latest — <time dateTime={ post.frontmatter.iso8601 }>{ moment(post.frontmatter.updated).format(`MMMM DD, YYYY`) }</time></span>
+                </div>
+
+                <h2 className="gh-article-title gh-card-title">{ post.frontmatter.title }</h2>
+              </header>
+
+              <p className="gh-article-excerpt" dangerouslySetInnerHTML={{ __html: post.excerpt }}></p>
+
+              <footer className="gh-card-meta">
+                <span className="gh-card-meta-wrapper">
+                  <span className="gh-card-duration">{ post.timeToRead } min read</span>
+                </span>
+              </footer>
+            </Link>
+          </article>
+
+          <div className="gh-wrapper">
+            <section className="gh-section">
+              <h2 className="gh-section-title">More essays</h2>
+              <div className="gh-feed">
+                {nodes.map((node) => {
+                    return (
+                      <Loop post={ node } key={ node.id } />
+                    )
+                })}
+              </div>
+              <Link to={ `/${next.fields.month}/` }>
+                <button class="gh-loadmore gh-btn">Load more essays</button>
+              </Link>
+            </section>
+
+            <aside className="gh-sidebar">
+              <section className="gh-section">
+                <h2 className="gh-section-title">About</h2>
+
+                <div className="gh-about">
+                  <section className="gh-about-wrapper">
+                    <h3 className="gh-about-title">Andrew Shell's Weblog</h3>
+                    <p className="gh-about-description">Strategies for thinking, learning, and productivity.</p>
+                  </section>
+                </div>
+              </section>
+            </aside>
+          </div>
         </div>
-        <nav className="flex flex-row justify-between my-4">
-          <a className="block" rel="prev"></a>
-          <Link to={ next.fields.slug } className="block" rel="next">{ next.frontmatter.title }</Link>
-        </nav>
-      </article>
+      </main>
     </Layout>
   );
 }
@@ -53,12 +75,17 @@ export const query = graphql`query HomePageQuery{
     }
   }
   allMarkdownRemark(
-    filter: { frontmatter: { published: { ne: false } }, fields: { sourceInstanceName: { eq: "posts" } } },
-    sort: {fields: [frontmatter___date], order: DESC}
-    limit: 2
+    filter: {
+      frontmatter: { published: { ne: false } },
+      fields: { sourceInstanceName: { eq: "posts" } }
+    },
+    sort: {fields: [frontmatter___date], order: DESC},
+    limit: 6
   ) {
     nodes {
-      html
+      id,
+      excerpt
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
@@ -67,6 +94,7 @@ export const query = graphql`query HomePageQuery{
       }
       fields {
         slug
+        month
       }
     }
   }

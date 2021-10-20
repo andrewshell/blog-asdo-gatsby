@@ -2,8 +2,9 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import moment from "moment";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/journal/layout";
+import Loop from "../components/journal/loop";
+import PageNav from "../components/journal/pagenav";
 
 export default function MonthTemplate({ data, pageContext }) {
   const siteUrl = data.site.siteMetadata.siteUrl;
@@ -11,34 +12,43 @@ export default function MonthTemplate({ data, pageContext }) {
 
   return (
     <Layout>
-      <SEO title={ month.format('MMMM YYYY') } />
+      <main id="gh-main" class="gh-main">
+        <article class="gh-article post no-image">
+          <header class="gh-article-header gh-canvas">
+            <h1 class="gh-article-title">{ month.format('MMMM YYYY') }</h1>
+          </header>
 
-      <h1>{ month.format('MMMM YYYY') }</h1>
-      {data.allMarkdownRemark.nodes.map((post) => {
-        const permalink = `${siteUrl}${post.fields.slug || "/"}`;
+          <div class="gh-content gh-canvas">
+          {data.allMarkdownRemark.nodes.map((node) => {
+            return (
+              <Loop post={ node } key={ node.id } />
+            )
+          })}
+          </div>
 
-        let publishedTime = '';
+          <footer class="gh-article-footer gh-canvas">
+            <nav class="gh-navigation">
+              <div class="gh-navigation-previous">
+                <PageNav
+                  slug={ pageContext.previousMonth ? `/${pageContext.previousMonth}/` : null }
+                  label="&laquo; Previous month"
+                  title={ pageContext.previousMonth ? moment(pageContext.previousMonth, "YYYY-MM").format('MMMM YYYY') : '' }
+                />
+              </div>
 
-        if (post.frontmatter.iso8601) {
-          publishedTime = `on <a className="u-url u-uid" href="${ permalink }"><time className="dt-published" datetime="${ post.frontmatter.iso8601 }">${ moment(post.frontmatter.iso8601).format(`MMMM DD, YYYY`) }</time></a>`;
+              <div class="gh-navigation-middle"></div>
 
-          if (post.frontmatter.updated && post.frontmatter.updated !== post.frontmatter.iso8601) {
-            publishedTime += ` and updated on <time className="dt-published" datetime="${ post.frontmatter.updated }">${ moment(post.frontmatter.updated).format(`MMMM DD, YYYY`) }</time>`;
-          }
-        }
-
-        return (
-          <article className="h-entry mb-4">
-            <header>
-              <h2 className="p-name">{ post.frontmatter.title }</h2>
-            </header>
-            <div className="e-content" dangerouslySetInnerHTML={{ __html: post.html }} />
-            <div className="text-xs">
-              Published by <a className="p-author h-card" href="https://blog.andrewshell.org/">Andrew Shell</a> <span dangerouslySetInnerHTML={{ __html: publishedTime }} />
-            </div>
-          </article>
-        );
-      })}
+              <div class="gh-navigation-next">
+                <PageNav
+                  slug={ pageContext.nextMonth ? `/${pageContext.nextMonth}/`: null }
+                  label="Next month &raquo;"
+                  title={ pageContext.nextMonth ? moment(pageContext.nextMonth, "YYYY-MM").format('MMMM YYYY') : '' }
+                />
+              </div>
+            </nav>
+          </footer>
+        </article>
+      </main>
     </Layout>
   );
 }
@@ -62,7 +72,9 @@ export const query = graphql`query MonthQuery($slug: String!) {
     sort: {fields: [frontmatter___date], order: DESC}
   ) {
     nodes {
-      html
+      id,
+      excerpt
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

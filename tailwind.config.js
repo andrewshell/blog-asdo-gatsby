@@ -1,11 +1,9 @@
 // See https://tailwindcss.com/docs/configuration for details
-
+const remark = require('remark')
 const fontSizeBase = 1.15;
 
 module.exports = {
-  purge: [
-    './src/**/*.js'
-  ],
+  purge: false,
   theme: {
     fontSize: {
       xs: (fontSizeBase * 0.75) + 'rem',
