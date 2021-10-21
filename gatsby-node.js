@@ -88,10 +88,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   for (const sourceInstanceName of ['posts', 'pages']) {
     if (nodes[sourceInstanceName].length > 0) {
       nodes[sourceInstanceName].forEach((node, index) => {
-        console.log(`${sourceInstanceName} ${node.id} ${index}`);
         const previousNodeId = index === 0 ? null : nodes[sourceInstanceName][index - 1].id
         const nextNodeId = index === nodes[sourceInstanceName].length - 1 ? null : nodes[sourceInstanceName][index + 1].id
-        console.log(`${previousNodeId} ${nextNodeId}`);
 
         if ('posts' === sourceInstanceName) {
           if (undefined === months[node.fields.month]) {
