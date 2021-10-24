@@ -199,9 +199,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-remove-serviceworker`,
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {}
-    }
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-netlify-cms`
   ]
 };
