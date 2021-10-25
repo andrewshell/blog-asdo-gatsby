@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React from "react";
-import moment from "moment";
+import moment from "moment-timezone";
 
 function Footer() {
   const { site } = useStaticQuery(graphql`

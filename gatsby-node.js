@@ -1,7 +1,8 @@
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require(`path`);
 
-const moment = require('moment');
+const moment = require('moment-timezone');
+moment.tz.setDefault('America/Chicago');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;

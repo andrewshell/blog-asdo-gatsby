@@ -34,6 +34,7 @@
     "glob": "^7.1.7",
     "graphql": "15.5.1",
     "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
     "netlify-cms-app": "^2.15.54",
     "node-fetch": "^2.6.1",
     "prismjs": "^1.24.1",
@@ -61,6 +62,7 @@
     "opmldump": "node bin/opmldump.js"
   },
   "devDependencies": {
+    "@netlify/plugin-gatsby": "^2.0.0-beta",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
     "babel-eslint": "^10.1.0",

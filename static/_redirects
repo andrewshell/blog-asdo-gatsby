@@ -2,13 +2,13 @@
 /contact-andrew/ /contact/
 /feed/ /rss.xml
 /my-resume/ /resume/
-/2017/03/06/best-way-inject-logger/ /best-way-inject-logger/
+/2017/03/06/best-way-inject-logger/ /what-is-the-best-way-to-inject-a-logger/
 /2018/09/26/how-to-build-a-time-tracking-app-in-react/ /how-to-build-a-time-tracking-app-in-react/
 /2018/06/28/ionic-4-and-mobx/ /ionic-4-and-mobx/
 /2011/05/26/what-does-it-mean-to-have-character/ /what-does-it-mean-to-have-character/
-/2016/11/04/best-git-workflow-small-teams/ /best-git-workflow-small-teams/
-/2017/06/10/develop-laravel-homestead/ /develop-laravel-homestead/
-/2017/05/02/best-way-handle-sessions-adr/ /best-way-handle-sessions-adr/
+/2016/11/04/best-git-workflow-small-teams/ /what-is-the-best-git-branching-strategy-for-small-teams/
+/2017/06/10/develop-laravel-homestead/ /how-to-develop-with-laravel-homestead/
+/2017/05/02/best-way-handle-sessions-adr/ /what-is-the-best-way-to-handle-sessions-with-adr/
 /2016/09/21/radar-under-the-hood/ /radar-under-the-hood/
 /2016/10/14/collecting-data-from-atlas-orm-with-php-debug-bar/ /collecting-data-from-atlas-orm-with-php-debug-bar/
 /2015/06/03/what-is-rsscloud/ /what-is-rsscloud/

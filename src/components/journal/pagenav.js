@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React from "react";
-import moment from "moment";
+import moment from "moment-timezone";
 
 export function PageNav({ slug, label, title }) {
   if (slug) {

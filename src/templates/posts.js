@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import moment from "moment";
+import moment from "moment-timezone";
 
 import Layout from "../components/journal/layout";
 import PageNav from "../components/journal/pagenav";
