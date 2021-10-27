@@ -1,8 +1,7 @@
-const { createFilePath } = require(`gatsby-source-filesystem`);
-const path = require(`path`);
+const { createFilePath } = require('gatsby-source-filesystem');
+const path = require('path');
 
 const moment = require('moment-timezone');
-moment.tz.setDefault('America/Chicago');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
@@ -19,7 +18,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       createNodeField({
         node,
         name: 'month',
-        value: moment(node.frontmatter.date).format('YYYY-MM'),
+        value: moment(node.frontmatter.date).tz(process.env.TIMEZONE).format('YYYY-MM'),
       });
     }
 
@@ -39,12 +38,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage, createRedirect } = actions;
-
-  createRedirect({ fromPath: '/posts/', toPath: '/essays/', isPermanent: true });
-  createRedirect({ fromPath: '/andrew/', toPath: '/about/', isPermanent: true });
-  createRedirect({ fromPath: '/contact-andrew/', toPath: '/contact/', isPermanent: true });
-  createRedirect({ fromPath: '/feed/', toPath: '/rss.xml', isPermanent: true });
-  createRedirect({ fromPath: '/my-resume/', toPath: '/resume/', isPermanent: true });
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
@@ -109,9 +102,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         });
 
         if ('posts' === node.fields.sourceInstanceName) {
-          const fromPath = moment(node.frontmatter.date).format('/YYYY-MM/DD') + node.fields.slug
+          const fromPath = moment(node.frontmatter.date).tz(process.env.TIMEZONE).format('/YYYY-MM/DD') + node.fields.slug
+          const fromPathUTC = moment(node.frontmatter.date).tz('UTC').format('/YYYY-MM/DD') + node.fields.slug
           const toPath = node.fields.slug
-          createRedirect({ fromPath, toPath, isPermanent: true })
+          createRedirect({ fromPath, toPath, isPermanent: true });
+          if (fromPathUTC !== fromPath) {
+            createRedirect({ fromPath: fromPathUTC, toPath, isPermanent: true });
+          }
         }
 
       })

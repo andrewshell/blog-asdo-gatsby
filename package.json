@@ -4,6 +4,7 @@
   "version": "3.0.141",
   "author": "Andrew Shell <andrew@andrewshell.org>",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "gatsby": "^3.13.1",
     "gatsby-plugin-canonical-urls": "^3.13.0",
     "gatsby-plugin-catch-links": "^3.13.0",

@@ -1,5 +1,7 @@
-const remark = require('remark')
-const visit = require('unist-util-visit')
+const remark = require('remark');
+const visit = require('unist-util-visit');
+
+require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
