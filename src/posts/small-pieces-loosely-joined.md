@@ -20,3 +20,5 @@ Instead, it's best to start with the simplest solution to your problem. If somet
 I had a single page with two columns. On the left side, I'd list all the things I needed to work on that week. On the right side, I'd list the days of the week and room for five items.
 
 I wasn't using OmniFocus or Things, just a piece of paper sitting in front of me on my desk.
+
+Here is my [Weekly Checklist](/uploads/2021/10/Weekly.pdf).
