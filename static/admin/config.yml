@@ -8,7 +8,9 @@ public_folder: /uploads
 collections:
   - name: "posts"
     label: "Posts"
+    label_singular: "Post"
     folder: "src/posts"
+    extension: "md"
     create: true
     slug: "{{slug}}"
     editor:
