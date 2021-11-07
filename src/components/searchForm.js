@@ -17,7 +17,7 @@ const SearchForm = ({ query, onUpdate }) => {
   }
 
   return (
-    <form role="search" autocomplete="off" method="GET" onSubmit={ handleSubmit } className="mb-4 flex w-auto">
+    <form role="search" autoComplete="off" method="GET" onSubmit={ handleSubmit } className="mb-4 flex w-auto">
       <input
         type="text"
         id="search-input"

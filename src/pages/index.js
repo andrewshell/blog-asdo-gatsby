@@ -1,101 +1,142 @@
-import React from "react";
-import { graphql, Link } from "gatsby";
-import moment from "moment-timezone";
+import * as React from "react"
+import { Link, graphql } from "gatsby"
 
-import Layout from "../components/journal/layout";
-import Loop from "../components/journal/loop";
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-export default function IndexPage({data}) {
-  const nodes = [...data.allMarkdownRemark.nodes];
-  const post = nodes.shift();
-  const next = nodes.pop();
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
+
+const BlogIndex = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const posts = [...data.allMarkdownRemark.nodes];
+
+  let lastPost, previous, next;
+
+  if (posts.length > 0) {
+    lastPost = posts.pop();
+  }
+
+  if (lastPost) {
+    previous = {
+      fields: { slug: `/${lastPost.fields.month}/` },
+      frontmatter: { title: dayjs(lastPost.fields.month, "YYYY-MM").format('MMMM YYYY') }
+    };
+  }
+
+  if (posts.length === 0) {
+    return (
+      <Layout location={location} title={siteTitle}>
+        <Seo title="All posts" />
+        <Bio />
+        <p>
+          No blog posts found. Add markdown posts to "content/blog" (or the
+          directory you specified for the "gatsby-source-filesystem" plugin in
+          gatsby-config.js).
+        </p>
+      </Layout>
+    )
+  }
 
   return (
-    <Layout>
-      <main id="gh-main" className="gh-main gh-outer">
-        <div className="gh-inner">
-          <article className="gh-latest gh-card">
-            <Link to={ post.fields.slug } rel="bookmark" className="gh-card-link">
-              <header className="gh-card-header">
-                <div className="gh-article-meta">
-                  <span className="gh-card-date">Latest — <time dateTime={ post.frontmatter.iso8601 }>{ moment(post.frontmatter.updated).format(`MMMM DD, YYYY`) }</time></span>
-                </div>
+    <Layout location={location} title={siteTitle}>
+      <Seo title="All posts" />
+      <Bio />
+      <ol style={{ listStyle: `none` }}>
+        {posts.map(post => {
+          const title = post.frontmatter.title || post.fields.slug
 
-                <h2 className="gh-article-title gh-card-title">{ post.frontmatter.title }</h2>
-              </header>
-
-              <p className="gh-article-excerpt" dangerouslySetInnerHTML={{ __html: post.excerpt }}></p>
-
-              <footer className="gh-card-meta">
-                <span className="gh-card-meta-wrapper">
-                  <span className="gh-card-duration">{ post.timeToRead } min read</span>
-                </span>
-              </footer>
-            </Link>
-          </article>
-
-          <div className="gh-wrapper">
-            <section className="gh-section">
-              <h2 className="gh-section-title">More essays</h2>
-              <div className="gh-feed">
-                {nodes.map((node) => {
-                    return (
-                      <Loop post={ node } key={ node.id } />
-                    )
-                })}
-              </div>
-              <Link to={ `/${next.fields.month}/` }>
-                <button class="gh-loadmore gh-btn">Load more essays</button>
+          return (
+            <li key={post.fields.slug}>
+              <article
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              >
+                <header>
+                  <h2>
+                    <Link to={post.fields.slug} itemProp="url">
+                      <span itemProp="headline">{title}</span>
+                    </Link>
+                  </h2>
+                  <small>{ dayjs(post.frontmatter.date).tz(process.env.GATSBY_TIMEZONE).format('MMMM DD, YYYY') }</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: post.frontmatter.description || post.excerpt,
+                    }}
+                    itemProp="description"
+                  />
+                </section>
+              </article>
+            </li>
+          )
+        })}
+      </ol>
+      <nav className="blog-post-nav">
+        <ul
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            justifyContent: `space-between`,
+            listStyle: `none`,
+            padding: 0,
+          }}
+        >
+          <li>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                ← {previous.frontmatter.title}
               </Link>
-            </section>
-
-            <aside className="gh-sidebar">
-              <section className="gh-section">
-                <h2 className="gh-section-title">About</h2>
-
-                <div className="gh-about">
-                  <section className="gh-about-wrapper">
-                    <h3 className="gh-about-title">Andrew Shell's Weblog</h3>
-                    <p className="gh-about-description">Strategies for thinking, learning, and productivity.</p>
-                  </section>
-                </div>
-              </section>
-            </aside>
-          </div>
-        </div>
-      </main>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+            )}
+          </li>
+        </ul>
+      </nav>
     </Layout>
-  );
+  )
 }
 
-export const query = graphql`query HomePageQuery{
-  site {
-    siteMetadata {
-      siteUrl
-    }
-  }
-  allMarkdownRemark(
-    filter: {
-      frontmatter: { published: { ne: false } },
-      fields: { sourceInstanceName: { eq: "posts" } }
-    },
-    sort: {fields: [frontmatter___date], order: DESC},
-    limit: 6
-  ) {
-    nodes {
-      id,
-      excerpt
-      timeToRead
-      frontmatter {
+export default BlogIndex
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
         title
-        date(formatString: "MMMM DD, YYYY")
-        iso8601: date
-        updated: updated
       }
-      fields {
-        slug
-        month
+    }
+    allMarkdownRemark(
+      filter: {
+        frontmatter: { published: { ne: false } },
+        fields: { sourceInstanceName: { eq: "posts" } }
+      },
+      sort: {fields: [frontmatter___date], order: DESC},
+      limit: 6
+    ) {
+      nodes {
+        excerpt(pruneLength: 280)
+        fields {
+          slug
+          month
+        }
+        frontmatter {
+          date
+          title
+          description
+        }
       }
     }
   }
-}`
+`

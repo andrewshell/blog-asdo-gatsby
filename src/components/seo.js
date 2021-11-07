@@ -1,104 +1,91 @@
-import React from "react"
-import { Helmet } from "react-helmet"
+/**
+ * SEO component that queries for data with
+ *  Gatsby's useStaticQuery React hook
+ *
+ * See: https://www.gatsbyjs.com/docs/use-static-query/
+ */
+
+import * as React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-const SEO = ({ title, description, image, pathname, article }) => (
-  <StaticQuery
-    query={query}
-    render={({
-      site: {
-        siteMetadata: {
-          defaultTitle,
-          titleTemplate,
-          defaultDescription,
-          siteUrl,
-          defaultImage,
-          twitterUsername,
-          googleSiteVerification
+import { Helmet } from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
+
+const Seo = ({ description, lang, meta, title }) => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            social {
+              twitter
+            }
+          }
+        }
+      }
+    `
+  )
+
+  const metaDescription = description || site.siteMetadata.description
+  const defaultTitle = site.siteMetadata?.title
+
+  return (
+    <Helmet
+      htmlAttributes={{
+        lang,
+      }}
+      title={title}
+      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      meta={[
+        {
+          name: `description`,
+          content: metaDescription,
         },
-      },
-    }) => {
-      let url = `${siteUrl}${pathname || "/"}`;
-      let seoImage = `https://image.thum.io/get/ogImage/${url}`;
-      if (null !== image) {
-        seoImage = `${siteUrl}${image}`;
-      }
-      const seo = {
-        title: title || defaultTitle,
-        description: description || defaultDescription,
-        image: seoImage,
-        url
-      }
-      return (
-        <>
-          <Helmet title={seo.title} titleTemplate={titleTemplate}>
-            <meta name="google-site-verification" content={googleSiteVerification} />
-            <meta name="description" content={seo.description} />
-            <meta name="image" content={seo.image} />
-            {seo.url && <meta property="og:url" content={seo.url} />}
-            {(article ? true : null) && (
-              <meta property="og:type" content="article" />
-            )}
-            {seo.title && <meta property="og:title" content={seo.title} />}
-            {defaultTitle && <meta property="og:site_name" content={defaultTitle} />}
-            {seo.description && (
-              <meta property="og:description" content={seo.description} />
-            )}
-            {seo.image && <meta property="og:image" content={seo.image} />}
-            <meta name="twitter:card" content="summary_large_image" />
-            {twitterUsername && (
-              <meta name="twitter:creator" content={twitterUsername} />
-            )}
-            {seo.title && <meta name="twitter:title" content={seo.title} />}
-            {seo.description && (
-              <meta name="twitter:description" content={seo.description} />
-            )}
-            {seo.image && <meta name="twitter:image" content={seo.image} />}
-            <script type="application/ld+json">{`
-{
-   "@context": "http://schema.org",
-   "@type": "WebSite",
-   "url": "https://blog.andrewshell.org/",
-   "potentialAction": {
-     "@type": "SearchAction",
-     "target": "https://blog.andrewshell.org/search/?keywords={search_term_string}",
-     "query-input": "required name=search_term_string"
-   }
+        {
+          property: `og:title`,
+          content: title,
+        },
+        {
+          property: `og:description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          name: `twitter:card`,
+          content: `summary`,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata?.social?.twitter || ``,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
+      ].concat(meta)}
+    />
+  )
 }
-`}</script>
-          </Helmet>
-        </>
-      )
-    }}
-  />
-)
-export default SEO
-SEO.propTypes = {
-  title: PropTypes.string,
+
+Seo.defaultProps = {
+  lang: `en`,
+  meta: [],
+  description: ``,
+}
+
+Seo.propTypes = {
   description: PropTypes.string,
-  image: PropTypes.string,
-  pathname: PropTypes.string,
-  article: PropTypes.bool,
+  lang: PropTypes.string,
+  meta: PropTypes.arrayOf(PropTypes.object),
+  title: PropTypes.string.isRequired,
 }
-SEO.defaultProps = {
-  title: null,
-  description: null,
-  image: null,
-  pathname: null,
-  article: false,
-}
-const query = graphql`
-  query SEO {
-    site {
-      siteMetadata {
-        defaultTitle: title
-        titleTemplate
-        defaultDescription: description
-        siteUrl
-        defaultImage: image
-        twitterUsername,
-        googleSiteVerification
-      }
-    }
-  }
-`
+
+export default Seo

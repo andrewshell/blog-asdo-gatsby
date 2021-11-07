@@ -1,89 +1,165 @@
-import React from "react";
-import { graphql, Link } from "gatsby";
-import moment from "moment-timezone";
+import * as React from "react"
+import { Link, graphql } from "gatsby"
 
-import Layout from "../components/journal/layout";
-import Loop from "../components/journal/loop";
-import PageNav from "../components/journal/pagenav";
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-export default function MonthTemplate({ data, pageContext }) {
-  const siteUrl = data.site.siteMetadata.siteUrl;
-  const month = moment(pageContext.slug, "YYYY-MM");
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
+
+const MonthIndex = ({ data, location, pageContext }) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const month = dayjs(pageContext.slug, "YYYY-MM");
+  const pageTitle = month.format('MMMM YYYY');
+  const posts = data.allMarkdownRemark.nodes
+  let previous, next;
+
+  if (pageContext.previousMonth) {
+    previous = {
+      fields: { slug: `/${pageContext.previousMonth}/` },
+      frontmatter: { title: dayjs(pageContext.previousMonth, "YYYY-MM").format('MMMM YYYY') }
+    };
+  }
+
+  if (pageContext.nextMonth) {
+    next = {
+      fields: { slug: `/${pageContext.nextMonth}/` },
+      frontmatter: { title: dayjs(pageContext.nextMonth, "YYYY-MM").format('MMMM YYYY') }
+    };
+  }
+
+  if (posts.length === 0) {
+    return (
+      <Layout location={location} title={siteTitle}>
+        <Seo title={ pageTitle } />
+        <Bio />
+        <p>
+          No blog posts found. Add markdown posts to "content/blog" (or the
+          directory you specified for the "gatsby-source-filesystem" plugin in
+          gatsby-config.js).
+        </p>
+      </Layout>
+    )
+  }
 
   return (
-    <Layout>
-      <main id="gh-main" class="gh-main">
-        <article class="gh-article post no-image">
-          <header class="gh-article-header gh-canvas">
-            <h1 class="gh-article-title">{ month.format('MMMM YYYY') }</h1>
-          </header>
+    <Layout location={location} title={siteTitle}>
+      <Seo title={ pageTitle } />
+      <article
+        className="blog-post"
+        itemScope
+        itemType="http://schema.org/Article"
+      >
+        <header>
+          <h1 itemProp="headline">{ pageTitle }</h1>
+        </header>
+        <section itemProp="articleBody">
+          <ol style={{ listStyle: `none` }}>
+            {posts.map(post => {
+              const title = post.frontmatter.title || post.fields.slug
 
-          <div class="gh-content gh-canvas">
-          {data.allMarkdownRemark.nodes.map((node) => {
-            return (
-              <Loop post={ node } key={ node.id } />
-            )
-          })}
-          </div>
-
-          <footer class="gh-article-footer gh-canvas">
-            <nav class="gh-navigation">
-              <div class="gh-navigation-previous">
-                <PageNav
-                  slug={ pageContext.previousMonth ? `/${pageContext.previousMonth}/` : null }
-                  label="&laquo; Previous month"
-                  title={ pageContext.previousMonth ? moment(pageContext.previousMonth, "YYYY-MM").format('MMMM YYYY') : '' }
-                />
-              </div>
-
-              <div class="gh-navigation-middle"></div>
-
-              <div class="gh-navigation-next">
-                <PageNav
-                  slug={ pageContext.nextMonth ? `/${pageContext.nextMonth}/`: null }
-                  label="Next month &raquo;"
-                  title={ pageContext.nextMonth ? moment(pageContext.nextMonth, "YYYY-MM").format('MMMM YYYY') : '' }
-                />
-              </div>
-            </nav>
-          </footer>
-        </article>
-      </main>
+              return (
+                <li key={post.fields.slug}>
+                  <article
+                    className="post-list-item"
+                    itemScope
+                    itemType="http://schema.org/Article"
+                  >
+                    <header>
+                      <h2>
+                        <Link to={post.fields.slug} itemProp="url">
+                          <span itemProp="headline">{title}</span>
+                        </Link>
+                      </h2>
+                      <small>{ dayjs(post.frontmatter.date).tz(process.env.GATSBY_TIMEZONE).format('MMMM DD, YYYY') }</small>
+                    </header>
+                    <section>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: post.frontmatter.description || post.excerpt,
+                        }}
+                        itemProp="description"
+                      />
+                    </section>
+                  </article>
+                </li>
+              )
+            })}
+          </ol>
+        </section>
+        <hr />
+        <footer>
+          <Bio />
+        </footer>
+      </article>
+      <nav className="blog-post-nav">
+        <ul
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            justifyContent: `space-between`,
+            listStyle: `none`,
+            padding: 0,
+          }}
+        >
+          <li>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                ← {previous.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+            )}
+          </li>
+        </ul>
+      </nav>
     </Layout>
-  );
+  )
 }
 
-export const query = graphql`query MonthQuery($slug: String!) {
-  site {
-    siteMetadata {
-      siteUrl
-    }
-  }
-  allMarkdownRemark(
-    filter: {
-      frontmatter: {
-        published: { ne: false }
-      },
-      fields: {
-        sourceInstanceName: { eq: "posts" },
-        month: { eq: $slug }
-      }
-    },
-    sort: {fields: [frontmatter___date], order: DESC}
+export default MonthIndex
+
+export const pageQuery = graphql`
+  query MonthIndex(
+    $month: String!
   ) {
-    nodes {
-      id,
-      excerpt
-      timeToRead
-      frontmatter {
+    site {
+      siteMetadata {
         title
-        date(formatString: "MMMM DD, YYYY")
-        iso8601: date
-        updated: updated
       }
-      fields {
-        slug
+    }
+    allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          published: { ne: false }
+        },
+        fields: {
+          sourceInstanceName: { eq: "posts" },
+          month: { eq: $month }
+        }
+      },
+      sort: {fields: [frontmatter___date], order: DESC}
+    ) {
+      nodes {
+        excerpt(pruneLength: 280)
+        fields {
+          slug
+        }
+        frontmatter {
+          date
+          title
+          description
+        }
       }
     }
   }
-}`;
+`

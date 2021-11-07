@@ -1,20 +1,29 @@
-import React from "react";
+import * as React from "react"
+import { graphql } from "gatsby"
 
-import Layout from "../components/journal/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-function NotFoundPage() {
+const NotFoundPage = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title
+
   return (
-    <Layout>
-      <main id="gh-main" class="gh-main">
-        <article class="gh-article post no-image">
-          <header class="gh-article-header gh-canvas">
-            <h1 class="gh-article-title">404 Page Not Found</h1>
-          </header>
-        </article>
-      </main>
+    <Layout location={location} title={siteTitle}>
+      <Seo title="404: Not Found" />
+      <h1>404: Not Found</h1>
+      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </Layout>
-  );
+  )
 }
 
-export default NotFoundPage;
+export default NotFoundPage
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

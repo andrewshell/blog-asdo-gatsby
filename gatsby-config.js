@@ -6,34 +6,36 @@ require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: `Andrew Shell's Weblog`,
-    titleTemplate: `%s - Andrew Shell's Weblog`,
-    description: `Hoopla, Ballyhoo, and more...`,
-    author: `Andrew Shell`,
-    image: "/default-image.png",
-    twitterUsername: `@andrewshell`,
-    siteUrl: 'https://blog.andrewshell.org',
-    googleSiteVerification: '_-goZtBP-ox3-3pjEHer7rHHhX5qA_1R_TsQsjyWQtc'
+    author: {
+      name: `Andrew Shell`,
+    },
+    description: `Strategies for thinking, learning, and productivity.`,
+    siteUrl: `https://blog.andrewshell.org/`,
+    social: {
+      twitter: `andrewshell`,
+    },
   },
   plugins: [
     `gatsby-plugin-image`,
     {
-      resolve: `gatsby-plugin-canonical-urls`,
-      options: {
-        siteUrl: `https://blog.andrewshell.org`,
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/posts`,
         name: `posts`,
-        path: `${__dirname}/src/posts`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/pages`,
         name: `pages`,
-        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -41,33 +43,36 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-embed-video`,
-            options: {
-              maxWidth: 800,
-              related: false,
-              noIframerder: true,
-            }
-          },
-          {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
-            }
+              maxWidth: 630,
+            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
-            }
+            },
           },
-          'gatsby-remark-prismjs'
-        ]
-      }
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        ],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-feed',
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-60009507-1",
+        head: true,
+        anonymize: true,
+        respectDNT: true
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
       options: {
         query: `
           {
@@ -84,13 +89,13 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+              return allMarkdownRemark.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ "content:encoded": node.html }],
                 })
               })
             },
@@ -100,22 +105,15 @@ module.exports = {
                   filter: { frontmatter: { published: { ne: false } }, fields: { sourceInstanceName: { eq: "posts" } } },
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      frontmatter {
-                        title
-                        date
-                        enclosure {
-                          url
-                          size
-                          type
-                        }
-                      }
-                      fields {
-                        slug
-                      }
+                  nodes {
+                    excerpt(pruneLength: 280)
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
                     }
                   }
                 }
@@ -125,7 +123,7 @@ module.exports = {
             title: "Andrew Shell's Weblog",
           },
         ],
-      }
+      },
     },
     {
       resolve: 'gatsby-plugin-lunr',
@@ -172,36 +170,12 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#e2e8f0`,
         display: `minimal-ui`,
-        icon: `src/images/geekity_icon.png`
-      }
-    },
-    `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        tailwind: true,
-        purgeOnly: [`src/css/style.css`],
-        printRejected: true,
-        purgeCSSOptions: {
-          safelist: ['blockquote', 'figure', 'figcaption']
-        }
-      }
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-60009507-1",
-        head: true,
-        anonymize: true,
-        respectDNT: true
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-catch-links`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-remove-serviceworker`,
-    `gatsby-plugin-netlify`,
-    `gatsby-plugin-netlify-cms`
-  ]
-};
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
+  ],
+}

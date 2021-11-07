@@ -1,90 +1,113 @@
-import React from "react";
-import { graphql } from "gatsby";
-import moment from "moment-timezone";
+import * as React from "react"
+import { Link, graphql } from "gatsby"
 
-import Layout from "../components/journal/layout";
-import PageNav from "../components/journal/pagenav";
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-export default function PostTemplate({ data, pageContext }) {
-  const post = data.markdownRemark;
-  const { previous, next } = data;
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
+
+const PostTemplate = ({ data, location }) => {
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const { previous, next } = data
 
   return (
-    <Layout>
-      <main id="gh-main" class="gh-main">
-        <article class="gh-article post no-image">
-          <header class="gh-article-header gh-canvas">
-            <span class="gh-article-meta">
-              <time datetime="{ post.frontmatter.iso8601 }">{ moment(post.frontmatter.updated).format(`MMMM DD, YYYY`) }</time>
-            </span>
-            <h1 class="gh-article-title">{ post.frontmatter.title }</h1>
-          </header>
-
-          <div class="gh-content gh-canvas"dangerouslySetInnerHTML={{ __html: post.html }}></div>
-
-          <footer class="gh-article-footer gh-canvas">
-            <nav class="gh-navigation">
-              <div class="gh-navigation-previous">
-                <PageNav
-                  slug={ previous?.fields?.slug }
-                  label="&laquo; Previous essay"
-                  title={previous?.frontmatter?.title}
-                />
-              </div>
-
-              <div class="gh-navigation-middle"></div>
-
-              <div class="gh-navigation-next">
-                <PageNav
-                  slug={ next?.fields?.slug }
-                  label="Next essay &raquo;"
-                  title={next?.frontmatter?.title}
-                />
-              </div>
-            </nav>
-          </footer>
-        </article>
-      </main>
+    <Layout location={ location } title={ siteTitle }>
+      <Seo
+        title={ post.frontmatter.title }
+        description={ post.frontmatter.description || post.excerpt }
+      />
+      <article
+        className="blog-post"
+        itemScope
+        itemType="http://schema.org/Article"
+      >
+        <header>
+          <h1 itemProp="headline">{ post.frontmatter.title }</h1>
+          <p>{ dayjs(post.frontmatter.date).tz(process.env.GATSBY_TIMEZONE).format('MMMM DD, YYYY') }</p>
+        </header>
+        <section
+          dangerouslySetInnerHTML={{ __html: post.html }}
+          itemProp="articleBody"
+        />
+        <hr />
+        <footer>
+          <Bio />
+        </footer>
+      </article>
+      <nav className="blog-post-nav">
+        <ul
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            justifyContent: `space-between`,
+            listStyle: `none`,
+            padding: 0,
+          }}
+        >
+          <li>
+            {previous && (
+              <Link to={ previous.fields.slug } rel="prev">
+                ← { previous.frontmatter.title }
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={ next.fields.slug } rel="next">
+                { next.frontmatter.title } →
+              </Link>
+            )}
+          </li>
+        </ul>
+      </nav>
     </Layout>
-  );
+  )
 }
 
-export const query = graphql`query PostQuery(
-  $slug: String!
-  $previousNodeId: String
-  $nextNodeId: String
-) {
-  site {
-    siteMetadata {
-      siteUrl
+export default PostTemplate
+
+export const pageQuery = graphql`
+  query PostBySlug(
+    $id: String!
+    $previousNodeId: String
+    $nextNodeId: String
+  ) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    markdownRemark(id: { eq: $id }) {
+      id
+      excerpt(pruneLength: 160)
+      html
+      frontmatter {
+        title
+        date
+        description
+      }
+    }
+    previous: markdownRemark(id: { eq: $previousNodeId }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+      }
+    }
+    next: markdownRemark(id: { eq: $nextNodeId }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+      }
     }
   }
-  markdownRemark(fields: { slug: { eq: $slug } }) {
-    html
-    frontmatter {
-      title
-      date(formatString: "MMMM DD, YYYY")
-      iso8601: date
-      updated: updated
-    }
-    fields {
-      slug
-    }
-  }
-  previous: markdownRemark(id: { eq: $previousNodeId }) {
-    fields {
-      slug
-    }
-    frontmatter {
-      title
-    }
-  }
-  next: markdownRemark(id: { eq: $nextNodeId }) {
-    fields {
-      slug
-    }
-    frontmatter {
-      title
-    }
-  }
-}`;
+`

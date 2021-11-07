@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { graphql } from "gatsby"
 
-import Layout from "../components/journal/layout";
-import SEO from "../components/seo";
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 import SearchForm from "../components/searchForm";
 import SearchResults from "../components/searchResults";
 
-export default function SearchPage({ data, location }) {
+const SearchPage = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`
   const keywords = new URLSearchParams(location.search).get('keywords') || '';
   const [results, setResults] = useState([]);
   const [searchQuery, setSearchQuery] = useState(keywords);
@@ -21,7 +24,7 @@ export default function SearchPage({ data, location }) {
         setResults(posts);
       });
     }
-  }, []);
+  }, [searchQuery]);
 
   function onUpdate(keywords) {
     setSearchQuery(keywords);
@@ -39,8 +42,8 @@ export default function SearchPage({ data, location }) {
   }
 
   return (
-    <Layout>
-      <SEO title="Search" />
+    <Layout location={location} title={siteTitle}>
+      <Seo title="Search" />
       <SearchForm
         query={ searchQuery }
         onUpdate={ onUpdate }
@@ -49,6 +52,23 @@ export default function SearchPage({ data, location }) {
         query={ searchQuery }
         results={ results }
       />
+      <hr />
+      <footer>
+        <Bio />
+      </footer>
     </Layout>
   );
 }
+
+export default SearchPage
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
+

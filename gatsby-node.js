@@ -1,50 +1,23 @@
-const { createFilePath } = require('gatsby-source-filesystem');
-const path = require('path');
+const path = require(`path`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
-const moment = require('moment-timezone');
-
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const parent = getNode(node.parent);
-
-    let slug = createFilePath({ node, getNode, basePath: `pages` });
-    if ((node.frontmatter || {}).slug) {
-      slug = '/' + node.frontmatter.slug + '/';
-    }
-
-    if ((node.frontmatter || {}).date) {
-      createNodeField({
-        node,
-        name: 'month',
-        value: moment(node.frontmatter.date).tz(process.env.TIMEZONE).format('YYYY-MM'),
-      });
-    }
-
-    createNodeField({
-      node,
-      name: 'sourceInstanceName',
-      value: parent.sourceInstanceName,
-    });
-
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    });
-  }
-}
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage, createRedirect } = actions;
+  const { createPage, createRedirect } = actions
+
+  // Define a template for blog post
+  const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
       {
         allMarkdownRemark(
-          filter: { frontmatter: { published: { ne: false } } }
           sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {
@@ -54,9 +27,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               sourceInstanceName,
               slug
               month
+              day
             }
             frontmatter {
               date
+              published
             }
           }
         }
@@ -73,17 +48,29 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const months = {};
-
   const nodes = result.data.allMarkdownRemark.nodes.reduce((nodes, node) => {
-    nodes[node.fields.sourceInstanceName || 'unknown'].push(node);
+    if (false === node.frontmatter.published) {
+      nodes['unpublished'].push(node);
+    } else {
+      nodes[node.fields.sourceInstanceName || 'unknown'].push(node);
+    }
     return nodes;
-  }, { pages: [], posts: [], unknown: [] });
+  }, { pages: [], posts: [], unpublished: [], unknown: [] });
 
-  for (const sourceInstanceName of ['posts', 'pages']) {
+  // Create blog posts pages
+  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
+  // `context` is available in the template as a prop and as a variable in GraphQL
+
+  for (const sourceInstanceName of ['pages', 'posts', 'unpublished']) {
     if (nodes[sourceInstanceName].length > 0) {
       nodes[sourceInstanceName].forEach((node, index) => {
-        const previousNodeId = index === 0 ? null : nodes[sourceInstanceName][index - 1].id
-        const nextNodeId = index === nodes[sourceInstanceName].length - 1 ? null : nodes[sourceInstanceName][index + 1].id
+        let previousNodeId = index === 0 ? null : nodes[sourceInstanceName][index - 1].id
+        let nextNodeId = index === nodes[sourceInstanceName].length - 1 ? null : nodes[sourceInstanceName][index + 1].id
+
+        if (sourceInstanceName === 'unpublished') {
+          previousNodeId = null;
+          nextNodeId = null;
+        }
 
         if ('posts' === sourceInstanceName) {
           if (undefined === months[node.fields.month]) {
@@ -95,28 +82,26 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           path: node.fields.slug,
           component: path.resolve(`./src/templates/${node.fields.sourceInstanceName}.js`),
           context: {
-            slug: node.fields.slug,
+            id: node.id,
             previousNodeId,
             nextNodeId,
           },
-        });
+        })
 
         if ('posts' === node.fields.sourceInstanceName) {
-          const fromPath = moment(node.frontmatter.date).tz(process.env.TIMEZONE).format('/YYYY-MM/DD') + node.fields.slug
-          const fromPathUTC = moment(node.frontmatter.date).tz('UTC').format('/YYYY-MM/DD') + node.fields.slug
+          const fromPath = dayjs(node.frontmatter.date).tz(process.env.GATSBY_TIMEZONE).format('/YYYY-MM/DD') + node.fields.slug
+          const fromPathUTC = dayjs(node.frontmatter.date).tz('UTC').format('/YYYY-MM/DD') + node.fields.slug
           const toPath = node.fields.slug
           createRedirect({ fromPath, toPath, isPermanent: true });
           if (fromPathUTC !== fromPath) {
             createRedirect({ fromPath: fromPathUTC, toPath, isPermanent: true });
           }
         }
-
       })
     }
   }
 
   const monthIdx = Object.keys(months);
-
   monthIdx.forEach((month, index) => {
     const previousMonth = index === 0 ? null : monthIdx[index - 1]
     const nextMonth = index === monthIdx.length - 1 ? null : monthIdx[index + 1]
@@ -125,13 +110,46 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       path: `/${month}/`,
       component: path.resolve(`./src/templates/months.js`),
       context: {
-        slug: month,
+        month,
         previousMonth,
         nextMonth,
       },
     });
   })
+}
 
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const parent = getNode(node.parent);
+    const value = createFilePath({ node, getNode })
+
+    if ((node.frontmatter || {}).date) {
+      createNodeField({
+        node,
+        name: 'month',
+        value: dayjs(node.frontmatter.date).tz(process.env.TIMEZONE).format('YYYY-MM'),
+      });
+      createNodeField({
+        node,
+        name: 'day',
+        value: dayjs(node.frontmatter.date).tz(process.env.TIMEZONE).format('DD'),
+      });
+    }
+
+    createNodeField({
+      node,
+      name: 'sourceInstanceName',
+      value: parent.sourceInstanceName,
+    });
+
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
 }
 
 exports.createSchemaCustomization = ({ actions }) => {
@@ -166,17 +184,17 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type Frontmatter {
       title: String
+      description: String
       date: Date @dateformat
       updated: Date @dateformat
       published: Boolean
-      description: String
-      featuredImg: File
     }
 
     type Fields {
       slug: String
       sourceInstanceName: String
       month: String
+      day: String
     }
   `)
 }
