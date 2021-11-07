@@ -1,7 +1,7 @@
 ---
 title: Minimalism ain't just a river in Egypt
-date: 2011-02-15 06:00:00+00:00
-updated: 2011-02-15 06:00:00+00:00
+date: 2011-02-15T06:00:00.000Z
+updated: 2011-02-15T06:00:00.000Z
 published: true
 ---
 

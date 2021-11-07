@@ -1,7 +1,7 @@
 ---
 title: What is the best way to inject a logger?
-date: 2017-03-06 16:34:00+00:00
-updated: 2017-03-06 16:34:00+00:00
+date: 2017-03-06T16:34:00.000Z
+updated: 2017-03-06T16:34:00.000Z
 published: true
 ---
 

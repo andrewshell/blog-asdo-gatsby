@@ -1,7 +1,7 @@
 ---
 title: Symfony Forms and Radar - Part 2
-date: 2016-09-28 05:00:55+00:00
-updated: 2016-09-28 05:00:55+00:00
+date: 2016-09-28T05:00:55.000Z
+updated: 2016-09-28T05:00:55.000Z
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Playing with Old School
-date: 2020-10-27 13:36:39+00:00
-updated: 2020-10-27 13:36:39+00:00
+date: 2020-10-27T13:36:39.000Z
+updated: 2020-10-27T13:36:39.000Z
 published: true
 ---
 

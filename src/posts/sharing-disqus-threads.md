@@ -1,7 +1,7 @@
 ---
 title: Sharing Disqus Threads
-date: 2013-01-19 06:00:00+00:00
-updated: 2013-01-19 06:00:00+00:00
+date: 2013-01-19T06:00:00.000Z
+updated: 2013-01-19T06:00:00.000Z
 published: true
 ---
 

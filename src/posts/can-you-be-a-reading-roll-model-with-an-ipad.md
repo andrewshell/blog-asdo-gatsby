@@ -1,7 +1,7 @@
 ---
 title: Can You Be a Reading Roll Model With an iPad?
-date: 2013-07-26 06:00:00+00:00
-updated: 2013-07-26 06:00:00+00:00
+date: 2013-07-26T06:00:00.000Z
+updated: 2013-07-26T06:00:00.000Z
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Tracking Multiple Connections with PHP Debug Bar and Atlas ORM
-date: 2016-10-18 14:14:29+00:00
-updated: 2016-10-18 14:14:29+00:00
+date: 2016-10-18T14:14:29.000Z
+updated: 2016-10-18T14:14:29.000Z
 published: true
 ---
 

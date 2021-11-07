@@ -1,7 +1,7 @@
 ---
 title: PHP Bugtracking
-date: 2006-11-05 06:00:00+00:00
-updated: 2006-11-05 06:00:00+00:00
+date: 2006-11-05T06:00:00.000Z
+updated: 2006-11-05T06:00:00.000Z
 published: true
 ---
 

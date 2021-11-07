@@ -1,7 +1,7 @@
 ---
 title: The Importance of Margins
-date: 2021-10-14 17:02:56+00:00
-updated: 2021-10-14 17:02:56+00:00
+date: 2021-10-14T17:02:56.000Z
+updated: 2021-10-14T17:02:56.000Z
 published: true
 ---
 

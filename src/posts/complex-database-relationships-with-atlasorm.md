@@ -1,7 +1,7 @@
 ---
 title: Complex Database Relationships with AtlasORM
-date: 2016-10-10 16:51:58+00:00
-updated: 2016-10-10 16:51:58+00:00
+date: 2016-10-10T16:51:58.000Z
+updated: 2016-10-10T16:51:58.000Z
 published: true
 ---
 

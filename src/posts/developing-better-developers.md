@@ -1,7 +1,7 @@
 ---
 title: Developing better developers
-date: 2020-11-02 16:32:45+00:00
-updated: 2020-11-02 16:32:45+00:00
+date: 2020-11-02T16:32:45.000Z
+updated: 2020-11-02T16:32:45.000Z
 published: true
 ---
 

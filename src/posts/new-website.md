@@ -1,7 +1,7 @@
 ---
 title: New Website
-date: 2020-12-05 23:00:28+00:00
-updated: 2020-12-05 23:00:28+00:00
+date: 2020-12-05T23:00:28.000Z
+updated: 2020-12-05T23:00:28.000Z
 published: true
 ---
 

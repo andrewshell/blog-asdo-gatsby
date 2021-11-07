@@ -1,7 +1,7 @@
 ---
 title: Identifying my priorities
-date: 2014-01-21 06:00:00+00:00
-updated: 2014-01-21 06:00:00+00:00
+date: 2014-01-21T06:00:00.000Z
+updated: 2014-01-21T06:00:00.000Z
 published: true
 ---
 

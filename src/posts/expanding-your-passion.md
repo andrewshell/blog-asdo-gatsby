@@ -1,7 +1,7 @@
 ---
 title: Expanding Your Passion
-date: 2010-08-23 06:00:00+00:00
-updated: 2010-08-23 06:00:00+00:00
+date: 2010-08-23T06:00:00.000Z
+updated: 2010-08-23T06:00:00.000Z
 published: true
 ---
 

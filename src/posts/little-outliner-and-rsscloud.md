@@ -1,7 +1,7 @@
 ---
 title: Little Outliner and rssCloud?
-date: 2020-10-21 15:58:45+00:00
-updated: 2020-10-21 15:58:45+00:00
+date: 2020-10-21T15:58:45.000Z
+updated: 2020-10-21T15:58:45.000Z
 published: true
 ---
 

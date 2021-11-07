@@ -1,7 +1,7 @@
 ---
 title: Joining Hyperboria
-date: 2013-03-13 20:44:21+00:00
-updated: 2013-03-13 20:44:21+00:00
+date: 2013-03-13T20:44:21.000Z
+updated: 2013-03-13T20:44:21.000Z
 published: true
 ---
 

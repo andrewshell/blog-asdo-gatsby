@@ -1,7 +1,7 @@
 ---
 title: First PHP Meetup
-date: 2004-12-16 06:00:00+00:00
-updated: 2004-12-16 06:00:00+00:00
+date: 2004-12-16T06:00:00.000Z
+updated: 2004-12-16T06:00:00.000Z
 published: true
 ---
 

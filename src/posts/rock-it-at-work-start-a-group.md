@@ -1,7 +1,7 @@
 ---
 title: Rock-It at Work - Start a Group
-date: 2011-06-29 06:00:00+00:00
-updated: 2011-06-29 06:00:00+00:00
+date: 2011-06-29T06:00:00.000Z
+updated: 2011-06-29T06:00:00.000Z
 published: true
 ---
 

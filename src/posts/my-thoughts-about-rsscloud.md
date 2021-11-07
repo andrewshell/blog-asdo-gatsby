@@ -1,7 +1,7 @@
 ---
 title: My thoughts about rssCloud
-date: 2020-10-22 19:54:12+00:00
-updated: 2020-10-22 19:54:12+00:00
+date: 2020-10-22T19:54:12.000Z
+updated: 2020-10-22T19:54:12.000Z
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Yahoo and the semantic web
-date: 2008-08-29 06:00:00+00:00
-updated: 2008-08-29 06:00:00+00:00
+date: 2008-08-29T06:00:00.000Z
+updated: 2008-08-29T06:00:00.000Z
 published: true
 ---
 

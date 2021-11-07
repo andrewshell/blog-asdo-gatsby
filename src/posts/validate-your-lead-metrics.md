@@ -1,7 +1,7 @@
 ---
 title: Validate Your Lead Metrics
-date: 2021-10-23 15:09:10+00:00
-updated: 2021-10-23 15:09:10+00:00
+date: 2021-10-23T15:09:10.000Z
+updated: 2021-10-23T15:09:10.000Z
 published: true
 ---
 

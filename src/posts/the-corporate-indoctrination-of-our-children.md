@@ -1,7 +1,7 @@
 ---
 title: The corporate indoctrination of our children
-date: 2013-09-24 06:00:00+00:00
-updated: 2013-09-24 06:00:00+00:00
+date: 2013-09-24T06:00:00.000Z
+updated: 2013-09-24T06:00:00.000Z
 published: true
 ---
 

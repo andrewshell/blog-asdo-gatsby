@@ -1,7 +1,7 @@
 ---
 title: What is the best way to handle sessions with ADR?
-date: 2017-05-02 10:00:59+00:00
-updated: 2017-05-02 10:00:59+00:00
+date: 2017-05-02T10:00:59.000Z
+updated: 2017-05-02T10:00:59.000Z
 published: true
 ---
 

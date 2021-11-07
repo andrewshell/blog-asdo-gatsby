@@ -1,7 +1,7 @@
 ---
 title: Laravel UTC Model
-date: 2015-05-01 06:00:00+00:00
-updated: 2015-05-01 06:00:00+00:00
+date: 2015-05-01T06:00:00.000Z
+updated: 2015-05-01T06:00:00.000Z
 published: true
 ---
 

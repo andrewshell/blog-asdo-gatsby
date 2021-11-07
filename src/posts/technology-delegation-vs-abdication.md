@@ -1,7 +1,7 @@
 ---
 title: Technology delegation vs abdication
-date: 2010-12-15 06:00:00+00:00
-updated: 2010-12-15 06:00:00+00:00
+date: 2010-12-15T06:00:00.000Z
+updated: 2010-12-15T06:00:00.000Z
 published: true
 ---
 

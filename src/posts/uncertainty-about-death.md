@@ -1,7 +1,7 @@
 ---
 title: Uncertainty about death
-date: 2015-07-07 06:00:00+00:00
-updated: 2015-07-07 06:00:00+00:00
+date: 2015-07-07T06:00:00.000Z
+updated: 2015-07-07T06:00:00.000Z
 published: true
 ---
 

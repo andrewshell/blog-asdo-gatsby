@@ -1,7 +1,7 @@
 ---
 title: Dead Drops 'How to'
-date: 2012-09-12 06:00:00+00:00
-updated: 2012-09-12 06:00:00+00:00
+date: 2012-09-12T06:00:00.000Z
+updated: 2012-09-12T06:00:00.000Z
 published: true
 ---
 

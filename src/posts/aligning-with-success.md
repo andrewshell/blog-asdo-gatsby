@@ -1,7 +1,7 @@
 ---
 title: Aligning with Success
-date: 2021-10-18 17:02:56+00:00
-updated: 2021-10-18 17:02:56+00:00
+date: 2021-10-18T17:02:56.000Z
+updated: 2021-10-18T17:02:56.000Z
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Getting started with Radar
-date: 2015-12-17 06:00:00+00:00
-updated: 2015-12-17 06:00:00+00:00
+date: 2015-12-17T06:00:00.000Z
+updated: 2015-12-17T06:00:00.000Z
 published: true
 ---
 

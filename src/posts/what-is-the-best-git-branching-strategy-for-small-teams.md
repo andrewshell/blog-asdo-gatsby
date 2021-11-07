@@ -1,7 +1,7 @@
 ---
 title: What is the best git branching strategy for small teams?
-date: 2016-11-04 12:45:59+00:00
-updated: 2016-11-04 12:45:59+00:00
+date: 2016-11-04T12:45:59.000Z
+updated: 2016-11-04T12:45:59.000Z
 published: true
 ---
 

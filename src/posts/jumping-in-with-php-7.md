@@ -1,7 +1,7 @@
 ---
 title: Jumping in with PHP 7
-date: 2016-01-15 17:09:57+00:00
-updated: 2016-01-15 17:09:57+00:00
+date: 2016-01-15T17:09:57.000Z
+updated: 2016-01-15T17:09:57.000Z
 published: true
 ---
 

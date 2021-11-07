@@ -1,7 +1,7 @@
 ---
 title: Read Full Story
-date: 2016-03-03 18:01:42+00:00
-updated: 2016-03-03 18:01:42+00:00
+date: 2016-03-03T18:01:42.000Z
+updated: 2016-03-03T18:01:42.000Z
 published: true
 ---
 

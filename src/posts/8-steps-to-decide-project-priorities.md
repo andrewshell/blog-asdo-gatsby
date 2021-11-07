@@ -1,7 +1,7 @@
 ---
 title: "8 Steps to Decide Project Priorities "
-date: 2021-10-12 13:46:48+00:00
-updated: 2021-10-12 13:46:48+00:00
+date: 2021-10-12T13:46:48.000Z
+updated: 2021-10-12T13:46:48.000Z
 published: true
 ---
 

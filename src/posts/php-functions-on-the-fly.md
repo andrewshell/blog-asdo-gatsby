@@ -1,7 +1,7 @@
 ---
 title: PHP Functions on the Fly
-date: 2012-06-14 06:00:00+00:00
-updated: 2012-06-14 06:00:00+00:00
+date: 2012-06-14T06:00:00.000Z
+updated: 2012-06-14T06:00:00.000Z
 published: true
 ---
 

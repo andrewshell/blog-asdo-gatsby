@@ -1,7 +1,7 @@
 ---
 title: Introducing fs-key-value My First NPM Module
-date: 2013-08-15 06:00:00+00:00
-updated: 2013-08-15 06:00:00+00:00
+date: 2013-08-15T06:00:00.000Z
+updated: 2013-08-15T06:00:00.000Z
 published: true
 ---
 

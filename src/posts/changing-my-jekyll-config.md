@@ -1,7 +1,7 @@
 ---
 title: Changing My Jekyll Config
-date: 2013-06-29 06:00:00+00:00
-updated: 2013-06-29 06:00:00+00:00
+date: 2013-06-29T06:00:00.000Z
+updated: 2013-06-29T06:00:00.000Z
 published: true
 ---
 

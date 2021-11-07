@@ -1,7 +1,7 @@
 ---
 title: Figuring out Silex SecurityServiceProvider
-date: 2013-11-23 06:00:00+00:00
-updated: 2013-11-23 06:00:00+00:00
+date: 2013-11-23T06:00:00.000Z
+updated: 2013-11-23T06:00:00.000Z
 published: true
 ---
 

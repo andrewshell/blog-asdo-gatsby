@@ -1,7 +1,7 @@
 ---
 title: Giving Up On Web Ownership?
-date: 2011-02-18 06:00:00+00:00
-updated: 2011-02-18 06:00:00+00:00
+date: 2011-02-18T06:00:00.000Z
+updated: 2011-02-18T06:00:00.000Z
 published: true
 ---
 

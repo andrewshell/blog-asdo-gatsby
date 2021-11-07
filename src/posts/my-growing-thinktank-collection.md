@@ -1,7 +1,7 @@
 ---
 title: My Growing ThinkTank Collection
-date: 2020-11-09 02:17:18+00:00
-updated: 2020-11-09 02:17:18+00:00
+date: 2020-11-09T02:17:18.000Z
+updated: 2020-11-09T02:17:18.000Z
 published: true
 ---
 

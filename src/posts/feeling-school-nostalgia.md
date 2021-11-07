@@ -1,7 +1,7 @@
 ---
 title: Feeling School Nostalgia
-date: 2020-01-22 15:15:48+00:00
-updated: 2020-01-22 15:15:48+00:00
+date: 2020-01-22T15:15:48.000Z
+updated: 2020-01-22T15:15:48.000Z
 published: true
 ---
 

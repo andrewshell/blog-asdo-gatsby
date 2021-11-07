@@ -1,7 +1,7 @@
 ---
 title: Playing with Gatsby
-date: 2020-10-26 18:01:33+00:00
-updated: 2020-10-26 18:01:33+00:00
+date: 2020-10-26T18:01:33.000Z
+updated: 2020-10-26T18:01:33.000Z
 published: true
 ---
 

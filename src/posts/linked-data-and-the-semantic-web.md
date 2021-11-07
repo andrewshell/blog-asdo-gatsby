@@ -1,7 +1,7 @@
 ---
 title: Linked Data and the Semantic Web
-date: 2020-12-10 22:49:42+00:00
-updated: 2020-12-10 22:49:42+00:00
+date: 2020-12-10T22:49:42.000Z
+updated: 2020-12-10T22:49:42.000Z
 published: true
 ---
 

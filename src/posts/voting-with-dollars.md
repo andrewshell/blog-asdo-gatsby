@@ -1,7 +1,7 @@
 ---
 title: "Voting with dollars "
-date: 2021-01-03 01:11:03+00:00
-updated: 2021-01-03 01:11:03+00:00
+date: 2021-01-03T01:11:03.000Z
+updated: 2021-01-03T01:11:03.000Z
 published: true
 ---
 

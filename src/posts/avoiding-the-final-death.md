@@ -1,7 +1,7 @@
 ---
 title: Avoiding the Final Death
-date: 2021-03-27 11:34:20+00:00
-updated: 2021-03-27 11:34:20+00:00
+date: 2021-03-27T11:34:20.000Z
+updated: 2021-03-27T11:34:20.000Z
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Drains of Canada: An Interview with Michael Cook"
-date: 2007-08-27 06:00:00+00:00
-updated: 2007-08-27 06:00:00+00:00
+date: 2007-08-27T06:00:00.000Z
+updated: 2007-08-27T06:00:00.000Z
 published: true
 ---
 

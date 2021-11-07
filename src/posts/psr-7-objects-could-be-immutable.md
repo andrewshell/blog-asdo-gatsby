@@ -1,7 +1,7 @@
 ---
 title: PSR-7 Objects Could Be Immutable
-date: 2016-12-31 14:58:01+00:00
-updated: 2016-12-31 14:58:01+00:00
+date: 2016-12-31T14:58:01.000Z
+updated: 2016-12-31T14:58:01.000Z
 published: true
 ---
 

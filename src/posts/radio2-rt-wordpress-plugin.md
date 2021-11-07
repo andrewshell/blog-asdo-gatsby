@@ -1,7 +1,7 @@
 ---
 title: Radio2 RT WordPress Plugin
-date: 2012-02-04 06:00:00+00:00
-updated: 2012-02-04 06:00:00+00:00
+date: 2012-02-04T06:00:00.000Z
+updated: 2012-02-04T06:00:00.000Z
 published: true
 ---
 

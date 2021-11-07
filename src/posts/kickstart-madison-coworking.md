@@ -1,7 +1,7 @@
 ---
 title: Kickstart Madison Coworking
-date: 2010-05-18 06:00:00+00:00
-updated: 2010-05-18 06:00:00+00:00
+date: 2010-05-18T06:00:00.000Z
+updated: 2010-05-18T06:00:00.000Z
 published: true
 ---
 

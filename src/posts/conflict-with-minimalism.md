@@ -1,7 +1,7 @@
 ---
 title: Conflict with Minimalism
-date: 2010-09-03 06:00:00+00:00
-updated: 2010-09-03 06:00:00+00:00
+date: 2010-09-03T06:00:00.000Z
+updated: 2010-09-03T06:00:00.000Z
 published: true
 ---
 

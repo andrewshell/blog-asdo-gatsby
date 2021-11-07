@@ -1,7 +1,7 @@
 ---
 title: Douglas Engelbart and Linked Data
-date: 2021-03-27 11:06:13+00:00
-updated: 2021-03-27 11:06:13+00:00
+date: 2021-03-27T11:06:13.000Z
+updated: 2021-03-27T11:06:13.000Z
 published: true
 ---
 

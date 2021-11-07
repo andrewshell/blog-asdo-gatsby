@@ -1,7 +1,7 @@
 ---
 title: What is rssCloud?
-date: 2015-06-03 06:00:00+00:00
-updated: 2015-06-03 06:00:00+00:00
+date: 2015-06-03T06:00:00.000Z
+updated: 2015-06-03T06:00:00.000Z
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Ionic 4 and MobX
-date: 2018-06-28 21:02:31+00:00
-updated: 2018-06-28 21:02:31+00:00
+date: 2018-06-28T21:02:31.000Z
+updated: 2018-06-28T21:02:31.000Z
 published: true
 ---
 

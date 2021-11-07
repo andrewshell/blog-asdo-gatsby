@@ -1,7 +1,7 @@
 ---
 title: Custom templates in pagePark
-date: 2020-10-24 21:41:59+00:00
-updated: 2020-10-24 21:41:59+00:00
+date: 2020-10-24T21:41:59.000Z
+updated: 2020-10-24T21:41:59.000Z
 published: true
 ---
 

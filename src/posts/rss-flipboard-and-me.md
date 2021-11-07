@@ -1,7 +1,7 @@
 ---
 title: RSS, FlipBoard and Me
-date: 2010-08-11 06:00:00+00:00
-updated: 2010-08-11 06:00:00+00:00
+date: 2010-08-11T06:00:00.000Z
+updated: 2010-08-11T06:00:00.000Z
 published: true
 ---
 

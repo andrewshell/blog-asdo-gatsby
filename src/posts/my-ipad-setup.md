@@ -1,7 +1,7 @@
 ---
 title: My iPad Setup
-date: 2021-05-30 14:01:33+00:00
-updated: 2021-05-30 14:01:33+00:00
+date: 2021-05-30T14:01:33.000Z
+updated: 2021-05-30T14:01:33.000Z
 published: true
 ---
 

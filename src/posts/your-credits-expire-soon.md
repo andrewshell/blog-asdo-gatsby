@@ -1,7 +1,7 @@
 ---
 title: Your credits expire soon
-date: 2014-04-25 06:00:00+00:00
-updated: 2014-04-25 06:00:00+00:00
+date: 2014-04-25T06:00:00.000Z
+updated: 2014-04-25T06:00:00.000Z
 published: true
 ---
 

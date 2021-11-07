@@ -1,7 +1,7 @@
 ---
 title: Triggering Safari Reader
-date: 2013-08-07 06:00:00+00:00
-updated: 2013-08-07 06:00:00+00:00
+date: 2013-08-07T06:00:00.000Z
+updated: 2013-08-07T06:00:00.000Z
 published: true
 ---
 

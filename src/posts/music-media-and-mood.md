@@ -1,7 +1,7 @@
 ---
 title: Music, Media, and Mood
-date: 2020-04-07 13:50:19+00:00
-updated: 2020-04-07 13:50:19+00:00
+date: 2020-04-07T13:50:19.000Z
+updated: 2020-04-07T13:50:19.000Z
 published: true
 ---
 

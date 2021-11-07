@@ -1,7 +1,7 @@
 ---
 title: "Self-Hosted Web-Crawler and Search Engine "
-date: 2020-11-04 13:52:01+00:00
-updated: 2020-11-04 13:52:01+00:00
+date: 2020-11-04T13:52:01.000Z
+updated: 2020-11-04T13:52:01.000Z
 published: true
 ---
 

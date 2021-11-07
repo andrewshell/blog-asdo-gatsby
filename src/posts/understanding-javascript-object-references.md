@@ -1,7 +1,7 @@
 ---
 title: Understanding Javascript Object References
-date: 2019-11-12 06:00:00+00:00
-updated: 2019-11-12 06:00:00+00:00
+date: 2019-11-12T06:00:00.000Z
+updated: 2019-11-12T06:00:00.000Z
 published: true
 ---
 

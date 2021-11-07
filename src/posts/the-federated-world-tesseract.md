@@ -1,7 +1,7 @@
 ---
 title: The Federated World Tesseract
-date: 2021-01-07 17:00:00+00:00
-updated: 2021-01-07 17:00:00+00:00
+date: 2021-01-07T17:00:00.000Z
+updated: 2021-01-07T17:00:00.000Z
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Shipping is Scary
-date: 2011-04-22 06:00:00+00:00
-updated: 2011-04-22 06:00:00+00:00
+date: 2011-04-22T06:00:00.000Z
+updated: 2011-04-22T06:00:00.000Z
 published: true
 ---
 

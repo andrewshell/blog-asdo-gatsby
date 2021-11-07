@@ -1,7 +1,7 @@
 ---
 title: Data Minimalism
-date: 2011-03-17 06:00:00+00:00
-updated: 2011-03-17 06:00:00+00:00
+date: 2011-03-17T06:00:00.000Z
+updated: 2011-03-17T06:00:00.000Z
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Developers and the Growth Mindset
-date: 2011-05-09 06:00:00+00:00
-updated: 2011-05-09 06:00:00+00:00
+date: 2011-05-09T06:00:00.000Z
+updated: 2011-05-09T06:00:00.000Z
 published: true
 ---
 

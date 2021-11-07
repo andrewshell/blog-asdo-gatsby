@@ -1,7 +1,7 @@
 ---
 title: "Fediverse of Federated Things "
-date: 2020-12-06 21:15:03+00:00
-updated: 2020-12-06 21:15:03+00:00
+date: 2020-12-06T21:15:03.000Z
+updated: 2020-12-06T21:15:03.000Z
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Voicemailcast for Feb 18, 2020
-date: 2020-02-18 16:11:06+00:00
-updated: 2020-02-18 16:11:06+00:00
+date: 2020-02-18T16:11:06.000Z
+updated: 2020-02-18T16:11:06.000Z
 published: true
 enclosure:
   url: https://blog.andrewshell.org/uploads/2020/02/voicemailcast-20200218.mp3

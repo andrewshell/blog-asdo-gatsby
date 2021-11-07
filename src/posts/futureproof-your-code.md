@@ -1,7 +1,7 @@
 ---
 title: FutureProof Your Code
-date: 2016-09-16 19:46:52+00:00
-updated: 2016-09-16 19:46:52+00:00
+date: 2016-09-16T19:46:52.000Z
+updated: 2016-09-16T19:46:52.000Z
 published: true
 ---
 

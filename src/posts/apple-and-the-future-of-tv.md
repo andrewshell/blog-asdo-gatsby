@@ -1,7 +1,7 @@
 ---
 title: Apple and the future of TV
-date: 2012-02-18 06:00:00+00:00
-updated: 2012-02-18 06:00:00+00:00
+date: 2012-02-18T06:00:00.000Z
+updated: 2012-02-18T06:00:00.000Z
 published: true
 ---
 

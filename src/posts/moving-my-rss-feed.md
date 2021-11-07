@@ -1,7 +1,7 @@
 ---
 title: Moving My RSS Feed
-date: 2013-08-08 06:00:00+00:00
-updated: 2013-08-08 06:00:00+00:00
+date: 2013-08-08T06:00:00.000Z
+updated: 2013-08-08T06:00:00.000Z
 published: true
 ---
 

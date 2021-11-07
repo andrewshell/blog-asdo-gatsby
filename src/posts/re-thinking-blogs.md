@@ -1,7 +1,7 @@
 ---
 title: Re-Thinking Blogs
-date: 2020-10-18 15:10:25+00:00
-updated: 2020-10-18 15:10:25+00:00
+date: 2020-10-18T15:10:25.000Z
+updated: 2020-10-18T15:10:25.000Z
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: LazyArray Officially Part of Aura.Di
-date: 2016-10-04 18:37:55+00:00
-updated: 2016-10-04 18:37:55+00:00
+date: 2016-10-04T18:37:55.000Z
+updated: 2016-10-04T18:37:55.000Z
 published: true
 ---
 

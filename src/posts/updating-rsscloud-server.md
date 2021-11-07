@@ -1,7 +1,7 @@
 ---
 title: Updating rssCloud Server
-date: 2020-02-18 03:29:18+00:00
-updated: 2020-02-18 03:29:18+00:00
+date: 2020-02-18T03:29:18.000Z
+updated: 2020-02-18T03:29:18.000Z
 published: true
 ---
 

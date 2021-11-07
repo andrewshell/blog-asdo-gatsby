@@ -1,7 +1,7 @@
 ---
 title: How Frontier got started
-date: 2020-10-31 01:31:08+00:00
-updated: 2020-10-31 01:31:08+00:00
+date: 2020-10-31T01:31:08.000Z
+updated: 2020-10-31T01:31:08.000Z
 published: true
 ---
 

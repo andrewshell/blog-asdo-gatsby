@@ -1,7 +1,7 @@
 ---
 title: Async/Await for callback users
-date: 2021-02-09 17:25:18+00:00
-updated: 2021-02-09 17:25:18+00:00
+date: 2021-02-09T17:25:18.000Z
+updated: 2021-02-09T17:25:18.000Z
 published: true
 ---
 

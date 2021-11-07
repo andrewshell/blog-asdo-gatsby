@@ -1,7 +1,7 @@
 ---
 title: Switching to Jekyll
-date: 2013-02-14 06:00:00+00:00
-updated: 2013-02-14 06:00:00+00:00
+date: 2013-02-14T06:00:00.000Z
+updated: 2013-02-14T06:00:00.000Z
 published: true
 ---
 

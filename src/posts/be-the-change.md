@@ -1,7 +1,7 @@
 ---
 title: Be the Change
-date: 2016-11-09 12:14:18+00:00
-updated: 2016-11-09 12:14:18+00:00
+date: 2016-11-09T12:14:18.000Z
+updated: 2016-11-09T12:14:18.000Z
 published: true
 ---
 

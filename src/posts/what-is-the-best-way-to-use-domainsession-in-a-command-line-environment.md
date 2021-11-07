@@ -1,7 +1,7 @@
 ---
 title: What is the best way to use DomainSession in a command line environment?
-date: 2017-05-25 16:42:29+00:00
-updated: 2017-05-25 16:42:29+00:00
+date: 2017-05-25T16:42:29.000Z
+updated: 2017-05-25T16:42:29.000Z
 published: true
 ---
 

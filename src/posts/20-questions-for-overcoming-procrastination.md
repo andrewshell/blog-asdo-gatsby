@@ -1,7 +1,7 @@
 ---
 title: 20 Questions for Overcoming Procrastination
-date: 2021-10-11 17:02:56+00:00
-updated: 2021-10-11 17:02:56+00:00
+date: 2021-10-11T17:02:56.000Z
+updated: 2021-10-11T17:02:56.000Z
 published: true
 ---
 

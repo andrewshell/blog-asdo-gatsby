@@ -1,7 +1,7 @@
 ---
 title: Is it a myth that women quit to take care of their family?
-date: 2013-09-11 06:00:00+00:00
-updated: 2013-09-11 06:00:00+00:00
+date: 2013-09-11T06:00:00.000Z
+updated: 2013-09-11T06:00:00.000Z
 published: true
 ---
 

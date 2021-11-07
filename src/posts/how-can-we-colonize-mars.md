@@ -1,7 +1,7 @@
 ---
 title: How Can We Colonize Mars?
-date: 2016-12-20 20:46:50+00:00
-updated: 2016-12-20 20:46:50+00:00
+date: 2016-12-20T20:46:50.000Z
+updated: 2016-12-20T20:46:50.000Z
 published: true
 ---
 

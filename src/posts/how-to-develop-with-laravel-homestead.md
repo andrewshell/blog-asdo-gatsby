@@ -1,7 +1,7 @@
 ---
 title: How to Develop with Laravel Homestead
-date: 2017-06-10 13:41:01+00:00
-updated: 2017-06-10 13:41:01+00:00
+date: 2017-06-10T13:41:01.000Z
+updated: 2017-06-10T13:41:01.000Z
 published: true
 ---
 

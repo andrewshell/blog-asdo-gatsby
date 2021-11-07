@@ -1,7 +1,7 @@
 ---
 title: My own nodeStorage server
-date: 2020-10-23 14:25:13+00:00
-updated: 2020-10-23 14:25:13+00:00
+date: 2020-10-23T14:25:13.000Z
+updated: 2020-10-23T14:25:13.000Z
 published: true
 ---
 

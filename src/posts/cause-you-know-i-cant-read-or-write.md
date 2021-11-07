@@ -1,7 +1,7 @@
 ---
 title: Cause you know... I can't read or write.
-date: 2009-01-06 06:00:00+00:00
-updated: 2009-01-06 06:00:00+00:00
+date: 2009-01-06T06:00:00.000Z
+updated: 2009-01-06T06:00:00.000Z
 published: true
 ---
 

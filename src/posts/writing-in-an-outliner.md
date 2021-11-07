@@ -1,7 +1,7 @@
 ---
 title: Writing in an outliner
-date: 2020-10-24 22:02:40+00:00
-updated: 2020-10-24 22:02:40+00:00
+date: 2020-10-24T22:02:40.000Z
+updated: 2020-10-24T22:02:40.000Z
 published: true
 ---
 

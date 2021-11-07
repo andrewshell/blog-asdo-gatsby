@@ -1,7 +1,7 @@
 ---
 title: Digital Decentralism
-date: 2012-01-23 06:00:00+00:00
-updated: 2012-01-23 06:00:00+00:00
+date: 2012-01-23T06:00:00.000Z
+updated: 2012-01-23T06:00:00.000Z
 published: true
 ---
 

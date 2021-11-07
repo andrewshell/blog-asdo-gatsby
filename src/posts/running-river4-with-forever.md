@@ -1,7 +1,7 @@
 ---
 title: Running River4 with forever
-date: 2014-06-25 06:00:00+00:00
-updated: 2014-06-25 06:00:00+00:00
+date: 2014-06-25T06:00:00.000Z
+updated: 2014-06-25T06:00:00.000Z
 published: true
 ---
 

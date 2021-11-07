@@ -1,7 +1,7 @@
 ---
 title: Free standing rssCloud testing tool
-date: 2020-10-25 15:10:40+00:00
-updated: 2020-10-25 15:10:40+00:00
+date: 2020-10-25T15:10:40.000Z
+updated: 2020-10-25T15:10:40.000Z
 published: true
 ---
 

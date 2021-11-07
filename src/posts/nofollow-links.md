@@ -1,7 +1,7 @@
 ---
 title: Nofollow Links
-date: 2011-03-29 06:00:00+00:00
-updated: 2011-03-29 06:00:00+00:00
+date: 2011-03-29T06:00:00.000Z
+updated: 2011-03-29T06:00:00.000Z
 published: true
 ---
 

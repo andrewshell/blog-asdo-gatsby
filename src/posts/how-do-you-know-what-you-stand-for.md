@@ -1,7 +1,7 @@
 ---
 title: How do you know what you stand for?
-date: 2009-12-11 06:00:00+00:00
-updated: 2009-12-11 06:00:00+00:00
+date: 2009-12-11T06:00:00.000Z
+updated: 2009-12-11T06:00:00.000Z
 published: true
 ---
 

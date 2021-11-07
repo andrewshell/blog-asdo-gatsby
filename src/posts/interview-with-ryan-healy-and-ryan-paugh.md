@@ -1,7 +1,7 @@
 ---
 title: Interview with Ryan Healy and Ryan Paugh
-date: 2010-10-01 06:00:00+00:00
-updated: 2010-10-01 06:00:00+00:00
+date: 2010-10-01T06:00:00.000Z
+updated: 2010-10-01T06:00:00.000Z
 published: true
 ---
 

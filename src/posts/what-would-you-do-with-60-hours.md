@@ -1,7 +1,7 @@
 ---
 title: What would you do with 60 hours?
-date: 2010-12-30 06:00:00+00:00
-updated: 2010-12-30 06:00:00+00:00
+date: 2010-12-30T06:00:00.000Z
+updated: 2010-12-30T06:00:00.000Z
 published: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Improving My Code
-date: 2013-08-02 06:00:00+00:00
-updated: 2013-08-02 06:00:00+00:00
+date: 2013-08-02T06:00:00.000Z
+updated: 2013-08-02T06:00:00.000Z
 published: true
 ---
 

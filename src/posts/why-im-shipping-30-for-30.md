@@ -1,7 +1,7 @@
 ---
 title: Why I'm Shipping 30 for 30?
-date: 2021-10-09 16:47:34+00:00
-updated: 2021-10-09 16:47:34+00:00
+date: 2021-10-09T16:47:34.000Z
+updated: 2021-10-09T16:47:34.000Z
 published: true
 ---
 

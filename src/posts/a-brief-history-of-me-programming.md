@@ -1,7 +1,7 @@
 ---
 title: A Brief History of Me Programming
-date: 2007-04-25 06:00:00+00:00
-updated: 2007-04-25 06:00:00+00:00
+date: 2007-04-25T06:00:00.000Z
+updated: 2007-04-25T06:00:00.000Z
 published: true
 ---
 

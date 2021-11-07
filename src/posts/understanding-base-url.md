@@ -1,7 +1,7 @@
 ---
 title: Understanding Base URL
-date: 2013-05-03 06:00:00+00:00
-updated: 2013-05-03 06:00:00+00:00
+date: 2013-05-03T06:00:00.000Z
+updated: 2013-05-03T06:00:00.000Z
 published: true
 ---
 

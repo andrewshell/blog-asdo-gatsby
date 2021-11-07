@@ -1,7 +1,7 @@
 ---
 title: Switched site to GatsbyJS
-date: 2019-11-06 18:31:25+00:00
-updated: 2019-11-06 18:31:25+00:00
+date: 2019-11-06T18:31:25.000Z
+updated: 2019-11-06T18:31:25.000Z
 published: true
 ---
 

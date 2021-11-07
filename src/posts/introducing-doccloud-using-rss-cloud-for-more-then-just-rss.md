@@ -1,7 +1,7 @@
 ---
 title: "Introducing DocCloud: Using RSS Cloud for more then just RSS"
-date: 2012-05-28 06:00:00+00:00
-updated: 2012-05-28 06:00:00+00:00
+date: 2012-05-28T06:00:00.000Z
+updated: 2012-05-28T06:00:00.000Z
 published: true
 ---
 
