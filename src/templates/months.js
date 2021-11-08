@@ -13,7 +13,7 @@ dayjs.extend(timezone)
 
 const MonthIndex = ({ data, location, pageContext }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const month = dayjs(pageContext.slug, "YYYY-MM");
+  const month = dayjs(pageContext.month, "YYYY-MM");
   const pageTitle = month.format('MMMM YYYY');
   const posts = data.allMarkdownRemark.nodes
   let previous, next;
