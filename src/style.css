@@ -57,12 +57,12 @@
   /* 1.200 Minor Third Type Scale */
   --fontSize-0: 0.833rem;
   --fontSize-1: 1rem;
-  --fontSize-2: 1.2rem;
-  --fontSize-3: 1.44rem;
-  --fontSize-4: 1.728rem;
-  --fontSize-5: 2.074rem;
-  --fontSize-6: 2.488rem;
-  --fontSize-7: 2.986rem;
+  --fontSize-2: 1.15rem;
+  --fontSize-3: 1.31rem;
+  --fontSize-4: 1.50rem;
+  --fontSize-5: 1.72rem;
+  --fontSize-6: 1.97rem;
+  --fontSize-7: 2.25rem;
   --color-primary: #005b99;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
@@ -173,7 +173,7 @@ p {
   line-height: var(--lineHeight-relaxed);
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
   padding: var(--spacing-0);
 }
 
@@ -190,7 +190,7 @@ ol {
 ul li,
 ol li {
   padding-left: var(--spacing-0);
-  margin-bottom: calc(var(--spacing-8) / 2);
+  margin-bottom: var(--spacing-0);
 }
 
 .hlist {
@@ -340,6 +340,21 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+
+.searchform {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.searchform input {
+  flex: 3;
+  width: 2em;
+}
+
+.searchform button {
+  flex: 1 0;
 }
 
 /* Media queries */

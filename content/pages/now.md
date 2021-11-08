@@ -1,24 +1,19 @@
 ---
 title: What I’m doing now
-date: 2020-10-18 16:27:47+00:00
+date: 2020-11-08T00:39:03Z
 ---
 
-## Building a Second Brain
+## Ship 30 for 30
 
-I signed up to be a part of Cohort 11 of the [Building a Second Brain course](https://www.buildingasecondbrain.com/) by [Tiago Forte](https://fortelabs.co/).
+On October 9th, I started [Ship 30 for 30](https://www.ship30for30.com/) which is a course teaching the fundamentals of writing on the internet. I just wrapped up the 30 days today.
 
-It was worth the time and money to take it. It has helped me think differently about taking notes, collecting information, and organizing and processing information.
+To learn more about how my 30 days went check out:
+* [Why I'm Shipping 30 for 30?](/why-im-shipping-30-for-30/)
+* [That's All Folks](/thats-all-folks/)
 
-The ideas I've generated while taking the course feed into my thoughts around [changing my website's format](/rethinking-blogs/) into a [digital garden](https://maggieappleton.com/garden-history).
 
-## rssCloud Server
+## Buying a House
 
-I'm working on an upgrade to the rssCloud server I launched back in 2015. I've come a long way in my Node.js development skills, and Node has changed a lot as well. The new release makes sure the server will target Node 14 LTS for future compatibility.
+I'm closing on a house on November 16th. It's a bit of a fixer upper so I'll spend the end of November and all of December getting it ready for my daughter and I to move in January.
 
-I've rewritten the code to use async/await instead of callbacks to improve readability.
-
-With Dave rebooting [XML-RPC](http://xmlrpc.com/), I've decided to add support for that protocol. It was supported in the OPML editor version but wasn't a priority when I created my server initially.
-
-Development was put on hold until I finished moving and sold the house, but I'm slowly working on it again and hope to have it released soon.
-
-If you're interested you can watch the [rssCloud Server GitHub repository](https://github.com/andrewshell/rsscloud-server).
+I'm looking forward to getting into carpentry and other DIY home renovation stuff. I've been watching a lot of videos on YouTube learning what I need to do to get everything ready.

@@ -44,18 +44,25 @@ const SearchPage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="Search" />
-      <SearchForm
-        query={ searchQuery }
-        onUpdate={ onUpdate }
-      />
-      <SearchResults
-        query={ searchQuery }
-        results={ results }
-      />
-      <hr />
-      <footer>
-        <Bio />
-      </footer>
+      <article
+        className="blog-post"
+      >
+        <header>
+          <h1 itemProp="headline">Search</h1>
+        </header>
+        <SearchForm
+          query={ searchQuery }
+          onUpdate={ onUpdate }
+        />
+        <SearchResults
+          query={ searchQuery }
+          results={ results }
+        />
+        <hr />
+        <footer>
+          <Bio />
+        </footer>
+      </article>
     </Layout>
   );
 }

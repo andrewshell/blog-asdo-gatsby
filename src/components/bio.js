@@ -46,6 +46,7 @@ const Bio = () => {
             <li><Link to="/now/">Now</Link></li>
             <li><Link to="/essays/">Essays</Link></li>
             <li><a href="https://amzn.to/2gdI0Ua">Wishlist</a></li>
+            <li><Link to="/search/">Search</Link></li>
           </ul>
         </div>
       )}

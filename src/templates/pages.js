@@ -16,6 +16,10 @@ const PageTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
+  const displaydate = post.frontmatter.date ? (
+    <p>{ dayjs(post.frontmatter.date).tz(process.env.GATSBY_TIMEZONE).format('MMMM DD, YYYY') }</p>
+  ) : ``;
+
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
@@ -29,7 +33,7 @@ const PageTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{ dayjs(post.frontmatter.date).tz(process.env.GATSBY_TIMEZONE).format('MMMM DD, YYYY') }</p>
+          { displaydate }
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
