@@ -348,6 +348,10 @@ a:focus {
   flex: 1 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {
