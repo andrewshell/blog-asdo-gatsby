@@ -15,7 +15,11 @@ const Bio = () => {
       site {
         siteMetadata {
           author {
-            name
+            name,
+            givenName,
+            familyName,
+            jobTitle,
+            homeLocation
           }
         }
       }
@@ -26,30 +30,31 @@ const Bio = () => {
   const author = data.site.siteMetadata?.author
 
   return (
-    <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
-      {author?.name && (
-        <div>
-          Written by <Link to="/about/"><strong>{author.name}</strong></Link>, a web developer from Madison, WI.<br />
-          <ul className="hlist">
-            <li><Link to="/about/">About</Link></li>
-            <li><Link to="/contact/">Contact</Link></li>
-            <li><Link to="/now/">Now</Link></li>
-            <li><Link to="/essays/">Essays</Link></li>
-            <li><a href="https://amzn.to/2gdI0Ua">Wishlist</a></li>
-            <li><Link to="/search/">Search</Link></li>
-          </ul>
-        </div>
-      )}
+    <div className="bio" itemscope="itemscope" itemtype="https://schema.org/Person">
+      <div className="bio-avatar" itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+        <StaticImage
+          itemprop="contentUrl"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="../images/profile-pic.png"
+          width={50}
+          height={50}
+          quality={95}
+          alt="Profile picture"
+        />
+      </div>
+
+      <div>
+        Written by <Link to="/about/"><strong itemprop="name"><span itemprop="givenName">{author.givenName}</span> <span itemprop="familyName">{author.familyName}</span></strong></Link>, a <span itemprop="jobTitle">{author.jobTitle}</span> from <span itemprop="homeLocation">{author.homeLocation}</span>.<br />
+        <ul className="hlist">
+          <li><Link to="/about/">About</Link></li>
+          <li><Link to="/contact/">Contact</Link></li>
+          <li><Link to="/now/">Now</Link></li>
+          <li><Link to="/essays/">Essays</Link></li>
+          <li><a href="https://amzn.to/2gdI0Ua">Wishlist</a></li>
+          <li><Link to="/search/">Search</Link></li>
+        </ul>
+      </div>
     </div>
   )
 }

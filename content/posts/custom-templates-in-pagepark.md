@@ -3,6 +3,7 @@ title: Custom templates in pagePark
 date: 2020-10-24T21:41:59.000Z
 updated: 2020-10-24T21:41:59.000Z
 published: true
+itemtype: https://schema.org/TechArticle
 ---
 
 My next experiment is creating a custom template on pagePark for OPML files. I'll have to see to what extent I can make this work.

@@ -12,24 +12,28 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 const PageTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
+  const post = data.markdownRemark;
+  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const { previous, next } = data;
+  const pagetype = post.frontmatter?.pagetype || `https://schema.org/WebPage`;
+  const itemtype = post.frontmatter?.itemtype || `https://schema.org/Article`;
+  const updatedDate = dayjs(post.frontmatter?.updated).tz(process.env.GATSBY_TIMEZONE);
 
-  const displaydate = post.frontmatter.date ? (
-    <p>{ dayjs(post.frontmatter.date).tz(process.env.GATSBY_TIMEZONE).format('MMMM DD, YYYY') }</p>
+  const displaydate = updatedDate.isValid() ? (
+    <p><span itemprop="dateModified" content={ updatedDate.format('YYYY-MM-DD') }>Updated { updatedDate.format('MMMM DD, YYYY') }</span></p>
   ) : ``;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} pagetype={pagetype}>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
       <article
         className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
+        itemprop="mainContentOfPage"
+        itemscope="itemscope"
+        itemtype={ itemtype }
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
@@ -94,7 +98,10 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date
+        updated
         description
+        pagetype
+        itemtype
       }
     }
     previous: markdownRemark(id: { eq: $previousNodeId }) {

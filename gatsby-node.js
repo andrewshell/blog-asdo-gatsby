@@ -171,6 +171,10 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Author {
       name: String
       summary: String
+      givenName: String
+      familyName: String
+      jobTitle: String
+      homeLocation: String
     }
 
     type Social {
@@ -188,6 +192,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date @dateformat
       updated: Date @dateformat
       published: Boolean
+      pagetype: String
+      itemtype: String
     }
 
     type Fields {

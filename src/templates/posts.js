@@ -15,9 +15,14 @@ const PostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+  const pagetype = post.frontmatter?.pagetype || `https://schema.org/WebPage`;
+  const itemtype = post.frontmatter?.itemtype || `https://schema.org/BlogPosting`
+  const publishedDate = dayjs(post.frontmatter?.date).tz(process.env.GATSBY_TIMEZONE);
+  const updatedDate = dayjs(post.frontmatter?.updated).tz(process.env.GATSBY_TIMEZONE);
+  const updatedDifferent = updatedDate.isValid() && false === updatedDate.isSame(publishedDate, 'day');
 
   return (
-    <Layout location={ location } title={ siteTitle }>
+    <Layout location={ location } title={ siteTitle } pagetype={ pagetype }>
       <Seo
         title={ post.frontmatter.title }
         description={ post.frontmatter.description || post.excerpt }
@@ -25,11 +30,14 @@ const PostTemplate = ({ data, location }) => {
       <article
         className="blog-post"
         itemScope
-        itemType="http://schema.org/Article"
+        itemType={ itemtype }
       >
         <header>
           <h1 itemProp="headline">{ post.frontmatter.title }</h1>
-          <p>{ dayjs(post.frontmatter.date).tz(process.env.GATSBY_TIMEZONE).format('MMMM DD, YYYY') }</p>
+          <p>
+            <span itemprop="datePublished" content={ publishedDate.format('YYYY-MM-DD') }>{ publishedDate.format('MMMM DD, YYYY') }</span>
+            { updatedDifferent ? (<span className="updated"><span itemprop="dateModified" content={ updatedDate.format('YYYY-MM-DD') }>Updated { updatedDate.format('MMMM DD, YYYY') }</span></span>) : '' }
+          </p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -90,7 +98,10 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date
+        updated
         description
+        pagetype
+        itemtype
       }
     }
     previous: markdownRemark(id: { eq: $previousNodeId }) {

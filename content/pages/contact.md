@@ -1,5 +1,6 @@
 ---
 title: Contact Me
+pagetype: https://schema.org/ContactPage
 ---
 
 I love hearing from people, so please e-mail me at andrew@andrewshell.org and introduce yourself.

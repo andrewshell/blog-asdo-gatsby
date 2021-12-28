@@ -8,6 +8,10 @@ module.exports = {
     title: `Andrew Shell's Weblog`,
     author: {
       name: `Andrew Shell`,
+      givenName: `Andrew`,
+      familyName: `Shell`,
+      jobTitle: `Senior Web Engineer/People Lead`,
+      homeLocation: `Madison, WI`
     },
     description: `Strategies for thinking, learning, and productivity.`,
     siteUrl: `https://blog.andrewshell.org/`,

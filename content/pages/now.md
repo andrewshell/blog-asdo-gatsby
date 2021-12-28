@@ -1,6 +1,6 @@
 ---
 title: What I’m doing now
-date: 2020-11-08T00:39:03Z
+updated: 2020-11-08T00:39:03Z
 ---
 
 ## Ship 30 for 30

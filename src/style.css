@@ -310,10 +310,23 @@ a:focus {
 }
 
 .bio-avatar {
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border: 3px solid #fff;
+  min-width: 50px;
   margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
-  min-width: 50px;
-  border-radius: 100%;
+}
+
+.bio-avatar img  {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+    vertical-align: middle;
 }
 
 .blog-post header h1 {
@@ -350,6 +363,11 @@ a:focus {
 
 img {
   max-width: 100%;
+}
+
+span.updated {
+  font-size: 50%;
+  margin-left: 1em;
 }
 
 /* Media queries */

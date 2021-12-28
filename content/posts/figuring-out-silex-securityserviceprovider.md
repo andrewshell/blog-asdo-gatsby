@@ -3,6 +3,7 @@ title: Figuring out Silex SecurityServiceProvider
 date: 2013-11-23T06:00:00.000Z
 updated: 2013-11-23T06:00:00.000Z
 published: true
+itemtype: https://schema.org/TechArticle
 ---
 
 I'm working on a couple of projects that will be using [Silex](http://silex.sensiolabs.org/) as the underlying framework.
@@ -17,31 +18,21 @@ What I want to do is have an authentication token available everywhere on the si
 
 This is the configuration I ended up with that seems to work for me. I'll explain after the snippet.
 
-## PHP Code
-
-### $app['security.firewalls'] = array(
-
-#### 'secure' => array(
-
-'anonymous' => true,
-
-'pattern' => '^/.*$',
-
-'form' => array('login_path' => '/user/login', 'check_path' => '/user/login_check'),
-
-'logout' => array('logout_path' => '/user/logout'),
-
-'users' => $app->share(function () { return new UserAuthUserProvider(); }),
-
-),
-
+```php
+$app['security.firewalls'] = array(
+    'secure' => array(
+        'anonymous' => true,
+        'pattern' => '^/.*$',
+        'form' => array('login_path' => '/user/login', 'check_path' => '/user/login_check'),
+        'logout' => array('logout_path' => '/user/logout'),
+        'users' => $app->share(function () { return new UserAuthUserProvider(); }),
+    ),
 );
 
-### $app['security.access_rules'] = array(
-
-array('^/user/secret$', 'ROLE_ADMIN'),
-
+$app['security.access_rules'] = array(
+    array('^/user/secret$', 'ROLE_ADMIN'),
 );
+```
 
 Things to note.
 
