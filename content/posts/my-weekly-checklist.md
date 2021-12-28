@@ -10,9 +10,9 @@ Folks on Twitter were interested in learning more about how I use this checklist
 
 ## On Monday Morning:
 
-### 1. Print Checklist (download [checklist](https://blog.andrewshell.org/uploads/2021/10/Weekly.pdf))
+### 1. Print Checklist
 
-I go into my documents folder and print out a blank checklist. I fill out the "Week of" date as well as each day of the week.
+I print out a [blank checklist](https://blog.andrewshell.org/uploads/2021/10/Weekly.pdf) and fill out the "Week of" date as well as each day of the week.
 
 ### 2. Fill Out the Backlog
 
