@@ -24,7 +24,7 @@ const Layout = ({ location, title, pagetype, children }) => {
   }
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath} itemscope="itemscope" itemtype={pagetype || 'https://schema.org/WebPage'}>
+    <div className="global-wrapper" data-is-root-path={isRootPath} itemScope="itemScope" itemType={pagetype || 'https://schema.org/WebPage'}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>

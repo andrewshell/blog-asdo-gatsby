@@ -30,10 +30,10 @@ const Bio = () => {
   const author = data.site.siteMetadata?.author
 
   return (
-    <div className="bio" itemscope="itemscope" itemtype="https://schema.org/Person">
-      <div className="bio-avatar" itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+    <div className="bio" itemScope="itemScope" itemType="https://schema.org/Person">
+      <div className="bio-avatar" itemProp="image" itemScope="itemScope" itemType="https://schema.org/ImageObject">
         <StaticImage
-          itemprop="contentUrl"
+          itemProp="contentUrl"
           layout="fixed"
           formats={["auto", "webp", "avif"]}
           src="../images/profile-pic.png"
@@ -45,7 +45,7 @@ const Bio = () => {
       </div>
 
       <div>
-        Written by <Link to="/about/"><strong itemprop="name"><span itemprop="givenName">{author.givenName}</span> <span itemprop="familyName">{author.familyName}</span></strong></Link>, a <span itemprop="jobTitle">{author.jobTitle}</span> from <span itemprop="homeLocation">{author.homeLocation}</span>.<br />
+        Written by <Link to="/about/"><strong itemProp="name"><span itemProp="givenName">{author.givenName}</span> <span itemProp="familyName">{author.familyName}</span></strong></Link>, a <span itemProp="jobTitle">{author.jobTitle}</span> from <span itemProp="homeLocation">{author.homeLocation}</span>.<br />
         <ul className="hlist">
           <li><Link to="/about/">About</Link></li>
           <li><Link to="/contact/">Contact</Link></li>

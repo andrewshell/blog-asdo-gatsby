@@ -16,11 +16,11 @@ const PageTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const { previous, next } = data;
   const pagetype = post.frontmatter?.pagetype || `https://schema.org/WebPage`;
-  const itemtype = post.frontmatter?.itemtype || `https://schema.org/Article`;
+  const itemType = post.frontmatter?.itemtype || `https://schema.org/Article`;
   const updatedDate = dayjs(post.frontmatter?.updated).tz(process.env.GATSBY_TIMEZONE);
 
   const displaydate = updatedDate.isValid() ? (
-    <p><span itemprop="dateModified" content={ updatedDate.format('YYYY-MM-DD') }>Updated { updatedDate.format('MMMM DD, YYYY') }</span></p>
+    <p><span itemProp="dateModified" content={ updatedDate.format('YYYY-MM-DD') }>Updated { updatedDate.format('MMMM DD, YYYY') }</span></p>
   ) : ``;
 
   return (
@@ -31,9 +31,9 @@ const PageTemplate = ({ data, location }) => {
       />
       <article
         className="blog-post"
-        itemprop="mainContentOfPage"
-        itemscope="itemscope"
-        itemtype={ itemtype }
+        itemProp="mainContentOfPage"
+        itemScope="itemScope"
+        itemType={ itemType }
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>

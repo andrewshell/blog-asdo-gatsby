@@ -16,7 +16,7 @@ const PostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
   const pagetype = post.frontmatter?.pagetype || `https://schema.org/WebPage`;
-  const itemtype = post.frontmatter?.itemtype || `https://schema.org/BlogPosting`
+  const itemType = post.frontmatter?.itemtype || `https://schema.org/BlogPosting`
   const publishedDate = dayjs(post.frontmatter?.date).tz(process.env.GATSBY_TIMEZONE);
   const updatedDate = dayjs(post.frontmatter?.updated).tz(process.env.GATSBY_TIMEZONE);
   const updatedDifferent = updatedDate.isValid() && false === updatedDate.isSame(publishedDate, 'day');
@@ -30,13 +30,13 @@ const PostTemplate = ({ data, location }) => {
       <article
         className="blog-post"
         itemScope
-        itemType={ itemtype }
+        itemType={ itemType }
       >
         <header>
           <h1 itemProp="headline">{ post.frontmatter.title }</h1>
           <p>
-            <span itemprop="datePublished" content={ publishedDate.format('YYYY-MM-DD') }>{ publishedDate.format('MMMM DD, YYYY') }</span>
-            { updatedDifferent ? (<span className="updated"><span itemprop="dateModified" content={ updatedDate.format('YYYY-MM-DD') }>Updated { updatedDate.format('MMMM DD, YYYY') }</span></span>) : '' }
+            <span itemProp="datePublished" content={ publishedDate.format('YYYY-MM-DD') }>{ publishedDate.format('MMMM DD, YYYY') }</span>
+            { updatedDifferent ? (<span className="updated"><span itemProp="dateModified" content={ updatedDate.format('YYYY-MM-DD') }>Updated { updatedDate.format('MMMM DD, YYYY') }</span></span>) : '' }
           </p>
         </header>
         <section
