@@ -6,7 +6,7 @@ published: true
 pagetype: https://schema.org/WebPage
 itemtype: https://schema.org/TechArticle
 ---
-Today I created my first NFT. I'm not really sure how useful it is, but what the heck.
+Today I created [my first NFT](https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/50785849398388566510903729972648362585060473171757419675425038676188286943233/). I'm not really sure how useful it is, but what the heck.
 
 The general idea is that it's in my best interest to become knowledgeable about blockchain and related tech because there are starting to be some [interesting use cases](https://www.youtube.com/watch?v=u1DgYveFF4Y) and I'm better off being primed to act on any new opportunities.
 
@@ -18,6 +18,8 @@ Then I was able to select my headshot as my profile picture and it looks the sam
 
 I've also signed up for the [Blockchain Developer Bootcamp](https://www.dappuniversity.com/) because I figure it will get me up to speed on everything I need to know.
 
-<nft-card contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="50785849398388566510903729972648362585060473171757419675425038676188286943233"></nft-card>
+<div style="text-align: center;">
 
-<script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+[![Andrew Shell's Headshot](/uploads/2022/02/opensea-nft.png)](https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/50785849398388566510903729972648362585060473171757419675425038676188286943233/)
+
+</div>
