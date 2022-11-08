@@ -1,19 +1,16 @@
 ---
 title: What I’m doing now
-updated: 2020-11-08T00:39:03Z
+date: 2020-04-13T16:02:07.504Z
+updated: 2022-11-08T17:04:55.508Z
+published: true
+pagetype: https://schema.org/WebPage
+itemtype: https://schema.org/Article
 ---
 
-## Ship 30 for 30
+## House Projects
 
-On October 9th, I started [Ship 30 for 30](https://www.ship30for30.com/) which is a course teaching the fundamentals of writing on the internet. I just wrapped up the 30 days today.
+For most of the year I was busy helping my mom move to Madison. She's now my next door neighbor. Because of this, I never got around to finishing the floors in my house and have lived with subfloors, staples, and tack strips in half of my house. I had hoped to wrap things up in time for Thanksgiving, but I decided not to stress myself out and I'll make the turkey and take it to my moms house.
 
-To learn more about how my 30 days went check out:
-* [Why I'm Shipping 30 for 30?](/why-im-shipping-30-for-30/)
-* [That's All Folks](/thats-all-folks/)
+## Releasing old Goals
 
-
-## Buying a House
-
-I'm closing on a house on November 16th. It's a bit of a fixer upper so I'll spend the end of November and all of December getting it ready for my daughter and I to move in January.
-
-I'm looking forward to getting into carpentry and other DIY home renovation stuff. I've been watching a lot of videos on YouTube learning what I need to do to get everything ready.
+There have been goals of mine that I held on to my entire life. I've decided that it's time to [release them](https://sive.rs/pets). I'm not sure what will be next, but I don't want to get stuck "shoulding all over myself"
