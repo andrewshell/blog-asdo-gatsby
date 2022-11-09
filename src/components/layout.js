@@ -31,6 +31,12 @@ const Layout = ({ location, title, pagetype, children }) => {
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <ul class="hlist">
+        <li><strong>Social:</strong></li>
+        <li><a rel="me" href="https://twitter.com/andrewshell">Twitter</a></li>
+        <li><a rel="me" href="https://pub.peakthink.org/@andrewshell">Mastodon</a></li>
+        <li><a href="https://github.com/andrewshell" rel="me">GitHub</a></li>
+        </ul>
       </footer>
     </div>
   )
