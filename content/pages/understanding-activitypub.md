@@ -6,8 +6,6 @@ published: true
 pagetype: https://schema.org/WebPage
 itemtype: https://schema.org/Article
 ---
-This post is the first of several articles about the technology around ActivityPub. 
-
 ActivityPub is the underlying protocol that powers social networks like Mastodon, PeerTube, and Pixelfed. It's intended to define a standard way different applications and networks can communicate.
 
 I am interested in understanding the protocol to find new exciting uses for these networks. What can I build that would leverage the existing communities and user base? 
