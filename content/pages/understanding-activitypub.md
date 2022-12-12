@@ -15,3 +15,5 @@ As I go along, I plan to learn in public and write articles about the different 
 Some articles will be little more than notes I take as I read and experiment. Others will be attempts to explain to a specific audience. For instance, I plan to have a capstone project that is a document to help application developers get a foothold in what's possible and the first steps to hello world.
 
 This page serves as an index for my ActivityPub-related articles.
+
+* \[WebFinger for ActivityPub Feed Discovery﻿](/webfinger-for-activitypub-feed-discovery/)
