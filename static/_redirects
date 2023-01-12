@@ -1,8 +1,9 @@
-/sitemap.xml /sitemap/sitemap-index.xml 301
+/sitemap/sitemap-index.xml /sitemap.xml 301
 /andrew/ /about/  301
 /contact-andrew/ /contact/  301
 /feed/ /rss.xml  301
 /rss/ /rss.xml  301
+/feed/index.xml /rss.xml  301
 /posts/ /essays/  301
 /my-resume/ /resume/  301
 /radio2rt/ /radio2-rt-wordpress-plugin/ 301

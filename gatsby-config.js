@@ -132,15 +132,49 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        query: `
+        {
+          allMarkdownRemark(
+            filter: { frontmatter: { published: { ne: false } } }
+          ) {
+            edges {
+              node {
+                id
+                fields {
+                  slug
+                }
+                frontmatter {
+                  date
+                }
+              }
+            }
+          }
+        }`,
+        mapping: {
+          allMarkdownRemark: {
+            sitemap: `pages`
+          }
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://blog.andrewshell.org',
+        sitemap: 'https://blog.andrewshell.org/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
     {
       resolve: 'gatsby-plugin-lunr',
       options: {
         languages: [{
           name: 'en',
           filterNodes: node => {
-            return (node.frontmatter || {}).published !== false;
+            return node?.frontmatter?.published !== false;
           }
         }],
         fields: [

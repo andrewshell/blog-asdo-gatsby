@@ -2,94 +2,32 @@
 title: Landing My Perfect Job
 date: 2013-06-17T06:00:00.000Z
 updated: 2013-06-17T06:00:00.000Z
-published: true
+published: false
 ---
 
-What some people may not
-
-realize is that I'm currently employed at my [perfect
-
-job.](http://www.datecheckpro.com/).  Sometimes I wonder how exactly I managed
-
-to get to this place in life and I think I've come up with some strategies that
-
-I'd like to share with you.
+What some people may not realize is that I'm currently employed at my [perfect job.](http://www.datecheckpro.com/).  Sometimes I wonder how exactly I managed to get to this place in life and I think I've come up with some strategies that I'd like to share with you.
 
 ## Money is important, but it's not the most important
 
-I'd extend this to benefits as well.  Unless you have a health condition that
+I'd extend this to benefits as well.  Unless you have a health condition that would make acquiring your own health insurance prohibitively expensive it's totally optional to find a company that offers benefits.  Just factor the cost of insurance and retirement investments into your salary.
 
-would make acquiring your own health insurance prohibitively expensive it's
-
-totally optional to find a company that offers benefits.  Just factor the cost
-
-of insurance and retirement investments into your salary.
-
-What IS important is variable to each person and it can change over time. For me
-
-these are the important attributes of an ideal job.
+What IS important is variable to each person and it can change over time. For me these are the important attributes of an ideal job.
 
 ### 1. Influence
 
-This is my number one attribute for a number of reasons.  First it really sucks
-
-when you work at a job doing stuff you can't stand doing.  I'll get into this
-
-more later on, but if you have influence at a company you can go a long way into
-
-making sure you're working on the projects and tasks that you want to be working
-
-on.
+This is my number one attribute for a number of reasons.  First it really sucks when you work at a job doing stuff you can't stand doing.  I'll get into this more later on, but if you have influence at a company you can go a long way into making sure you're working on the projects and tasks that you want to be working on.
 
 ### 2. Autonomy
 
-I can't be micromanaged.  I've come to realize that I'm the most productive if I
+I can't be micromanaged.  I've come to realize that I'm the most productive if I can come and go and work when is best for me.  I've found that the best way to achieve this is to work from home.  With fast internet I can video Skype, call, text or e-mail my coworkers depending on how important the reason is.  Some people might not be able to handle this, but since I'm a bit of a workaholic my boss is never worried about me slacking off.
 
-can come and go and work when is best for me.  I've found that the best way to
-
-achieve this is to work from home.  With fast internet I can video Skype, call,
-
-text or e-mail my coworkers depending on how important the reason is.  Some
-
-people might not be able to handle this, but since I'm a bit of a workaholic my
-
-boss is never worried about me slacking off.  If I'm feeling like crap I can
-
-take a nap and when I get up I get way more done then if I had pushed through
-
-the fog and kept working.  This is why people in offices spend so much time on
-
-Facebook and Twitter.  They feel like crap for any number of reasons (florescent
-
-lighting, sugar crashing, general tiredness, etc) but they can't go take a nap
-
-so instead they dick around on Facebook.
+If I'm feeling like crap I can take a nap and when I get up I get way more done then if I had pushed through the fog and kept working.  This is why people in offices spend so much time on Facebook and Twitter.  They feel like crap for any number of reasons (florescent lighting, sugar crashing, general tiredness, etc) but they can't go take a nap so instead they dick around on Facebook.
 
 ### 3. Passion
 
-This is a bit of a loaded attribute.  The company I work for builds a tool for
+This is a bit of a loaded attribute.  The company I work for builds a tool for grocery stores to manage their expiring inventory.  Is that what I'm passionate about?  It probably wouldn't be on the top of my list.  However what I am passionate about is building amazing software.  I'm passionate about learning how to improve my code and make things work better for everybody involved (users, administrators, developers, etc).
 
-grocery stores to manage their expiring inventory.  Is that what I'm passionate
-
-about?  It probably wouldn't be on the top of my list.  However what I am
-
-passionate about is building amazing software.  I'm passionate about learning
-
-how to improve my code and make things work better for everybody involved
-
-(users, administrators, developers, etc).  At some of my prior jobs these ideals
-
-were a low priority.  It was more important to get more features out as quickly
-
-as possible, accumulating a bunch of technical debt in the process.  I would get
-
-scolded for taking my time to do things the right way because we "didn't have
-
-time for that".  Now because of my autonomy and influence I can manage
-
-expectations and make sure that I'm passionate about the projects I'm working
-
-on.
+At some of my prior jobs these ideals were a low priority.  It was more important to get more features out as quickly as possible, accumulating a bunch of technical debt in the process.  I would get scolded for taking my time to do things the right way because we "didn't have time for that".  Now because of my autonomy and influence I can manage expectations and make sure that I'm passionate about the projects I'm working on.
 
 ### 4. Chemistry
 

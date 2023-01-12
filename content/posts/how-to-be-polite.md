@@ -2,7 +2,7 @@
 title: How to Be Polite
 date: 2014-08-14T06:00:00.000Z
 updated: 2014-08-14T06:00:00.000Z
-published: true
+published: false
 ---
 
 Politeness and manners are something that I feel has always intrigued and eluded me.

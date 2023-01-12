@@ -26,6 +26,8 @@ const PostTemplate = ({ data, location }) => {
       <Seo
         title={ post.frontmatter.title }
         description={ post.frontmatter.description || post.excerpt }
+        meta={[]}
+        published={ post.frontmatter.published }
       />
       <article
         className="blog-post"
@@ -102,6 +104,7 @@ export const pageQuery = graphql`
         description
         pagetype
         itemtype
+        published
       }
     }
     previous: markdownRemark(id: { eq: $previousNodeId }) {
