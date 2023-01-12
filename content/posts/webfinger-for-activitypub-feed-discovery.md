@@ -6,6 +6,7 @@ published: true
 pagetype: https://schema.org/WebPage
 itemtype: https://schema.org/TechArticle
 ---
+
 This post is the first of several articles about the technology around [Understanding ActivityPub](/understanding-activitypub/).
 
 The first question I had while reading the ActivityPub specification was, "How do I find the different feeds and documents defined by the spec?"

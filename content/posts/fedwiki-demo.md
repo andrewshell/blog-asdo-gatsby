@@ -2,7 +2,7 @@
 title: FedWiki Demo
 date: 2021-03-27T15:51:01.000Z
 updated: 2021-03-27T15:51:01.000Z
-published: false
+published: true
 itemtype: https://schema.org/TechArticle
 ---
 

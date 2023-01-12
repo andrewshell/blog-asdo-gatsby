@@ -2,7 +2,7 @@
 title: Sharing Disqus Threads
 date: 2013-01-19T06:00:00.000Z
 updated: 2013-01-19T06:00:00.000Z
-published: false
+published: true
 ---
 
 Today I met up with my friend [Joe Nelson](http://begriffs.com/), the goal was to discuss my prior blog post about [a better social news experience](/a-better-social-news-experience/). We wanted to look at the larger idea and see what baby steps could we accomplish to start moving toward that ideal.

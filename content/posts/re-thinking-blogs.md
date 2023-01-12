@@ -2,7 +2,7 @@
 title: Re-Thinking Blogs
 date: 2020-10-18T15:10:25.000Z
 updated: 2020-10-18T15:10:25.000Z
-published: false
+published: true
 ---
 
 My site has been a blog since at least 2006. It literally uses the blog subdomain. I don't know how much I like that anymore.

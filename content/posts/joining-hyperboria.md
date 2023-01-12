@@ -2,7 +2,7 @@
 title: Joining Hyperboria
 date: 2013-03-13T20:44:21.000Z
 updated: 2013-03-13T20:44:21.000Z
-published: false
+published: true
 ---
 
 Yesterday I joined [Hyperboria](http://hyperboria.net/).

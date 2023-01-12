@@ -2,7 +2,7 @@
 title: My iPad Setup
 date: 2021-05-30T14:01:33.000Z
 updated: 2021-05-30T14:01:33.000Z
-published: false
+published: true
 ---
 
 This morning I read [Peter Akkies Newsletter](https://peterakkies.net/) and he asks:
@@ -23,7 +23,8 @@ The old "dumb" stylus never worked very well so I held out. When the first iPad 
 
 My first accessories for my new iPad pro were:
 
-1. [Paperlike screen protector](https://paperlike.com/)
-2. [Lamicall Tablet Stand](https://www.amazon.com/gp/product/B071GL4MXS/)
-3. [tomtoc Tablet Shoulder Sleeve Bag](https://www.amazon.com/gp/product/B07R6KKPV9/)
+1. [Apple Pencil](https://www.apple.com/apple-pencil/)
+2. [Paperlike screen protector](https://paperlike.com/)
+3. [Lamicall Tablet Stand](https://www.amazon.com/gp/product/B071GL4MXS/)
+4. [tomtoc Tablet Shoulder Sleeve Bag](https://www.amazon.com/gp/product/B07R6KKPV9/)
 

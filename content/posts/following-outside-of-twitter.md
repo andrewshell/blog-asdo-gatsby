@@ -2,7 +2,7 @@
 title: Following Outside of Twitter
 date: 2011-05-01T06:00:00.000Z
 updated: 2011-05-01T06:00:00.000Z
-published: false
+published: true
 itemtype: https://schema.org/TechArticle
 ---
 

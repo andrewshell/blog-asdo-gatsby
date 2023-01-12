@@ -2,7 +2,7 @@
 title: Identifying my priorities
 date: 2014-01-21T06:00:00.000Z
 updated: 2014-01-21T06:00:00.000Z
-published: false
+published: true
 ---
 
 Lately I've been overwhelmed.  This is not unusual for me ever since my heart surgery I've been more aware of it.

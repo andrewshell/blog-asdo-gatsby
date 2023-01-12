@@ -2,7 +2,7 @@
 title: "Rebooting The News #86"
 date: 2011-03-14T06:00:00.000Z
 updated: 2011-03-14T06:00:00.000Z
-published: false
+published: true
 enclosure:
   url: https://blog.andrewshell.org/uploads/2011/03/reboot11mar14-asclip.mp3
   size: "7527803"

@@ -2,7 +2,7 @@
 title: Understanding ActivityPub
 date: 2022-12-12T15:44:08.107Z
 updated: 2022-12-12T15:44:08.113Z
-published: false
+published: true
 pagetype: https://schema.org/WebPage
 itemtype: https://schema.org/Article
 ---

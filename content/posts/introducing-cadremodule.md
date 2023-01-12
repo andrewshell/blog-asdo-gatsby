@@ -2,7 +2,7 @@
 title: Introducing Cadre.Module
 date: 2016-10-20T15:51:24.000Z
 updated: 2016-10-20T15:51:24.000Z
-published: false
+published: true
 ---
 
 Today I published a new component [Cadre.Module](https://github.com/cadrephp/Cadre.Module).

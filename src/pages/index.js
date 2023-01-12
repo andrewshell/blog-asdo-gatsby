@@ -119,7 +119,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: {
-        frontmatter: { published: { ne: true } },
+        frontmatter: { published: { eq: true } },
         fields: { sourceInstanceName: { eq: "posts" } }
       },
       sort: {fields: [frontmatter___date], order: DESC},

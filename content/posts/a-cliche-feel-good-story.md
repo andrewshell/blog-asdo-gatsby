@@ -13,8 +13,6 @@ Here's a story about kids playing baseball. It's such a trope that I'm sure you'
 > The pitcher picks up the ball and throws it wide, way past first base, and the kid is encouraged to run to second base.
 > The winning team decides it's more important to give this kid a win than for them to win the game. They let the kid run to home base, and he wins the game. Everyone is happy. The kids' dad is proud of the other boys for doing the right thing and making his son happy.
 > A few weeks later, the disadvantaged kid dies. This game had been his last hurah.
->
-> <cite>></cite>
 
 This story makes most people feel something. You feel bad for the kid because life dealt him a lousy hand. You admire the other kids for putting the boy's needs in front of their desire to win.
 

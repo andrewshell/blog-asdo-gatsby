@@ -2,7 +2,7 @@
 title: LazyArray Officially Part of Aura.Di
 date: 2016-10-04T18:37:55.000Z
 updated: 2016-10-04T18:37:55.000Z
-published: false
+published: true
 ---
 
 In my prior posts about integrating [Symfony Forms with Radar](/symfony-forms-radar/), I created a helper class called [LazyArray](https://github.com/futureproofphp/symfony-forms-radar/blob/1.x/src/LazyArray.php).

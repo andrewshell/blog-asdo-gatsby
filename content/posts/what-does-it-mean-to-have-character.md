@@ -2,7 +2,7 @@
 title: What does it mean to have character?
 date: 2011-05-26T06:00:00.000Z
 updated: 2011-05-26T06:00:00.000Z
-published: false
+published: true
 ---
 
 Today I came across a wikipedia page about the [Seven Blunders of the World](http://en.wikipedia.org/wiki/Seven_Blunders_of_the_World) which was a list created by Gandhi.  As I went through them one particularly stuck with me.  That was "Knowledge without Character" particularly because knowledge is something I strive for.  The problem was although I had a sense in my gut about what character was, I wasn't sure specifically.  Furthermore I wasn't sure if I have character.

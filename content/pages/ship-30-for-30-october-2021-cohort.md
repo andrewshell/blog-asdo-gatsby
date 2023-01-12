@@ -2,7 +2,7 @@
 title: Ship 30 for 30 October 2021 Cohort
 date: 2022-01-12T17:37:10.492Z
 updated: 2022-01-12T17:37:10.515Z
-published: false
+published: true
 pagetype: https://schema.org/WebPage
 itemtype: https://schema.org/Article
 ---

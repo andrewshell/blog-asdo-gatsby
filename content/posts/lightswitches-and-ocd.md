@@ -2,7 +2,7 @@
 title: Lightswitches and OCD
 date: 2014-01-29T06:00:00.000Z
 updated: 2014-01-29T06:00:00.000Z
-published: false
+published: true
 ---
 
 I'm a little OCD when it comes to light switches. My particular obsession goes a little like this:

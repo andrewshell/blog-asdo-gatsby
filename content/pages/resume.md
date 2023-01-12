@@ -15,7 +15,7 @@ Senior Web Engineer at Johnson Health Tech North America
 
 ## Skills
 
-For fifteen years I've been building a wide variety of web applications. Much of my work has been with **PHP**, but I've also worked extensively with Angular and the Ionic Framework. Most of my recent development has been with **React, Redux, Laravel, Ionic 4 and Angular**.
+I've been building a wide variety of web applications for twenty years. Much of my work has used **PHP** and **Node.js**, but I've also worked extensively with **React**, **Ionic 4**, and **Angular**.
 
 I'm incredibly comfortable **learning new things quickly** and **working with ambiguity**. I always consider the **goals of the business** before I work. The best way to be productive is to avoid spending time building the wrong thing.
 
@@ -34,34 +34,29 @@ _PHP|Architect Magazine_
 
 ## Experience
 
-### Senior Web Enginner 2019-Present
+### Senior Web Enginner/ People Lead 2019-Present
 _Johnson Health Tech, Cottage Grove, WI_
 
-  * Building APIs with Node.js
-  * Integrating with third-party API
-  * Mentoring and training other developers
+Senior Engineer building and maintaining a network of connected workout services and pipelines. Services are all on AWS using Docker, Node.js, PHP, Python, Elastic Beanstalk, Lambda, SQS, SNS, Firehose, MongoDB, and DynamoDB. Additionally, I mentor four developers as part of my People Lead role.
+
+I'm responsible for planning and executing various solutions for our stakeholders, many of which involve coordinating work across other teams, both internal and external to our organization. I lead investigations to gather information and document systems and processes so I can recommend strategies for improving reliability, decreasing latency, and eliminating legacy tech debt.
 
 ### Senior Engineer 2018-2019
 _Acumium, Madison, WI_
 
-  * Debugged issues and developed new features on Magento 2 websites
-  * Improved and extended Node.js (Express) APIs
-  * Product owner for CMS projects. Understanding our offerings and determining best fit for new projects.
+Worked on a variety of PHP and Node.js web applications for our clients. Designed and executed a git and Gitflow training program across the organization to unify our development practices.
 
 ### CTO & Lead Developer 2017-2018
 _Stryv, Remote from Madison, WI_
 
-  * Supported founder with defining scope and design of the product.
-  * Managed day to day product backlog.
-  * Spent the majority of my time building a Progressive Web App (PWA) using Ionic 3 & 4 with a backend API built using Laravel.
+Building web and mobile applications with PHP, Laravel, SVG, Angular, and the Ionic Framework. Close collaboration with the founder and CEO to iterate on his vision.
 
 ### Co-Founder and CTO 2011-2018
 _Pinpoint Software, Madison, WI_
 
-  * Built the MVP of our flagship product [Date Check Pro](http://datecheckpro.com/) in 6 weeks.
-  * Continued to plan features with management and customers to quickly iterate.
-  * Architected and built [Taskle](http://www.taskle.com/), our second SaaS application for task management and store audits.
-  * Redesigned and reimagined Date Check Pro and helped lead the development of version 2.0
+At Pinpoint Software, I built and maintained two SaaS products. Our flagship product DateCheckPro was a tool for grocery stores to manage and reduce expiring inventory. Shortly after, we launched Taskle, a tool for stores to manage recurring audits and checklists.
+
+I designed database schemas (MySQL) and built the back and front ends during this time. Additionally, I worked closely with my co-founder and grocery industry partners.
 
 ## Honors & Activities
 

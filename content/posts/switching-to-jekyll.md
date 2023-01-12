@@ -2,7 +2,7 @@
 title: Switching to Jekyll
 date: 2013-02-14T06:00:00.000Z
 updated: 2013-02-14T06:00:00.000Z
-published: false
+published: true
 ---
 
 After running my blog for many years on WordPress I've recently decided to migrate over to [Jekyll](https://github.com/mojombo/jekyll) running on [Github Pages](http://pages.github.com/).

@@ -2,7 +2,7 @@
 title: A better social news experience?
 date: 2012-12-31T06:00:00.000Z
 updated: 2012-12-31T06:00:00.000Z
-published: false
+published: true
 ---
 
 A number of years ago when I worked for [Brazen Careerist](http://www.brazencareerist.com/) I had an idea for the company. We could create a white label social news site that was a window into a larger network of social news sites. Management didn't see this as a useful direction for the company so it didn't happen.

@@ -2,7 +2,7 @@
 title: Putting your life on autopilot
 date: 2011-02-09T06:00:00.000Z
 updated: 2011-02-09T06:00:00.000Z
-published: false
+published: true
 ---
 
 My life needs fixing.  There are a lot of things going on that I need to repair.  Some of which are:

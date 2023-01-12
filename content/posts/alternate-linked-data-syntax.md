@@ -2,7 +2,7 @@
 title: Alternate Linked Data Syntax
 date: 2020-12-23T21:07:54.000Z
 updated: 2020-12-23T21:07:54.000Z
-published: false
+published: true
 itemtype: https://schema.org/TechArticle
 ---
 

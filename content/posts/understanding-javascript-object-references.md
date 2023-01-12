@@ -2,7 +2,7 @@
 title: Understanding Javascript Object References
 date: 2019-11-12T06:00:00.000Z
 updated: 2019-11-12T06:00:00.000Z
-published: false
+published: true
 ---
 
 Today I was in a class learning about [Kinvey](https://www.progress.com/kinvey) and my instructor was stuck on a problem in a node.js app he was working on.

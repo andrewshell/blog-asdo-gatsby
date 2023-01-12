@@ -2,7 +2,7 @@
 title: Digital Decentralism
 date: 2012-01-23T06:00:00.000Z
 updated: 2012-01-23T06:00:00.000Z
-published: false
+published: true
 ---
 
 I've been very interested in thinking of clever ways to help myself and other people avoid [digital sharecropping](http://www.roughtype.com/archives/2011/08/digital_sharecr.php). Especially with the recent hoopla around SOPA.

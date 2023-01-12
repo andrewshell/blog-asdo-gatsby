@@ -2,7 +2,7 @@
 title: What is a social network?
 date: 2013-10-28T06:00:00.000Z
 updated: 2013-10-28T06:00:00.000Z
-published: false
+published: true
 ---
 
 Dave Winer says in [What's missing in our social networks?](http://scripting.com/2013/10/28/whatsMissingInOurSocialNetworks):
