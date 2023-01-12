@@ -34,7 +34,7 @@ _PHP|Architect Magazine_
 
 ## Experience
 
-### Senior Web Enginner/ People Lead 2019-Present
+### Senior Web Engineer/ People Lead 2019-Present
 _Johnson Health Tech, Cottage Grove, WI_
 
 Senior Engineer building and maintaining a network of connected workout services and pipelines. Services are all on AWS using Docker, Node.js, PHP, Python, Elastic Beanstalk, Lambda, SQS, SNS, Firehose, MongoDB, and DynamoDB. Additionally, I mentor four developers as part of my People Lead role.
