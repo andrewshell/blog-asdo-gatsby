@@ -2,7 +2,7 @@
 title: Discovering Clean Architecture
 date: 2016-09-23T05:00:34.000Z
 updated: 2016-09-23T05:00:34.000Z
-published: true
+published: false
 itemtype: https://schema.org/TechArticle
 ---
 

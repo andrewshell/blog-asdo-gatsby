@@ -2,7 +2,7 @@
 title: Collecting Data from Atlas ORM with PHP Debug Bar
 date: 2016-10-14T05:00:09.000Z
 updated: 2016-10-14T05:00:09.000Z
-published: true
+published: false
 itemtype: https://schema.org/TechArticle
 ---
 

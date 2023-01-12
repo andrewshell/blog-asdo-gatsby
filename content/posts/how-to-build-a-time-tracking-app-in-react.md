@@ -2,7 +2,7 @@
 title: How To Build A Time Tracking App In React
 date: 2018-09-26T12:30:18.000Z
 updated: 2018-09-26T12:30:18.000Z
-published: true
+published: false
 ---
 
 Recently for a job I was applying for I build a time tracking demo in React.

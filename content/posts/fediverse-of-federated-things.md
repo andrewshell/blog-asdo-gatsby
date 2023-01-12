@@ -2,7 +2,7 @@
 title: "Fediverse of Federated Things "
 date: 2020-12-06T21:15:03.000Z
 updated: 2020-12-06T21:15:03.000Z
-published: true
+published: false
 itemtype: https://schema.org/TechArticle
 ---
 

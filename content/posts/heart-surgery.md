@@ -2,7 +2,7 @@
 title: Heart Surgery
 date: 2013-05-02T06:00:00.000Z
 updated: 2013-05-02T06:00:00.000Z
-published: true
+published: false
 ---
 
 I had been diagnosed with a heart murmur back in 2005 at which time the cardiologist said it was unremarkable and that I just needed antibiotics prior to dental work.  Two years ago I had a second ultrasound of my heart and no red flags were raised.

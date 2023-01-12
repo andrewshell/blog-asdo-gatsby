@@ -2,7 +2,7 @@
 title: "Self-Hosted Web-Crawler and Search Engine "
 date: 2020-11-04T13:52:01.000Z
 updated: 2020-11-04T13:52:01.000Z
-published: true
+published: false
 ---
 
 I'd like to do some research into what options there are in this area. I know Dave has had issues with not finding things on his blog using Google or Duck Duck Go.

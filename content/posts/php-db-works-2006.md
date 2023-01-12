@@ -2,7 +2,7 @@
 title: PHP/DB | Works 2006
 date: 2006-09-12T06:00:00.000Z
 updated: 2006-09-12T06:00:00.000Z
-published: true
+published: false
 ---
 
 I just arrived in Toronto yesterday for the third PHP Works conference I've attended. The last two years were incredible and I have no doubts that this year will be great as well. I will try to post several entries while I'm here detailing what talks I've attended and such. Today is the all day seminars.

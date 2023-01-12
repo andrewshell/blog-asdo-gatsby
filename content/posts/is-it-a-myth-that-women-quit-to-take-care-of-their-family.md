@@ -2,7 +2,7 @@
 title: Is it a myth that women quit to take care of their family?
 date: 2013-09-11T06:00:00.000Z
 updated: 2013-09-11T06:00:00.000Z
-published: true
+published: false
 ---
 
 I was reading the September issue of the Harvard Business Review today.  There are a bunch of articles about women in the workplace.  I'm not planning on getting into the details and subtleties of this issue because it's complex and has a lot of facets to it.  However there is one thing I'd like to comment on.

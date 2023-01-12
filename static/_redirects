@@ -5,6 +5,7 @@
 /rss/ /rss.xml  301
 /posts/ /essays/  301
 /my-resume/ /resume/  301
+/radio2rt/ /radio2-rt-wordpress-plugin/ 301
 /2017/03/06/best-way-inject-logger/ /what-is-the-best-way-to-inject-a-logger/  301
 /2018/09/26/how-to-build-a-time-tracking-app-in-react/ /how-to-build-a-time-tracking-app-in-react/  301
 /2018/06/28/ionic-4-and-mobx/ /ionic-4-and-mobx/  301

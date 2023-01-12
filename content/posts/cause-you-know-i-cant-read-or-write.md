@@ -2,7 +2,7 @@
 title: Cause you know... I can't read or write.
 date: 2009-01-06T06:00:00.000Z
 updated: 2009-01-06T06:00:00.000Z
-published: true
+published: false
 ---
 
 Or so I say.  But clearly that's not true, unless you believe my stories of a well trained chimp that does all my reading and writing for me.  It's a joke I've used quite a bit through the years.  People typically find it funny because of the obvious falseness of it.  Clearly I can read and write but most people also seem to think I'm quite intelligent.  I am a computer programmer of all things.  And this is where I feel most people fail.

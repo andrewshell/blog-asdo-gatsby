@@ -2,7 +2,7 @@
 title: Escaping Corporate Silos With WordPress
 date: 2011-02-23T06:00:00.000Z
 updated: 2011-02-23T06:00:00.000Z
-published: true
+published: false
 itemtype: https://schema.org/TechArticle
 ---
 

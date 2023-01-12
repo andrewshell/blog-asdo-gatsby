@@ -11,7 +11,7 @@ Senior Web Engineer at Johnson Health Tech North America
 
 [![View Andrew Shell's profile on LinkedIn](https://www.linkedin.com/img/webpromo/btn_viewmy_160x25.gif)](https://www.linkedin.com/in/andrewshell)
 
-[Download Single Page Resume PDF](/uploads/2019/02/resume.pdf)
+[Download Single Page Resume PDF](/resume.pdf)
 
 ## Skills
 

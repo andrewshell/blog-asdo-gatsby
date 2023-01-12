@@ -2,7 +2,7 @@
 title: Douglas Engelbart and Linked Data
 date: 2021-03-27T11:06:13.000Z
 updated: 2021-03-27T11:06:13.000Z
-published: true
+published: false
 itemtype: https://schema.org/TechArticle
 ---
 

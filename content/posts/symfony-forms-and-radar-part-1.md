@@ -2,7 +2,7 @@
 title: Symfony Forms and Radar - Part 1
 date: 2016-09-26T05:00:50.000Z
 updated: 2016-09-26T05:00:50.000Z
-published: true
+published: false
 ---
 
 I have several projects I'd like to build soon. One thing they have in common is there will be a lot of data entry via forms. Back in the day I used to use [HTML_QuickForm](https://pear.php.net/package/HTML_QuickForm) but I haven't used it for a long time.
