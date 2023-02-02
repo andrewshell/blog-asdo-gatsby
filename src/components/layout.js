@@ -34,8 +34,8 @@ const Layout = ({ location, title, pagetype, children }) => {
         <ul class="hlist">
         <li><strong>Social:</strong></li>
         <li><a rel="me" href="https://twitter.com/andrewshell">Twitter</a></li>
-        <li><a rel="me" href="https://pub.peakthink.org/@andrewshell">Mastodon</a></li>
-        <li><a href="https://github.com/andrewshell" rel="me">GitHub</a></li>
+        <li><a rel="me" href="https://indieweb.social/@andrewshell">Mastodon</a></li>
+        <li><a rel="me" href="https://github.com/andrewshell">GitHub</a></li>
         </ul>
       </footer>
     </div>
