@@ -123,7 +123,7 @@ export const pageQuery = graphql`
         fields: { sourceInstanceName: { eq: "posts" } }
       },
       sort: {fields: [frontmatter___date], order: DESC},
-      limit: 1000
+      limit: 5
     ) {
       nodes {
         excerpt(pruneLength: 280)

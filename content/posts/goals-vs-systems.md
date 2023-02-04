@@ -13,6 +13,7 @@ Adams acknowledges that you can reduce the difference between goals and systems 
 In my essay [Unified Theory of Goal-Setting](/unified-theory-of-goal-setting/), I say:
 
 > Every single goal-setting and task management system is just a way to filter and prioritize the endless number of things you could be doing and decide on a single thing to do right now.
+>
 > The differences between systems mostly come down to how broad/specific your level of abstraction is and what criteria you're using for prioritization.
 
 Systems seem more valuable because they are more specific. But creating a system without first having a goal you hope to achieve makes it less likely that you'll achieve what you want. You need to have a benchmark to determine if the system is working. These are the lead and lag indicators.
